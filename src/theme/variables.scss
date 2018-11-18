@@ -88,3 +88,13 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face{
+  font-family: 'tag-doc';
+  font-size: normal;
+  src: url(../assets/fonts/TagDoc93.ttf);
+}
+
+.bay-font{
+  font-family: 'tag-doc';
+}

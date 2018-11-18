@@ -12,7 +12,7 @@ export class HomePage {
   client: any;
   index: any;
   ALGOLIA_APP_ID: string = "E4K2LLB4XB";
-  ALGOLIA_APP_KEY: string = "dc33177231ad519d67771dcabd09c01e";
+  ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
   words = [];
   constructor(public navCtrl: NavController) {
@@ -20,7 +20,7 @@ export class HomePage {
       protocol: 'https:'
     });
 
-    this.index = this.client.initIndex("thesis_WORDS")
+    this.index = this.client.initIndex("tuklas_WORDS")
 
   }
   search(event) {
@@ -39,9 +39,9 @@ export class HomePage {
     
     this.navCtrl.push(WordPage,{
       'words': this.words
+     
     });
     
-
   }
 
 }
