@@ -1,16 +1,27 @@
+
+
 <ion-content class="card-background-page" padding>
   
-  <!-- <ion-img width="80" height="80" src="..."></ion-img> -->
+
   <ion-img src="../../assets/imgs/tuklas-logo-v1.png" width="100%" height="20%"></ion-img>
 
-  <ion-item>        
+  <!-- <ion-item>        
       <ion-label><ion-icon name="search"></ion-icon></ion-label>
-      <ion-input clearInput type="search" placeholder="Search a word"></ion-input>
+      <ion-input clearInput type="search" placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"></ion-input>
   
       <button ion-button item-right icon-only clear>
           <ion-icon name="mic"></ion-icon>
       </button>
-  </ion-item>
+ 
+  </ion-item> -->
+<ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"> 
+</ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
+            <h2>Filipino: {{word.filipino}}</h2>
+            <h3>English: {{word.english}}</h3>
+        </ion-item>
+    </ion-list>
 
   <ion-card>
       <img src="../../assets/imgs/bahay-kubo.jpg"/>
@@ -19,3 +30,17 @@
   </ion-card>
 
 </ion-content>
+
+<!-- <ion-header>
+<ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)">
+</ion-searchbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
+            <h2>Filipino: {{word.filipino}}</h2>
+            <h3>English: {{word.english}}</h3>
+        </ion-item>
+    </ion-list>
+</ion-content> -->

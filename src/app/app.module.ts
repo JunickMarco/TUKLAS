@@ -1,3 +1,4 @@
+
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -8,10 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { LearnPage } from '../pages/learn/learn';
 import { QuizPage } from '../pages/quiz/quiz';
 import { WotdPage } from '../pages/wotd/wotd';
+import { WordPage } from '../pages/word/word';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LearnPage,
     QuizPage,
     WotdPage,
+    WordPage,
     TabsPage
   ],
   imports: [
@@ -35,6 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LearnPage,
     QuizPage,
     WotdPage,
+    WordPage,
     TabsPage
   ],
   providers: [
