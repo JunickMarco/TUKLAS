@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
+
 /**
  * Generated class for the WordPage page.
  *
@@ -59,4 +61,9 @@ export class WordPage {
 
   }
 
+  @ViewChild("audio") audio;
+  playAudio(){
+    this.audio.nativeElement.play();
+  }
+  
 }

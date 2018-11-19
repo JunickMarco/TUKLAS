@@ -17,16 +17,17 @@
 <ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"> 
 </ion-searchbar>
     <ion-list>
-        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
+        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word.english)">
             <h2>Filipino: {{word.wordName}}</h2>
             <h3>English: {{word.engEq}}</h3>
         </ion-item>
         
-        <ion-item *ngIf="words.length < 1 " >
-            <h2>no results found</h2>
-           
-        </ion-item>
-        
+        <div *ngIf="searchQuery">
+            <ion-item *ngIf="words.length < 1 ">
+                <h2>no results found</h2>
+            
+            </ion-item>
+        </div>
     </ion-list>
     
 

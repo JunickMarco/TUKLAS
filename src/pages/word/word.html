@@ -21,10 +21,10 @@
   <div class="word-card">
 
     <div class="card-head">
-      <span class="word-primary" *ngFor="let item of arr">{{item.wordName}} <button
-          class="btn-icon">
-          <ion-icon name="volume-up"></ion-icon>
-        </button></span>
+      
+      <span class="word-primary" *ngFor="let item of arr">{{item.wordName}} 
+        <button *ngFor="let item of arr" class="btn-icon" (click)="playAudio()"><ion-icon name="volume-up"></ion-icon></button>
+      </span>
       <span class="bay-font" *ngFor="let item of arr" >{{item.bayEq}}</span>
       <span class="word-secondary" *ngFor="let item of arr" >{{item.engEq}}</span>
       <span class="part-of-speech" *ngFor="let item of arr">{{item.parosFil}} |
@@ -68,5 +68,10 @@
     </div>
 
   </div>
+  
+
+  <audio #audio>
+    <source *ngFor="let item of arr" src="{{item.audio}}" type="audio/ogg">
+  </audio>
 
 </ion-content>
