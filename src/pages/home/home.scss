@@ -1,5 +1,7 @@
 page-home {
-$searchbar-ios-toolbar-input-background: rgba(0, 0, 0, .0);
+
+    $searchbar-ios-toolbar-input-background: rgba(0, 0, 0, .0);
+
     ion-content {
         background: #E5E6EB !important;
     }
@@ -10,6 +12,14 @@ $searchbar-ios-toolbar-input-background: rgba(0, 0, 0, .0);
         background-color: #E5E6EB;
     }
 
+    .search-box {
+        display: flex;
+    }
+
+    .btn-icon {
+        background-color: transparent;
+    }
+    
     .card-background-page {
 
         ion-card {

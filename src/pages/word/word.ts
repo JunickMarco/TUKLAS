@@ -2,6 +2,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the WordPage page.
@@ -51,6 +52,9 @@ export class WordPage {
 
   }
 
+  navigateToHomePage(): void {
+    this.navCtrl.push(HomePage);
+ }
 
   navigateToDetails(word) {
 

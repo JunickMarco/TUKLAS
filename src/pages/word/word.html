@@ -1,7 +1,7 @@
 <ion-content padding>
 
   <div class="action-bar">
-    <button class="btn-icon">
+    <button class="btn-icon" (click)="navigateToHomePage()">
       <ion-icon name="arrow-back"></ion-icon>
     </button>
     <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
@@ -53,9 +53,8 @@
     </div>
 
     <h2 class="word-subhead">Example Sentences</h2>
-    <ul>
-      <li>“Sa likod ng bahay nila ay may puno.”</li>
-      <li>“Siya umalis sa bahay na dati niyang tinitirhan.”</li>
+    <ul *ngFor="let item of arr">
+      <li>{{item.sentence}}</li>
     </ul>
 
     <h2 class="word-subhead">Synonyms</h2>
