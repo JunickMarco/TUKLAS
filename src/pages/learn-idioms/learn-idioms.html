@@ -5,12 +5,21 @@
     <button class="btn-icon" (click)="navigateToLearnPage()">
       <ion-icon name="arrow-back"></ion-icon>
     </button>
-    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
+    <ion-searchbar placeholder="Search an Idiom" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
       class="searchbarbg"></ion-searchbar>
   </div>
 
-    <button class="btn-icon" (click)="navigateToIdiomCardPage()">
-        TEST
-      </button>
 
+  <ion-list>
+    <ion-item *ngFor="let idiom of idioms" (click)="navigateIdiomCardPage(idiom)">
+      <h2>{{idiom.idiomName}}</h2>
+    </ion-item>
+  
+    <div *ngIf="searchQuery">
+      <ion-item *ngIf="idioms.length < 1 ">
+        <h2>No Idiom Found</h2>
+  
+      </ion-item>
+    </div>
+  </ion-list>
 </ion-content>

@@ -13,8 +13,8 @@ export class HomePage {
 //speech
   matches: String[];
   isRecording = false;
+  
   public selectedItem: any;
-
   public selectedWord: any;
   client: any;
   index: any;
@@ -49,7 +49,7 @@ export class HomePage {
       'wordName': this.selectedWord.wordName,
       'audioFile': this.selectedWord.audio,
       'bayEq': this.selectedWord.bayEq,
-      'copyright': this.selectedWord.copyright,
+      'copyrightDefFil': this.selectedWord.copyright.defFil,
       'engDef': this.selectedWord.engDef,
       'engEq': this.selectedWord.engEq,
       'filDef': this.selectedWord.filDef,

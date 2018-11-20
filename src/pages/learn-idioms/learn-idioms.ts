@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
 import { IdiomPage } from '../idiom/idiom';
-
+import * as algoliasearch from 'algoliasearch';
 /**
  * Generated class for the LearnIdiomsPage page.
  *
@@ -17,19 +17,58 @@ import { IdiomPage } from '../idiom/idiom';
 })
 export class LearnIdiomsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public selectedWord: any;
+  client: any;
+  index: any;
+  ALGOLIA_APP_ID: string = "E4K2LLB4XB";
+  ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
+  searchQuery: string = "";
+  idioms = [];
+  hits = [];
+  constructor(public navCtrl: NavController) {
+    this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
+      protocol: 'https:'
+    });
+
+    this.index = this.client.initIndex("tuklas_IDIOMS")
+    console.log(this.index);
+  } 
+  
+  retrieve(){
+    let num = [7, 8, 9];
+    num.forEach(function (value) {
+      console.log(value);
+    }); 
+
+    num.forEach(this.index.browse('') as $hit) {
+      $hits[] = $hit;
+    }
+  }
+  
+  search(event) {
+    this.index.search({
+      query: this.searchQuery
+    }).then((data) => {
+      console.log(data.hits);
+      this.idioms = data.hits;
+      console.log(this.idioms);
+    })
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LearnIdiomsPage');
-  }
+  navigateIdiomCardPage(idiom) {
+    this.selectedWord = idiom;
+    console.log(idiom);
+    this.navCtrl.push(IdiomPage, {
+      'idiomName': this.selectedWord.idiomName,
+      'meanEng': this.selectedWord.meanEng,
+      'meanFil': this.selectedWord.meanFil
+
+    });
+
+}
 
   navigateToLearnPage(): void {
     this.navCtrl.push(LearnPage);
- }
-
- navigateToIdiomCardPage(): void {
-  this.navCtrl.push(IdiomPage);
-}
-
+  }
 }

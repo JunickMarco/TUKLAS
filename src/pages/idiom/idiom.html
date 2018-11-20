@@ -1,7 +1,7 @@
 <ion-content padding>
 
     <div class="action-bar">
-      <button class="btn-icon" (click)="navigateToHomePage()">
+      <button class="btn-icon" (click)="navigateToLearnIdiomsPage()">
         <ion-icon name="arrow-back"></ion-icon>
       </button>
     </div>
@@ -9,21 +9,20 @@
     <div class="idiom-card">
 
       <div class="card-head">
-        <span class="idiom-primary">Agaw-buhay</span>
+        <span class="idiom-primary">{{idiomName}}</span>
       </div>
 
       <div class="line-divide"></div>
 
         <h2 class="idiom-subhead mean-sh">Meaning</h2>
-        <p class="meaning">: between life and death (literal=life about to be snatched away)</p>
+        <p class="meaning">: {{meanEng}}</p>
 
         <h2 class="idiom-subhead mean-sh">Kahulugan</h2>
-        <p class="meaning">: naghihingalo</p>
-
-
-      <!-- <div class="copyrights">
+        <p class="meaning">: {{meanFil}}</p>
+ 
+      <div class="copyrights">
         <p>English definition retrieved from Merriam-Webster Dictionary.</p>
-      </div> -->
+      </div>
 
   </div>
 
