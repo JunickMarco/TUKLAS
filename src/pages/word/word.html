@@ -16,19 +16,25 @@
       <h2>Filipino: {{word.wordName}}</h2>
       <h3>English: {{word.engEq}}</h3>
     </ion-item>
+    <div *ngIf="searchQuery">
+      <ion-item *ngIf="words.length < 1 ">
+        <h2>No Word Found</h2>
+    
+      </ion-item>
+    </div>
   </ion-list>
 
   <div class="word-card">
 
     <div class="card-head">
       
-      <span class="word-primary" *ngFor="let item of arr">{{item.wordName}} 
-        <button *ngFor="let item of arr" class="btn-icon" (click)="playAudio()"><ion-icon name="volume-up"></ion-icon></button>
+      <span class="word-primary" >{{wordName}} 
+        <button class="btn-icon" (click)="playAudio()" ><ion-icon name="volume-up"></ion-icon></button>
       </span>
-      <span class="bay-font" *ngFor="let item of arr" >{{item.bayEq}}</span>
-      <span class="word-secondary" *ngFor="let item of arr" >{{item.engEq}}</span>
-      <span class="part-of-speech" *ngFor="let item of arr">{{item.parosFil}} |
-        {{item.parosEng}}</span>
+      <span class="bay-font"  >{{bayEq}}</span>
+      <span class="word-secondary"  >{{engEq}}</span>
+      <span class="part-of-speech" >{{parosFil}} |
+        {{parosEng}}</span>
     </div>
 
     <div class="line-divide"></div>
@@ -42,20 +48,21 @@
       <div [ngSwitch]="def">
         <ion-list *ngSwitchDefault>
           <h2 class="word-subhead def-sh">Definition</h2>
-          <p class="def" *ngFor="let item of arr">{{item.engDef}}</p>
+          <p class="def" >{{engDef}}</p>
         </ion-list>
 
         <ion-list *ngSwitchCase="'filDef'">
           <h2 class="word-subhead def-sh">Depinisyon</h2>
-          <p class="def" *ngFor="let item of arr">{{item.filDef}}</p>
+          <p class="def" >{{filDef}}</p>
         </ion-list>
       </div>
     </div>
 
     <h2 class="word-subhead">Example Sentences</h2>
-    <ul *ngFor="let item of arr">
-      <li>{{item.sentence}}</li>
+    <ul>
+      <li *ngFor="let item of sentence">{{item}}</li>      
     </ul>
+    
 
     <h2 class="word-subhead">Synonyms</h2>
     <p>Tahanan, Tirahan</p>
@@ -70,7 +77,7 @@
   
 
   <audio #audio>
-    <source *ngFor="let item of arr" src="{{item.audio}}" type="audio/ogg">
+    <source  src="{{audioFile}}" type="audio/ogg">
   </audio>
 
 </ion-content>

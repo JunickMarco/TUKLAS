@@ -17,7 +17,18 @@ import { HomePage } from '../home/home';
   templateUrl: 'word.html',
 })
 export class WordPage {
-  arr: string;
+  public selectedWord: any;
+  audioFile: string;
+  wordName: string;
+  bayEq: string;
+  copyright: string;
+  engDef: string;
+  engEq: string;
+  filDef: string;
+  parosEng: string;
+  parosFil: string;
+  sentence: string;
+
   client: any;
   index: any;
   ALGOLIA_APP_ID: string = "E4K2LLB4XB";
@@ -31,11 +42,32 @@ export class WordPage {
     });
     
     this.index = this.client.initIndex("tuklas_WORDS")
-
-    console.log(this.navParams.data.words);
-    this.arr = navParams.get('words');
+    //for testing
+    console.log(this.navParams.get('audioFile'));
+    console.log(this.navParams.get('bayEq'));
+    console.log(this.navParams.get('wordName'));
+    console.log(this.navParams.get('copyright'));
+    console.log(this.navParams.get('engDef'));
+    console.log(this.navParams.get('filDef'));
+    console.log(this.navParams.get('parosEng'));
+    console.log(this.navParams.get('parosFil'));
+    console.log(this.navParams.get('sentence'));
+    console.log(this.navParams.get('engEq'));
+    
+    this.audioFile = navParams.get('audioFile');
+    this.bayEq = navParams.get('bayEq');
+    this.wordName = navParams.get('wordName');
+    this.copyright = navParams.get('copyright');
+    this.engDef = navParams.get('engDef');
+    this.filDef = navParams.get('filDef');
+    this.parosEng = navParams.get('parosEng');
+    this.parosFil = navParams.get('parosFil');
+    this.sentence = navParams.get('sentence');
+    this.engEq = navParams.get('engEq');
+    
+   
   }
-
+ 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WordPage');
     
@@ -57,9 +89,19 @@ export class WordPage {
  }
 
   navigateToDetails(word) {
-
+    this.selectedWord = word;
+    console.log(word);
     this.navCtrl.push(WordPage, {
-      'words': this.words
+      'wordName': this.selectedWord.wordName,
+      'audioFile': this.selectedWord.audio,
+      'bayEq': this.selectedWord.bayEq,
+      'copyright': this.selectedWord.copyright,
+      'engDef': this.selectedWord.engDef,
+      'engEq': this.selectedWord.engEq,
+      'filDef': this.selectedWord.filDef,
+      'parosEng': this.selectedWord.parosEng,
+      'parosFil': this.selectedWord.parosFil,
+      'sentence': this.selectedWord.sentence
 
     });
 
@@ -69,5 +111,7 @@ export class WordPage {
   playAudio(){
     this.audio.nativeElement.play();
   }
+
+
   
 }

@@ -5,34 +5,31 @@
 
   <ion-img src="../../assets/imgs/tuklas-logo-v1.png" width="100%" height="20%"></ion-img>
 
-  <!-- <ion-item>        
-      <ion-label><ion-icon name="search"></ion-icon></ion-label>
-      <ion-input clearInput type="search" placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"></ion-input>
-  
-      <button ion-button item-right icon-only clear>
-          <ion-icon name="mic"></ion-icon>
-      </button>
- 
-  </ion-item> -->
   <div class="search-box">
-    <ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
-    <button class="btn-icon">
+    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
+    <button class="btn-icon" (click)="startListening()">
         <ion-icon name="mic"></ion-icon>
     </button>
+    <!-- <button ion-button full (click)="stopListening()" *ngIf="isIos()">Stop Listening</button> -->
   </div>
     
     <ion-list>
-        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word.english)">
+        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
             <h2>Filipino: {{word.wordName}}</h2>
             <h3>English: {{word.engEq}}</h3>
         </ion-item>
         
         <div *ngIf="searchQuery">
             <ion-item *ngIf="words.length < 1 ">
-                <h2>no results found</h2>
+                <h2>No Word Found</h2>
             
             </ion-item>
         </div>
+        <!-- <div *ngIf="startListening">
+        <ion-item *ngFor="let match of matches" (click)="getItem(match)">
+            {{ match }}
+        </ion-item>
+        </div> -->
     </ion-list>
 
 
@@ -44,16 +41,4 @@
 
 </ion-content>
 
-<!-- <ion-header>
-<ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)">
-</ion-searchbar>
-</ion-header>
 
-<ion-content padding>
-    <ion-list>
-        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
-            <h2>Filipino: {{word.filipino}}</h2>
-            <h3>English: {{word.english}}</h3>
-        </ion-item>
-    </ion-list>
-</ion-content> -->
