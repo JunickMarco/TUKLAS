@@ -34,16 +34,25 @@ export class LearnIdiomsPage {
     console.log(this.index);
   } 
   
-  retrieve(){
-    let num = [7, 8, 9];
-    num.forEach(function (value) {
-      console.log(value);
-    }); 
+//   retrieve(){
 
-    num.forEach(this.index.browse('') as $hit) {
-      $hits[] = $hit;
-    }
-  }
+//     this.hits.forEach(this.index.browse(''){
+     
+//     }); 
+
+//     this.hits.forEach(this.index, function (value, key) {
+//       console.log(value);
+//     }); 
+
+//     num.forEach(this.index.browse('') as $hit) {
+//       $hits[] = $hit;
+//     }
+//   }
+
+//   var num = [7, 8, 9];
+// num.forEach(function (value) {
+//   console.log(value);
+// });
   
   search(event) {
     this.index.search({
