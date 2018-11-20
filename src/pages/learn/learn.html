@@ -1,18 +1,26 @@
-<!--
-  Generated template for the LearnPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-content class="card-background-page" padding>
 
-  <ion-navbar>
-    <ion-title>learn</ion-title>
-  </ion-navbar>
+  <h1>LEARN</h1>
 
-</ion-header>
+  <div class="line-divide"></div>
 
+  <ion-card>
+    <!-- <img src="../../assets/imgs/bahay-kubo.jpg"/> -->
+    <div class="card-title">Filipino Grammar</div>
+    <!-- <div class="card-subtitle"></div> -->
+  </ion-card>
 
-<ion-content padding>
+  <ion-card>
+    <!-- <img src="../../assets/imgs/bahay-kubo.jpg"/> -->
+    <div class="card-title">Baybayin</div>
+    <!-- <div class="card-subtitle"></div> -->
+  </ion-card>
+
+  <ion-card (click)="navigateToIdiomsPage()">
+    <!-- <img src="../../assets/imgs/bahay-kubo.jpg"/> -->
+    <div class="card-title">Idioms</div>
+    <!-- <div class="card-subtitle"></div> -->
+  </ion-card>
 
 </ion-content>

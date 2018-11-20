@@ -1,0 +1,68 @@
+page-idiom {
+
+    ion-icon {
+        font-size: 3rem;
+    }
+
+    .line-divide {
+        background-color: #E7E4E4;
+        width: 80%;
+        height: 3px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .action-bar {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .btn-icon {
+        background-color: transparent;
+    }
+
+    .idiom-card {
+        // background-color: #fff;
+        padding: 5px 20px;
+        // border-radius: 10px;
+        // box-shadow: rgb(128, 128, 128) 1px 1px 3px;
+
+        .card-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+           // background-color: brown;
+        }
+
+        .idiom-subhead {
+            color: #416AAA;
+            font-size: 2rem;
+        }
+
+        .mean-sh {
+            margin-top: 5px;
+        }
+
+        .idiom-primary {
+            font-family: serif;
+           font-size: 4rem;
+            color: #000;
+           // background-color: red;
+        }
+
+    }
+
+    .idiom-subcard {
+        background-color: #fff;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: rgb(128, 128, 128) 0px 2px 2px;
+        margin-top: 10px;
+
+        .meaning {
+            text-align: center;
+        }
+    }
+}

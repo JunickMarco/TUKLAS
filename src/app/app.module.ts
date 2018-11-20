@@ -11,6 +11,8 @@ import { QuizPage } from '../pages/quiz/quiz';
 import { WotdPage } from '../pages/wotd/wotd';
 import { WordPage } from '../pages/word/word';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LearnIdiomsPage } from '../pages/learn-idioms/learn-idioms';
+import { IdiomPage } from '../pages/idiom/idiom';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -26,7 +28,9 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     QuizPage,
     WotdPage,
     WordPage,
-    TabsPage
+    TabsPage,
+    LearnIdiomsPage,
+    IdiomPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     QuizPage,
     WotdPage,
     WordPage,
-    TabsPage
+    TabsPage,
+    LearnIdiomsPage,
+    IdiomPage
   ],
   providers: [
     StatusBar,

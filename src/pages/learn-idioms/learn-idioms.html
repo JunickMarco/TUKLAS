@@ -1,0 +1,16 @@
+
+<ion-content padding>
+
+  <div class="action-bar">
+    <button class="btn-icon" (click)="navigateToLearnPage()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
+      class="searchbarbg"></ion-searchbar>
+  </div>
+
+    <button class="btn-icon" (click)="navigateToIdiomCardPage()">
+        TEST
+      </button>
+
+</ion-content>
