@@ -33,8 +33,8 @@
       </span>
       <span class="bay-font"  >{{bayEq}}</span>
       <span class="word-secondary"  >{{engEq}}</span>
-      <span class="part-of-speech" >{{parosFil}} |
-        {{parosEng}}</span>
+      <span class="part-of-speech" >{{filParos}} |
+        {{engParos}}</span>
     </div>
 
     <div class="line-divide"></div>
@@ -60,21 +60,21 @@
 
     <h2 class="word-subhead">Example Sentences</h2>
     <ul>
-      <li *ngFor="let item of sentence">{{item}}</li>      
+      <li *ngFor="let item of sentences">{{item}}</li>      
     </ul>
     
 
     <h2 class="word-subhead">Synonyms</h2>
-    <p>Tahanan, Tirahan</p>
+    <ul>
+      <li *ngFor="let item of synonyms">{{item}}</li>
+    </ul>
 
     <div class="line-divide"></div>
 
     <div class="copyrights">
-<<<<<<< HEAD
-      <p>{{copyright}}</p>
-=======
-      <p>English definition retrieved {{copyright.defEng}}</p>
->>>>>>> f4e17ef8ef9ce190350666ed73129a500b3c8e82
+      <p>{{copyrightDefFil}}</p>
+      <p>{{copyrightDefEng}}</p>
+      <p>{{copyrightSentSampl}}</p>
     </div>
 
   </div>

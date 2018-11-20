@@ -47,15 +47,19 @@ export class HomePage {
     console.log(word);
     this.navCtrl.push(WordPage,{
       'wordName': this.selectedWord.wordName,
-      'audioFile': this.selectedWord.audio,
+      'audioFile': this.selectedWord.audioOut,
       'bayEq': this.selectedWord.bayEq,
       'copyrightDefFil': this.selectedWord.copyright.defFil,
-      'engDef': this.selectedWord.engDef,
+      'copyrightDefEng': this.selectedWord.copyright.defEng,
+      'copyrightSentSampl': this.selectedWord.copyright.sentSampl,
+      'engDef': this.selectedWord.definition.engDef,
+      'filDef': this.selectedWord.definition.filDef,
       'engEq': this.selectedWord.engEq,
-      'filDef': this.selectedWord.filDef,
-      'parosEng': this.selectedWord.parosEng,
-      'parosFil': this.selectedWord.parosFil,
-      'sentence': this.selectedWord.sentence
+      'engParos': this.selectedWord.partofspeech.engParos,
+      'filParos': this.selectedWord.partofspeech.filParos,
+      'sentences': this.selectedWord.sentences,
+      'synonyms': this.selectedWord.synonyms
+  
      
     });
     

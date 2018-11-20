@@ -25,9 +25,14 @@ export class WordPage {
   engDef: string;
   engEq: string;
   filDef: string;
-  parosEng: string;
-  parosFil: string;
-  sentence: string;
+  engParos: string;
+  filParos: string;
+  sentences: string;
+  synonyms: string;
+  copyrightDefFil: string;
+  copyrightDefEng: string;
+  copyrightSentSampl: string;
+  
 
   client: any;
   index: any;
@@ -46,23 +51,29 @@ export class WordPage {
     console.log(this.navParams.get('audioFile'));
     console.log(this.navParams.get('bayEq'));
     console.log(this.navParams.get('wordName'));
-    console.log(this.navParams.get('copyright'));
+    console.log(this.navParams.get('copyrightDefFil'));
     console.log(this.navParams.get('engDef'));
     console.log(this.navParams.get('filDef'));
-    console.log(this.navParams.get('parosEng'));
-    console.log(this.navParams.get('parosFil'));
-    console.log(this.navParams.get('sentence'));
+    console.log(this.navParams.get('engParos'));
+    console.log(this.navParams.get('filParos'));
+    console.log(this.navParams.get('sentences'));
     console.log(this.navParams.get('engEq'));
-    
+    console.log(this.navParams.get('synonyms'));
+    console.log(this.navParams.get('copyrightDefEng'));
+    console.log(this.navParams.get('copyrightSentSampl'));
+
     this.audioFile = navParams.get('audioFile');
     this.bayEq = navParams.get('bayEq');
     this.wordName = navParams.get('wordName');
-    this.copyright = navParams.get('copyright');
+    this.copyrightDefFil = navParams.get('copyrightDefFil');
+    this.copyrightDefEng = navParams.get('copyrightDefEng');
+    this.copyrightSentSampl = navParams.get('copyrightSentSampl');
     this.engDef = navParams.get('engDef');
     this.filDef = navParams.get('filDef');
-    this.parosEng = navParams.get('parosEng');
-    this.parosFil = navParams.get('parosFil');
-    this.sentence = navParams.get('sentence');
+    this.engParos = navParams.get('engParos');
+    this.filParos = navParams.get('filParos');
+    this.sentences = navParams.get('sentences');
+    this.synonyms = navParams.get('synonyms');
     this.engEq = navParams.get('engEq');
     
    
@@ -93,15 +104,18 @@ export class WordPage {
     console.log(word);
     this.navCtrl.push(WordPage, {
       'wordName': this.selectedWord.wordName,
-      'audioFile': this.selectedWord.audio,
+      'audioFile': this.selectedWord.audioOut,
       'bayEq': this.selectedWord.bayEq,
-      'copyright': this.selectedWord.copyright,
-      'engDef': this.selectedWord.engDef,
+      'copyrightDefFil': this.selectedWord.copyright.defFil,
+      'copyrightDefEng': this.selectedWord.copyright.defEng,
+      'copyrightSentSampl': this.selectedWord.copyright.sentSampl,
+      'engDef': this.selectedWord.definition.engDef,
+      'filDef': this.selectedWord.definition.filDef,
       'engEq': this.selectedWord.engEq,
-      'filDef': this.selectedWord.filDef,
-      'parosEng': this.selectedWord.parosEng,
-      'parosFil': this.selectedWord.parosFil,
-      'sentence': this.selectedWord.sentence
+      'engParos': this.selectedWord.partofspeech.engParos,
+      'filParos': this.selectedWord.partofspeech.filParos,
+      'sentences': this.selectedWord.sentences,
+      'synonyms': this.selectedWord.synonyms
 
     });
 
