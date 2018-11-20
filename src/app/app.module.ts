@@ -13,6 +13,8 @@ import { WordPage } from '../pages/word/word';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LearnIdiomsPage } from '../pages/learn-idioms/learn-idioms';
 import { IdiomPage } from '../pages/idiom/idiom';
+import { LearnGrammarPage } from '../pages/learn-grammar/learn-grammar';
+import { LearnBaybayinPage } from '../pages/learn-baybayin/learn-baybayin';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +32,9 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     WordPage,
     TabsPage,
     LearnIdiomsPage,
-    IdiomPage
+    IdiomPage,
+    LearnGrammarPage,
+    LearnBaybayinPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     WordPage,
     TabsPage,
     LearnIdiomsPage,
-    IdiomPage
+    IdiomPage,
+    LearnGrammarPage,
+    LearnBaybayinPage
   ],
   providers: [
     StatusBar,

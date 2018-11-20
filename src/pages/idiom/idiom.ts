@@ -2,6 +2,7 @@ import { LearnIdiomsPage } from './../learn-idioms/learn-idioms';
 import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LearnIdiomsPage } from '../learn-idioms/learn-idioms';
 
 /**
  * Generated class for the IdiomPage page.
@@ -36,5 +37,9 @@ export class IdiomPage {
   navigateToLearnIdiomsPage(): void {
     this.navCtrl.push(LearnIdiomsPage);
   }
+
+  navigateToIdiomsPage(): void {
+    this.navCtrl.push(LearnIdiomsPage);
+ }
 
 }
