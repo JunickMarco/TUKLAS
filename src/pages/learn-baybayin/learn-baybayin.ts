@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { LearnIdiomsPage } from '../learn-idioms/learn-idioms';
+import { LearnPage } from '../learn/learn';
 
 /**
- * Generated class for the IdiomPage page.
+ * Generated class for the LearnBaybayinPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +11,20 @@ import { LearnIdiomsPage } from '../learn-idioms/learn-idioms';
 
 @IonicPage()
 @Component({
-  selector: 'page-idiom',
-  templateUrl: 'idiom.html',
+  selector: 'page-learn-baybayin',
+  templateUrl: 'learn-baybayin.html',
 })
-export class IdiomPage {
+export class LearnBaybayinPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IdiomPage');
+    console.log('ionViewDidLoad LearnBaybayinPage');
   }
 
-  navigateToIdiomsPage(): void {
-    this.navCtrl.push(LearnIdiomsPage);
+  navigateToLearnPage(): void {
+    this.navCtrl.push(LearnPage);
  }
 
 }
