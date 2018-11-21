@@ -4,6 +4,10 @@ page-idiom {
         font-size: 3rem;
     }
 
+    ion-content {
+        background: #E5E6EB !important;
+    }
+
     .line-divide {
         background-color: #E7E4E4;
         width: 80%;
@@ -64,5 +68,20 @@ page-idiom {
         .meaning {
             text-align: center;
         }
+    }
+
+    .copyrights {
+        display: flex;   
+    }
+
+    .chead {
+        margin-right: 25px;
+        font-size: 1rem;
+        color: #7C98AC;
+    }
+
+    .copy {
+        font-size: 0.5rem;
+        color: #7C98AC;
     }
 }
