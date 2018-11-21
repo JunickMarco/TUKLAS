@@ -95,4 +95,19 @@ page-word {
             text-align: center;
         }
     }
+
+    .copyrights {
+        display: flex;   
+    }
+
+    .chead {
+        margin-right: 25px;
+        font-size: 1rem;
+        color: #7C98AC;
+    }
+
+    .copy {
+        font-size: 0.5rem;
+        color: #7C98AC;
+    }
 }

@@ -75,14 +75,14 @@ export class LearnIdiomsPage {
   //   })
   // }
 
-  listIndexes(){
-    this.index.listIndexes(function (err, content) {
-      if (err) throw err;
+  // listIndexes(){
+  //   this.index.listIndexes(function (err, content) {
+  //     if (err) throw err;
 
-      console.log(content);
-      this.arr = content;
-    });
-  }
+  //     console.log(content);
+  //     this.arr = content;
+  //   });
+  // }
 
  
 

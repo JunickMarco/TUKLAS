@@ -60,7 +60,7 @@
 
     <h2 class="word-subhead">Example Sentences</h2>
     <ul>
-      <li *ngFor="let item of sentences">{{item}}</li>      
+      <li *ngFor="let item of sentences">"{{item}}"</li>      
     </ul>
     
 
@@ -72,9 +72,12 @@
     <div class="line-divide"></div>
 
     <div class="copyrights">
-      <p>{{copyrightDefFil}}</p>
-      <p>{{copyrightDefEng}}</p>
-      <p>{{copyrightSentSampl}}</p>
+      <p class="chead">©</p>
+      <div>
+          <p class="copy">English definition retrieved from {{copyrightDefFil}}</p>
+          <p class="copy">Filipino definition retrieved from {{copyrightDefEng}}</p>
+          <p class="copy">Sample Sentences retrieved from{{copyrightSentSampl}}</p>
+      </div>
     </div>
 
   </div>
