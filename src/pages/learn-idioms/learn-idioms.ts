@@ -24,7 +24,7 @@ export class LearnIdiomsPage {
   ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
   idioms = [];
-  hits = [];
+ 
   constructor(public navCtrl: NavController) {
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -32,6 +32,13 @@ export class LearnIdiomsPage {
 
     this.index = this.client.initIndex("tuklas_IDIOMS")
     console.log(this.index);
+
+    this.index.listIndexes(function (err, content) {
+      if (err) throw err;
+
+      console.log(content);
+      this.arr = content;
+    });
   } 
   
 //   retrieve(){
@@ -53,7 +60,34 @@ export class LearnIdiomsPage {
 // num.forEach(function (value) {
 //   console.log(value);
 // });
-  
+
+// listIndexes(){
+//   this.index.listIndexes((data)=>{
+//     console.log(data)
+//     this.arr = data;
+//   })
+// }
+
+  // listIndexes() {
+  //   this.index.listIndexes((data) =>{
+  //     console.log(data)
+  //   this.arr = data;
+  //   })
+  // }
+
+  listIndexes(){
+    this.index.listIndexes(function (err, content) {
+      if (err) throw err;
+
+      console.log(content);
+      this.arr = content;
+    });
+  }
+
+ 
+
+
+
   search(event) {
     this.index.search({
       query: this.searchQuery
@@ -70,8 +104,9 @@ export class LearnIdiomsPage {
     console.log(idiom);
     this.navCtrl.push(IdiomPage, {
       'idiomName': this.selectedWord.idiomName,
-      'meanEng': this.selectedWord.meanEng,
-      'meanFil': this.selectedWord.meanFil
+      'meanEng': this.selectedWord.meaning.meanEng,
+      'meanFil': this.selectedWord.meaning.meanFil, 
+      'idiomCopyr': this.selectedWord.idiomCopyr
 
     });
 
