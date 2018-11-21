@@ -7,7 +7,17 @@
       </button>
     </div>
   
-    <ion-item-group>
+    <ion-list>
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-bookmarks"></ion-icon> Introduction</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-clock"></ion-icon> History</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-create"></ion-icon> How to Write</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-grid"></ion-icon> Baybayin Chart</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="ios-paper"></ion-icon> Reading Materials</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-add"></ion-icon> Other Philippine Writing Systems</button> 
+      <button ion-item (click)="itemSelected(item)"><ion-icon name="md-megaphone"></ion-icon> Call to Action</button> 
+    </ion-list>
+
+    <!-- <ion-item-group>
       <ion-item-divider color="light"><ion-icon name="md-bookmarks"></ion-icon> Introduction</ion-item-divider>
       <button ion-item (click)="itemSelected(item)">What is Baybayin?</button> 
       <button ion-item (click)="itemSelected(item)">Something</button> 
@@ -46,7 +56,7 @@
       <ion-item-divider color="light"><ion-icon name="md-megaphone"></ion-icon> Call to Action</ion-item-divider>
       <button ion-item (click)="itemSelected(item)">Help Promote!</button> 
       <button ion-item (click)="itemSelected(item)">Help Preserve!</button> 
-    </ion-item-group>
+    </ion-item-group> -->
 
   </ion-content>
   

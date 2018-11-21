@@ -1,18 +1,15 @@
-<!--
-  Generated template for the AboutPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>about</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
 
 <ion-content padding>
 
+  <h1>ABOUT</h1>
+
+  <div class="line-divide"></div>
+
+  <ion-list>
+    <button ion-item (click)="itemSelected(item)"><ion-icon name="ios-information-circle-outline"></ion-icon> About the app</button> 
+    <button ion-item (click)="itemSelected(item)"><ion-icon name="ios-help-circle-outline"></ion-icon> Help</button> 
+    <button ion-item (click)="itemSelected(item)"><ion-icon>©</ion-icon> Copyright</button> 
+  </ion-list>
+
 </ion-content>
+  
