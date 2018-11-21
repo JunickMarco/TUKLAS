@@ -33,12 +33,12 @@ export class LearnIdiomsPage {
     this.index = this.client.initIndex("tuklas_IDIOMS")
     console.log(this.index);
 
-    this.index.listIndexes(function (err, content) {
-      if (err) throw err;
+    // this.index.listIndexes(function (err, content) {
+    //   if (err) throw err;
 
-      console.log(content);
-      this.arr = content;
-    });
+    //   console.log(content);
+    //   this.arr = content;
+    // });
   } 
   
 //   retrieve(){
