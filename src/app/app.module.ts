@@ -17,6 +17,7 @@ import { LearnGrammarPage } from '../pages/learn-grammar/learn-grammar';
 import { LearnBaybayinPage } from '../pages/learn-baybayin/learn-baybayin';
 import { GrammarLanguagePage } from '../pages/grammar-language/grammar-language';
 import { BaybayinIntroPage } from '../pages/baybayin-intro/baybayin-intro';
+import { AboutAppPage } from '../pages/about-app/about-app';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -38,7 +39,8 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     LearnGrammarPage,
     LearnBaybayinPage,
     GrammarLanguagePage,
-    BaybayinIntroPage
+    BaybayinIntroPage,
+    AboutAppPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     LearnGrammarPage,
     LearnBaybayinPage,
     GrammarLanguagePage,
-    BaybayinIntroPage
+    BaybayinIntroPage,
+    AboutAppPage
   ],
   providers: [
     StatusBar,
