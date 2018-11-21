@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
+import { GrammarLanguagePage } from '../grammar-language/grammar-language';
 
 /**
  * Generated class for the LearnGrammarPage page.
@@ -26,5 +27,9 @@ export class LearnGrammarPage {
   navigateToLearnPage(): void {
     this.navCtrl.push(LearnPage);
  }
+
+ navigateToGrammarLanguagePage(): void {
+  this.navCtrl.push(GrammarLanguagePage);
+}
 
 }
