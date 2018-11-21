@@ -62,13 +62,13 @@
     <ul>
       <li *ngFor="let item of sentences">"{{item}}"</li>      
     </ul>
-    
 
+<div *ngIf="words.length > 0">
     <h2 class="word-subhead">Synonyms</h2>
     <ul>
       <li *ngFor="let item of synonyms">{{item}}</li>
     </ul>
-
+  </div>
     <div class="line-divide"></div>
 
     <div class="copyrights">
