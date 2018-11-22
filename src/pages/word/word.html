@@ -19,7 +19,7 @@
     <div *ngIf="searchQuery">
       <ion-item *ngIf="words.length < 1 ">
         <h2>No Word Found</h2>
-    
+
       </ion-item>
     </div>
   </ion-list>
@@ -27,13 +27,15 @@
   <div class="word-card">
 
     <div class="card-head">
-      
-      <span class="word-primary" >{{wordName}} 
-        <button class="btn-icon" (click)="playAudio()" ><ion-icon name="volume-up"></ion-icon></button>
+
+      <span class="word-primary">{{wordName}}
+        <button class="btn-icon" (click)="playAudio()">
+          <ion-icon name="volume-up"></ion-icon>
+        </button>
       </span>
-      <span class="bay-font"  >{{bayEq}}</span>
-      <span class="word-secondary"  >{{engEq}}</span>
-      <span class="part-of-speech" >{{filParos}} |
+      <span class="bay-font">{{bayEq}}</span>
+      <span class="word-secondary">{{engEq}}</span>
+      <span class="part-of-speech">{{filParos}} |
         {{engParos}}</span>
     </div>
 
@@ -60,31 +62,31 @@
 
     <h2 class="word-subhead">Example Sentences</h2>
     <ul>
-      <li *ngFor="let item of sentences">"{{item}}"</li>      
+      <li *ngFor="let item of sentences">"{{item}}"</li>
     </ul>
 
-<div *ngIf="words.length > 0">
-    <h2 class="word-subhead">Synonyms</h2>
-    <ul>
-      <li *ngFor="let item of synonyms">{{item}}</li>
-    </ul>
-  </div>
+    <div *ngIf="synonyms != null">
+      <h2 class="word-subhead">Synonyms</h2>
+      <ul>
+        <li *ngFor="let item of synonyms">{{item}}</li>
+      </ul>
+    </div>
     <div class="line-divide"></div>
 
     <div class="copyrights">
       <p class="chead">©</p>
       <div>
-          <p class="copy">English definition retrieved from {{copyrightDefFil}}</p>
-          <p class="copy">Filipino definition retrieved from {{copyrightDefEng}}</p>
-          <p class="copy">Sample Sentences retrieved from{{copyrightSentSampl}}</p>
+        <p class="copy">English definition retrieved from {{copyrightDefFil}}</p>
+        <p class="copy">Filipino definition retrieved from {{copyrightDefEng}}</p>
+        <p class="copy">Sample Sentences retrieved from{{copyrightSentSampl}}</p>
       </div>
     </div>
 
   </div>
-  
+
 
   <audio #audio>
-    <source  src="{{audioFile}}" type="audio/mpeg">
+    <source src="{{audioFile}}" type="audio/mpeg">
   </audio>
 
 </ion-content>
