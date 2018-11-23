@@ -4,7 +4,7 @@
     <button class="btn-icon" (click)="navigateToHomePage()">
       <ion-icon name="arrow-back"></ion-icon>
     </button>
-    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
+    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)"
       class="searchbarbg"></ion-searchbar>
     <button class="btn-icon">
       <ion-icon name="mic"></ion-icon>

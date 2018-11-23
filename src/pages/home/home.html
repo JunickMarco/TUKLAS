@@ -4,7 +4,7 @@
   <ion-img src="../../assets/imgs/tuklas-logo-v1.png" width="100%" height="20%"></ion-img>
 
   <div class="search-box">
-    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
     <button class="btn-icon" (click)="startListening()">
         <ion-icon name="mic"></ion-icon>
     </button>
