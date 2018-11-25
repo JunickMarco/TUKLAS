@@ -1,16 +1,58 @@
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
 <ion-content padding>
 
+  <ion-item-group>
+    <ion-item-divider>A</ion-item-divider>
+    <ion-item *ngFor="let item of idioms1 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>B</ion-item-divider>
+    <ion-item *ngFor="let item of idioms2 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>C</ion-item-divider>
+    <ion-item *ngFor="let item of idioms3 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+  
+  <ion-item-group>
+    <ion-item-divider>D</ion-item-divider>
+    <ion-item *ngFor="let item of idioms4 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>E</ion-item-divider>
+    <ion-item *ngFor="let item of idioms5 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>F</ion-item-divider>
+    <ion-item *ngFor="let item of idioms6 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>G</ion-item-divider>
+    <ion-item *ngFor="let item of idioms7 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>H</ion-item-divider>
+    <ion-item *ngFor="let item of idioms8 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>I</ion-item-divider>
+    <ion-item *ngFor="let item of idioms9 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>T</ion-item-divider>
+    <ion-item *ngFor="let item of idioms10 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group>
   
 
-
-  <div id="search-box">
-    <!-- SearchBox widget will appear here -->
-  </div>
-  
-
-  <div id="hits" (click)="navigateToDetails()">
-    <!-- Hits widget will appear here -->
-  </div>
- 
+  <!-- <ion-item-group>
+    <ion-item-divider>B</ion-item-divider>
+    <ion-item *ngFor="let item of idioms1 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
+  </ion-item-group> -->
 </ion-content>

@@ -21,6 +21,7 @@ export class IdiomPage {
   meanEng : string;
   meanFil: string;
   idiomCopyr: string;
+  idiomId: number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log(this.navParams.get('idiomName'));
     console.log(this.navParams.get('meanEng'));
@@ -31,6 +32,7 @@ export class IdiomPage {
     this.meanEng = navParams.get('meanEng');
     this.meanFil = navParams.get('meanFil');
     this.idiomCopyr = navParams.get('idiomCopyr');
+    this.idiomId = navParams.get('idiomId');
   }
 
   ionViewDidLoad() {
