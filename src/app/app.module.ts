@@ -24,6 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
+import { firebaseConfig } from './credentials';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +48,9 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -70,5 +76,6 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
     SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
+  
 })
 export class AppModule {}

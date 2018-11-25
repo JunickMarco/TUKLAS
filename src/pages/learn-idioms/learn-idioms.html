@@ -1,25 +1,15 @@
-
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
 <ion-content padding>
 
-  <div class="action-bar">
-    <button class="btn-icon" (click)="navigateToLearnPage()">
-      <ion-icon name="arrow-back"></ion-icon>
-    </button>
-    <ion-searchbar placeholder="Search an Idiom" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
-      class="searchbarbg"></ion-searchbar>
+  
+
+  <div id="search-box">
+    <!-- SearchBox widget will appear here -->
   </div>
-
-
-  <ion-list>
-    <ion-item *ngFor="let idiom of idioms" (click)="navigateIdiomCardPage(idiom)">
-      <h2>{{idiom.idiomName}}</h2>
-    </ion-item>
   
-    <div *ngIf="searchQuery">
-      <ion-item *ngIf="idioms.length < 1 ">
-        <h2>No Idiom Found</h2>
-  
-      </ion-item>
-    </div>
-  </ion-list>
+
+  <div id="hits" (click)="navigateToDetails(idiomName)">
+    <!-- Hits widget will appear here -->
+  </div>
+ 
 </ion-content>

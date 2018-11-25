@@ -4,17 +4,24 @@
     <button class="btn-icon" (click)="navigateToHomePage()">
       <ion-icon name="arrow-back"></ion-icon>
     </button>
-    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)"
-      class="searchbarbg"></ion-searchbar>
+    <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
     <button class="btn-icon">
       <ion-icon name="mic"></ion-icon>
     </button>
   </div>
 
   <ion-list class="float">
+
     <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
       <h2>Filipino: {{word.wordName}}</h2>
-      <h3>English: {{word.engEq}}</h3>
+
+      <div *ngIf="word.engEq == null">
+        <h3>English: None</h3>
+      </div>
+      <div *ngIf="word.engEq != null">
+        <h3>English: {{word.engEq}}</h3>
+      </div>
+
     </ion-item>
     <div *ngIf="searchQuery">
       <ion-item *ngIf="words.length < 1 ">
@@ -34,37 +41,62 @@
         </button>
       </span>
       <span class="bay-font">{{bayEq}}</span>
-      <span class="word-secondary">{{engEq}}</span>
+      <div *ngIf="engEq != null">
+        <span class="word-secondary">{{engEq}}</span>
+      </div>
       <span class="part-of-speech">{{filParos}} |
         {{engParos}}</span>
     </div>
 
     <div class="line-divide"></div>
+    <div *ngIf="engDef != null">
+      <div class="word-subcard">
+        <ion-segment [(ngModel)]="def">
 
-    <div class="word-subcard">
-      <ion-segment [(ngModel)]="def">
-        <ion-segment-button value="engDef"> English </ion-segment-button>
-        <ion-segment-button value="filDef"> Filipino </ion-segment-button>
-      </ion-segment>
+          <ion-segment-button value="engDef"> English </ion-segment-button>
 
-      <div [ngSwitch]="def">
-        <ion-list *ngSwitchDefault>
-          <h2 class="word-subhead def-sh">Definition</h2>
-          <p class="def">{{engDef}}</p>
-        </ion-list>
+          <ion-segment-button value="filDef"> Filipino </ion-segment-button>
+        </ion-segment>
 
-        <ion-list *ngSwitchCase="'filDef'">
-          <h2 class="word-subhead def-sh">Depinisyon</h2>
-          <p class="def">{{filDef}}</p>
-        </ion-list>
+        <div [ngSwitch]="def">
+
+          <ion-list *ngSwitchDefault>
+            <h2 class="word-subhead def-sh">Definition</h2>
+            <p class="def">{{engDef}}</p>
+          </ion-list>
+
+          <ion-list *ngSwitchCase="'filDef'">
+            <h2 class="word-subhead def-sh">Depinisyon</h2>
+            <p class="def">{{filDef}}</p>
+          </ion-list>
+        </div>
       </div>
     </div>
 
-    <h2 class="word-subhead">Example Sentences</h2>
-    <ul>
-      <li *ngFor="let item of sentences">"{{item}}"</li>
-    </ul>
+    <div *ngIf="engDef == null">
+      <div class="word-subcard">
+        <ion-segment [(ngModel)]="def">
 
+          <ion-segment-button value="filDef"> Filipino </ion-segment-button>
+        </ion-segment>
+
+        <div [ngSwitch]="def">
+
+
+          <ion-list *ngSwitchCase="'filDef'">
+            <h2 class="word-subhead def-sh">Depinisyon</h2>
+            <p class="def">{{filDef}}</p>
+          </ion-list>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="sentences != null">
+      <h2 class="word-subhead">Example Sentences</h2>
+      <ul>
+        <li *ngFor="let item of sentences">"{{item}}"</li>
+      </ul>
+    </div>
     <div *ngIf="synonyms != null">
       <h2 class="word-subhead">Synonyms</h2>
       <ul>

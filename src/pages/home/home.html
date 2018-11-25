@@ -4,31 +4,33 @@
   <ion-img src="../../assets/imgs/tuklas-logo-v1.png" width="100%" height="20%"></ion-img>
 
   <div class="search-box">
-    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="750" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
     <button class="btn-icon" (click)="startListening()">
         <ion-icon name="mic"></ion-icon>
     </button>
     <!-- <button ion-button full (click)="stopListening()" *ngIf="isIos()">Stop Listening</button> -->
   </div>
     
-    <ion-list>
-        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
-            <h2>Filipino: {{word.wordName}}</h2>
+<ion-list class="float">
+
+    <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
+        <h2>Filipino: {{word.wordName}}</h2>
+
+        <div *ngIf="word.engEq == null">
+            <h3>English: None</h3>
+        </div>
+        <div *ngIf="word.engEq != null">
             <h3>English: {{word.engEq}}</h3>
-        </ion-item>
-        
-        <div *ngIf="searchQuery">
-            <ion-item *ngIf="words.length < 1 ">
-                <h2>No Word Found</h2>
-            
-            </ion-item>
         </div>
-        <div *ngIf="startListening">
-        <ion-item *ngFor="let match of matches" (click)="getItem(match)">
-            {{ match }}
+
+    </ion-item>
+    <div *ngIf="searchQuery">
+        <ion-item *ngIf="words.length < 1 ">
+            <h2>No Word Found</h2>
+
         </ion-item>
-        </div>
-    </ion-list>
+    </div>
+</ion-list>
 
 
   <ion-card>
