@@ -75,19 +75,8 @@
 
     <div *ngIf="engDef == null">
       <div class="word-subcard">
-        <ion-segment [(ngModel)]="def">
-
-          <ion-segment-button value="filDef"> Filipino </ion-segment-button>
-        </ion-segment>
-
-        <div [ngSwitch]="def">
-
-
-          <ion-list *ngSwitchCase="'filDef'">
-            <h2 class="word-subhead def-sh">Depinisyon</h2>
-            <p class="def">{{filDef}}</p>
-          </ion-list>
-        </div>
+        <h2 class="word-subhead def-sh">Depinisyon</h2>
+        <p class="def">{{filDef}}</p>
       </div>
     </div>
 
@@ -97,12 +86,14 @@
         <li *ngFor="let item of sentences">"{{item}}"</li>
       </ul>
     </div>
+
     <div *ngIf="synonyms != null">
       <h2 class="word-subhead">Synonyms</h2>
       <ul>
         <li *ngFor="let item of synonyms">{{item}}</li>
       </ul>
     </div>
+
     <div class="line-divide"></div>
 
     <div class="copyrights">
