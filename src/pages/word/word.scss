@@ -1,50 +1,71 @@
 page-word {
 
-    .float {
-        width: 90%;
-        margin: 0 auto;
-        position: absolute;
-        z-index: 1;
-        box-shadow: rgb(77, 77, 77) 3px 3px 3px;
-        border-radius: 5px;
-    }
-
     ion-content {
-        background-color: #E5E6EB !important;
+        background-color: #fdfdfe !important;
     }
 
-    ion-icon {
-        font-size: 2rem;
+    .blue-half {
+        width: 100%;
+        height: 50%;
+        background-color: #416AAA;
+        position: absolute;
+        z-index: -1;
     }
+
 
     .action-bar {
         display: flex;
-        margin-bottom: 10px;
+    }
+
+    ion-icon {
+        font-size: 2.2rem;
+    }
+
+    .action-icon {
+        color: #fff;
     }
 
     .btn-icon {
         background-color: transparent;
     }
 
-    .line-divide {
-        background-color: #E7E4E4;
-        width: 80%;
-        height: 3px;
-        margin: auto;
+    .suggestion-box {
+        width: 92%;
+        margin: 0 auto;
+        left: 5%;
+        position: absolute;
+        z-index: 1;
+        box-shadow: rgb(77, 77, 77) 3px 3px 3px;
+        border-radius: 5px;
     }
+
 
     .word-card {
         background-color: #fff;
         padding: 5px 20px;
         border-radius: 10px;
         box-shadow: rgb(128, 128, 128) 1px 1px 3px;
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+
+    .word-primary {
+        font-family: 'Open Sans';
+        font-size: 4rem;
+        color: #000;
+    }
+
+    .word-secondary {
+        font-family: serif;
+      font-size: 3rem;
+        color: #000;
+       // background-color: orange;
+    }
 
         .card-head {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-           // background-color: brown;
         }
 
         .word-subhead {
@@ -56,19 +77,9 @@ page-word {
             margin-top: 5px;
         }
 
-        .word-primary {
-            font-family: serif;
-           font-size: 4rem;
-            color: #000;
-           // background-color: red;
-        }
+       
 
-        .word-secondary {
-            font-family: serif;
-          font-size: 3rem;
-            color: #000;
-           // background-color: orange;
-        }
+        
 
         .bay-font {
            font-size: 4rem;
@@ -82,17 +93,85 @@ page-word {
           margin-bottom: 10px;
             //background-color: green;
         }
+
+    
+
+    
+
+   
+
+    .line-divide {
+        background-color: #E7E4E4;
+        width: 80%;
+        height: 3px;
+        margin: auto;     
     }
+
+    // .word-card {
+    //     background-color: #fff;
+    //     padding: 5px 20px;
+    //     border-radius: 10px;
+    //     box-shadow: rgb(128, 128, 128) 1px 1px 3px;
+
+    //     .card-head {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //        // background-color: brown;
+    //     }
+
+    //     .word-subhead {
+    //         color: #416AAA;
+    //         font-size: 2rem;
+    //     }
+
+    //     .def-sh {
+    //         margin-top: 5px;
+    //     }
+
+    //     .word-primary {
+    //         font-family: serif;
+    //        font-size: 4rem;
+    //         color: #000;
+    //        // background-color: red;
+    //     }
+
+    //     .word-secondary {
+    //         font-family: serif;
+    //       font-size: 3rem;
+    //         color: #000;
+    //        // background-color: orange;
+    //     }
+
+    //     .bay-font {
+    //        font-size: 4rem;
+    //         color: #000;
+    //        // background-color: blue;
+    //     }
+
+    //     .part-of-speech {
+    //         color: #7C98AC;
+    //       font-size: 1.5rem;
+    //       margin-bottom: 10px;
+    //         //background-color: green;
+    //     }
+    // }
 
     .word-subcard {
         background-color: #fff;
         padding: 7px;
         border-radius: 5px;
         box-shadow: rgb(128, 128, 128) 0px 2px 2px;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
 
         .def {
             text-align: center;
+        }
+
+        .def-sh {
+            margin-top: 5px;
         }
     }
 

@@ -37,11 +37,13 @@ $colors: (
   // primary:    #488aff,
   // primary:    #3338D4,
   primary:    #416AAA,
+  // primary:    #fb495a,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  bg:         #E5E6EB
+  bg:         #E5E6EB,
+  white:      #fff
 );
 
 
@@ -94,6 +96,18 @@ $colors: (
   font-family: 'tag-doc';
   font-size: normal;
   src: url(../assets/fonts/TagDoc93.ttf);
+}
+
+@font-face{
+  font-family: 'tex';
+  font-size: normal;
+  src: url(../assets/fonts/texgyreadventor-regular.otf);
+}
+
+@font-face{
+  font-family: 'pop';
+  font-size: normal;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
 }
 
 .bay-font{

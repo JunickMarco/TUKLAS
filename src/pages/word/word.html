@@ -1,20 +1,27 @@
-<ion-content padding>
+<ion-content>
+
+  <div class="blue-half">
+
+  </div>
 
   <div class="action-bar">
+
     <button class="btn-icon" (click)="navigateToHomePage()">
-      <ion-icon name="arrow-back"></ion-icon>
+      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
     </button>
     <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
     <button class="btn-icon">
-      <ion-icon name="mic"></ion-icon>
+      <ion-icon name="mic" class="action-icon"></ion-icon>
     </button>
+
   </div>
 
-  <ion-list class="float">
+
+  <ion-list class="suggestion-box">
 
     <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
-      <h2>Filipino: {{word.wordName}}</h2>
 
+      <h2>Filipino: {{word.wordName}}</h2>
       <div *ngIf="word.engEq == null">
         <h3>English: None</h3>
       </div>
@@ -23,32 +30,41 @@
       </div>
 
     </ion-item>
+
     <div *ngIf="searchQuery">
       <ion-item *ngIf="words.length < 1 ">
         <h2>No Word Found</h2>
-
       </ion-item>
     </div>
+
   </ion-list>
+
 
   <div class="word-card">
 
     <div class="card-head">
 
-      <span class="word-primary">{{wordName}}
+      <span class="word-primary">
+        {{wordName}}
         <button class="btn-icon" (click)="playAudio()">
           <ion-icon name="volume-up"></ion-icon>
         </button>
       </span>
+
       <span class="bay-font">{{bayEq}}</span>
+
       <div *ngIf="engEq != null">
         <span class="word-secondary">{{engEq}}</span>
       </div>
-      <span class="part-of-speech">{{filParos}} |
-        {{engParos}}</span>
+
+      <span class="part-of-speech">{{filParos}} | {{engParos}}</span>
+
     </div>
 
+
     <div class="line-divide"></div>
+
+    
     <div *ngIf="engDef != null">
       <div class="word-subcard">
         <ion-segment [(ngModel)]="def">
@@ -62,12 +78,22 @@
 
           <ion-list *ngSwitchDefault>
             <h2 class="word-subhead def-sh">Definition</h2>
-            <p class="def">{{engDef}}</p>
+            
+            <!-- <ul>
+              <li *ngFor="let item of engDef">{{item}}</li>
+            </ul> -->
+
+            <p *ngFor="let item of engDef">: {{item}}</p>
           </ion-list>
 
           <ion-list *ngSwitchCase="'filDef'">
             <h2 class="word-subhead def-sh">Depinisyon</h2>
-            <p class="def">{{filDef}}</p>
+          
+            <!-- <ul>
+              <li *ngFor="let item of filDef">{{item}}</li>
+            </ul> -->
+
+            <p *ngFor="let item of filDef">: {{item}}</p>
           </ion-list>
         </div>
       </div>
@@ -87,7 +113,7 @@
       </ul>
     </div>
 
-    <div *ngIf="synonyms != null">
+    <div *ngIf="synonyms != null" class="syn-flex">
       <h2 class="word-subhead">Synonyms</h2>
       <ul>
         <li *ngFor="let item of synonyms">{{item}}</li>
@@ -101,7 +127,7 @@
       <div>
         <p class="copy">English definition retrieved from {{copyrightDefFil}}</p>
         <p class="copy">Filipino definition retrieved from {{copyrightDefEng}}</p>
-        <p class="copy">Sample Sentences retrieved from{{copyrightSentSampl}}</p>
+        <p class="copy">Sample Sentences retrieved from {{copyrightSentSampl}}</p>
       </div>
     </div>
 
