@@ -68,15 +68,13 @@
     <div *ngIf="engDef != null">
       <div class="word-subcard">
         <ion-segment [(ngModel)]="def">
-
-          <ion-segment-button value="engDef"> English </ion-segment-button>
-
           <ion-segment-button value="filDef"> Filipino </ion-segment-button>
+          <ion-segment-button value="engDef"> English </ion-segment-button>
         </ion-segment>
 
         <div [ngSwitch]="def">
 
-          <ion-list *ngSwitchDefault>
+          <ion-list *ngSwitchCase="'engDef'">
             <h2 class="word-subhead def-sh">Definition</h2>
             
             <!-- <ul>
@@ -86,7 +84,7 @@
             <p *ngFor="let item of engDef">: {{item}}</p>
           </ion-list>
 
-          <ion-list *ngSwitchCase="'filDef'">
+          <ion-list *ngSwitchDefault>
             <h2 class="word-subhead def-sh">Depinisyon</h2>
           
             <!-- <ul>
