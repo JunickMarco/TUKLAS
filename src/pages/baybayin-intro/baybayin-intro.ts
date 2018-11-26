@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LearnBaybayinPage } from '../learn-baybayin/learn-baybayin';
 
 /**
  * Generated class for the BaybayinIntroPage page.
@@ -21,5 +22,10 @@ export class BaybayinIntroPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BaybayinIntroPage');
   }
+
+
+  navigateToBaybayinPage(): void {
+    this.navCtrl.push(LearnBaybayinPage);
+ }
 
 }

@@ -250,5 +250,9 @@ export class LearnIdiomsPage implements OnInit{
 
   }
 
+  navigateToLearnPage(): void {
+    this.navCtrl.push(LearnPage);
+ }
+
 
 }

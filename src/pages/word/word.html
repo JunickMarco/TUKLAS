@@ -74,26 +74,11 @@
 
         <div [ngSwitch]="def">
 
-<<<<<<< HEAD
-          <ion-list *ngSwitchDefault>
-=======
           <ion-list *ngSwitchCase="'engDef'">
-            <h2 class="word-subhead def-sh">Definition</h2>
->>>>>>> 6cc3a565efd55bd218c4c78af305eddd0f16b733
-            
-            <h2 class="word-subhead def-sh">Depinisyon</h2>
-            
-            
-            <p *ngFor="let item of filDef">: {{item}}</p>
+            <h2 class="word-subhead def-sh">Definition</h2>       
+            <p *ngFor="let item of engDef">: {{item}}</p>
           </ion-list>
 
-<<<<<<< HEAD
-          <ion-list *ngSwitchCase="'filDef'">
-            <h2 class="word-subhead def-sh">Definition</h2>
-            
-            
-            <p *ngFor="let item of engDef">: {{item}}</p>
-=======
           <ion-list *ngSwitchDefault>
             <h2 class="word-subhead def-sh">Depinisyon</h2>
           
@@ -102,7 +87,6 @@
             </ul> -->
 
             <p *ngFor="let item of filDef">: {{item}}</p>
->>>>>>> 6cc3a565efd55bd218c4c78af305eddd0f16b733
           </ion-list>
         </div>
       </div>

@@ -1,16 +1,40 @@
 page-learn-baybayin {
 
+    .yellow-half {
+        width: 100%;
+        height: 13%;
+        background-color: #FFD15C;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .divide {
+        margin-bottom: 30px;
+    }
+
     ion-content {
-        background: #E5E6EB !important;
+        background-color: #fdfdfe !important;
     }
 
     .action-bar {
         display: flex;
-        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .action-icon {
+        color: #fff;
+        font-size: 2em;
     }
 
     .btn-icon {
         background-color: transparent;
     }
+
+    ion-list {
+        margin: 0 auto;
+    }
+
 
 }

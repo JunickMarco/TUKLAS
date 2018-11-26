@@ -1,15 +1,25 @@
 page-idiom {
 
+    .blue-half {
+        width: 100%;
+        height: 50%;
+        background-color: #FFD15C;
+        position: absolute;
+        z-index: -1;
+    }
+
+
     ion-icon {
         font-size: 3rem;
+        color: #fff;
     }
 
     ion-content {
-        background: #E5E6EB !important;
+        background-color: #fdfdfe !important;
     }
 
     .line-divide {
-        background-color: #416AAA;
+        background-color: #E7E4E4;
         width: 80%;
         height: 3px;
         margin: auto auto 20px auto;
@@ -18,6 +28,8 @@ page-idiom {
     .action-bar {
         display: flex;
         margin-bottom: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
     }
 
     .btn-icon {
@@ -25,37 +37,56 @@ page-idiom {
     }
 
     .idiom-card {
-        // background-color: #fff;
+        background-color: #fff;
         padding: 5px 20px;
-        // border-radius: 10px;
-        // box-shadow: rgb(128, 128, 128) 1px 1px 3px;
-
-        .card-head {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-           // background-color: brown;
-        }
-
-        .idiom-subhead {
-            color: #416AAA;
-            font-size: 2rem;
-        }
-
-        .mean-sh {
-            margin-top: 5px;
-        }
-
-        .idiom-primary {
-            font-family: serif;
-           font-size: 4rem;
-            color: #000;
-           // background-color: red;
-        }
-
+        border-radius: 10px;
+        box-shadow: rgb(128, 128, 128) 1px 1px 3px;
+        width: 90%;
+        margin: 10px auto 0 auto;
+        font-family: 'oss';
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
     }
+
+    .card-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+       // background-color: brown;
+    }
+
+    .idiom-subhead {
+        color: rgb(223, 188, 99);
+        font-size: 2rem;
+    }
+
+    .mean-sh {
+        margin-top: 5px;
+    }
+
+    // .idiom-primary {
+    //     font-family: serif;
+    //    font-size: 4rem;
+    //     color: #000;
+    //    // background-color: red;
+    // }
+
+    .idiom-primary {
+        font-family: 'oss';
+        font-size: 3rem;
+        color: #000;
+        text-transform: uppercase;  
+    }
+
+    // .idiom-card {
+    //     // background-color: #fff;
+    //     padding: 5px 20px;
+    //     // border-radius: 10px;
+    //     // box-shadow: rgb(128, 128, 128) 1px 1px 3px;
+    // }
 
     .idiom-subcard {
         background-color: #fff;
@@ -76,7 +107,7 @@ page-idiom {
     .chead {
         margin-right: 25px;
         font-size: 1rem;
-        color: #7C98AC;
+        color: rgb(245, 231, 196);
     }
 
     .copy {
