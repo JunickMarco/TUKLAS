@@ -53,7 +53,39 @@ export class LearnIdiomsPage implements OnInit{
   idioms9: Observable<any[]>;
   notesCollection10: AngularFirestoreCollection<Note>;
   idioms10: Observable<any[]>;
-  
+  notesCollection11: AngularFirestoreCollection<Note>;
+  idioms11: Observable<any[]>;
+  notesCollection12: AngularFirestoreCollection<Note>;
+  idioms12: Observable<any[]>;
+  notesCollection13: AngularFirestoreCollection<Note>;
+  idioms13: Observable<any[]>;
+  notesCollection14: AngularFirestoreCollection<Note>;
+  idioms14: Observable<any[]>;
+  notesCollection15: AngularFirestoreCollection<Note>;
+  idioms15: Observable<any[]>;
+  notesCollection16: AngularFirestoreCollection<Note>;
+  idioms16: Observable<any[]>;
+  notesCollection17: AngularFirestoreCollection<Note>;
+  idioms17: Observable<any[]>;
+  notesCollection18: AngularFirestoreCollection<Note>;
+  idioms18: Observable<any[]>;
+  notesCollection19: AngularFirestoreCollection<Note>;
+  idioms19: Observable<any[]>;
+  notesCollection20: AngularFirestoreCollection<Note>;
+  idioms20: Observable<any[]>;
+  notesCollection21: AngularFirestoreCollection<Note>;
+  idioms21: Observable<any[]>;
+  notesCollection22: AngularFirestoreCollection<Note>;
+  idioms22: Observable<any[]>;
+  notesCollection23: AngularFirestoreCollection<Note>;
+  idioms23: Observable<any[]>;
+  notesCollection24: AngularFirestoreCollection<Note>;
+  idioms24: Observable<any[]>;
+  notesCollection25: AngularFirestoreCollection<Note>;
+  idioms25: Observable<any[]>;
+  notesCollection26: AngularFirestoreCollection<Note>;
+  idioms26: Observable<any[]>;
+ 
   constructor(private afs: AngularFirestore, public navCtrl: NavController){
     // this.idioms = db.collection('idioms').valueChanges();
     // this.idioms = db.collection('idioms', ref => {
@@ -83,30 +115,30 @@ export class LearnIdiomsPage implements OnInit{
    });
    this.idioms2 = this.notesCollection2.valueChanges();
    //c
-   this.notesCollection3 = this.afs.collection('idioms', ref => {
-     return ref.where("idiomID", '>=', 100).where("idiomID", '<', 150)
-   });
-   this.idioms3 = this.notesCollection3.valueChanges();
+  //  this.notesCollection3 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 100).where("idiomID", '<', 150)
+  //  });
+  //  this.idioms3 = this.notesCollection3.valueChanges();
    //d
    this.notesCollection4 = this.afs.collection('idioms', ref => {
      return ref.where("idiomID", '>=', 150).where("idiomID", '<', 200)
    });
    this.idioms4 = this.notesCollection4.valueChanges();
    //e
-   this.notesCollection5 = this.afs.collection('idioms', ref => {
-     return ref.where("idiomID", '>=', 200).where("idiomID", '<', 250)
-   });
-   this.idioms5 = this.notesCollection5.valueChanges();
+  //  this.notesCollection5 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 200).where("idiomID", '<', 250)
+  //  });
+  //  this.idioms5 = this.notesCollection5.valueChanges();
    //f
-   this.notesCollection6 = this.afs.collection('idioms', ref => {
-     return ref.where("idiomID", '>=', 250).where("idiomID", '<', 300)
-   });
-   this.idioms6 = this.notesCollection6.valueChanges();
+  //  this.notesCollection6 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 250).where("idiomID", '<', 300)
+  //  });
+  //  this.idioms6 = this.notesCollection6.valueChanges();
    //g
-   this.notesCollection7 = this.afs.collection('idioms', ref => {
-     return ref.where("idiomID", '>=', 300).where("idiomID", '<', 350)
-   });
-   this.idioms7 = this.notesCollection7.valueChanges();
+  //  this.notesCollection7 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 300).where("idiomID", '<', 350)
+  //  });
+  //  this.idioms7 = this.notesCollection7.valueChanges();
    //h
    this.notesCollection8 = this.afs.collection('idioms', ref => {
      return ref.where("idiomID", '>=', 350).where("idiomID", '<', 400)
@@ -118,10 +150,90 @@ export class LearnIdiomsPage implements OnInit{
    });
    this.idioms9 = this.notesCollection9.valueChanges();
    //j
-   this.notesCollection10 = this.afs.collection('idioms', ref => {
-     return ref.where("idiomID", '>=', 450)
+  //  this.notesCollection10 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 450).where("idiomID", '<', 500)
+  //  });
+  //  this.idioms10 = this.notesCollection10.valueChanges();
+   //k
+   this.notesCollection11 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 500).where("idiomID", '<', 550)
    });
-   this.idioms10 = this.notesCollection10.valueChanges();
+   this.idioms11 = this.notesCollection11.valueChanges();
+   //l
+   this.notesCollection12 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 550).where("idiomID", '<', 600)
+   });
+   this.idioms12 = this.notesCollection12.valueChanges();
+   //m
+   this.notesCollection13 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 600).where("idiomID", '<', 650)
+   });
+   this.idioms13 = this.notesCollection13.valueChanges();
+   //n
+   this.notesCollection14 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 650).where("idiomID", '<', 700)
+   });
+   this.idioms14 = this.notesCollection14.valueChanges();
+   //o
+  //  this.notesCollection15 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 700).where("idiomID", '<', 750)
+  //  });
+  //  this.idioms15 = this.notesCollection15.valueChanges();
+   //p
+   this.notesCollection16 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 750).where("idiomID", '<', 800)
+   });
+   this.idioms16 = this.notesCollection16.valueChanges();
+   //q
+  //  this.notesCollection17 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 800).where("idiomID", '<', 850)
+  //  });
+  //  this.idioms17 = this.notesCollection17.valueChanges();
+   //r
+  //  this.notesCollection18 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 850).where("idiomID", '<', 900)
+  //  });
+  //  this.idioms18 = this.notesCollection18.valueChanges();
+   //s
+   this.notesCollection19 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 900).where("idiomID", '<', 950)
+   });
+   this.idioms19 = this.notesCollection19.valueChanges();
+   //t
+   this.notesCollection20 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 950).where("idiomID", '<', 1000)
+   });
+   this.idioms20 = this.notesCollection20.valueChanges();
+   //u
+   this.notesCollection21 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 1000).where("idiomID", '<', 1050)
+   });
+   this.idioms21 = this.notesCollection21.valueChanges();
+   //v
+   this.notesCollection22 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 1050).where("idiomID", '<', 1100)
+   });
+   this.idioms22 = this.notesCollection22.valueChanges();
+   //w
+   this.notesCollection23 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 1100).where("idiomID", '<', 1150)
+   });
+   this.idioms23 = this.notesCollection23.valueChanges();
+   //x
+  //  this.notesCollection24 = this.afs.collection('idioms', ref => {
+  //    return ref.where("idiomID", '>=', 1150).where("idiomID", '<', 1200)
+  //  });
+  //  this.idioms24 = this.notesCollection24.valueChanges();
+   //y
+   this.notesCollection25 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 1200).where("idiomID", '<', 1250)
+   });
+   this.idioms25 = this.notesCollection25.valueChanges();
+   //z
+   this.notesCollection26 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 1250).where("idiomID", '<', 1300)
+   });
+   this.idioms26 = this.notesCollection26.valueChanges();
  }
 
   navigateToDetails(item){

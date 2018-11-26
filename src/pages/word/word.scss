@@ -47,18 +47,22 @@ page-word {
         box-shadow: rgb(128, 128, 128) 1px 1px 3px;
         width: 90%;
         margin: 10px auto 0 auto;
+        font-family: 'oss';
+        
     }
 
     .word-primary {
-        font-family: 'Open Sans';
+        font-family: 'oss';
         font-size: 4rem;
         color: #000;
+        text-transform: uppercase;  
     }
 
     .word-secondary {
-        font-family: serif;
+        font-family: 'oss';
       font-size: 3rem;
         color: #000;
+        text-transform: uppercase; 
        // background-color: orange;
     }
 
@@ -69,9 +73,13 @@ page-word {
         }
 
         .word-subhead {
+            
+            font-family: 'heebomed';
             color: #416AAA;
             font-size: 2rem;
         }
+
+        
 
         .def-sh {
             margin-top: 5px;
@@ -88,7 +96,9 @@ page-word {
         }
 
         .part-of-speech {
-            color: #7C98AC;
+            // color: #7C98AC;
+            color: #416AAA;
+            opacity: 0.7;
           font-size: 1.5rem;
           margin-bottom: 10px;
             //background-color: green;
