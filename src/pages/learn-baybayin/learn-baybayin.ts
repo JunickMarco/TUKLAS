@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
 import { BaybayinIntroPage } from '../baybayin-intro/baybayin-intro';
+import { BaybayinPracticewritePage } from '../baybayin-practicewrite/baybayin-practicewrite';
 
 /**
  * Generated class for the LearnBaybayinPage page.
@@ -30,6 +31,10 @@ export class LearnBaybayinPage {
 
  navigateToBaybayinIntroPage(): void {
   this.navCtrl.push(BaybayinIntroPage);
+}
+
+  navigateToBaybayinPracticewritePage(): void {
+    this.navCtrl.push(BaybayinPracticewritePage);
 }
 
 }
