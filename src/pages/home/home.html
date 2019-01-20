@@ -3,8 +3,8 @@
     <img id="logo" src="../../assets/imgs/tuklas-logo-v3.png">
 
     <div class="search-box">
-    <ion-searchbar [(ngModel)]="selectedItem" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg" placeholder="Search a word..."></ion-searchbar>
-    <button class="btn-icon" (click)="startListening()">
+    <ion-searchbar [(ngModel)]="selectedItem" debounce="1" (ionInput)="search($event)" class="searchbarbg" placeholder="Search a word..."></ion-searchbar>
+    <button class="btn-icon" (click)="global()">
         <ion-icon name="mic"></ion-icon>
     </button>
     <!-- <button ion-button full (click)="stopListening()" *ngIf="isIos()">Stop Listening</button> -->
@@ -23,7 +23,7 @@
             </div>
         </ion-item>
 
-        <div *ngIf="searchQuery">
+        <div *ngIf="selectedItem">
             <ion-item *ngIf="words.length < 1 ">
                 <h2>No Word Found</h2>
             </ion-item>
