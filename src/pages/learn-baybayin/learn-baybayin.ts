@@ -2,7 +2,12 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
 import { BaybayinIntroPage } from '../baybayin-intro/baybayin-intro';
-import { BaybayinPracticewritePage } from '../baybayin-practicewrite/baybayin-practicewrite';
+import { BaybayinHistoryPage } from '../baybayin-history/baybayin-history';
+import { BaybayinWritePage } from '../baybayin-write/baybayin-write';
+import { BaybayinChartPage } from '../baybayin-chart/baybayin-chart';
+import { BaybayinMaterialsPage } from '../baybayin-materials/baybayin-materials';
+import { BaybayinSystemsPage } from '../baybayin-systems/baybayin-systems';
+import { BaybayinActionPage } from '../baybayin-action/baybayin-action';
 
 /**
  * Generated class for the LearnBaybayinPage page.
@@ -33,8 +38,27 @@ export class LearnBaybayinPage {
   this.navCtrl.push(BaybayinIntroPage);
 }
 
-  navigateToBaybayinPracticewritePage(): void {
-    this.navCtrl.push(BaybayinPracticewritePage);
+ navigateToBaybayinHistoryPage(): void {
+  this.navCtrl.push(BaybayinHistoryPage);
 }
 
+ navigateToBaybayinWritePage(): void {
+  this.navCtrl.push(BaybayinWritePage);
+}
+
+ navigateToBaybayinChartPage(): void {
+  this.navCtrl.push(BaybayinChartPage);
+}
+
+ navigateToBaybayinMaterialsPage(): void {
+  this.navCtrl.push(BaybayinMaterialsPage);
+}
+
+ navigateToBaybayinSystemsPage(): void {
+  this.navCtrl.push(BaybayinSystemsPage);
+}
+
+ navigateToBaybayinActionPage(): void {
+  this.navCtrl.push(BaybayinActionPage);
+}
 }

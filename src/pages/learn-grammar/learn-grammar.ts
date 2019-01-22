@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
 import { GrammarLanguagePage } from '../grammar-language/grammar-language';
+import { GrammarStructurePage } from '../grammar-structure/grammar-structure';
+import { GrammarNumbersPage } from '../grammar-numbers/grammar-numbers';
+import { GrammarMistakesPage } from '../grammar-mistakes/grammar-mistakes';
 
 /**
  * Generated class for the LearnGrammarPage page.
@@ -32,4 +35,15 @@ export class LearnGrammarPage {
   this.navCtrl.push(GrammarLanguagePage);
 }
 
+ navigateToGrammarStructurePage(): void {
+  this.navCtrl.push(GrammarStructurePage);
+}
+
+ navigateToGrammarNumbersPage(): void {
+  this.navCtrl.push(GrammarNumbersPage);
+}
+
+ navigateToGrammarMistakesPage(): void {
+  this.navCtrl.push(GrammarMistakesPage);
+}
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the BaybayinPracticewritePage page.
+ * Generated class for the GrammarStructurePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-baybayin-practicewrite',
-  templateUrl: 'baybayin-practicewrite.html',
+  selector: 'page-grammar-structure',
+  templateUrl: 'grammar-structure.html',
 })
-export class BaybayinPracticewritePage {
+export class GrammarStructurePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BaybayinPracticewritePage');
+    console.log('ionViewDidLoad GrammarStructurePage');
   }
 
 }

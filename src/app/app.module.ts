@@ -15,9 +15,20 @@ import { LearnIdiomsPage } from '../pages/learn-idioms/learn-idioms';
 import { IdiomPage } from '../pages/idiom/idiom';
 import { LearnGrammarPage } from '../pages/learn-grammar/learn-grammar';
 import { LearnBaybayinPage } from '../pages/learn-baybayin/learn-baybayin';
+
 import { GrammarLanguagePage } from '../pages/grammar-language/grammar-language';
+import { GrammarStructurePage } from '../pages/grammar-structure/grammar-structure';
+import { GrammarNumbersPage } from '../pages/grammar-numbers/grammar-numbers';
+import { GrammarMistakesPage } from '../pages/grammar-mistakes/grammar-mistakes';
+
 import { BaybayinIntroPage } from '../pages/baybayin-intro/baybayin-intro';
-import { BaybayinPracticewritePage } from '../pages/baybayin-practicewrite/baybayin-practicewrite';
+import { BaybayinHistoryPage } from '../pages/baybayin-history/baybayin-history';
+import { BaybayinWritePage } from '../pages/baybayin-write/baybayin-write';
+import { BaybayinChartPage } from '../pages/baybayin-chart/baybayin-chart';
+import { BaybayinMaterialsPage } from '../pages/baybayin-materials/baybayin-materials';
+import { BaybayinSystemsPage } from '../pages/baybayin-systems/baybayin-systems';
+import { BaybayinActionPage } from '../pages/baybayin-action/baybayin-action';
+
 import { AboutAppPage } from '../pages/about-app/about-app';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -44,8 +55,16 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     LearnGrammarPage,
     LearnBaybayinPage,
     GrammarLanguagePage,
+    GrammarStructurePage,
+    GrammarNumbersPage,
+    GrammarMistakesPage,
     BaybayinIntroPage,
-    BaybayinPracticewritePage,
+    BaybayinHistoryPage,
+    BaybayinWritePage,
+    BaybayinChartPage,
+    BaybayinMaterialsPage,
+    BaybayinSystemsPage,
+    BaybayinActionPage,
     AboutAppPage
   ],
   imports: [
@@ -69,8 +88,16 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     LearnGrammarPage,
     LearnBaybayinPage,
     GrammarLanguagePage,
+    GrammarStructurePage,
+    GrammarNumbersPage,
+    GrammarMistakesPage,
     BaybayinIntroPage,
-    BaybayinPracticewritePage,
+    BaybayinHistoryPage,
+    BaybayinWritePage,
+    BaybayinChartPage,
+    BaybayinMaterialsPage,
+    BaybayinSystemsPage,
+    BaybayinActionPage,
     AboutAppPage
   ],
   providers: [
