@@ -1,0 +1,143 @@
+page-word ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-word .blue-half {
+  width: 100%;
+  height: 50%;
+  background-color: #416AAA;
+  position: absolute;
+  z-index: -1;
+}
+
+page-word .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-word ion-icon {
+  font-size: 2.2rem;
+}
+
+page-word .action-icon {
+  color: #fff;
+}
+
+page-word .btn-icon {
+  background-color: transparent;
+}
+
+page-word .suggestion-box {
+  width: 92%;
+  margin: 0 auto;
+  left: 5%;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-shadow: #4d4d4d 3px 3px 3px;
+          box-shadow: #4d4d4d 3px 3px 3px;
+  border-radius: 5px;
+}
+
+page-word .word-card {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 1px 1px 3px;
+          box-shadow: gray 1px 1px 3px;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  font-family: 'oss';
+}
+
+page-word .word-primary {
+  font-family: 'oss';
+  font-size: 4rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+page-word .word-secondary {
+  font-family: 'oss';
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+page-word .card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-word .word-subhead {
+  font-family: 'heebomed';
+  color: #416AAA;
+  font-size: 2rem;
+}
+
+page-word .def-sh {
+  margin-top: 5px;
+}
+
+page-word .bay-font {
+  font-size: 4rem;
+  color: #000;
+}
+
+page-word .part-of-speech {
+  color: #416AAA;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+page-word .line-divide {
+  background-color: #E7E4E4;
+  width: 80%;
+  height: 3px;
+  margin: auto;
+}
+
+page-word .word-subcard {
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  -webkit-box-shadow: gray 0px 2px 2px;
+          box-shadow: gray 0px 2px 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+page-word .word-subcard .def {
+  text-align: center;
+}
+
+page-word .word-subcard .def-sh {
+  margin-top: 5px;
+}
+
+page-word .copyrights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-word .chead {
+  margin-right: 25px;
+  font-size: 1rem;
+  color: #7C98AC;
+}
+
+page-word .copy {
+  font-size: 0.5rem;
+  color: #7C98AC;
+}
+/*# sourceMappingURL=word.css.map */

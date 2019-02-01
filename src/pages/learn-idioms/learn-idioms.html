@@ -12,7 +12,7 @@
 
   <ion-item-group>
     <ion-item-divider class="div-color">A</ion-item-divider>
-    <ion-item class="bg-color"*ngFor="let item of idioms1 | async" (click)="navigateToDetails(item)">{{ item.idiomName }} </ion-item>
+    <ion-item class="bg-color"*ngFor="let item of idioms1  | async" (click)="navigateToDetails(item)">{{ item.idiomName }} </ion-item>
     
   </ion-item-group>
 

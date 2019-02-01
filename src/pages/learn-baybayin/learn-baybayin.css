@@ -1,0 +1,38 @@
+page-learn-baybayin .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-learn-baybayin .divide {
+  margin-bottom: 30px;
+}
+
+page-learn-baybayin ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-learn-baybayin .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-learn-baybayin .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-learn-baybayin .btn-icon {
+  background-color: transparent;
+}
+
+page-learn-baybayin ion-list {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=learn-baybayin.css.map */

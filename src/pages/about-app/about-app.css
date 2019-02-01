@@ -1,0 +1,39 @@
+page-about-app .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #D7515A;
+  position: absolute;
+  z-index: -1;
+}
+
+page-about-app .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-about-app .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-about-app .divide {
+  margin-bottom: 10px;
+}
+
+page-about-app ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-about-app .btn-icon {
+  background-color: transparent;
+}
+
+page-about-app .lesson {
+  margin: 0 auto;
+  padding: 10px;
+}
+/*# sourceMappingURL=about-app.css.map */

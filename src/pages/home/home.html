@@ -37,13 +37,14 @@
         <img src="../../assets/imgs/wotd-placeholder.png"/>
 
         <div class="card-titlehead">Word of the Day</div>
-        <div class="card-title">Bahay</div>
-        <div class="card-baybay bay-font">ᜊᜑᜌ᜔</div>
-        <div class="card-subtitle">pangngalan | noun</div>
+       
+        <div class="card-title"*ngFor="let item of wordsWOTD | async">{{item.wordName}}</div>
+        <div class="card-baybay bay-font" *ngFor="let item of wordsWOTD | async" >{{item.bayEq}}</div>
+        <div class="card-subtitle" *ngFor="let item of wordsWOTD | async" >{{item.partofspeech.filParos}} | {{item.partofspeech.engParos}}</div>
 
         <ion-row no-padding>
             <ion-col text-right>
-            <button ion-button clear small color="primary" icon-start>
+            <button ion-button clear small color="primary" icon-start (click)="SwitchTab()">
                 View word card 
                 <ion-icon name='ios-arrow-forward' class="card-arrow"></ion-icon>
             </button>
