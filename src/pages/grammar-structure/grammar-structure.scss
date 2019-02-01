@@ -1,3 +1,64 @@
 page-grammar-structure {
 
+    .yellow-half {
+        width: 100%;
+        height: 13%;
+        background-color: #FFD15C;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .action-icon {
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .action-bar {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .divide {
+        margin-bottom: 10px;
+    }
+
+    ion-content {
+        background-color: #fdfdfe !important;
+    }
+
+    .btn-icon {
+        background-color: transparent;
+    }
+
+    .lesson {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+
+    .example {
+        background-color: rgb(255, 239, 197);
+        padding: 5px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    .backTop {
+        background-color: #FFD15C;
+        padding: 10px;
+        font-size: 1.01em;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .btn-area {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .head-par {
+        font-weight: bold;
+    }
 }

@@ -24,17 +24,45 @@ page-baybayin-intro {
         margin-bottom: 10px;
     }
 
-    ion-content {
-        background-color: #fdfdfe !important;
-    }
+    // ion-content {
+    //     background-color: #fdfdfe !important;
+    // }
 
     .btn-icon {
         background-color: transparent;
     }
 
-    .lesson {
+    // .lesson {
+    //     margin: 0 auto;
+    //     padding: 10px;
+    // }
+
+    .backTop {
+        background-color: #FFD15C;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1.01em;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .btn-area {
         margin: 0 auto;
+        width: 30%;
+    }
+
+    .accent {
+        background-color: rgb(253, 246, 229);
         padding: 10px;
     }
 
+    .second {
+        background-color: rgb(253, 251, 245);
+        padding: 10px;
+    }
+
+
+    .lesson h1 {
+        text-align: center;
+    }
 }

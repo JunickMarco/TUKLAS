@@ -1,3 +1,68 @@
 page-grammar-mistakes {
 
+    .yellow-half {
+        width: 100%;
+        height: 13%;
+        background-color: #FFD15C;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .action-icon {
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .action-bar {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .divide {
+        margin-bottom: 10px;
+    }
+
+    // ion-content {
+    //     background-color: #fdfdfe !important;
+    // }
+
+    .btn-icon {
+        background-color: transparent;
+    }
+
+    // .lesson {
+    //     margin: 0 auto;
+    //     padding: 10px;
+    // }
+
+    .backTop {
+        background-color: #FFD15C;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1.01em;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .btn-area {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .accent {
+        background-color: rgb(253, 246, 229);
+        padding: 10px;
+    }
+
+    .second {
+        background-color: rgb(253, 251, 245);
+        padding: 10px;
+    }
+
+
+    .lesson h1 {
+        text-align: center;
+    }
 }

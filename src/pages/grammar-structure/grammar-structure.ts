@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { LearnGrammarPage } from '../learn-grammar/learn-grammar';
 
 /**
  * Generated class for the GrammarStructurePage page.
@@ -21,5 +22,19 @@ export class GrammarStructurePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GrammarStructurePage');
   }
+
+  navigateToGrammarPage(): void {
+    this.navCtrl.push(LearnGrammarPage);
+ }
+
+ @ViewChild('pageTop') pageTop: Content;
+
+ /**
+  * Method to scroll to top
+  */
+ public pageScroller(){
+   //scroll to page top
+   this.pageTop.scrollToTop();
+ }
 
 }

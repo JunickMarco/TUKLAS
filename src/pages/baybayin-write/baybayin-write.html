@@ -1,18 +1,58 @@
-<!--
-  Generated template for the BaybayinWritePage page.
+<ion-content #pageTop>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+  <div class="yellow-half"></div>
 
-  <ion-navbar>
-    <ion-title>baybayin-write</ion-title>
-  </ion-navbar>
+  <div class="action-bar">
+    <button class="btn-icon" (click)="navigateToBaybayinPage()">
+      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
+    </button>
+  </div>
 
-</ion-header>
+  <div class="divide"></div>
+
+  <div class="lesson">
+
+    <div class="second">
+      <h1>Characteristics</h1>
+      <p>
+        The writing system is an abugida system using consonant-vowel combinations. Each character, written in its basic form, is a consonant ending with the vowel “A”. To produce consonants ending with the other vowel sounds, a mark is placed either above the consonant (to produce an “E” or “I” sound) or below the consonant (to produce an “O” or “U” sound). The mark is called a kudlit. The kudlit does not apply to stand-alone vowels. Vowels themselves have their own glyphs. There is only one symbol for D or R as they were allophones in most languages of the Philippines, where D occurred in initial, final, pre-consonantal or post-consonantal positions and R in intervocalic positions.  
+      </p>
+      <p>
+        The grammatical rule has survived in modern Filipino, so that when a d is between two vowels, it becomes an r, as in the words dangál (honour) and marangál (honourable), or dunong (knowledge) and marunong (knowledgeable), and even raw for daw (he said, she said, they said, it was said, allegedly, reportedly, supposedly) and rin for din (also, too) after vowels. This variant of the script is not used for Ilokano, Pangasinan, Bikolano, and other Philippine languages to name a few, as these languages have separate symbols for D and R.
+      </p>
+    </div>
 
 
-<ion-content padding>
+      <div class="accent">
+        <h1>Pre-Spanish “style”</h1>
+       <p>
+        In the original form of the Baybayin script, a stand-alone consonant (consonants not ending with any vowel sound) cannot be indicated unambiguously; therefore, such consonants were simply not written, and the reader would fill in the missing consonants through context. For example, the letters n and k in a word like bundók (mountain) were omitted, so that it was spelled bu-do.       </p>
+      </div>
+    
+      <div class="second">
+          <h1>Virama Kudlit “style”</h1>
+       <p>
+          The original writing method was particularly difficult for the Spanish priests who were translating books into the native language. Because of this, Francisco López introduced his own kudlit in 1620 that cancelled the implicit a vowel sound. The kudlit was in the form of a “+” sign, in reference to Christianity. This cross-shaped kudlit functions exactly the same as the virama in the Devanagari script of India. In fact, Unicode calls this kudlit the Tagalog Sign Virama. See sample above in Characteristics Section.       </p>
+      </div>
+      
+
+      <div class="accent">
+        <h1>“Nga” character</h1>
+        <p>
+            A single character represented “nga”. The current version of the Filipino alphabet still retains “ng” as a digraph, viz, a single letter composed of two characters.        </p>
+      </div>
+      
+      <div class="second">
+        <h1>Punctuation</h1>
+    <p>
+        Words written in baybayin were written in a continuous flow, and the only form of punctuation was a single vertical line, or more often, a pair of vertical lines (||). These vertical lines fulfill the function of a comma, period, or unpredictably separate sets of words.    </p>
+      </div>
+      
+  </div>
+
+  <div class="btn-area">
+    <button class="btn-icon backTop" (click)="pageScroller()">BACK TO TOP</button>
+  </div>
+
 
 </ion-content>

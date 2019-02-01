@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { LearnBaybayinPage } from '../learn-baybayin/learn-baybayin';
+
 
 /**
  * Generated class for the BaybayinHistoryPage page.
@@ -22,4 +24,18 @@ export class BaybayinHistoryPage {
     console.log('ionViewDidLoad BaybayinHistoryPage');
   }
 
+  
+  navigateToBaybayinPage(): void {
+    this.navCtrl.push(LearnBaybayinPage);
+ }
+
+ @ViewChild('pageTop') pageTop: Content;
+
+ /**
+  * Method to scroll to top
+  */
+ public pageScroller(){
+   //scroll to page top
+   this.pageTop.scrollToTop();
+ }
 }
