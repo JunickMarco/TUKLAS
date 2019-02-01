@@ -1,0 +1,38 @@
+page-learn-grammar .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-learn-grammar .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-learn-grammar .divide {
+  margin-bottom: 30px;
+}
+
+page-learn-grammar ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-learn-grammar .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-learn-grammar .btn-icon {
+  background-color: transparent;
+}
+
+page-learn-grammar ion-list {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=learn-grammar.css.map */

@@ -1,0 +1,70 @@
+page-learn .blue-half {
+  width: 100%;
+  height: 23%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-learn .head-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+page-learn .page-head {
+  font-family: 'oss';
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 30px auto 0 auto;
+  color: #fff;
+}
+
+page-learn ion-content {
+  background: #f5f4f4 !important;
+}
+
+page-learn .line-divide {
+  width: 80%;
+  height: 3px;
+  margin: auto;
+}
+
+page-learn .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #f5dda1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+page-learn .card-background-page .card-title {
+  position: absolute;
+  top: 35%;
+  font-family: 'worksanssemi';
+  text-transform: uppercase;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.8;
+  letter-spacing: 0.1px;
+}
+
+page-learn .card-background-page .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  color: #000;
+}
+/*# sourceMappingURL=learn.css.map */

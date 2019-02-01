@@ -1,0 +1,113 @@
+page-idiom .blue-half {
+  width: 100%;
+  height: 50%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-idiom ion-icon {
+  font-size: 3rem;
+  color: #fff;
+}
+
+page-idiom ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-idiom .line-divide {
+  background-color: #E7E4E4;
+  width: 80%;
+  height: 3px;
+  margin: auto auto 20px auto;
+}
+
+page-idiom .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+page-idiom .btn-icon {
+  background-color: transparent;
+}
+
+page-idiom .idiom-card {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 1px 1px 3px;
+          box-shadow: gray 1px 1px 3px;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  font-family: 'oss';
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+page-idiom .card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+page-idiom .idiom-subhead {
+  color: #dfbc63;
+  font-size: 2rem;
+}
+
+page-idiom .mean-sh {
+  margin-top: 5px;
+}
+
+page-idiom .idiom-primary {
+  font-family: 'oss';
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+page-idiom .idiom-subcard {
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  -webkit-box-shadow: gray 0px 2px 2px;
+          box-shadow: gray 0px 2px 2px;
+  margin-top: 10px;
+}
+
+page-idiom .idiom-subcard .meaning {
+  text-align: center;
+}
+
+page-idiom .copyrights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+page-idiom .chead {
+  margin-right: 25px;
+  font-size: 1rem;
+  color: #f5e7c4;
+}
+
+page-idiom .copy {
+  font-size: 0.5rem;
+  color: #7C98AC;
+}
+/*# sourceMappingURL=idiom.css.map */

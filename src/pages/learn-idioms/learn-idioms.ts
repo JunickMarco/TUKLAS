@@ -109,6 +109,7 @@ export class LearnIdiomsPage implements OnInit{
      return ref.where("idiomID", '>=', 1).where("idiomID", '<', 50)
    });
    this.idioms1 = this.notesCollection1.valueChanges();
+   console.log(this.idioms1)
    //b
    this.notesCollection2 = this.afs.collection('idioms', ref => {
      return ref.where("idiomID", '>=', 50).where("idiomID", '<', 100)
@@ -234,12 +235,12 @@ export class LearnIdiomsPage implements OnInit{
      return ref.where("idiomID", '>=', 1250).where("idiomID", '<', 1300)
    });
    this.idioms26 = this.notesCollection26.valueChanges();
+   
  }
 
   navigateToDetails(item){
     this.selectedIdiom = item;
     console.log(item);
-
     this.navCtrl.push(IdiomPage, {
       'idiomName': this.selectedIdiom.idiomName,
       'meanEng': this.selectedIdiom.meaning.meanEng,

@@ -1,0 +1,38 @@
+page-about .blue-half {
+  width: 100%;
+  height: 23%;
+  background-color: #D7515A;
+  position: absolute;
+  z-index: -1;
+}
+
+page-about .head-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+page-about .page-head {
+  font-family: 'oss';
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 30px auto 0 auto;
+  color: #fff;
+}
+
+page-about ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-about .line-divide {
+  width: 80%;
+  height: 3px;
+  margin: auto;
+}
+
+page-about ion-list {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=about.css.map */

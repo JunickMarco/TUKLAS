@@ -1,18 +1,109 @@
-<!--
-  Generated template for the WotdPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-content>
+<div class="blue-half">
 
-  <ion-navbar>
-    <ion-title>Word of the Day</ion-title>
-  </ion-navbar>
+</div>
 
-</ion-header>
+<div class="word-card">
+
+<div class="card-head">
+
+  <span class="word-primary" *ngFor="let item of wordsWOTD | async">
+    {{item.wordName}}
+    <button class="btn-icon" (click)="playAudio()">
+      <ion-icon name="volume-up"></ion-icon>
+    </button>
+  </span>
+
+  <span class="bay-font" *ngFor="let item of wordsWOTD | async" >{{item.bayEq}}</span>
+
+  <div *ngFor="let item of wordsWOTD | async">
+    <div *ngIf="item.engEq != null">
+      <span class="word-secondary">{{item.engEq}}</span>
+    </div>
+  </div>
+
+  <span class="part-of-speech" *ngFor="let item of wordsWOTD | async">{{item.partofspeech.filParos}} | {{item.partofspeech.engParos}}</span>
+
+</div>
 
 
-<ion-content padding>
+<div class="line-divide"></div>
+
+<div *ngFor="let item of wordsWOTD | async">
+  <div *ngIf="item.definition.engDef != null">
+  <div class="word-subcard">
+    <ion-segment [(ngModel)]="def">
+      <ion-segment-button value="filDef"> Filipino </ion-segment-button>
+      <ion-segment-button value="engDef"> English </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="def">
+
+      <ion-list *ngSwitchCase="'engDef'">
+        <h2 class="word-subhead def-sh">Definition</h2>
+        <p *ngFor="let item of item.definition.engDef">: {{item}}</p>
+      </ion-list>
+
+      <ion-list *ngSwitchDefault>
+        <h2 class="word-subhead def-sh">Depinisyon</h2>
+
+        <!-- <ul>
+              <li *ngFor="let item of filDef">{{item}}</li>
+            </ul> -->
+
+        <p *ngFor="let item of item.definition.filDef">: {{item}}</p>
+      </ion-list>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="item.definition.filDef == null">
+  <div class="word-subcard">
+    <h2 class="word-subhead def-sh">Depinisyon</h2>
+    <p class="def">{{item.definition.filDef}}</p>
+  </div>
+</div>
+</div>
+
+<div *ngFor="let item of wordsWOTD | async">
+  <div *ngIf="item.sentences != null">
+    <h2 class="word-subhead">Example Sentences</h2>
+    <ul>
+      <li *ngFor="let item of item.sentences">"{{item}}"</li>
+    </ul>
+  </div>
+</div>
+<div *ngFor="let item of wordsWOTD | async">
+<div *ngIf="item.synonyms != null" class="syn-flex">
+  <h2 class="word-subhead">Synonyms</h2>
+  <ul>
+    <li *ngFor="let item of item.synonyms">{{item}}</li>
+  </ul>
+</div>
+</div>
+
+
+<div class="line-divide"></div>
+<div *ngFor="let item of wordsWOTD | async">
+<div class="copyrights">
+  <p class="chead">©</p>
+  <div>
+    <p class="copy">English definition retrieved from {{item.copyright.defFil}}</p>
+    <p class="copy">Filipino definition retrieved from {{item.copyright.defEng}}</p>
+    <p class="copy">Sample Sentences retrieved from {{item.copyright.sentSampl}}</p>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div *ngFor="let item of wordsWOTD | async">
+<audio #audio>
+  <source src="{{item.audioOut}}" type="audio/mpeg">
+</audio>
+</div>
+
 
 </ion-content>
