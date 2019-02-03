@@ -11,6 +11,7 @@ import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
+import { query } from '@angular/core/src/render3/instructions';
 
 interface Note {
   audioOut: string;
@@ -64,6 +65,7 @@ export class HomePage {
     }).then((data) => {
       console.log(data.hits);
       this.words = data.hits;
+      
 
     })
 
@@ -113,12 +115,14 @@ export class HomePage {
               )
           }
 
-        });
-
+        })
   }
 
   //generate WOTD
   ionViewDidEnter() {
+    this.hasOneDayPassed();
+    this.generateWord();
+    
     this.storage.ready().then(() => {
     });
     this.storage.get("tryy").then((tryy) => {
@@ -180,7 +184,8 @@ export class HomePage {
           // }
           handler: (data: string) => {
             console.log(data);
-            this.selectedItem = data;
+            this.selectedItem = data + "a";
+
           }
         }
       ]
@@ -217,7 +222,15 @@ export class HomePage {
   generateWord() {
     if (!this.hasOneDayPassed()) return false;
     this.random = Math.floor((Math.random() * 20) + 1);
-    this.storage.set("tryy", this.random);
+    this.storage.get("tryy").then((tryy) => {
+      console.log(tryy)
+      if(tryy == this.random){
+        this.random = Math.floor((Math.random() * 20) + 1);
+      }
+      else{
+        this.storage.set("tryy", this.random);
+      }
+    });
   }
 
 

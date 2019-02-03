@@ -10,26 +10,29 @@
     <!-- <button ion-button full (click)="stopListening()" *ngIf="isIos()">Stop Listening</button> -->
     </div>
     
-    <ion-list class="suggestion-box">
-
-        <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
-            <h2>Filipino: {{word.wordName}}</h2>
-
-            <div *ngIf="word.engEq == null">
-                <h3>English: None</h3>
-            </div>
-            <div *ngIf="word.engEq != null">
-                <h3>English: {{word.engEq}}</h3>
-            </div>
-        </ion-item>
-
-        <div *ngIf="selectedItem">
-            <ion-item *ngIf="words.length < 1 ">
-                <h2>No Word Found</h2>
+    <div *ngIf="selectedItem.length > 1">
+        <ion-list class="suggestion-box">
+        
+            <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
+                <h2>Filipino: {{word.wordName}}</h2>
+        
+                <div *ngIf="word.engEq == null">
+                    <h3>English: None</h3>
+                </div>
+                <div *ngIf="word.engEq != null">
+                    <h3>English: {{word.engEq}}</h3>
+                </div>
             </ion-item>
-        </div>
-
-    </ion-list>
+        
+            <div *ngIf="selectedItem">
+                <ion-item *ngIf="words.length < 1 ">
+                    <h2>No Word Found</h2>
+                </ion-item>
+            </div>
+        
+        </ion-list>
+    </div>
+    
 
 
     <ion-card>

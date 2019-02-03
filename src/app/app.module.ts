@@ -29,6 +29,10 @@ import { BaybayinMaterialsPage } from '../pages/baybayin-materials/baybayin-mate
 import { BaybayinSystemsPage } from '../pages/baybayin-systems/baybayin-systems';
 import { BaybayinActionPage } from '../pages/baybayin-action/baybayin-action';
 
+import { QuizBaybayinPage } from '../pages/quiz-baybayin/quiz-baybayin';
+import { QuizGrammarPage } from '../pages/quiz-grammar/quiz-grammar';
+import { QuizIdiomsPage } from '../pages/quiz-idioms/quiz-idioms';
+
 import { AboutAppPage } from '../pages/about-app/about-app';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -40,7 +44,9 @@ import { firebaseConfig } from './credentials';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { IonicStorageModule } from '@ionic/storage';
-
+import { DataProvider } from '../providers/data/data';
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     MyApp,
@@ -66,7 +72,11 @@ import { IonicStorageModule } from '@ionic/storage';
     BaybayinMaterialsPage,
     BaybayinSystemsPage,
     BaybayinActionPage,
-    AboutAppPage
+    QuizBaybayinPage,
+    QuizGrammarPage,
+    QuizIdiomsPage,
+    AboutAppPage,
+    FlashCardComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +84,7 @@ import { IonicStorageModule } from '@ionic/storage';
     IonicStorageModule.forRoot(), //for local storage
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -100,13 +111,17 @@ import { IonicStorageModule } from '@ionic/storage';
     BaybayinMaterialsPage,
     BaybayinSystemsPage,
     BaybayinActionPage,
+    QuizBaybayinPage,
+    QuizGrammarPage,
+    QuizIdiomsPage,
     AboutAppPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SpeechRecognition,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataProvider
   ]
   
 })

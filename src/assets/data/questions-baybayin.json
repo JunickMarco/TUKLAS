@@ -1,0 +1,484 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "flashCardFront": "QUESTION BAYBAYIN1",
+            "flashCardBack": "Helicopter",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "flashCardFront": "QUESTION BAYBAYIN2",
+            "flashCardBack": "Plane",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "flashCardFront": "QUESTION BAYBAYIN3",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "flashCardFront": "QUESTION BAYBAYIN4",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "flashCardFront": "QUESTION BAYBAYIN5",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "flashCardFront": "QUESTION BAYBAYIN6",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "flashCardFront": "QUESTION BAYBAYIN7",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "flashCardFront": "QUESTION BAYBAYIN8",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "flashCardFront": "QUESTION BAYBAYIN9",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "flashCardFront": "QUESTION BAYBAYIN10",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "flashCardFront": "QUESTION BAYBAYIN11",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "flashCardFront": "QUESTION BAYBAYIN12",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "flashCardFront": "QUESTION BAYBAYIN13",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "flashCardFront": "QUESTION BAYBAYIN14",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "flashCardFront": "QUESTION BAYBAYIN15",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "flashCardFront": "QUESTION BAYBAYIN16",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "flashCardFront": "QUESTION BAYBAYIN17",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "flashCardFront": "QUESTION BAYBAYIN18",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "flashCardFront": "QUESTION BAYBAYIN19",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "flashCardFront": "QUESTION BAYBAYIN20",
+            "flashCardBack": "Truck",
+            "flashCardFlipped": false,
+            "questionText": "What is this?",
+            "answers": [
+                {
+                    "answer": "Helicopter",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Plane",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Truck",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}

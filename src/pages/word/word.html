@@ -17,18 +17,18 @@
   </div>
 
 
+<div *ngIf="searchQuery.length > 1">
   <ion-list class="suggestion-box">
 
     <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
-
       <h2>Filipino: {{word.wordName}}</h2>
+
       <div *ngIf="word.engEq == null">
         <h3>English: None</h3>
       </div>
       <div *ngIf="word.engEq != null">
         <h3>English: {{word.engEq}}</h3>
       </div>
-
     </ion-item>
 
     <div *ngIf="searchQuery">
@@ -38,6 +38,7 @@
     </div>
 
   </ion-list>
+</div>
 
 
   <div class="word-card">
