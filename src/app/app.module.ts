@@ -47,6 +47,9 @@ import { IonicStorageModule } from '@ionic/storage';
 import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpClientModule } from '@angular/common/http';
+
+import { Keyboard } from '@ionic-native/keyboard/ngx';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -76,7 +79,7 @@ import { HttpClientModule } from '@angular/common/http';
     QuizGrammarPage,
     QuizIdiomsPage,
     AboutAppPage,
-    FlashCardComponent
+    FlashCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -114,14 +117,15 @@ import { HttpClientModule } from '@angular/common/http';
     QuizBaybayinPage,
     QuizGrammarPage,
     QuizIdiomsPage,
-    AboutAppPage
+    AboutAppPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    Keyboard
   ]
   
 })

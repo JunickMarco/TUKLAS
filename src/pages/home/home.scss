@@ -1,91 +1,179 @@
 page-home {
 
     ion-content {
-        background: #E5E6EB !important;
+        background: #f7f7f7 !important;
     }
 
-    #logo {
-        margin: 5px auto 10px auto;
-    }
+    // .scroll-content {
+    //     overflow-y: hidden;
+    // }
 
     .bay-sil {
         font-family: 'baysil';
-    }
-
-    .suggestion-box {
-        width: 85%;
-        margin: 0 auto;
-        position: absolute;
-        z-index: 1;
-        box-shadow: rgb(77, 77, 77) 3px 3px 3px;
-        border-radius: 5px;
-    }
-
-    $searchbar-ios-toolbar-input-background: rgba(0, 0, 0, .0);
-
-    .search-box {
-        display: flex;
     }
 
     .btn-icon {
         background-color: transparent;
     }
 
-    ion-card {
-        position: relative;
-        text-align: center;
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+    .skew {
+        width: 100%;
+        height: 200px;
+        margin-top: -35px;
+        transform: skew(0deg, -10deg);
+        background-color: #fff;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .page-wrap {
+        width: 100%;
+        margin: 20px auto 0 auto;
+        padding: 10px;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 20px;
+
+        #logo {
+            width: 310px;
+            height: 125px;
+        }
+    }
+
+    .search-container {
+        margin-top: 10px;
+
+        .search-box {
+            display: flex;
+
+            ion-searchbar {
+                --icon-color: map-get($colors, primary) !important;
+            }
+
+            .fa-microphone {
+                color: map-get($colors, primary);
+                font-size: 25px;
+            }
+        }
+
+        .suggestion-box {
+            width: 86.8%;
+            margin: 0 auto;
+            position: absolute;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: rgb(139, 139, 139) 1px 1px 1px;
+            border-radius: 5px;
+        }
+    }
+
+    .wotd-container {
+        display: flex;
+        justify-content: center;
+
         margin-top: 30px;
-        border-radius: 5px;
-    }
 
+        .wotd-card {
+            width: 80%;
+            height: 208px;
     
-    .card-titlehead {
-        position: absolute;
-        top: 20px;
-        font-size: 1.5em;
-        width: 100%;
-        color: #fff;
-        font-family: 'worksanssemi';
-        text-transform: uppercase; 
+            background: linear-gradient(0deg, rgba(48, 48, 48, 0.76), rgba(48, 48, 48, 0.76)), url(../../assets/imgs/wotd.png) no-repeat center;
+            background-size: cover;
+            border-radius: 18px;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            padding: 5% 2% 2% 2%;
+
+            &:active {
+                background: linear-gradient(0deg, rgba(118, 118, 118, 0.76), rgba(118, 118, 118, 0.76)), url(../../assets/imgs/wotd.png) no-repeat center;
+                
+                // transition: 0.3s;
+
+                @keyframes changesize {
+                    from {
+                        width: 80%;
+                        height: 208px;
+                    }
+                    
+                    to {
+                        width: 82%;
+                        height: 215px;  
+                    }
+                }
+
+                animation-duration: 0.5s;
+                animation-name: changesize;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+    
+            .card-title {
+                font-family: 'bitter-reg';
+                color: #fff;
+                font-size: 14px;
+
+                .accent {
+                    font-family: 'opensans-bold';
+                    color: #FB7B7B;
+                    font-weight: 800;
+                }
+            }
+    
+            .card-random {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .card-word { 
+                    font-family: 'opensans-bold';
+                    color: #fff;
+                    font-size: 36px;
+                    text-align: center;
+                }
         
+                .card-baybayin {
+                    font-family: 'baydoc';
+                    color: #fff;
+                    font-size: 28px;
+                    text-align: center;
+                }
         
-    }
+                .card-pos {
+                    font-family: 'sourcesans-reg';
+                    color: #B6B6B6;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+    
+            .card-footer {
+                display: flex;
+                justify-content: flex-end;
 
-    .card-title {
-        position: absolute;
-        top: 30%;
-        font-size: 2em;
-        width: 100%;
-        font-weight: bold;
-        color: #fff;
-        font-family: serif;
+                p {
+                    font-family: 'opensans-reg';
+                    color: #fff;
+                    font-size: 6px;
+                    text-align: right;
+                    padding-right: 3px;
+                }
+                
+                img {
+                    width: 17px;
+                    height: 17px;
+                    align-self: center;
+                }
+            }
+        }
     }
-
-    .card-baybay {
-        position: absolute;
-        top: 45%;
-        font-size: 1.5em;
-        width: 100%;
-        font-weight: bold;
-        color: #fff;
-    }
-
-    .card-subtitle {
-        font-size: 1em;
-        position: absolute;
-        bottom: 20%;
-        width: 100%;
-        color: #fff;
-    }
-
-    .card-arrow {
-        margin-left: 7px;
-    }
-
 }
 
 

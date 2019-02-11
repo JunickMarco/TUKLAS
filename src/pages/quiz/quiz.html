@@ -1,29 +1,60 @@
-<ion-content class="card-background-page">
 
-  <div class="blue-half"></div>
+<ion-content>
 
-  <div class="head-center">
-    <h1 class="page-head">PRACTICE TEST</h1>
+  <div class="bg-half"></div>
+
+  <div class="page-wrap">
+    <div class="header">
+      <h1>QUIZ</h1>
+    </div>
+
+    <div class="menu">
+
+      <div class="item blue" (click)="navigateToQuizGrammarPage()">
+        <div class="icon">
+          <img class="icon-gra" src="../../assets/imgs/icon-grammar.png" alt="Grammar Icon">
+        </div>
+
+        <div class="description">
+            <h2>Grammar</h2>
+            <p>Learn about the structures of the Filipino Language.</p>
+        </div>
+      </div>
+
+      <div class="item red" (click)="navigateToQuizBaybayinPage()">
+        <div class="icon">
+          <img class="icon-bay" src="../../assets/imgs/icon-baybayin.png" alt="Baybayin Icon">
+        </div>
+
+        <div class="description">
+            <h2>Baybayin</h2>
+            <p>Discover the Philippine ancient writing system.</p>
+        </div>
+      </div>
+
+      <div class="item green" (click)="navigateToQuizIdiomsPage()">
+        <div class="icon">
+          <img class="icon-idio" src="../../assets/imgs/icon-idioms.png" alt="Idioms Icon">
+        </div>
+
+        <div class="description">
+            <h2>Idioms</h2>
+            <p>Know the Filipino idiomatic expressions.</p>
+        </div>
+      </div>
+
+      <div class="item purple" (click)="navigateToQuizIdiomsPage()">
+        <div class="icon">
+          <img class="icon-vocab" src="../../assets/imgs/icon-vocab.png" alt="Vocabulary Icon">
+        </div>
+
+        <div class="description">
+            <h2>Vocabulary</h2>
+            <p>Widen your knowledge.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
-
-  <div class="line-divide"></div>
-
-  <ion-card (click)="navigateToQuizGrammarPage()">
-    <!-- <img src="../../assets/imgs/pattern-one.png"/> -->
-    <div class="card-title">Filipino Grammar</div>
-    <!-- <div class="card-subtitle"></div> -->
-  </ion-card>
-
-  <ion-card (click)="navigateToQuizBaybayinPage()">
-    <!-- <img src="../../assets/imgs/pattern-five.jpg"/> -->
-    <div class="card-title">Baybayin</div>
-    <!-- <div class="card-subtitle"></div> -->
-  </ion-card>
-
-  <ion-card (click)="navigateToQuizIdiomsPage()">
-    <!-- <img src="../../assets/imgs/pattern-three.jpg"/> -->
-    <div class="card-title">Idioms</div>
-    <!-- <div class="card-subtitle"></div> -->
-  </ion-card>
-
+  
 </ion-content>
