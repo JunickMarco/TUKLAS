@@ -40,13 +40,25 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
-import { firebaseConfig } from './credentials';
+// import { firebaseConfig } from './credentials';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { IonicStorageModule } from '@ionic/storage';
 import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpClientModule } from '@angular/common/http';
+
+import { HttpModule } from '@angular/http';
+import { FcmProvider } from '../providers/fcm/fcm';
+import { Firebase } from '@ionic-native/firebase/ngx';
+const config = {
+  apiKey: "AIzaSyB__ZukLK_JVXiVYNzoHPwArqjRQHTjah8",
+  authDomain: "thesis-6214c.firebaseapp.com",
+  databaseURL: "https://thesis-6214c.firebaseio.com",
+  projectId: "thesis-6214c",
+  storageBucket: "thesis-6214c.appspot.com",
+  messagingSenderId: "649781282"
+};
 @NgModule({
   declarations: [
     MyApp,
@@ -77,14 +89,17 @@ import { HttpClientModule } from '@angular/common/http';
     QuizIdiomsPage,
     AboutAppPage,
     FlashCardComponent
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(), //for local storage
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
-    HttpClientModule
+    HttpClientModule,
+    HttpModule,
+   
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -121,7 +136,10 @@ import { HttpClientModule } from '@angular/common/http';
     SplashScreen,
     SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    Firebase,
+    FcmProvider,
+    
   ]
   
 })
