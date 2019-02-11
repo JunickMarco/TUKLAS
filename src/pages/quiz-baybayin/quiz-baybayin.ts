@@ -80,10 +80,12 @@ export class QuizBaybayinPage {
 
   }
 
-  restartQuiz() {
+  restartQuiz(): void {
     this.score = 0;
-    this.slides.lockSwipes(false);
-    this.slides.slideTo(1, 1000);
-    this.slides.lockSwipes(true);
+    this.navCtrl.push(QuizBaybayinPage);
+    // this.slides.lockSwipes(false);
+    // this.slides.slideTo(1, 1000);
+    // this.slides.lockSwipes(true);
+
   }
 }

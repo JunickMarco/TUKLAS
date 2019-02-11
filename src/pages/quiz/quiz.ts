@@ -1,8 +1,10 @@
+import { QuizVocabularyPage } from './../quiz-vocabulary/quiz-vocabulary';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QuizBaybayinPage } from '../quiz-baybayin/quiz-baybayin';
 import { QuizGrammarPage } from '../quiz-grammar/quiz-grammar';
 import { QuizIdiomsPage } from '../quiz-idioms/quiz-idioms';
+
 
 /**
  * Generated class for the QuizPage page.
@@ -34,6 +36,10 @@ export class QuizPage {
 
   navigateToQuizBaybayinPage(): void {
     this.navCtrl.push(QuizBaybayinPage);
+
+  }
+  navigateToQuizVocabularyPage(): void {
+    this.navCtrl.push(QuizVocabularyPage);
 
   }
 }

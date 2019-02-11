@@ -6,8 +6,8 @@ import { IdiomPage } from '../idiom/idiom';
 import * as algoliasearch from 'algoliasearch';
 import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection } from '@angular/fire/firestore';
 import 'rxjs/add/operator/map';
-import { Subject } from 'rxjs/Subject';
-import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import {switchMap} from 'rxjs/operators';
 import 'rxjs/add/operator/map';
 

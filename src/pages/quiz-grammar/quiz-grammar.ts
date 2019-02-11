@@ -81,10 +81,12 @@ export class QuizGrammarPage {
 
   }
 
-  restartQuiz() {
+  restartQuiz(): void {
     this.score = 0;
-    this.slides.lockSwipes(false);
-    this.slides.slideTo(1, 1000);
-    this.slides.lockSwipes(true);
+    this.navCtrl.push(QuizGrammarPage);
+    // this.slides.lockSwipes(false);
+    // this.slides.slideTo(1, 1000);
+    // this.slides.lockSwipes(true);
+
   }
 }
