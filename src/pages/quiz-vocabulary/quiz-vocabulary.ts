@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 /**
- * Generated class for the QuizIdiomsPage page.
+ * Generated class for the QuizVocabularyPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,10 +10,11 @@ import { DataProvider } from '../../providers/data/data';
 
 @IonicPage()
 @Component({
-  selector: 'page-quiz-idioms',
-  templateUrl: 'quiz-idioms.html',
+  selector: 'page-quiz-vocabulary',
+  templateUrl: 'quiz-vocabulary.html',
 })
-export class QuizIdiomsPage {
+export class QuizVocabularyPage {
+
   @ViewChild('slides') slides: any;
 
   hasAnswered: boolean = false;
@@ -29,7 +30,7 @@ export class QuizIdiomsPage {
   ionViewDidLoad() {
     this.slides.lockSwipes(true);
 
-    this.dataService.loadIdioms().then((data) => {
+    this.dataService.loadVocab().then((data) => {
 
       data.map((question) => {
 
@@ -82,7 +83,7 @@ export class QuizIdiomsPage {
 
   restartQuiz(): void {
     this.score = 0;
-    this.navCtrl.push(QuizIdiomsPage);
+    this.navCtrl.push(QuizVocabularyPage);
     // this.slides.lockSwipes(false);
     // this.slides.slideTo(1, 1000);
     // this.slides.lockSwipes(true);

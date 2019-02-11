@@ -59,6 +59,21 @@ export class DataProvider {
         resolve(this.data);
       });
     });
+    
+  }
+  loadVocab() {
+
+    if (this.data) {
+      return Promise.resolve(this.data);
+    }
+
+    return new Promise(resolve => {
+
+      this.http.get('assets/data/questions-vocabulary.json').subscribe((data: any) => {
+        this.data = data.questions;
+        resolve(this.data);
+      });
+    });
 
   }
 }

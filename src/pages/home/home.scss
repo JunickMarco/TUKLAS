@@ -92,12 +92,12 @@ page-home {
     
             padding: 5% 2% 2% 2%;
 
-            &:active {
+&:active {
                 background: linear-gradient(0deg, rgba(118, 118, 118, 0.76), rgba(118, 118, 118, 0.76)), url(../../assets/imgs/wotd.png) no-repeat center;
-                
+                background-size: cover;
                 // transition: 0.3s;
 
-                @keyframes changesize {
+                @keyframes changesizewotd {
                     from {
                         width: 80%;
                         height: 208px;
@@ -110,7 +110,7 @@ page-home {
                 }
 
                 animation-duration: 0.5s;
-                animation-name: changesize;
+                animation-name: changesizewotd;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
             }

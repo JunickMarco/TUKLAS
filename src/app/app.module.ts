@@ -1,4 +1,5 @@
 
+
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -32,7 +33,7 @@ import { BaybayinActionPage } from '../pages/baybayin-action/baybayin-action';
 import { QuizBaybayinPage } from '../pages/quiz-baybayin/quiz-baybayin';
 import { QuizGrammarPage } from '../pages/quiz-grammar/quiz-grammar';
 import { QuizIdiomsPage } from '../pages/quiz-idioms/quiz-idioms';
-
+import { QuizVocabularyPage } from './../pages/quiz-vocabulary/quiz-vocabulary';
 import { AboutAppPage } from '../pages/about-app/about-app';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -48,7 +49,6 @@ import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpClientModule } from '@angular/common/http';
 
-<<<<<<< HEAD
 import { HttpModule } from '@angular/http';
 import { FcmProvider } from '../providers/fcm/fcm';
 import { Firebase } from '@ionic-native/firebase/ngx';
@@ -60,10 +60,6 @@ const config = {
   storageBucket: "thesis-6214c.appspot.com",
   messagingSenderId: "649781282"
 };
-=======
-import { Keyboard } from '@ionic-native/keyboard/ngx';
-
->>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
 @NgModule({
   declarations: [
     MyApp,
@@ -92,13 +88,10 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
     QuizBaybayinPage,
     QuizGrammarPage,
     QuizIdiomsPage,
+    QuizVocabularyPage,
     AboutAppPage,
-<<<<<<< HEAD
     FlashCardComponent
 
-=======
-    FlashCardComponent,
->>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
   ],
   imports: [
     BrowserModule,
@@ -138,6 +131,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
     QuizBaybayinPage,
     QuizGrammarPage,
     QuizIdiomsPage,
+    QuizVocabularyPage,
     AboutAppPage,
   ],
   providers: [
@@ -146,13 +140,9 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
     SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
-<<<<<<< HEAD
     Firebase,
     FcmProvider,
     
-=======
-    Keyboard
->>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
   ]
   
 })
