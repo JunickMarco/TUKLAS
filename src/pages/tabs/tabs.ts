@@ -6,6 +6,7 @@ import { LearnPage } from '../learn/learn';
 import { QuizPage } from '../quiz/quiz';
 import { WotdPage } from '../wotd/wotd';
 
+
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -18,6 +19,6 @@ export class TabsPage {
   tab5Root = AboutPage;
 
   constructor() {
-
+    
   }
 }

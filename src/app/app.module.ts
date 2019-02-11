@@ -48,6 +48,7 @@ import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { HttpClientModule } from '@angular/common/http';
 
+<<<<<<< HEAD
 import { HttpModule } from '@angular/http';
 import { FcmProvider } from '../providers/fcm/fcm';
 import { Firebase } from '@ionic-native/firebase/ngx';
@@ -59,6 +60,10 @@ const config = {
   storageBucket: "thesis-6214c.appspot.com",
   messagingSenderId: "649781282"
 };
+=======
+import { Keyboard } from '@ionic-native/keyboard/ngx';
+
+>>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
 @NgModule({
   declarations: [
     MyApp,
@@ -88,8 +93,12 @@ const config = {
     QuizGrammarPage,
     QuizIdiomsPage,
     AboutAppPage,
+<<<<<<< HEAD
     FlashCardComponent
 
+=======
+    FlashCardComponent,
+>>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
   ],
   imports: [
     BrowserModule,
@@ -129,7 +138,7 @@ const config = {
     QuizBaybayinPage,
     QuizGrammarPage,
     QuizIdiomsPage,
-    AboutAppPage
+    AboutAppPage,
   ],
   providers: [
     StatusBar,
@@ -137,9 +146,13 @@ const config = {
     SpeechRecognition,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
+<<<<<<< HEAD
     Firebase,
     FcmProvider,
     
+=======
+    Keyboard
+>>>>>>> f6ff5b9143fbbd061dd741e2540e7b43670f8bb7
   ]
   
 })
