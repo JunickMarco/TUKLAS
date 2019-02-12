@@ -31,7 +31,7 @@ interface Note {
   wordName: string;
 }
 
-interface RandomNumber{
+interface RandomNumber {
   random: number;
 }
 
@@ -65,87 +65,13 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, private alertCtrl: AlertController, private afs: AngularFirestore, private storage: Storage, private http: HttpClient, public fcm: FcmProvider,
     public toastCtrl: ToastController, private splashScreen: SplashScreen,
-    private statusBar: StatusBar,) {
+    private statusBar: StatusBar, ) {
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
     });
 
     this.index = this.client.initIndex("tuklas_WORDS")
     this.matches = [];
-
-    // this.http.get('https://us-central1-thesis-6214c.cloudfunctions.net/sample').subscribe((response) => {
-    //   console.log(response);
-    //   this.rand = response;
-    //   console.log(this.rand)
-    // });
-    // http.get('https://us-central1-thesis-6214c.cloudfunctions.net/corsEnabledFunction')
-    //   .subscribe((data) => {
-    //     console.log('data', data);
-    //   })
-    // this.rand = http.get(this.url, { 
-    //   responseType: 'text' 
-    // })
-    // console.log(this.rand)
-    // console.log(http.get(this.url, {
-    //   responseType: 'text'
-    // }))
-    // plt.ready().then(() => {
-    //   fcm.getToken()
-    //   fcm.onNotifications().pipe(
-    //     tap(msg => {
-    //       // show a toast
-    //       const toast = toastCtrl.create({
-    //         message: msg.body,
-    //         duration: 3000
-    //       });
-    //       toast.present();
-    //     })
-    //   ).subscribe()
-    // })
-    // this.initializeApp();
-   
-  }
-  // private async presentToast(message) {
-  //   const toast = await this.toastCtrl.create({
-  //     message,
-  //     duration: 3000
-  //   });
-  //   toast.present();
-  // }
-  // private notificationSetup() {
-  //   this.fcm.getToken();
-  //   this.fcm.onNotifications().subscribe(
-  //     (msg) => {
-  //       if (this.plt.is('ios')) {
-  //         this.presentToast(msg.aps.alert);
-  //       } else {
-  //         this.presentToast(msg.body);
-  //       }
-  //     });
-  // }
-  // initializeApp() {
-  //   this.plt.ready().then(() => {
-  //     this.statusBar.styleDefault();
-  //     this.splashScreen.hide();
-  //     this.notificationSetup();
-  //   });
-  // }
-  
-
-  ionViewDidLoad(){
-  //  this.fcm.getToken()
-  //  this.fcm.listenToNotifications().pipe(
-  //    tap(msg => {
-  //      const toast = this.toastCtrl.create({
-  //        message: msg.body,
-  //        duration: 3000
-  //      })
-  //      toast.present()
-  //    })
-  //  )
-  //  .subscribe()
-    
-    
   }
 
   //searchbox
@@ -186,28 +112,6 @@ export class HomePage {
   }
 
 
-  ngOnInit() {
-
-    // console.log(this.generateWord());
-    // interval(1000).subscribe(() => {
-    //   
-    // });
-
-    //permission for speechrecognition
-    this.speechRecognition.hasPermission()
-      .then((hasPermission: boolean) => {
-
-        if (!hasPermission) {
-          this.speechRecognition.requestPermission()
-            .then(
-              () => console.log('Granted'),
-              () => console.log('Denied')
-            )
-        }
-
-      })
-  }
-
   //generate WOTD
   ionViewDidEnter() {
     this.numberCollection = this.afs.collection('random', ref => {
@@ -225,139 +129,9 @@ export class HomePage {
       this.wordsWOTD = this.wordsCollection1.valueChanges();
       console.log(this.wordsWOTD)
     });
-    // this.plt.ready().then(() => {
-    //   this.fcm.getToken();
-    //   // Listen to incoming messages
-    //   this.fcm.listenToNotifications().pipe(
-    //     tap(msg => {
-
-    //       let messageText: string;
-    //       if (this.plt.is('android')) {
-    //         messageText = msg.body;
-    //       }
-
-    //       if (this.plt.is('ios')) {
-    //         messageText = msg.aps.alert;
-    //       }
-
-    //       // show a toast
-    //       const toast = this.toastCtrl.create({
-    //         message: messageText,
-    //         duration: 3000,
-    //         position: 'top'
-    //       });
-    //       toast.present();
-
-    //     })
-    //   )
-    //     .subscribe();
-    // })
-    // this.hasOneDayPassed();
-    // this.generateWord();
-
-    // this.storage.get("tryy").then((tryy) => {
-    //   console.log(tryy)
-      
-    // });
-  }
-
-  //speech recognition function
-  startListening() {
-    return new Promise<any>((resolve, reject) => {
-
-      let options = {
-        language: 'en-US'
-      }
-      this.speechRecognition.startListening().subscribe(matches => {
-        console.log(matches)
-        this.matches = matches;
-        this.cd.detectChanges();
-      });
-      this.isRecording = true;
-
-      setTimeout(() => {
-        resolve();
-      }, 5000);
-    });
-  }
-
-  stopListening() { //for ios only
-    this.speechRecognition.stopListening().then(() => {
-      this.isRecording = false;
-    })
-  }
-  isIos() {
-    return this.plt.is('ios');
-  }
-  presentConfirm() {
-
-    var options = {
-      title: 'Choose the word',
-      message: 'What did you say?',
-      inputs: [],
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          handler: () => {
-            console.log('Cancel clicked');
-          }
-        },
-        {
-          text: 'Ok',
-          // handler: data => {
-          //   console.log(data);
-          // }
-          handler: (data: string) => {
-            console.log(data);
-            this.selectedItem = data + " ";
-
-          }
-        }
-      ]
-    };
-
-    options.inputs = [];
-
-    // adds radio button
-    for (let i = 0; i < this.matches.length; i++) {
-      options.inputs.push({ name: 'options', value: this.matches[i], label: this.matches[i], type: 'radio' });
-    }
-
-    let alert = this.alertCtrl.create(options);
-    alert.present();
 
   }
 
-  global() {
-    this.startListening().then(res => this.presentConfirm());
-  }
-
-  //WOTD function
-
-  // hasOneDayPassed() {
-  //   var date = new Date().toLocaleDateString();
-
-  //   if (localStorage.yourapp_date == date)
-  //     return false;
-
-  //   localStorage.yourapp_date = date;
-  //   return true;
-  // }
-
-  // generateWord() {
-  //   if (!this.hasOneDayPassed()) return false;
-  //   this.random = Math.floor((Math.random() * 20) + 1);
-  //   this.storage.get("tryy").then((tryy) => {
-  //     console.log(tryy)
-  //     if (tryy == this.random) {
-  //       this.random = Math.floor((Math.random() * 20) + 1);
-  //     }
-  //     else {
-  //       this.storage.set("tryy", this.random);
-  //     }
-  //   });
-  // }
 
 
 }
