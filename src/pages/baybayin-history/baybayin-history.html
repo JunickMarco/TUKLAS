@@ -1,85 +1,53 @@
-<ion-content #pageTop>
 
-  <div class="yellow-half"></div>
-
-  <div class="action-bar">
-    <button class="btn-icon" (click)="navigateToBaybayinPage()">
-      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-    </button>
-  </div>
-
-  <div class="divide"></div>
-
-  <div class="lesson">
-
-    <div class="second">
-      <h1>Introduction</h1>
-      <p>
-        Baybayin was noted by the Spanish priest Pedro Chirino in 1604 and Antonio de Morga in 1609 to be known by most, and was generally used for personal writings, poetry, etc. According to William Henry Scott, there were some datus from the 1590s who could not sign affidavits or oaths, and witnesses who could not sign land deeds in the 1620s. There is no data on when this level of literacy was first achieved, and no history of the writing system itself. There are at least six theories about the origins of Baybayin.      </p>
+<ion-content>
+    <div class="nav-half"></div>
+  
+    <div class="action-bar">
+  
+      <div class="back" (click)="navigateToBaybayinPage()">
+        <ion-icon name="arrow-back" class="action-icon"></ion-icon>
+      </div>
+  
+      <div class="title">
+        <p>Baybayin</p>
+      </div>
+       
     </div>
-     
+  
+    <div class="content-wrapper">
+  
+      <div class="lesson-list">
+  
+        <div class="lesson-box">
+          <div class="lesson-title">
+              <div class="lesson-icon">
+                  <img src="../../assets/imgs/icon-baybayin-history.png" alt="History Icon">
+                </div>
 
-      <div class="accent">
-        <h1>Kawi</h1>
-        <p>
-          Kawi originated in Java, and was used across much of Maritime Southeast Asia.
-        </p>
+              <div class="lesson-name">
+                <h1>History</h1>
+              </div>
+          </div>
+          
+  
+          <div class="lesson-content">
+              <h2>Contents</h2>
+              <ul class="content-list">
+                <li>Classification & Terminology</li>
+                <li>Filipino vs Tagalog</li>
+                <li>Early History of Filipino Language</li>
+                <li>Early Development of the Written Filipino Language</li>
+                <li>Spanish Influence on the Tagalog Language</li>
+                <li>The Philippines After Independence</li>
+                <li>Filipino as an Official Language</li>
+                <li>Filipino Language Today</li>
+              </ul>
+          </div>
+        </div>
+  
+  
       </div>
-    
-      <div class="second">
-        <h1>Laguna Copperplate Inscription</h1>
-        <p>
-          The Laguna Copperplate Inscription is the earliest known written document found in the Philippines.
-        </p>
-
-      </div>
-      
-
-      <div class="accent">
-        <h1>Butuan Ivory Seal</h1>
-        <p>
-          It is a legal document, and has inscribed on it a date of Saka era 822, corresponding to April 21, 900 AD Laguna Copperplate Inscription#cite note-bibingka-1. It was written in the Kawi script in a variety of Old Malay containing numerous loanwords from Sanskrit and a few non-Malay vocabulary elements whose origin is ambiguous between Old Javanese and Old Tagalog. One hypothesis therefore reasons that, since Kawi is the earliest attestation of writing on the Philippines, then Baybayin may be descended from Kawi.
-        </p>
-        <p>
-          A second example of Kawi script can be seen on the Butuan Ivory Seal, though it has not been dated.
-        </p>
-        <p>
-          An earthenware burial jar, called the “Calatagan Pot,” found in Batangas is inscribed with characters strikingly similar to Baybayin, and is claimed to have been inscribed ca. 1300 AD. However, its authenticity has not yet been proven.
-        </p>
-      </div>
-      
-      <div class="second">
-    <h1>Old Sumatran “Malay” scripts</h1>
-    <p>Another hypothesis states that a script or script used to write one of the Malay languages was adopted and became Baybayin. In particular, the Pallava script from Sumatra is attested to the 7th century.</p>
-      </div>
-     
-
-      <div class="accent">
-       <h1>Sulawesi</h1>
-       <p>
-        The Liboginese and/or Makassarese scripts of Sulawesi could have been introduced or borrowed and adapted into Baybayin.
-       </p>
-      </div>
-
-      <div class="second">
-      <h1>Old Assamese</h1>
-      <p>
-        Assamese is a variant of Eastern Nagari script, a precursor to Devanagari. This hypothesis states that a version of this script was introduced to the Philippines via Bengal, which evolved into Baybayin.
-      </p>
-      </div>
-
-      <div class="accent">
-        <h1>Cham</h1>
-        <p>
-          Finally, an early Cham script from Champa—in what is now southern Vietnam and southeastern Cambodia—could have been introduced or borrowed and adapted into Baybayin.
-        </p>
-      </div>
-      
-  </div>
-
-  <div class="btn-area">
-    <button class="btn-icon backTop" (click)="pageScroller()">BACK TO TOP</button>
-  </div>
-
-
+  
+    </div>
 </ion-content>
+  

@@ -1,118 +1,53 @@
-<ion-content #pageTop>
-<!-- 
-  <div class="yellow-half"></div> -->
 
-  <div class="action-bar">
-    <button class="btn-icon" (click)="navigateToGrammarPage()">
-      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-    </button>
-    <p>The Filipino Language</p>
-  </div>
-<!-- 
-  <div class="divide"></div> -->
-
-  <!-- <div class="lesson">
-
-    <div class="second">
-      <h1>Introduction</h1>
-      <p>
-        The Filipino language is based on the Tagalog language, which is classified as a member of the Austronesian, or Malayo-Polynesian, language family. One of the world’s largest language families, the Austronesian language family is divided into two groups, Central-Eastern and Western. Filipino belongs to the Western, along with the Malay, Indonesian and Javanese languages.
-      </p>
-      <p>
-        Technically, Filipino is considered a variant of the native Tagalog language of the Philippines. Practically speaking, however, Filipino and Tagalog are essentially the same language. Filipino is considered the proper term, especially by Filipino-speakers who are not of the Tagalog group of peoples.
-      </p>
+<ion-content>
+    <div class="nav-half"></div>
+  
+    <div class="action-bar">
+  
+      <div class="back" (click)="navigateToGrammarPage()">
+        <ion-icon name="arrow-back" class="action-icon"></ion-icon>
+      </div>
+  
+      <div class="title">
+        <p>Grammar</p>
+      </div>
+       
     </div>
-     
+  
+    <div class="content-wrapper">
+  
+      <div class="lesson-list">
+  
+        <div class="lesson-box">
+          <div class="lesson-title">
+              <div class="lesson-icon">
+                  <img src="../../assets/imgs/icon-grammar-lang.png" alt="Grammar Icon">
+                </div>
 
-      <div class="accent">
-        <h1>Early History of the Filipino Language</h1>
-        <p>
-          Relatively little is known about the Tagalog language upon which Filipino is based. Some linguists maintain that, like the peoples of the Central Philippines, the Tagalog people originated along the Northeastern Mindanao or Eastern Visayas.
-        </p>
-        <p>
-          The first written example of the Tagalog language dates from circa 900 AD. Fragments of Tagalog, Sanskrit, Malay and Javanese appear in the Laguna Copperplate Inscription. The first known book written in the Tagalog language is a Christian Doctrine. Dating from the late 16th century, versions were written in both Spanish and Tagalog.
-        </p>
+              <div class="lesson-name">
+                <h1>The Filipino Language</h1>
+              </div>
+          </div>
+          
+  
+          <div class="lesson-content">
+              <h2>Contents</h2>
+              <ul class="content-list">
+                <li>Classification & Terminology</li>
+                <li>Filipino vs Tagalog</li>
+                <li>Early History of Filipino Language</li>
+                <li>Early Development of the Written Filipino Language</li>
+                <li>Spanish Influence on the Tagalog Language</li>
+                <li>The Philippines After Independence</li>
+                <li>Filipino as an Official Language</li>
+                <li>Filipino Language Today</li>
+              </ul>
+          </div>
+        </div>
+  
+  
       </div>
-    
-      <div class="second">
-        <h1>Early Development of the Written Filipino Language</h1>
-        <p>
-          Two versions of the Christian Doctrine of 1593, the first known book written in Tagalog, were created – one written in a Latin alphabet and the other in the Baybayin script. Baybayin is an ancient writing system of the Tagalog language that existed in the Philippines before the arrival of the Spanish.
-        </p>
-        <p>
-          While it bears some resemblance to south Indian languages that influenced the development of many Southeast Asian languages, Baybayin is believed to have descended from the Buginese script of the Bugis people of Sulawesi, an island south of the Philippines.
-        </p>
-        <p>
-          Development of the written Filipino language progressed immensely throughout the years of Spanish occupation. Spanish missionaries and members of the clergy worked on manuals and vocabulary guides to Tagalog, which helped stabilize the language.
-        </p>
-      </div>
-      
-
-      <div class="accent">
-        <h1>Spanish Influence on the Tagalog Language</h1>
-        <p>
-          In 1565, the first Spanish settlement was established in the Philippines and a period of Spanish colonial rule ensued. Throughout the period of Spanish dominance in the Philippines, the Tagalog language underwent significant evolution.
-        </p>
-        <p>
-          Thanks to Spanish influence, Tagalog gained an enormous number of Spanish language loanwords – today, an estimated 40 percent of informal Tagalog vocabulary used in common speech consists of Spanish loanwords or words derived from Spanish origins. Derived from Tagalog, the modern Filipino language has retained this influence today.
-        </p>
-      </div>
-      
-      <div class="second">
-        <h1>The Philippines After Independence</h1>
-        <p>
-          Spain continued to dominate over the Philippines until the end of the Spanish-American War in 1898, at which point the United States was awarded control of the Philippines. The Philippines did not gain total freedom until 1946, when it became a fully independent democratic republic.
-        </p>
-        <p>
-          Philippine President Ferdinand Marcos imposed a state of martial law in the Republic in 1972, resulting in protests and the development of the People Power Movement. Marcos’s regime was dismantled in 1986.
-        </p>
-      </div>
-     
-
-      <div class="accent">
-        <h1>Filipino as an Official Language</h1>
-        <p>
-          One year after Ferdinand Marcos’ fall, a new Philippine democratic constitution was ratified. The 1987 constitution of the Republic of the Philippines designated Filipino as the official national language of the Republic.
-        </p>
-        <p>
-          The linguistic debate was revived again in the 1970s and with the drafting of a new Philippine constitution in the 1980s. The 1987 constitution officially declared “Filipino” to be the national language, and made provisions for future evolution of the language in accordance with other Philippine languages. Today many Filipino-speakers, especially those who are non-Tagalogs, refer to their language as “Tagalog-based.”
-        </p>
-      </div>
-
-      <div class="second">
-        <h1>Filipino Language Today</h1>
-        <p>
-          With approximately 14 million members, native Tagalog-speakers make up one of the largest linguistic and cultural groups of the Philippines. Today Filipino serves as the national language of the Philippines and, along with English, is one of the country’s official languages – an impressive feat considering that more than 100 languages exist within the Philippines. Filipino is taught in schools throughout the Philippines and is the official language of education and business.
-        </p>
-        <p>
-          Filipino can also be found in immigrant communities in Canada, the United Kingdom, the United States, and Hong Kong. The Filipino language is spoken as a first language by an estimated 15 million people around the world.
-        </p>  
-      </div>
-    
-  </div> -->
-
-  <header id="showcase">
-    <h1>Welcome to the Beach</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora animi blanditiis, neque rerum, atque adipisci.</p>
-    <a href="#" class="button">Read More</a>
-  </header>
-
-  <section id="section-a">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure rerum ad voluptate quod saepe dicta eius nisi, laboriosam, nulla blanditiis natus sequi modi! Quibusdam aut possimus, rerum id, facilis voluptatibus iste numquam. Accusantium nisi, provident repellat sit, numquam nam ducimus tempora sint officiis laudantium cupiditate dolorem temporibus. Odit explicabo ipsum unde nesciunt tempora, incidunt nulla eveniet provident eius est excepturi harum, quia corporis beatae iure repellat magnam atque quod quis inventore laboriosam facilis suscipit. Obcaecati repellendus ipsum aperiam iusto quae, omnis alias debitis aliquam, temporibus ipsam facilis veniam magni minima nobis ad soluta ex error. Sint facilis blanditiis aliquid. Quo!</p>
-  </section>
-  <section id="section-b">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure rerum ad voluptate quod saepe dicta eius nisi, laboriosam, nulla blanditiis natus sequi modi! Quibusdam aut possimus, rerum id, facilis voluptatibus iste numquam. Accusantium nisi, provident repellat sit, numquam nam ducimus tempora sint officiis laudantium cupiditate dolorem temporibus. Odit explicabo ipsum unde nesciunt tempora, incidunt nulla eveniet provident eius est excepturi harum, quia corporis beatae iure repellat magnam atque quod quis inventore laboriosam facilis suscipit. Obcaecati repellendus ipsum aperiam iusto quae, omnis alias debitis aliquam, temporibus ipsam facilis veniam magni minima nobis ad soluta ex error. Sint facilis blanditiis aliquid. Quo!</p>
-  </section>
-  <section id="section-c">
-    <div class="box-1">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam, eligendi alias quod ducimus optio, nostrum at fugiat, consequatur blanditiis quos quasi eos maxime repellendus sapiente natus expedita vitae voluptatibus.
+  
     </div>
-    <div class="box-2">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam, eligendi alias quod ducimus optio, nostrum at fugiat, consequatur blanditiis quos quasi eos maxime repellendus sapiente natus expedita vitae voluptatibus.
-    </div>
-    <div class="box-3">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam, eligendi alias quod ducimus optio, nostrum at fugiat, consequatur blanditiis quos quasi eos maxime repellendus sapiente natus expedita vitae voluptatibus.
-    </div>
-  </section>
-
 </ion-content>
+  

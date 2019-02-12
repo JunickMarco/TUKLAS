@@ -1,54 +1,184 @@
 page-learn-idioms {
 
-    .yellow-half {
+    
+    ion-content {
+        background-color: #F7F7F7 !important;
+    }
+
+    .nav-half {
         width: 100%;
-        height: 13%;
-        background-color: #FFD15C;
+        height: 200px;
+        margin-top: -35px;
+        transform: skew(0deg, -10deg);
+        background-color: #A0FFCC;
         position: absolute;
         z-index: -1;
     }
-    
-    .action-icon {
+
+    .action-bar {
+        width: 100%;
+        max-height: 15%;
+        margin-top: 10px;
+
+        padding: 20px;
+        // background-color: red;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-family: 'bitter-bold';
+            color: #3B3B3B;
+            font-size: 24px;
+        }
+    }
+
+     .action-icon {
         color: #fff;
         font-size: 2em;
     }
 
-    .divide {
-        margin-bottom: 30px;
-    }
-
-    ion-item-group {
-        width: 90%;
+    .content-wrapper {
+        width: 100%;
         margin: 0 auto;
-    }
+        padding: 0 20px;
 
-    ion-content {
-        // background: #E5E6EB !important;
-        // background-color: #ffffff;
-        // box-shadow: 10px 10px 14px -6px rgba(244,247,245,1);
-    }
-
-    .action-bar {
         display: flex;
-        padding-top: 20px;
-        padding-left: 10px;
-        margin-bottom: 20px;
+        flex-direction: column;
     }
 
-    .btn-icon {
-        background-color: transparent;
-    }
-
-    .bg-color{
-        background-color: #FFD15C;
-        box-shadow: 10px 10px 14px -6px rgba(255,209,92,0.28);
-        margin-bottom: 5px;
-        border-radius: 10px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;  
-    }
+    .lesson-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     
+        .lesson-box {
+            width: 322px;
+
+            background: #fff;
+            background-size: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+
+            margin: 2%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .lesson-title {
+                display: flex;
+                align-items: center;
+                width: 90%;
+                margin-top: 10px;
+
+                .lesson-icon {
+                    width: 35%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        height: 86px;
+                    }
+                }
+
+                .lesson-name {
+                    width: 70%;
+                    padding-left: 5px;
+
+                    font-family: 'opensans-extrabold';
+                    color: #000;
+                    font-size: 36px;
+                }
+            }
+
+
+            .lesson-content {
+                padding: 10px;
+                
+                h2 {
+                    font-family: 'opensans-bold';
+                    color: #000;
+                    font-size: 18px;  
+                }
+
+                .content-list{
+                    list-style-type: none;
+                    margin-top: 5px;
+                    padding: 0;
+    
+                    display: flex;
+                    flex-wrap: wrap;
+    
+                    li {
+                        margin: 5px;
+                        padding: 3px 5px; 
+    
+                        background: #A0FFCC;
+                        // border: 1px solid #fff;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+    
+                        font-family: 'sourcesans-reg';
+                        color: #000;
+                        font-size: 13px;
+
+                        &:active {
+                            background: rgb(206, 255, 229);
+                            transition: 0.1s;         
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    .letter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 15px;
+
+        .letter-start {
+            font-family: 'opensans-extrabold';
+            color: #000;
+            font-size: 36px;
+        }
+    
+        .idiom-item {
+            width: 322px;
+    
+            background: #fff;
+            background-size: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+    
+            margin-bottom: 5px;
+            padding: 5px 10px;
+    
+            &:active {
+                background: rgb(212, 212, 212);
+                transition: 0.1s;         
+            }
+    
+            p {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 13px;
+            }
+        }
+    }
+
+    
+
     .div-color{
         background-color: #ffffff;
         opacity: 0.8;
@@ -56,4 +186,8 @@ page-learn-idioms {
         font-weight: bold;  
     }
 
+    ion-item-group {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

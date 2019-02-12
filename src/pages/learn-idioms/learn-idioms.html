@@ -1,157 +1,275 @@
+
 <ion-content>
+    <div class="nav-half"></div>
   
-    <div class="yellow-half"></div>
-
     <div class="action-bar">
-      <button class="btn-icon" (click)="navigateToLearnPage()">
+  
+      <div class="back" (click)="navigateToLearnPage()">
         <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-      </button>
+      </div>
+  
+      <div class="title">
+        <p>Idioms</p>
+      </div>
+       
     </div>
+  
+    <div class="content-wrapper">
+  
+      <div class="lesson-list">
+  
+        <div class="lesson-box">
+          <div class="lesson-title">
+              <div class="lesson-icon">
+                  <img src="../../assets/imgs/icon-idioms-idioms.png" alt="Idioms Icon">
+                </div>
 
-    <div class="divide"></div>
+              <div class="lesson-name">
+                <h1>Filipino Idioms</h1>
+              </div>
+          </div>
+          
+  
+          <div class="lesson-content">
+              <h2>Contents</h2>
+              <ul class="content-list">
+                <li>Classification & Terminology</li>
+              </ul>
+          </div>
+        </div>
 
-  <ion-item-group>
-    <ion-item-divider class="div-color">A</ion-item-divider>
-    <ion-item class="bg-color"*ngFor="let item of idioms1  | async" (click)="navigateToDetails(item)">{{ item.idiomName }} </ion-item>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>A</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms1  | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+        
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>B</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms2 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>K</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms11 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>D</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms4 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>H</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms8 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>I</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms9 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>L</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms12 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>M</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms13 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>N</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms14 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>P</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms16 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>S</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms19 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>T</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms20 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>U</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms21 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container">
+          <div class="letter-start">
+            <h2>W</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms23 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+      </div>
+  
     
-  </ion-item-group>
 
-  <ion-item-group>
-    <ion-item-divider class="div-color">B</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms2 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">K</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms11 | async" (click)="navigateToDetails(item)">{{
-      item.idiomName}}</ion-item>
-  </ion-item-group>
+    
   
-  <ion-item-group>
-    <ion-item-divider class="div-color">D</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms4 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">E</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms5 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group> -->
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">F</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms6 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">G</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms7 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group> -->
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">H</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms8 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">I</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms9 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">J</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms10 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group> -->
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">K</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms11 | async" (click)="navigateToDetails(item)">{{ item.idiomNamee}}</ion-item>
-  </ion-item-group> -->
   
-  <ion-item-group>
-    <ion-item-divider class="div-color">L</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms12 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">M</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms13 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">N</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms14 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">O</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms15 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">P</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms16 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">Q</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms17 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">R</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms18 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">E</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms5 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}
   
-  <ion-item-group>
-    <ion-item-divider class="div-color">S</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms19 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">T</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms20 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">U</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms21 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">V</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms22 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">W</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms23 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">X</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms24 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group>
-
-  <ion-item-group>
-    <ion-item-divider class="div-color">Y</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms25 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
-
-  <!-- <ion-item-group>
-    <ion-item-divider class="div-color">Z</ion-item-divider>
-    <ion-item class="bg-color" *ngFor="let item of idioms26 | async" (click)="navigateToDetails(item)">{{ item.idiomName
-      }}</ion-item>
-  </ion-item-group> -->
+  </ion-item>
+    </ion-item-group> -->
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">F</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms6 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}
+  
+  </ion-item>
+    </ion-item-group>
+  
+    <ion-item-group>
+      <ion-item-divider class="div-color">G</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms7 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}
+  
+  </ion-item>
+    </ion-item-group> -->
+  
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">J</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms10 | async" (click)="navigateToDetails(item)">{{ item.idiomName }}
+  
+  </ion-item>
+    </ion-item-group> -->
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">K</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms11 | async" (click)="navigateToDetails(item)">{{ item.idiomNamee}}
+  
+  </ion-item>
+    </ion-item-group> -->
+    
+    
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">O</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms15 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+  
+   
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">Q</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms17 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">R</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms18 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+    
+  
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">V</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms22 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+  
+  
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">X</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms24 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group>
+  
+    <ion-item-group>
+      <ion-item-divider class="div-color">Y</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms25 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+  
+    <!-- <ion-item-group>
+      <ion-item-divider class="div-color">Z</ion-item-divider>
+      <ion-item class="bg-color" *ngFor="let item of idioms26 | async" (click)="navigateToDetails(item)">{{ item.idiomName
+        }}</ion-item>
+    </ion-item-group> -->
+    </div>
 </ion-content>
+  

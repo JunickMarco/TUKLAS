@@ -1,68 +1,140 @@
 page-baybayin-intro {
 
-    .yellow-half {
+    ion-content {
+        background-color: #F7F7F7 !important;
+    }
+
+    .nav-half {
         width: 100%;
-        height: 13%;
-        background-color: #FFD15C;
+        height: 200px;
+        margin-top: -35px;
+        transform: skew(0deg, -10deg);
+        background-color: #FFA0A0;
         position: absolute;
         z-index: -1;
     }
 
-    .action-icon {
+    .action-bar {
+        width: 100%;
+        max-height: 15%;
+        margin-top: 10px;
+
+        padding: 20px;
+        // background-color: red;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-family: 'bitter-bold';
+            color: #3B3B3B;
+            font-size: 24px;
+        }
+    }
+
+     .action-icon {
         color: #fff;
         font-size: 2em;
     }
 
-    .action-bar {
-        display: flex;
-        padding-top: 20px;
-        padding-left: 10px;
-        margin-bottom: 20px;
-    }
-
-    .divide {
-        margin-bottom: 10px;
-    }
-
-    // ion-content {
-    //     background-color: #fdfdfe !important;
-    // }
-
-    .btn-icon {
-        background-color: transparent;
-    }
-
-    // .lesson {
-    //     margin: 0 auto;
-    //     padding: 10px;
-    // }
-
-    .backTop {
-        background-color: #FFD15C;
-        padding: 10px;
-        margin: 10px 0;
-        font-size: 1.01em;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .btn-area {
+    .content-wrapper {
+        width: 100%;
         margin: 0 auto;
-        width: 30%;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
     }
 
-    .accent {
-        background-color: rgb(253, 246, 229);
-        padding: 10px;
-    }
+    .lesson-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        .lesson-box {
+            width: 322px;
 
-    .second {
-        background-color: rgb(253, 251, 245);
-        padding: 10px;
-    }
+            background: #fff;
+            background-size: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+
+            margin: 2%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
 
-    .lesson h1 {
-        text-align: center;
+            .lesson-title {
+                display: flex;
+                align-items: center;
+                width: 90%;
+                margin-top: 10px;
+
+                .lesson-icon {
+                    width: 35%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        height: 56px;
+                    }
+                }
+
+                .lesson-name {
+                    width: 70%;
+                    padding-left: 5px;
+
+                    font-family: 'opensans-extrabold';
+                    color: #000;
+                    font-size: 36px;
+                }
+            }
+
+
+            .lesson-content {
+                padding: 10px;
+                
+                h2 {
+                    font-family: 'opensans-bold';
+                    color: #000;
+                    font-size: 18px;  
+                }
+
+                .content-list{
+                    list-style-type: none;
+                    margin-top: 5px;
+                    padding: 0;
+    
+                    display: flex;
+                    flex-wrap: wrap;
+    
+                    li {
+                        margin: 5px;
+                        padding: 3px 5px; 
+    
+                        background: #A8FFA0;
+                        // border: 1px solid #fff;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+    
+                        font-family: 'sourcesans-reg';
+                        color: #000;
+                        font-size: 13px;
+
+                        &:active {
+                            background: rgb(197, 255, 192);
+                            transition: 0.1s;         
+                        }
+                    }
+                }
+            }
+
+
+        }
     }
 }
