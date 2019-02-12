@@ -1,6 +1,6 @@
 
-import { Component, OnInit } from '@angular/core';;
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, OnInit, ViewChild } from '@angular/core';;
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { LearnPage } from '../learn/learn';
 import { IdiomPage } from '../idiom/idiom';
 import * as algoliasearch from 'algoliasearch';
@@ -255,5 +255,100 @@ export class LearnIdiomsPage implements OnInit{
     this.navCtrl.push(LearnPage);
  }
 
+  @ViewChild('pageTop') pageTop: Content;
+  @ViewChild(Content) content: Content;
+  @ViewChild('target_A') target_A: any;
+  @ViewChild('target_B') target_B: any;
+  @ViewChild('target_K') target_K: any;
+  @ViewChild('target_D') target_D: any;
+  @ViewChild('target_H') target_H: any;
+  @ViewChild('target_I') target_I: any;
+  @ViewChild('target_L') target_L: any;
+  @ViewChild('target_M') target_M: any;
+  @ViewChild('target_N') target_N: any;
+  @ViewChild('target_P') target_P: any;
+  @ViewChild('target_S') target_S: any;
+  @ViewChild('target_T') target_T: any;
+  @ViewChild('target_U') target_U: any;
+  @ViewChild('target_W') target_W: any;
+ 
+
+ /**
+  * Method to scroll to top
+  */
+ public pageScroller(){
+   //scroll to page top
+   this.pageTop.scrollToTop();
+ }
+
+ public scrollElementA() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_A.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementB() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_B.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementK() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_K.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementD() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_D.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementH() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_H.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementI() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_I.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementL() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_L.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementM() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_M.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementN() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_N.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementP() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_P.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementS() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_S.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementT() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_T.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementU() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_U.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementW() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_W.nativeElement.offsetTop, 500);
+  }
 
 }

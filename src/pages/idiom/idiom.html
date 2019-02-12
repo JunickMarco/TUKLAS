@@ -1,37 +1,49 @@
+
 <ion-content>
+  <div class="nav-half"></div>
 
-    <div class="blue-half"></div>
+  <div class="action-bar">
 
-    <div class="action-bar">
-      <button class="btn-icon" (click)="navigateToLearnIdiomsPage()">
-        <ion-icon name="arrow-back"></ion-icon>
-      </button>
+    <div class="back" (click)="navigateToLearnIdiomsPage()">
+      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
     </div>
 
-    <div class="idiom-card">
-
-      <div class="card-head">
-        <span class="idiom-primary">{{idiomName}}</span>
-      </div>
-
-      <div class="line-divide"></div>
-
-        <h2 class="idiom-subhead mean-sh">Meaning</h2>
-        <p class="meaning">: {{meanEng}}</p>
-
-        <h2 class="idiom-subhead mean-sh">Kahulugan</h2>
-        <p class="meaning">: {{meanFil}}</p>
- 
-
-        <div class="line-divide"></div>
-
-      <div class="copyrights">
-        <p class="chead">© Meaning retreieved from {{idiomCopyr}}</p>
-        <div>
-          <p class="copy"></p>
-        </div>
-      </div>
-
+    <div class="title">
+      <p>Idioms</p>
+    </div>
+     
   </div>
 
+  <div class="content-wrapper">
+
+    <div class="lesson-list">
+
+      <div class="lesson-box">
+        <div class="lesson-title">
+            <h1>{{idiomName}}</h1>
+            <span class="fake">{{idiomName}}</span>
+        </div>
+        
+        <div class="lesson-content">
+           <div class="meaning">
+              <h2>Meaning</h2>
+              <p>: {{meanEng}}</p>
+           </div>
+
+           <div class="kahulugan">
+              <h2>Kahuluhan</h2>
+              <p>: {{meanFil}}</p>
+           </div>
+        </div>
+
+        <div class="copyrights">
+            <div class="word-subhead cpr">Copyrights ©</div>
+            <p class="copy-item">Meaning retrieved from {{idiomCopyr}}</p>
+          </div>
+      </div>
+
+    </div>
+
+  
+  </div>
 </ion-content>
