@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=grammar-mistakes.css.map */
+page-grammar-mistakes .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-grammar-mistakes .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-grammar-mistakes .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-grammar-mistakes .divide {
+  margin-bottom: 10px;
+}
+
+page-grammar-mistakes .btn-icon {
+  background-color: transparent;
+}
+
+page-grammar-mistakes .backTop {
+  background-color: #FFD15C;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.01em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+page-grammar-mistakes .btn-area {
+  margin: 0 auto;
+  width: 30%;
+}
+
+page-grammar-mistakes .accent {
+  background-color: #fdf6e5;
+  padding: 10px;
+}
+
+page-grammar-mistakes .second {
+  background-color: #fdfbf5;
+  padding: 10px;
+}
+
+page-grammar-mistakes .lesson h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=grammar-mistakes.css.map */

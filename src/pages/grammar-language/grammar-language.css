@@ -15,25 +15,128 @@ page-grammar-language .action-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+page-grammar-language .action-bar .action-bar:before {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+page-grammar-language .action-bar p {
+  color: #fff;
 }
 
 page-grammar-language .divide {
   margin-bottom: 10px;
 }
 
-page-grammar-language ion-content {
-  background-color: #fdfdfe !important;
-}
-
 page-grammar-language .btn-icon {
   background-color: transparent;
 }
 
-page-grammar-language .lesson {
-  margin: 0 auto;
+page-grammar-language .backTop {
+  background-color: #FFD15C;
   padding: 10px;
+  margin: 10px 0;
+  font-size: 1.01em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+page-grammar-language .btn-area {
+  margin: 0 auto;
+  width: 30%;
+}
+
+page-grammar-language .accent {
+  background-color: #fdf6e5;
+  padding: 10px;
+}
+
+page-grammar-language .second {
+  background-color: #fdfbf5;
+  padding: 10px;
+}
+
+page-grammar-language .lesson h1 {
+  text-align: center;
+}
+
+page-grammar-language #showcase {
+  background-image: url("../../assets/imgs/the-fil-lang.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+page-grammar-language #showcase h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+page-grammar-language #showcase p {
+  font-size: 20px;
+}
+
+page-grammar-language #showcase .button {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+page-grammar-language #showcase .button:hover {
+  background: #333;
+  color: #fff;
+}
+
+page-grammar-language #section-a {
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+page-grammar-language #section-b {
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+page-grammar-language #section-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+}
+
+page-grammar-language #section-c .box-1, page-grammar-language #section-c .box-3 {
+  background: #fff;
 }
 /*# sourceMappingURL=grammar-language.css.map */

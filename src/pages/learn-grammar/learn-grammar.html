@@ -1,21 +1,72 @@
 
 <ion-content>
-
   <div class="nav-half"></div>
 
   <div class="action-bar">
-    <button class="btn-icon" (click)="navigateToLearnPage()">
+
+    <div class="back" (click)="navigateToLearnPage()">
       <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-    </button>
+    </div>
+
+    <div class="title">
+      <p>Grammar</p>
+    </div>
+     
   </div>
 
-  <div class="divide"></div>
+  <div class="content-wrapper">
 
-  <ion-list>
-    <button ion-item (click)="navigateToGrammarLanguagePage()"><ion-icon name="md-book"></ion-icon> The Filipino Language</button> 
-    <button ion-item (click)="navigateToGrammarStructurePage()"><ion-icon name="md-cube"></ion-icon> Sentence Structure</button> 
-    <button ion-item (click)="navigateToGrammarNumbersPage()"><ion-icon name="md-keypad"></ion-icon> Counting Numbers</button> 
-    <button ion-item (click)="navigateToGrammarMistakesPage()"><ion-icon name="md-close-circle"></ion-icon> Common Mistakes</button> 
-  </ion-list>
+    <div class="header">
+      <h1>Lessons</h1>
+    </div>
 
+    <div class="menu-lesson">
+
+      <div class="item-lesson" (click)="navigateToGrammarLanguagePage()" (touchend)="navigateToGrammarLanguagePage()">
+        <div class="icon-lesson">
+          <img src="../../assets/imgs/icon-grammar-lang.png" alt="Grammar Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>The Filipino Language</h2>
+            <p>know the language</p>
+        </div>
+      </div>
+
+      <div class="item-lesson" (click)="navigateToGrammarStructurePage()" (touchend)="navigateToGrammarStructurePage()">
+        <div class="icon-lesson">
+          <img src="../../assets/imgs/icon-grammar-struct.png" alt="Structure Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>The Filipino Language</h2>
+            <p>know the language</p>
+        </div>
+      </div>
+
+      <div class="item-lesson" (click)="navigateToGrammarNumbersPage()" (touchend)="navigateToGrammarNumbersPage()">
+        <div class="icon-lesson">
+          <img src="../../assets/imgs/icon-grammar-numbers.png" alt="Numbers Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>Counting Numbers</h2>
+            <p>learn your 123s</p>
+        </div>
+      </div>
+
+      <div class="item-lesson" (click)="navigateToGrammarMistakesPage()" (touchend)="navigateToGrammarMistakesPage()">
+        <div class="icon-lesson">
+          <img  src="../../assets/imgs/icon-grammar-mistakes.png" alt="Mistakes Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>Common Mistakes</h2>
+            <p>correct the wrong</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </ion-content>

@@ -1,66 +1,106 @@
 
 <ion-content>
+  <div class="nav-half"></div>
 
-    <div class="yellow-half"></div>
+  <div class="action-bar">
 
-    <div class="action-bar">
-      <button class="btn-icon" (click)="navigateToLearnPage()">
-        <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-      </button>
+    <div class="back" (click)="navigateToLearnPage()">
+      <ion-icon name="arrow-back" class="action-icon"></ion-icon>
     </div>
-  
-    <div class="divide"></div>
 
-    <ion-list>
-      <button ion-item (click)="navigateToBaybayinIntroPage()"><ion-icon name="md-bookmarks"></ion-icon> Introduction</button> 
-      <button ion-item (click)="navigateToBaybayinHistoryPage()"><ion-icon name="md-clock"></ion-icon> History</button> 
-      <button ion-item (click)="navigateToBaybayinWritePage()"><ion-icon name="md-create"></ion-icon> How to Write</button> 
-      <!-- <button ion-item (click)="navigateToBaybayinChartPage()"><ion-icon name="md-grid"></ion-icon> Baybayin Chart</button>  -->
-      <button ion-item (click)="navigateToBaybayinMaterialsPage()"><ion-icon name="ios-paper"></ion-icon> Reading Materials</button> 
-      <button ion-item (click)="navigateToBaybayinSystemsPage()"><ion-icon name="md-add"></ion-icon> Other Philippine Writing Systems</button> 
-      <!-- <button ion-item (click)="navigateToBaybayinActionPage()"><ion-icon name="md-megaphone"></ion-icon> Call to Action</button>  -->
-    </ion-list>
+    <div class="title">
+      <p>Baybayin</p>
+    </div>
+     
+  </div>
 
-    <!-- <ion-item-group>
-      <ion-item-divider color="light"><ion-icon name="md-bookmarks"></ion-icon> Introduction</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">What is Baybayin?</button> 
-      <button ion-item (click)="itemSelected(item)">Something</button> 
+  <div class="content-wrapper">
 
-      <ion-item-divider></ion-item-divider>
+    <div class="header">
+      <h1>Lessons</h1>
+    </div>
 
-      <ion-item-divider color="light"><ion-icon name="md-clock"></ion-icon> History</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">Old Usage</button> 
-      <button ion-item (click)="itemSelected(item)">Modern usage</button> 
-      <button ion-item (click)="itemSelected(item)">Variations</button> 
+    <div class="menu-lesson">
 
-      <ion-item-divider></ion-item-divider>
+      <div class="item-lesson" (click)="navigateToBaybayinIntroPage()">
+        <div class="icon-lesson">
+          <img class="icon-intro" src="../../assets/imgs/icon-baybayin-intro.png" alt="Intro Icon">
+        </div>
 
-      <ion-item-divider color="light"><ion-icon name="md-create"></ion-icon> How to Write</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">Vowels</button> 
-      <button ion-item (click)="itemSelected(item)">Consonants</button> 
-      <button ion-item (click)="itemSelected(item)">Final Consonants</button> 
-      <button ion-item (click)="itemSelected(item)">Special Consonants</button> 
-      <button ion-item (click)="itemSelected(item)">Kudlit</button> 
-      <button ion-item (click)="itemSelected(item)">Spanish Kudlit</button> 
+        <div class="description-lesson">
+            <h2>Introduction</h2>
+            <p>discover baybayin</p>
+        </div>
+      </div>
 
-      <ion-item-divider></ion-item-divider>
+      <div class="item-lesson" (click)="navigateToBaybayinHistoryPage()">
+        <div class="icon-lesson">
+          <img src="../../assets/imgs/icon-baybayin-history.png" alt="History Icon">
+        </div>
 
-      <ion-item-divider color="light"><ion-icon name="ios-paper"></ion-icon> Reading Materials</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">Doctrina Christiana</button> 
-      <button ion-item (click)="itemSelected(item)">Poem</button> 
+        <div class="description-lesson">
+            <h2>History</h2>
+            <p>how it started</p>
+        </div>
+      </div>
 
-      <ion-item-divider></ion-item-divider>
+      <div class="item-lesson" (click)="navigateToBaybayinWritePage()">
+        <div class="icon-lesson">
+          <img src="../../assets/imgs/icon-baybayin-write.png" alt="Write Icon">
+        </div>
 
-      <ion-item-divider color="light"><ion-icon name="md-add"></ion-icon> Other Philippine Native Writing System</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">Kulitan</button> 
-      <button ion-item (click)="itemSelected(item)">Surat Mangyan</button> 
+        <div class="description-lesson">
+            <h2>How to Write</h2>
+            <p>ready your pens!</p>
+        </div>
+      </div>
 
-      <ion-item-divider></ion-item-divider>
+      <div class="item-lesson" (click)="navigateToBaybayinChartPage()">
+        <div class="icon-lesson">
+          <img  src="../../assets/imgs/icon-baybayin-chart.png" alt="Mistakes Icon">
+        </div>
 
-      <ion-item-divider color="light"><ion-icon name="md-megaphone"></ion-icon> Call to Action</ion-item-divider>
-      <button ion-item (click)="itemSelected(item)">Help Promote!</button> 
-      <button ion-item (click)="itemSelected(item)">Help Preserve!</button> 
-    </ion-item-group> -->
+        <div class="description-lesson">
+            <h2>Baybayin Chart</h2>
+            <p>memorize the table</p>
+        </div>
+      </div>
 
+      <div class="item-lesson" (click)="navigateToBaybayinMaterialsPage()">
+        <div class="icon-lesson">
+          <img  src="../../assets/imgs/icon-baybayin-read.png" alt="Materials Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>Reading Materials</h2>
+            <p>practice reading</p>
+        </div>
+      </div>
+
+      <div class="item-lesson" (click)="navigateToBaybayinSystemsPage()">
+        <div class="icon-lesson">
+          <img  src="../../assets/imgs/icon-baybayin-kulitan.png" alt="Kulitan Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>Other Writing Systems</h2>
+            <p>discover more</p>
+        </div>
+      </div>
+
+      <div class="item-lesson" (click)="navigateToBaybayinActionPage()">
+        <div class="icon-lesson">
+          <img  src="../../assets/imgs/icon-baybayin-action.png" alt="Action Icon">
+        </div>
+
+        <div class="description-lesson">
+            <h2>Call to Action</h2>
+            <p>participate and help</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
   </ion-content>
   

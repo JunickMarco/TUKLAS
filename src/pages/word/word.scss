@@ -4,19 +4,6 @@ page-word {
         background-color: #fdfdfe !important;
     }
 
-    .blue-half {
-        width: 100%;
-        height: 50%;
-        background-color: #416AAA;
-        position: absolute;
-        z-index: -1;
-    }
-
-
-    .action-bar {
-        display: flex;
-    }
-
     ion-icon {
         font-size: 2.2rem;
     }
@@ -29,174 +16,208 @@ page-word {
         background-color: transparent;
     }
 
-    .suggestion-box {
-        width: 92%;
-        margin: 0 auto;
-        left: 5%;
-        position: absolute;
-        z-index: 1;
-        box-shadow: rgb(77, 77, 77) 3px 3px 3px;
-        border-radius: 5px;
-    }
-
-
-    .word-card {
-        background-color: #fff;
-        padding: 5px 20px;
-        border-radius: 10px;
-        box-shadow: rgb(128, 128, 128) 1px 1px 3px;
-        width: 90%;
-        margin: 10px auto 0 auto;
-        font-family: 'oss';
-        
-    }
-
-    .word-primary {
-        font-family: 'oss';
-        font-size: 4rem;
-        color: #000;
-        text-transform: uppercase;  
-    }
-
-    .word-secondary {
-        font-family: 'oss';
-      font-size: 3rem;
-        color: #000;
-        text-transform: uppercase; 
-       // background-color: orange;
-    }
-
-        .card-head {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .word-subhead {
-            
-            font-family: 'heebomed';
-            color: #416AAA;
-            font-size: 2rem;
-        }
-
-        
-
-        .def-sh {
-            margin-top: 5px;
-        }
-
-       
-
-        
-
-        .bay-font {
-           font-size: 4rem;
-            color: #000;
-           // background-color: blue;
-        }
-
-        .part-of-speech {
-            // color: #7C98AC;
-            color: #416AAA;
-            opacity: 0.7;
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-            //background-color: green;
-        }
-
-    
-
-    
-
-   
-
-    .line-divide {
-        background-color: #E7E4E4;
-        width: 80%;
-        height: 3px;
-        margin: auto;     
-    }
-
-    // .word-card {
-    //     background-color: #fff;
-    //     padding: 5px 20px;
-    //     border-radius: 10px;
-    //     box-shadow: rgb(128, 128, 128) 1px 1px 3px;
-
-    //     .card-head {
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         align-items: center;
-    //        // background-color: brown;
-    //     }
-
-    //     .word-subhead {
-    //         color: #416AAA;
-    //         font-size: 2rem;
-    //     }
-
-    //     .def-sh {
-    //         margin-top: 5px;
-    //     }
-
-    //     .word-primary {
-    //         font-family: serif;
-    //        font-size: 4rem;
-    //         color: #000;
-    //        // background-color: red;
-    //     }
-
-    //     .word-secondary {
-    //         font-family: serif;
-    //       font-size: 3rem;
-    //         color: #000;
-    //        // background-color: orange;
-    //     }
-
-    //     .bay-font {
-    //        font-size: 4rem;
-    //         color: #000;
-    //        // background-color: blue;
-    //     }
-
-    //     .part-of-speech {
-    //         color: #7C98AC;
-    //       font-size: 1.5rem;
-    //       margin-bottom: 10px;
-    //         //background-color: green;
-    //     }
+    // .suggestion-box {
+    //     width: 92%;
+    //     margin: 0 auto;
+    //     left: 5%;
+    //     position: absolute;
+    //     z-index: 1;
+    //     box-shadow: rgb(77, 77, 77) 3px 3px 3px;
+    //     border-radius: 5px;
     // }
+    
+    .bg-half {
+        width: 100%;
+        height: 45%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/imgs/word-bg2.png) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
 
-    .word-subcard {
-        background-color: #fff;
-        padding: 7px;
-        border-radius: 5px;
-        box-shadow: rgb(128, 128, 128) 0px 2px 2px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+    .page-wrap {
+        width: 100%;
+        margin: 20px auto 0 auto;
+        padding: 10px;
+    }
 
-        .def {
-            text-align: center;
+    .action-bar {
+        display: flex;
+
+        .action-icon {
+            color: #fff;
+            font-size: 2em;
         }
 
-        .def-sh {
-            margin-top: 5px;
+        .fa-microphone {
+            color: map-get($colors, primary);
+            font-size: 25px;
+        }
+
+        .suggestion-box {
+            width: 86.8%;
+            margin: 0 auto;
+            position: absolute;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: rgb(139, 139, 139) 1px 1px 1px;
+            border-radius: 5px;
         }
     }
 
-    .copyrights {
-        display: flex;   
+    .word-container { 
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        margin-top: 50px;
+
+        .back-wordcard {
+            width: 95%;
+            min-height: 208px;
+            max-height: 500px;
+
+            position: absolute;
+            top: -3px;
+            right: -1px;
+            z-index: -1;    
+
+            background: #8FA7FF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+        .word-card {
+            width: 95%;
+            // min-height: 208px;
+            // max-height: 500px;
+
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+
+            padding: 10px;
+
+            .word-header {
+                display: flex;
+                flex-direction: column;
+
+                .row-one {
+                    display: flex;
+                    align-items: center;
+
+
+                    .word-name {
+                        font-family: 'opensans-bold';
+                        color: #fff;
+                        font-size: 36px;
+
+                        overflow-x: auto; 
+                    }
+
+                    .word-audio {
+                        color: #fff;
+                        align-self: flex-start;
+
+                        margin: 15px 3px 0 10px;
+                    }
+                }
+
+            
+                .word-baybayin {
+                    font-family: 'baydoc';
+                    color: #fff;
+                    font-size: 28px;
+
+                    overflow-x: auto; 
+                }
+
+                .word-english {
+                    font-family: 'opensans-reg';
+                    color: #fff;
+                    font-size: 24px;
+
+                    overflow-x: auto; 
+                }
+
+                .word-paros {
+                    font-family: 'sourcesans-reg';
+                    color: #b6b6b6;
+                    font-size: 13px;
+                }
+        
+            }
+
+
+            .word-subcard {
+                padding: 7px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                background: rgb(255, 255, 255);
+                border-radius: 6px;
+
+                .definition {
+                    font-family: 'opensans-reg';
+                    color: #000;
+                    font-size: 14px;
+                }
+            }
+
+            .word-subhead {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 18px;
+            }
+
+            .white {
+                color: #fff;
+            }
+
+            .sentence-list li{
+                margin-bottom: 10px;
+                font-family: 'opensans-reg';
+                font-size: 14px;
+            }
+
+            .synonyms-list{
+                list-style-type: none;
+                margin-top: 10px;
+                padding: 0;
+
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 5px;
+                    padding: 3px 5px; 
+
+                    background: rgba(146, 146, 146, 0.53);
+                    border: 1px solid #fff;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+
+                    font-family: 'opensans-light';
+                    color: #ffff;
+                    font-size: 14px;
+                }
+            }
+
+
+            .copyrights {
+                margin-top: 30px;
+                
+                .cpr {
+                    font-size: 14px;
+                    color: rgba(196, 196, 196, 0.616);
+                }
+    
+                .copy-item {
+                    font-family: 'opensans-reg';
+                    color: rgba(160, 160, 160, 0.616);
+                    font-size: 8px;
+                }
+            }
+        }
     }
 
-    .chead {
-        margin-right: 25px;
-        font-size: 1rem;
-        color: #7C98AC;
-    }
-
-    .copy {
-        font-size: 0.5rem;
-        color: #7C98AC;
-    }
 }

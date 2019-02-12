@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=grammar-structure.css.map */
+page-grammar-structure .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-grammar-structure .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-grammar-structure .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-grammar-structure .divide {
+  margin-bottom: 10px;
+}
+
+page-grammar-structure ion-content {
+  background-color: #fdfdfe !important;
+}
+
+page-grammar-structure .btn-icon {
+  background-color: transparent;
+}
+
+page-grammar-structure .lesson {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+page-grammar-structure .example {
+  background-color: #ffefc5;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+page-grammar-structure .backTop {
+  background-color: #FFD15C;
+  padding: 10px;
+  font-size: 1.01em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+page-grammar-structure .btn-area {
+  margin: 0 auto;
+  width: 30%;
+}
+
+page-grammar-structure .head-par {
+  font-weight: bold;
+}
+/*# sourceMappingURL=grammar-structure.css.map */

@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=baybayin-materials.css.map */
+page-baybayin-materials .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-baybayin-materials .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-baybayin-materials .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-baybayin-materials .divide {
+  margin-bottom: 10px;
+}
+
+page-baybayin-materials .btn-icon {
+  background-color: transparent;
+}
+
+page-baybayin-materials .backTop {
+  background-color: #FFD15C;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.01em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+page-baybayin-materials .btn-area {
+  margin: 0 auto;
+  width: 30%;
+}
+
+page-baybayin-materials .accent {
+  background-color: #fdf6e5;
+  padding: 10px;
+}
+
+page-baybayin-materials .second {
+  background-color: #fdfbf5;
+  padding: 10px;
+}
+
+page-baybayin-materials .lesson h1 {
+  text-align: center;
+}
+
+page-baybayin-materials .bigger {
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=baybayin-materials.css.map */

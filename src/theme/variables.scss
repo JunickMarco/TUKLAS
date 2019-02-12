@@ -225,6 +225,11 @@ $colors: (
 }
 
 @font-face {
+  font-family: 'opensans-light';
+  src: url(../assets/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
   font-family: 'opensans-bold';
   src: url(../assets/fonts/OpenSans-Bold.ttf);
 }
@@ -232,6 +237,11 @@ $colors: (
 @font-face {
   font-family: 'opensans-semibold';
   src: url(../assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'opensans-extrabold';
+  src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
 }
 
 

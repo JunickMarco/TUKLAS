@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=grammar-numbers.css.map */
+page-grammar-numbers .yellow-half {
+  width: 100%;
+  height: 13%;
+  background-color: #FFD15C;
+  position: absolute;
+  z-index: -1;
+}
+
+page-grammar-numbers .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-grammar-numbers .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+page-grammar-numbers .divide {
+  margin-bottom: 10px;
+}
+
+page-grammar-numbers .btn-icon {
+  background-color: transparent;
+}
+
+page-grammar-numbers .backTop {
+  background-color: #FFD15C;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.01em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+page-grammar-numbers .btn-area {
+  margin: 0 auto;
+  width: 30%;
+}
+
+page-grammar-numbers .accent {
+  background-color: #fdf6e5;
+  padding: 10px;
+}
+
+page-grammar-numbers .second {
+  background-color: #fdfbf5;
+  padding: 10px;
+}
+
+page-grammar-numbers .lesson h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+page-grammar-numbers #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+page-grammar-numbers #customers td, page-grammar-numbers #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+page-grammar-numbers #customers tr:nth-child(even) {
+  background-color: #fdfbf5;
+}
+
+page-grammar-numbers #customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fcd67e;
+  color: white;
+}
+/*# sourceMappingURL=grammar-numbers.css.map */

@@ -1,70 +1,151 @@
-page-learn .blue-half {
-  width: 100%;
-  height: 23%;
-  background-color: #FFD15C;
-  position: absolute;
-  z-index: -1;
-}
-
-page-learn .head-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-page-learn .page-head {
-  font-family: 'oss';
-  text-transform: uppercase;
-  font-size: 3em;
-  margin: 30px auto 0 auto;
-  color: #fff;
-}
-
 page-learn ion-content {
   background: #f5f4f4 !important;
 }
 
-page-learn .line-divide {
-  width: 80%;
-  height: 3px;
-  margin: auto;
+page-learn .bg-half {
+  width: 100%;
+  height: 45%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/imgs/learn-bg.png) no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/imgs/learn-bg.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
 }
 
-page-learn .card-background-page ion-card {
-  position: relative;
-  text-align: center;
+page-learn .page-wrap {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+
+page-learn .header {
+  margin-left: 20px;
+}
+
+page-learn .header h1 {
+  font-family: 'bitter-bold';
+  color: #fff;
+  font-size: 48px;
+}
+
+page-learn .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-learn .menu .item {
   width: 90%;
-  height: 20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  border-radius: 5px;
-  background-color: #f5dda1;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  height: 107px;
+  background: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
-page-learn .card-background-page .card-title {
-  position: absolute;
-  top: 35%;
-  font-family: 'worksanssemi';
-  text-transform: uppercase;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #000;
-  opacity: 0.8;
-  letter-spacing: 0.1px;
+page-learn .menu .item:active {
+  background: #F2F2F2;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: changesize;
+          animation-name: changesize;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
-page-learn .card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 75%;
-  width: 100%;
+@-webkit-keyframes changesize {
+  from {
+    width: 90%;
+    height: 107px;
+  }
+  to {
+    width: 92%;
+    height: 110px;
+  }
+}
+
+@keyframes changesize {
+  from {
+    width: 90%;
+    height: 107px;
+  }
+  to {
+    width: 92%;
+    height: 110px;
+  }
+}
+
+page-learn .menu .item .icon {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+page-learn .menu .item .icon .icon-gra {
+  width: 67px;
+  height: 56px;
+}
+
+page-learn .menu .item .icon .icon-bay {
+  width: 60px;
+  height: 40px;
+}
+
+page-learn .menu .item .icon .icon-idio {
+  width: 78px;
+  height: 79px;
+}
+
+page-learn .menu .item .description {
+  width: 70%;
+  padding-right: 20px;
+}
+
+page-learn .menu .item .description h2 {
+  font-family: 'opensans-semibold';
   color: #000;
+  font-size: 24px;
+}
+
+page-learn .menu .item .description p {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 11px;
+}
+
+page-learn .menu .blue {
+  -webkit-box-shadow: 0px 4px 4px rgba(5, 62, 171, 0.15);
+          box-shadow: 0px 4px 4px rgba(5, 62, 171, 0.15);
+}
+
+page-learn .menu .red {
+  -webkit-box-shadow: 0px 4px 4px rgba(179, 2, 2, 0.15);
+          box-shadow: 0px 4px 4px rgba(179, 2, 2, 0.15);
+}
+
+page-learn .menu .green {
+  -webkit-box-shadow: 0px 4px 4px rgba(30, 108, 10, 0.15);
+          box-shadow: 0px 4px 4px rgba(30, 108, 10, 0.15);
 }
 /*# sourceMappingURL=learn.css.map */
