@@ -40,7 +40,12 @@ page-wotd {
 
         h1 {
             font-family: 'bitter-bold';
-            color: rgb(255, 137, 137);
+            // color: rgb(255, 137, 137);
+            text-shadow: 0px 0px 13px #000407;
+            text-shadow: 0px 0px 7px #052f5f;
+
+            // text-shadow: 0px 0px 7px rgba(5, 47, 95, 0.75);
+            color: #FDFDFD;
             font-size: 48px;
         }
     }
@@ -189,7 +194,7 @@ page-wotd {
                 .cpr {
                     font-size: 14px;
                     color: rgba(196, 196, 196, 0.616);
-                }
+                } 
     
                 .copy-item {
                     font-family: 'opensans-reg';

@@ -1,42 +1,72 @@
 <ion-content>
 
-  <ion-slides #slides>
-
-    <ion-slide class="start-slide">
-      <button ion-button color="primary" (click)="nextSlide()">Start!</button>
-    </ion-slide>
-
-    <ion-slide *ngFor="let question of questions | slice:0:10; let i = index;">
-
-      <h3>Question {{i+1}}</h3>
-
-      <flash-card [isFlipped]="question.flashCardFlipped">
-        <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
-        <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
-      </flash-card>
-
-      <h3>{{question.questionText}}</h3>
-
-      <ion-list no-lines radio-group>
-
-        <ion-item *ngFor="let answer of question.answers; let i = index;">
-
-          <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
-          <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
-
-        </ion-item>
-
-      </ion-list>
-
-    </ion-slide>
-
-    <ion-slide>
-      <h2>Final Score: {{score}}</h2>
-
-      <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>
-
-    </ion-slide>
-
-  </ion-slides>
-
-</ion-content>
+    <ion-slides #slides>
+  
+      <ion-slide class="start-slide">
+          <h1>Vocabulary Quiz</h1>  
+  
+          <div class="menu-lesson">
+  
+              <div class="item-lesson" (click)="nextSlide()">
+                <div class="icon-lesson">
+                  <img src="../../assets/imgs/icon-quiz-start.png" alt="Start Icon">
+                </div>
+        
+                <div class="description-lesson">
+                    <h2>Press to START!</h2>
+                </div> 
+              </div>
+    
+            </div>
+        
+         
+      </ion-slide>
+  
+      <ion-slide *ngFor="let question of questions | slice:0:10; let i = index;">
+  
+        <h3 class="question-label"><span class="quiz-accent">></span> Question {{i+1}} / 10</h3>
+  
+        <flash-card [isFlipped]="question.flashCardFlipped">
+          <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
+          <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+        </flash-card>
+  
+        <!-- <h3>{{question.questionText}}</h3> -->
+   
+        <ion-list no-lines radio-group> 
+  
+          <ion-item *ngFor="let answer of question.answers; let i = index;">
+  
+            <!-- <ion-label class="answer-label">{{i+1}}. {{answer.answer}}</ion-label> -->
+            <ion-label class="answer-label">{{answer.answer}}</ion-label>
+            <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+  
+          </ion-item>
+  
+        </ion-list>
+  
+      </ion-slide>
+  
+      <ion-slide class="start-slide">
+  
+          <h1>Final Score: {{score}}</h1>
+          <div class="icon-quiz">
+            <img src="../../assets/imgs/icon-quiz-end.png" alt="End Icon">
+          </div>
+  
+          <div class="menu-lesson">
+  
+              <div class="item-quiz" (click)="restartQuiz()">
+  
+                <div class="description-lesson">
+                    <h2>Try Again</h2>
+                </div>
+              </div>
+    
+            </div>
+  
+      </ion-slide>
+  
+    </ion-slides>
+  
+  </ion-content>
