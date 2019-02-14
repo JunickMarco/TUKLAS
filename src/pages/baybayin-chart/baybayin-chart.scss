@@ -62,11 +62,24 @@ page-baybayin-chart {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
 
-            margin: 2%;
+            margin: 3%;
 
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            h3 {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 18px;  
+
+                background: #FFA0A0;
+                // border: 1px solid #fff;
+                box-sizing: border-box;
+                border-radius: 3px;
+
+                padding: 5px;
+            }
 
 
             .lesson-title {
@@ -106,6 +119,7 @@ page-baybayin-chart {
                     font-size: 18px;  
                 }
 
+
                 .content-list{
                     list-style-type: none;
                     margin-top: 5px;
@@ -138,4 +152,124 @@ page-baybayin-chart {
 
         }
     }
+
+    // .menu-lesson {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    
+    //     .item-lesson {
+    //         width: 130px;
+    //         height: 150px;
+
+    //         background: #FFFFFF;
+    //         border: 2px solid #EAEAEA;
+    //         box-sizing: border-box;
+    //         border-radius: 10px;
+
+    //         margin: 2%;
+
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+
+    //         &:active {
+    //             background: #F2F2F2;
+                
+    //             // transition: 0.3s;
+
+    //             @keyframes changesizelearn {
+    //                 from {
+    //                     width: 130px;
+    //                     height: 150px;
+    //                 }
+                    
+    //                 to {
+    //                     width: 135px;
+    //                     height: 155px;  
+    //                 }
+    //             }
+
+    //             animation-duration: 0.5s;
+    //             animation-name: changesizelearn;
+    //             animation-iteration-count: infinite;
+    //             animation-direction: alternate;
+    //         }
+
+    //         .icon-lesson {
+    //             margin-top: 20px;
+    //         }
+
+    //         .baybayin-item {
+    //             font-family: 'baysil';
+    //             font-size: 5em;
+
+    //             background-color: red;
+    //         }
+
+    //         .baybayin-meaning {
+    //             font-family: 'opensans-bold';
+    //             color: #000;
+    //             font-size: 13px; 
+
+    //             background-color: green;
+    //         }
+
+    //         .description-lesson {
+    //             padding: 5px;
+    //             text-align: center;
+    //             position: relative;
+    //             bottom: 15px;
+                
+    //             h2 {
+    //                 font-family: 'opensans-bold';
+    //                 color: #000;
+    //                 font-size: 13px;  
+    //             }
+
+    //             p {
+    //                 font-family: 'sourcesans-reg';
+    //                 color: rgba(0, 0, 0, 0.55);
+    //                 font-size: 10px;
+    //             }
+    //         }
+    //     }
+    // }
+
+    .baybayin-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .baybayin-item {
+            width: 130px;
+            min-height: 150px;
+
+            margin: 5px;
+
+            background: #FFFFFF;
+            border: 2px solid #EAEAEA;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            text-align: center;
+
+            .baybayin-text {
+                font-family: 'baysil';
+                color: #000;
+                font-size: 45px;
+                line-height: 0.5;
+            }
+
+            .baybayin-eq {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 18px;
+
+            }
+        }
+    }
+
 }

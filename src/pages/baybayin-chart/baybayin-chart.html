@@ -33,18 +33,492 @@
           <div class="lesson-content">
               <h2>Contents</h2>
               <ul class="content-list">
-                <li>Classification & Terminology</li>
-                <li>Filipino vs Tagalog</li>
-                <li>Early History of Filipino Language</li>
-                <li>Early Development of the Written Filipino Language</li>
-                <li>Spanish Influence on the Tagalog Language</li>
-                <li>The Philippines After Independence</li>
-                <li>Filipino as an Official Language</li>
-                <li>Filipino Language Today</li>
+                <li (click)="scrollElementVowels()">Vowels</li>
+                <li (click)="scrollElementBSound()">B Sounds</li>
+                <li (click)="scrollElementKSound()">K Sounds</li>
+                <li (click)="scrollElementDRSound()">D/R Sounds</li>
+                <li (click)="scrollElementGSound()">G Sounds</li>
+                <li (click)="scrollElementHSound()">H Sounds</li>
+                <li (click)="scrollElementLSound()">L Sounds</li>
+                <li (click)="scrollElementMSound()">M Sounds</li>
+                <li (click)="scrollElementNSound()">N Sounds</li>
+                <li (click)="scrollElementNGSound()">Ng Sounds</li>
+                <li (click)="scrollElementPSound()">P Sounds</li>
+                <li (click)="scrollElementSSound()">S Sounds</li>
+                <li (click)="scrollElementTSound()">T Sounds</li>
+                <li (click)="scrollElementWSound()">W Sounds</li>
+                <li (click)="scrollElementYSound()">Y Sounds</li>
+                <li (click)="scrollElementPunctuation()">Punctuation Marks</li>
               </ul>
           </div>
         </div>
-  
+
+        <div class="lesson-box">
+
+          <h3>Vowels</h3>
+      
+          <div class="lesson-content" #Vowels>
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">A</p>
+                    <p class="baybayin-eq">A</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">E</p>
+                  <p class="baybayin-eq">E/I</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">O</p>
+                  <p class="baybayin-eq">O/U</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #BSound>
+
+          <h3>B Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">B</p>
+                    <p class="baybayin-eq">Ba</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Be</p>
+                  <p class="baybayin-eq">Be/Bi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Bo</p>
+                  <p class="baybayin-eq">Bo/Bu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">B+</p>
+                  <p class="baybayin-eq">B</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #KSound>
+
+          <h3>K Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">K</p>
+                    <p class="baybayin-eq">Ka</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ke</p>
+                  <p class="baybayin-eq">Ke/Ki</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ko</p>
+                  <p class="baybayin-eq">Ko/Ku</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">K+</p>
+                  <p class="baybayin-eq">K</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #DRSound>
+
+          <h3>D/R Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">D</p>
+                    <p class="baybayin-eq">Da/Ra</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">De</p>
+                  <p class="baybayin-eq">De/Di | Re/Ri</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Do</p>
+                  <p class="baybayin-eq">Do/Du | Ro/Ru</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">D+</p>
+                  <p class="baybayin-eq">D/R</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #GSound>
+
+          <h3>G Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">G</p>
+                    <p class="baybayin-eq">Ga</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ge</p>
+                  <p class="baybayin-eq">Ge/Gi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Go</p>
+                  <p class="baybayin-eq">Go/Gu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">G+</p>
+                  <p class="baybayin-eq">G</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #HSound>
+
+          <h3>H Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">H</p>
+                    <p class="baybayin-eq">Ha</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">He</p>
+                  <p class="baybayin-eq">He/Hi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ho</p>
+                  <p class="baybayin-eq">Ho/Hu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">H+</p>
+                  <p class="baybayin-eq">H</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #LSound>
+
+          <h3>L Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">L</p>
+                    <p class="baybayin-eq">La</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Le</p>
+                  <p class="baybayin-eq">Le/Li</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Lo</p>
+                  <p class="baybayin-eq">Lo/Lu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">L+</p>
+                  <p class="baybayin-eq">L</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #MSound>
+
+          <h3>M Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">M</p>
+                    <p class="baybayin-eq">Ma</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Me</p>
+                  <p class="baybayin-eq">Me/Mi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Mo</p>
+                  <p class="baybayin-eq">Mo/Mu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">M+</p>
+                  <p class="baybayin-eq">M</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #NSound>
+
+          <h3>N Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">n</p>
+                    <p class="baybayin-eq">Na</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">ne</p>
+                  <p class="baybayin-eq">Ne/Ni</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">no</p>
+                  <p class="baybayin-eq">No/Nu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">n+</p>
+                  <p class="baybayin-eq">N</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #NGSound>
+
+          <h3>Ng Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">N</p>
+                    <p class="baybayin-eq">Nga</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ne</p>
+                  <p class="baybayin-eq">Nge/Ngi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">No</p>
+                  <p class="baybayin-eq">Ngo/Ngu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">N+</p>
+                  <p class="baybayin-eq">Ng</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #PSound>
+
+          <h3>P Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">P</p>
+                    <p class="baybayin-eq">Pa</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Pe</p>
+                  <p class="baybayin-eq">Pe/Pi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Po</p>
+                  <p class="baybayin-eq">Po/Pu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">P+</p>
+                  <p class="baybayin-eq">P</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #SSound>
+
+          <h3>S Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">S</p>
+                    <p class="baybayin-eq">Sa</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Se</p>
+                  <p class="baybayin-eq">Se/Si</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">So</p>
+                  <p class="baybayin-eq">So/Su</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">S+</p>
+                  <p class="baybayin-eq">S</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #TSound>
+
+          <h3>T Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">T</p>
+                    <p class="baybayin-eq">Ta</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Te</p>
+                  <p class="baybayin-eq">Te/Ti</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">To</p>
+                  <p class="baybayin-eq">To/Tu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">T+</p>
+                  <p class="baybayin-eq">T</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #WSound>
+
+          <h3>W Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">W</p>
+                    <p class="baybayin-eq">Wa</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">We</p>
+                  <p class="baybayin-eq">We/Wi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Wo</p>
+                  <p class="baybayin-eq">Wo/Wu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">W+</p>
+                  <p class="baybayin-eq">W</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #YSound>
+
+          <h3>Y Sounds</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">Y</p>
+                    <p class="baybayin-eq">Ya</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Ye</p>
+                  <p class="baybayin-eq">Ye/Yi</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Yo</p>
+                  <p class="baybayin-eq">Yo/Yu</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">Y+</p>
+                  <p class="baybayin-eq">Y</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        <div class="lesson-box" #Punctuation>
+
+          <h3>Punctuation Marks</h3>
+      
+          <div class="lesson-content">
+              <div class="baybayin-list">
+                <div class="baybayin-item">
+                    <p class="baybayin-text">.</p>
+                    <p class="baybayin-eq">. (period)</p>
+                </div>
+
+                <div class="baybayin-item">
+                  <p class="baybayin-text">,</p>
+                  <p class="baybayin-eq">, (comma)</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+
+        
   
       </div>
   
