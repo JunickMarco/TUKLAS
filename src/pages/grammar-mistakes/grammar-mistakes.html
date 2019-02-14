@@ -28,22 +28,90 @@
                 <h1>Common Mistakes</h1>
               </div>
           </div>
-          
+           
   
           <div class="lesson-content">
               <h2>Contents</h2>
               <ul class="content-list">
-                <li>Classification & Terminology</li>
-                <li>Filipino vs Tagalog</li>
-                <li>Early History of Filipino Language</li>
-                <li>Early Development of the Written Filipino Language</li>
-                <li>Spanish Influence on the Tagalog Language</li>
-                <li>The Philippines After Independence</li>
-                <li>Filipino as an Official Language</li>
-                <li>Filipino Language Today</li>
+                <li (click)="scrollElementNgvsnang()">Ng vs Nang</li>
+                <li (click)="scrollElementDinvsrin()">Din vs Rin</li>
               </ul>
           </div>
         </div>
+
+
+        <div class="lesson-box" #Ngvsnang>
+          <h3>Ng vs Nang</h3>
+            <div class="lesson-content">
+                <div class="mistake-explanation">
+                  <p><strong>Nang</strong> is used to replace “noong” and “para” or “upang”, to connect an adverb (pang-abay), and to connect two repeating verbs (pandiwang inuulit).</p>
+                  <p><strong>Ng</strong> is used to point out an object and to express ownership.</p>
+                </div>
+
+                <div class="example wrong-example">
+                  <div class="icon-example">
+                    <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                  </div>
+
+                  <ul class="example-list wrong-list">
+                    <li>Natuwa ako ng makita ko sila.</li>
+                    <li>Bilisan mo ng maka-uwi na tayo.</li>
+                    <li>Pumila ng maayos.</li>
+                    <li>Tulog ng tulog ang bata.</li>
+                  </ul>
+                </div>
+
+                <div class="example correct-example">
+                    <div class="icon-example">
+                        <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                      </div>
+                  <ul class="example-list correct-list">
+                    <li>Natuwa ako nang makita ko sila.</li>
+                    <li>Bilisan mo nang maka-uwi na tayo.</li>
+                    <li>Pumila nang maayos.</li>
+                    <li>Tulog nang tulog ang bata.</li>
+                  </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lesson-box" #Dinvsrin>
+            <h3>Din vs Rin</h3>
+              <div class="lesson-content">
+                  <div class="mistake-explanation">
+                    <p><strong>Din</strong> is used when the preceding word ends with a consonant letter except w and y.</p>
+                    <p><strong>Rin</strong> is used when the preceding word ends with a vowel letter, w, and y.</p>
+                  </div>
+  
+                  <div class="example wrong-example">
+                    <div class="icon-example">
+                      <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                    </div>
+  
+                    <ul class="example-list wrong-list">
+                      <li>Tapos na din siyang kumain.</li>
+                      <li>Doon rin ako nagpunta.</li>
+                      <li>Sumigaw din si Juan.</li>
+                      <li>Nag-away din silang dalawa.</li>
+                    </ul>
+                  </div>
+  
+                  <div class="example correct-example">
+                      <div class="icon-example">
+                          <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                    <ul class="example-list correct-list">
+                      <li>Tapos na rin siyang kumain.</li>
+                      <li>Doon din ako nagpunta.</li>
+                      <li>Sumigaw rin si Juan nang.</li>
+                      <li>Nag-away rin silang dalawa.</li>
+                    </ul>
+                  </div>
+  
+              </div>
+          </div>
+
   
   
       </div>

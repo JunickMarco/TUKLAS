@@ -28,6 +28,9 @@ export class BaybayinMaterialsPage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Lordsprayer') Lordsprayer: any;
+ @ViewChild('Lupanghinirang') Lupanghinirang: any;
 
  /**
   * Method to scroll to top
@@ -36,4 +39,14 @@ export class BaybayinMaterialsPage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElementLordsprayer() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Lordsprayer.nativeElement.offsetTop, 500);
+}
+
+public scrollElementLupanghinirang() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Lupanghinirang.nativeElement.offsetTop, 500);
+}
 }

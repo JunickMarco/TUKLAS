@@ -28,6 +28,10 @@ export class GrammarMistakesPage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Ngvsnang') Ngvsnang: any;
+ @ViewChild('Dinvsrin') Dinvsrin: any;
+
 
  /**
   * Method to scroll to top
@@ -36,4 +40,14 @@ export class GrammarMistakesPage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElementNgvsnang() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Ngvsnang.nativeElement.offsetTop, 500);
+}
+
+public scrollElementDinvsrin() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Dinvsrin.nativeElement.offsetTop, 500);
+}
 }
