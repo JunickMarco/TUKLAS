@@ -21,11 +21,6 @@
                     "answer": "ᜁ",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "ᜂ",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -36,11 +31,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜃᜎᜆ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "ᜊᜑᜌ᜔",
                     "correct": true,
@@ -65,11 +56,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜃᜈ᜔ᜆᜓ",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "ᜐᜒᜋ᜔ᜊᜑᜈ᜔",
                     "correct": false,
@@ -94,11 +81,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜃᜈ᜔ᜆᜓ",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "ᜆᜑᜈᜈ᜔",
                     "correct": false,
@@ -133,11 +116,7 @@
                     "correct": false,
                     "selected": false
                 },
-                {
-                    "answer": "ᜑᜇ᜔ᜇᜒᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "ᜃᜈ᜔ᜆᜓ",
                     "correct": false,
@@ -152,11 +131,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜆ᜔ᜐᜒᜈᜒᜎᜐ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "ᜐᜃᜓᜅ᜔",
                     "correct": true,
@@ -181,11 +156,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜀᜊᜃᜇ",
-                    "correct": false,
-                    "selected": false
-                },
+                
                 {
                     "answer": "ᜀᜊᜅ᜔",
                     "correct": false,
@@ -210,11 +181,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜂᜊᜒᜐᜓ",
-                    "correct": false,
-                    "selected": false
-                },
+            
                 {
                     "answer": "ᜂᜊ᜔ᜑᜒᜆᜓ",
                     "correct": false,
@@ -253,11 +220,6 @@
                     "answer": "ᜉᜀᜈᜓ",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "ᜉᜀᜈ᜔ᜌᜌ",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -268,11 +230,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜊᜊᜁᜇᜓ",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "ᜊᜓᜈ᜔ᜆᜓᜆ᜔",
                     "correct": true,
@@ -297,11 +255,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜃ",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "ᜊᜊ",
                     "correct": false,
@@ -326,11 +280,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜇᜀᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+           
                 {
                     "answer": "ᜇᜊᜓᜄ᜔",
                     "correct": false,
@@ -369,11 +319,6 @@
                     "answer": "ᜁᜊᜃ᜔",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "ᜁᜊᜉᜓᜇᜐ᜔ᜌᜓᜈ᜔",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -384,11 +329,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜀᜎᜒᜋ᜔ᜊᜓᜌᜓᜄᜒᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "ᜀᜎᜒᜋ᜔ᜉᜓᜅᜆ᜔",
                     "correct": true,
@@ -413,11 +354,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜀᜎᜒᜋᜓᜇᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "ᜀᜎᜒᜋ᜔ᜉᜓᜌᜓ",
                     "correct": false,
@@ -442,11 +379,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜉᜀᜇᜎᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "ᜉᜀᜈ᜔ᜌᜌ",
                     "correct": false,
@@ -485,11 +418,6 @@
                     "answer": "ᜎᜈ᜔ᜄᜒᜆ᜔",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "ᜎᜊᜊᜓ",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -500,11 +428,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜋᜀᜄᜉ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "ᜋᜀᜀᜐᜑᜈ᜔",
                     "correct": true,
@@ -529,11 +453,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜈᜄᜒᜐ᜔ᜈᜈ᜔",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "ᜈᜄᜒᜄᜒᜅ᜔",
                     "correct": false,
@@ -558,11 +478,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "ᜄ",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "ᜊ",
                     "correct": false,
@@ -575,7 +491,7 @@
                 },
                 {
                     "answer": "ᜃ",
-                    "correct": false,
+                    "correct": true,
                     "selected": false
                 }
             ]

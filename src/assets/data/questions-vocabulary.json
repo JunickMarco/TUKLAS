@@ -17,11 +17,6 @@
                     "selected": false
                 },
                 {
-                    "answer": "Sinok",
-                    "correct": false,
-                    "selected": false
-                },
-                {
                     "answer": "Gugol",
                     "correct": false,
                     "selected": false
@@ -34,11 +29,7 @@
             "flashCardBack": "Ang tamang sagot ay Akibat",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Pato",
-                    "correct": false,
-                    "selected": false
-                },
+ 
                 {
                     "answer": "Abat",
                     "correct": false,
@@ -64,7 +55,7 @@
             "answers": [
                 {
                     "answer": "Abito",
-                    "correct": false,
+                    "correct": true,
                     "selected": false
                 },
                 {
@@ -72,11 +63,7 @@
                     "correct": false,
                     "selected": false
                 },
-                {
-                    "answer": "Abo",
-                    "correct": false,
-                    "selected": false
-                },
+    
                 {
                     "answer": "Abla",
                     "correct": false,
@@ -95,11 +82,7 @@
                     "correct": false,
                     "selected": false
                 },
-                {
-                    "answer": "Abiso",
-                    "correct": false,
-                    "selected": false
-                },
+
                 {
                     "answer": "Abogado",
                     "correct": false,
@@ -115,12 +98,12 @@
         {
             "id": 5,
             "flashCardFront": "Cobwebs",
-            "flashCardBack": "Agiw",
+            "flashCardBack": "Ang tamang sagot ay Agiw",
             "flashCardFlipped": false,
             "answers": [
                 {
                     "answer": "Agiw",
-                    "correct": false,
+                    "correct": true,
                     "selected": false
                 },
                 {
@@ -128,11 +111,7 @@
                     "correct": false,
                     "selected": false
                 },
-                {
-                    "answer": "Sinok",
-                    "correct": false,
-                    "selected": false
-                },
+
                 {
                     "answer": "Babag",
                     "correct": false,
@@ -156,11 +135,7 @@
                     "correct": true,
                     "selected": false
                 },
-                {
-                    "answer": "Tampo ",
-                    "correct": false,
-                    "selected": false
-                },
+   
                 {
                     "answer": "Gulo",
                     "correct": false,
@@ -179,11 +154,7 @@
                     "correct": true,
                     "selected": false
                 },
-                {
-                    "answer": "Daan",
-                    "correct": false,
-                    "selected": false
-                },
+      
                 {
                     "answer": "Damit",
                     "correct": false,
@@ -202,11 +173,7 @@
             "flashCardBack": "Ang tamang sagot ay Nabegador",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Guro",
-                    "correct": false,
-                    "selected": false
-                },
+  
                 {
                     "answer": "Obheto",
                     "correct": false,
@@ -244,12 +211,9 @@
                     "answer": "Paanyaya",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "Ngalatowat",
-                    "correct": false,
-                    "selected": false
                 }
+                
+                
             ]
         },
         {
@@ -258,11 +222,7 @@
             "flashCardBack": "Ang tamang sagot ay Ngalatowat",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Ngalit",
-                    "correct": false,
-                    "selected": false
-                },
+       
                 {
                     "answer": "Ngalatowat",
                     "correct": true,
@@ -286,11 +246,7 @@
             "flashCardBack": "Ang tamang sagot ay Maaliwalas",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Maalam",
-                    "correct": false,
-                    "selected": false
-                },
+  
                 {
                     "answer": "Maagap",
                     "correct": false,
@@ -319,11 +275,7 @@
                     "correct": false,
                     "selected": false
                 },
-                {
-                    "answer": "Habag",
-                    "correct": false,
-                    "selected": false
-                },
+          
                 {
                     "answer": "Labahita",
                     "correct": false,
@@ -356,11 +308,6 @@
                     "answer": "Gaat",
                     "correct": true,
                     "selected": false
-                },
-                {
-                    "answer": "Baak",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -372,11 +319,6 @@
             "answers": [
                 {
                     "answer": "Kaanakan",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Kaano-ano",
                     "correct": false,
                     "selected": false
                 },
@@ -412,12 +354,8 @@
                     "answer": "Nagisnan",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "Nabegasyon",
-                    "correct": false,
-                    "selected": false
                 }
+               
             ]
         },
         {
@@ -440,12 +378,8 @@
                     "answer": "Obitwaryo",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "Obhetibo",
-                    "correct": false,
-                    "selected": false
                 }
+              
             ]
         },
         {
@@ -468,25 +402,16 @@
                     "answer": "Talima",
                     "correct": true,
                     "selected": false
-                },
-                {
-                    "answer": "Gabay",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
         {
             "id": 18,
             "flashCardFront": "Cabinetmaker",
-            "flashCardBack": "Ang tamang sagot ay Pahimakas",
+            "flashCardBack": "Ang tamang sagot ay Ebanista",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Baar",
-                    "correct": false,
-                    "selected": false
-                },
+      
                 {
                     "answer": "Katulong",
                     "correct": false,
@@ -510,11 +435,7 @@
             "flashCardBack": "Ang tamang sagot ay Gabara",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Gabi",
-                    "correct": false,
-                    "selected": false
-                },
+         
                 {
                     "answer": "Gabara",
                     "correct": true,
