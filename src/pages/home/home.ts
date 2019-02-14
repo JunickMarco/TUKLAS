@@ -1,7 +1,7 @@
 import { FcmProvider } from './../../providers/fcm/fcm';
 import { WordPage } from './../word/word';
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { NavController, Platform, ModalController, ViewController } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { ChangeDetectorRef } from '@angular/core';
@@ -64,8 +64,7 @@ export class HomePage {
   words = [];
 
   constructor(public navCtrl: NavController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, private alertCtrl: AlertController, private afs: AngularFirestore, private storage: Storage, private http: HttpClient, public fcm: FcmProvider,
-    public toastCtrl: ToastController, private splashScreen: SplashScreen,
-    private statusBar: StatusBar, ) {
+    public toastCtrl: ToastController, private modal: ModalController, private view: ViewController) {
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
     });
@@ -132,6 +131,10 @@ export class HomePage {
 
   }
 
+  instModal(){
+    const myModal = this.modal.create('ModalPage')
+    myModal.present();
+  }
 
-
+ 
 }

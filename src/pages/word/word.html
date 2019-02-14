@@ -12,7 +12,7 @@
 
       <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
 
-      <button class="btn-icon">
+      <button class="btn-icon" (click)="instModal()">
           <i class="fas fa-microphone"></i>
       </button>
     </div>

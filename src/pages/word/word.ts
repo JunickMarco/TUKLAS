@@ -1,6 +1,6 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
 import { HomePage } from '../home/home';
 
@@ -40,7 +40,8 @@ export class WordPage {
   ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
   words = [];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private modal: ModalController, private view: ViewController) {
     //algolia for search
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -126,6 +127,11 @@ export class WordPage {
   @ViewChild("audio") audio;
   playAudio() {
     this.audio.nativeElement.play();
+  }
+
+  instModal() {
+    const myModal = this.modal.create('ModalPage')
+    myModal.present();
   }
 
 

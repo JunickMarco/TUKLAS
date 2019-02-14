@@ -50,8 +50,12 @@
     <ion-slide class="start-slide">
 
         <h1>Final Score: {{score}}</h1>
-        <div class="icon-quiz">
+        <div class="icon-quiz" *ngIf="score >= 6 ">
           <img src="../../assets/imgs/icon-quiz-end.png" alt="End Icon">
+        </div>
+        
+        <div class="icon-quiz" *ngIf="score <= 5 ">
+          <img src="../../assets/imgs/icon-baybayin-kulitan.png" alt="End Icon">
         </div>
 
         <div class="menu-lesson">
