@@ -33,19 +33,170 @@
           <div class="lesson-content">
               <h2>Contents</h2>
               <ul class="content-list">
-                <li>Classification & Terminology</li>
-                <li>Filipino vs Tagalog</li>
-                <li>Early History of Filipino Language</li>
-                <li>Early Development of the Written Filipino Language</li>
-                <li>Spanish Influence on the Tagalog Language</li>
-                <li>The Philippines After Independence</li>
-                <li>Filipino as an Official Language</li>
-                <li>Filipino Language Today</li>
+                <li (click)="scrollElementWritten()">How it's Written</li>
+                <li (click)="scrollElementWritevowels()">Vowels</li>
+                <li (click)="scrollElementWriteconsonant()">Consonants</li>
+                <li (click)="scrollElementEarlyNga()">NGA Character</li>
+                <li (click)="scrollElementEarlyKudlit()">Kudlit</li>
+                <li (click)="scrollElementEarlySpanishkud()">Spanish Kudlit</li>
+                <li (click)="scrollElementEarlyVertical()">Vertical Bars</li>
               </ul>
           </div>
         </div>
   
+
+        <div class="lesson-box" #Written>
+          <h3>How it's Written</h3>
+            <div class="lesson-content">
+              <div class="lesson-text">
+                <p>
+                    <strong>Baybayin</strong> is written based on how the word is pronounced.
+                </p>
+                <p>
+                    Each consonant letter is a syllable that is pronounced with the <strong>A</strong> vowel. Each consonant is written as <strong>BA</strong> instead of <strong>B</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <div class="lesson-box" #Writevowels>
+          <h3>Vowels</h3>
+            <div class="lesson-content">
+              <div class="lesson-text">
+                <p>
+                    Baybayin has 3 special vowel characters: <strong>A, I/E and O/U</strong>.
+                </p>
+                <p>
+                    The vowels are used when a syllable doesn’t have a consonant. 
+                </p>
+
+                <p class="sample-baybayin">
+                  A E O
+                </p>
+                <p class="example-italic-text">
+                  (A) (E/I) (O/U)
+                </p>
+              </div>
+            </div>
+        </div>
+        
+
+        <div class="lesson-box" #Writeconsonant>
+          <h3>Consonants</h3>
+            <div class="lesson-content">
+              <div class="lesson-text">
+                <p>
+                    For <strong>traditional baybayin</strong> there are consonant called Final Consonants in which the consonant characters are not written. 
+                </p>
+                <p>
+                    For example in <strong>'Bundok'</strong>, NA and KA are not written because, ancient baybayin must contain a vowel sound, bundok is written as <strong>Bu Do</strong>.
+                </p>
+                <p class="example-text">
+                    Traditional:
+                  </p>
+                <p class="sample-baybayin">
+                  bu do
+                </p>
+                <br />
+                <p class="example-text">
+                    Spanish Kudlit / Modernized:
+                  </p>
+                <p class="sample-baybayin">
+                  bun+dok+
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="lesson-box" #Nga>
+            <h3>NGA Character</h3>
+              <div class="lesson-content">
+                <div class="lesson-text">
+                  <p>
+                    <strong>NGA</strong> is considered as a single character and it must be written that way.
+                  </p>
   
+                  <p class="sample-baybayin">
+                    N
+                  </p>
+                  <p class="example-italic-text">
+                    (Nga)
+                  </p>
+                </div>
+              </div>
+          </div>
+  
+          <div class="lesson-box" #Kudlit>
+              <h3>Kudlit</h3>
+                <div class="lesson-content">
+                  <div class="lesson-text">
+                    <p>
+                        It means a small cut or incision.
+                    </p>
+                    <p>
+                        To change the sound of a character is changed by the position of the kudlit. 
+                    </p>
+                    <p>
+                        For <strong>I/E</strong>the kudlit is placed on top of the letter.
+                    </p>
+                    <p>
+                        For <strong>O/U</strong>it is placed below the letter.
+                    </p>
+                    <p>
+                        The kudlit can be written or be in any shape. Usually it is written as a <strong>dot</strong> or <strong>tick</strong> but sometimes they are written/shaped like a <strong>V</strong> or <strong>></strong>. 
+                    </p>
+    
+                    <p class="sample-baybayin">
+                      b be bo
+                    </p>
+                    <p class="example-italic-text">
+                      (Ba) (Be/Bi) (Bo/Bu)
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="lesson-box" #Spanishkud>
+              <h3>Spanish Kudlit / Francis Lopez Krus</h3>
+                <div class="lesson-content">
+                  <div class="lesson-text">
+                    <p>
+                        This is to solve the Final Consonants problem, a Spanish Friar Fransisco Lopez invented a new kudlit (cross-kudlit) to cancel out the vowel sound.
+                    </p>
+                    <p>
+                        Kudlit is used when a syllable doesn’t need a vowel sound. 
+                    </p>
+                    <p>
+                        However, there are Filipinos who didn’t accept the Spanish Kudlit because they were so used to the old writing style. Today, it has become popular among Filipinos who have rediscovered Baybayin.
+                    </p>
+                    <p class="sample-baybayin">
+                      b b+
+                    </p>
+                    <p class="example-italic-text">
+                      (Ba) (B)
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="lesson-box" #Vertical>
+              <h3>Vertical Bars</h3>
+                <div class="lesson-content">
+                  <div class="lesson-text">
+                    <p>
+                        Vertical bars acted as punctuation to baybayin, it is merely used as a comma and/or a period. It can be written like || or | depending on the writer’s preference.
+                    </p>
+    
+                    <p class="sample-baybayin">
+                      .
+                    </p>
+                    <p class="example-italic-text">
+                      (period)
+                    </p>
+                  </div>
+                </div>
+            </div>
+
       </div>
   
     </div>
