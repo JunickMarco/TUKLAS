@@ -29,6 +29,14 @@ export class BaybayinWritePage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Written') Written: any;
+ @ViewChild('Writevowels') Writevowels: any;
+ @ViewChild('Writeconsonant') Writeconsonant: any;
+ @ViewChild('Nga') Nga: any;
+ @ViewChild('Kudlit') Kudlit: any;
+ @ViewChild('Spanishkud') Spanishkud: any;
+ @ViewChild('Vertical') Vertical: any;
 
  /**
   * Method to scroll to top
@@ -37,4 +45,39 @@ export class BaybayinWritePage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElemenWritten() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Written.nativeElement.offsetTop, 500);
+}
+
+public scrollElementWritevowels() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Writevowels.nativeElement.offsetTop, 500);
+}
+
+public scrollElementWriteconsonant() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Writeconsonant.nativeElement.offsetTop, 500);
+}
+
+public scrollElementNga() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Nga.nativeElement.offsetTop, 500);
+}
+
+public scrollElementKudlit() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Kudlit.nativeElement.offsetTop, 500);
+}
+
+public scrollElementSpanishkud() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Spanishkud.nativeElement.offsetTop, 500);
+}
+
+public scrollElementVertical() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Vertical.nativeElement.offsetTop, 500);
+}
 }
