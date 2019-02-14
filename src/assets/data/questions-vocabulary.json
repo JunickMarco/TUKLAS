@@ -2,23 +2,27 @@
     "questions": [
         {
             "id": 1,
-            "flashCardFront": "QUESTION VOCAB1",
-            "flashCardBack": "Helicopter",
+            "flashCardFront": "Farewell",
+            "flashCardBack": "Ang tamang sagot ay Pahimakas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": true,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
+                    "answer": "Akibat",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Pahimakas",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Sinok",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Gugol",
                     "correct": false,
                     "selected": false
                 }
@@ -26,23 +30,27 @@
         },
         {
             "id": 2,
-            "flashCardFront": "QUESTION VOCAB2",
-            "flashCardBack": "Plane",
+            "flashCardFront": "Consequence",
+            "flashCardBack": "Ang tamang sagot ay Akibat",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Pato",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Abat",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Akibat",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Abentura",
                     "correct": false,
                     "selected": false
                 }
@@ -50,47 +58,55 @@
         },
         {
             "id": 3,
-            "flashCardFront": "QUESTION VOCAB3",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Cassock",
+            "flashCardBack": "Ang tamang sagot ay Pahimakas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Abito",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Abitsuwelas",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
-                    "correct": true,
+                    "answer": "Abo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Abla",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 4,
-            "flashCardFront": "QUESTION VOCAB4",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Gibber",
+            "flashCardBack": "Ang tamang sagot ay Abla",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Aberya",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Abiso",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Abogado",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Abla",
                     "correct": true,
                     "selected": false
                 }
@@ -98,95 +114,111 @@
         },
         {
             "id": 5,
-            "flashCardFront": "QUESTION VOCAB5",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Cobwebs",
+            "flashCardBack": "Agiw",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Agiw",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Akda",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
-                    "correct": true,
+                    "answer": "Sinok",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Babag",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 6,
-            "flashCardFront": "QUESTION VOCAB6",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Combat",
+            "flashCardBack": "Ang tamang sagot ay Babag",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Dagabdab",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Babag",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Tampo ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Gulo",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 7,
-            "flashCardFront": "QUESTION VOCAB7",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Overcoat",
+            "flashCardBack": "Ang tamang sagot ay Gaban",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Gaban",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Daan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Damit",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Babad",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 8,
-            "flashCardFront": "QUESTION VOCAB8",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Navigator",
+            "flashCardBack": "Ang tamang sagot ay Nabegador",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Guro",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Obheto",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Obispado",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nabegador",
                     "correct": true,
                     "selected": false
                 }
@@ -194,95 +226,111 @@
         },
         {
             "id": 9,
-            "flashCardFront": "QUESTION VOCAB9",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Written",
+            "flashCardBack": "Ang tamang sagot ay Nakatitik",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Nakatitik",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Talima",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Paanyaya",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ngalatowat",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 10,
-            "flashCardFront": "QUESTION VOCAB10",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Loud voice",
+            "flashCardBack": "Ang tamang sagot ay Ngalatowat",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Ngalit",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Ngalatowat",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Nagisnan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Maalwan",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 11,
-            "flashCardFront": "QUESTION VOCAB11",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Clear",
+            "flashCardBack": "Ang tamang sagot ay Maaliwalas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Maalam",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Maagap",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Maaliwalas",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Maigi",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 12,
-            "flashCardFront": "QUESTION VOCAB12",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Prepared",
+            "flashCardBack": "Ang tamang sagot ay Laan",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Labaha",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Habag",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Labahita",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Laan",
                     "correct": true,
                     "selected": false
                 }
@@ -290,47 +338,55 @@
         },
         {
             "id": 13,
-            "flashCardFront": "QUESTION VOCAB13",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Nick",
+            "flashCardBack": "Ang tamang sagot ay Gaat",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Gaban",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Gabara",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Gaat",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Baak",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 14,
-            "flashCardFront": "QUESTION VOCAB14",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Neighbor",
+            "flashCardBack": "Ang tamang sagot ay Kaabay",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Kaanakan",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Kaano-ano",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Kaanak",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Kaabay",
                     "correct": true,
                     "selected": false
                 }
@@ -338,95 +394,111 @@
         },
         {
             "id": 15,
-            "flashCardFront": "QUESTION VOCAB15",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Obsequious",
+            "flashCardBack": "Ang tamang sagot ay Naglalangis",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Naglalangis",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Naglalagare",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nagisnan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nabegasyon",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 16,
-            "flashCardFront": "QUESTION VOCAB16",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Bishoptic",
+            "flashCardBack": "Ang tamang sagot ay Obispado",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Obispo",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Obispado",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Obitwaryo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Obhetibo",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 17,
-            "flashCardFront": "QUESTION VOCAB17",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Obey",
+            "flashCardBack": "Ang tamang sagot ay Talima",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Kaakuhan",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Ibigan",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Talima",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Gabay",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 18,
-            "flashCardFront": "QUESTION VOCAB18",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Cabinetmaker",
+            "flashCardBack": "Ang tamang sagot ay Pahimakas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Baar",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Katulong",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Fakultad",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ebanista",
                     "correct": true,
                     "selected": false
                 }
@@ -434,48 +506,56 @@
         },
         {
             "id": 19,
-            "flashCardFront": "QUESTION VOCAB19",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Barge",
+            "flashCardBack": "Ang tamang sagot ay Gabara",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Gabi",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Gabara",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Haba",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Pasok",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 20,
-            "flashCardFront": "QUESTION VOCAB20",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Double",
+            "flashCardBack": "Ang tamang sagot ay Ibayo",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Labaha",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Nagisnan",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Ibayo",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Obaryo",
+                    "correct": false,
                     "selected": false
                 }
             ]

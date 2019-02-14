@@ -2,23 +2,28 @@
     "questions": [
         {
             "id": 1,
-            "flashCardFront": "QUESTION BAYBAYIN1",
-            "flashCardBack": "Helicopter",
+            "flashCardFront": "A",
+            "flashCardBack": "Ang tamang sagot ay ᜀ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜀ",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜁ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜁ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂ",
                     "correct": false,
                     "selected": false
                 }
@@ -26,23 +31,28 @@
         },
         {
             "id": 2,
-            "flashCardFront": "QUESTION BAYBAYIN2",
-            "flashCardBack": "Plane",
+            "flashCardFront": "bahay",
+            "flashCardBack": "Ang tamang sagot ay ᜊᜑᜌ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜃᜎᜆ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜊᜑᜌ᜔",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜆᜑᜈᜈ᜔",
                     "correct": false,
                     "selected": false
                 }
@@ -50,47 +60,57 @@
         },
         {
             "id": 3,
-            "flashCardFront": "QUESTION BAYBAYIN3",
-            "flashCardBack": "Truck",
+            "flashCardFront": "hardin",
+            "flashCardBack": "Ang tamang sagot ay ᜑᜇ᜔ᜇᜒᜈ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜐᜒᜋ᜔ᜊᜑᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜑᜇ᜔ᜇᜒᜈ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜆᜑᜈᜈ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 4,
-            "flashCardFront": "QUESTION BAYBAYIN4",
-            "flashCardBack": "Truck",
+            "flashCardFront": "sabsaban",
+            "flashCardBack": "Ang tamang sagot ay ᜐᜊ᜔ᜐᜊᜈ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜆᜑᜈᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜐᜊ᜔ᜐᜊᜈ᜔",
                     "correct": true,
                     "selected": false
                 }
@@ -98,95 +118,115 @@
         },
         {
             "id": 5,
-            "flashCardFront": "QUESTION BAYBAYIN5",
-            "flashCardBack": "Truck",
+            "flashCardFront": "kandungan",
+            "flashCardBack": "Ang tamang sagot ay ᜃᜈ᜔ᜇᜓᜅᜈ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜃᜈ᜔ᜇᜓᜅᜈ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜐᜊ᜔ᜐᜊᜈ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜑᜇ᜔ᜇᜒᜈ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 6,
-            "flashCardFront": "QUESTION BAYBAYIN6",
-            "flashCardBack": "Truck",
+            "flashCardFront": "sakong",
+            "flashCardBack": "Ang tamang sagot ay ᜐᜃᜓᜅ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜆ᜔ᜐᜒᜈᜒᜎᜐ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜐᜃᜓᜅ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜐᜉᜆᜓᜐ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜃᜈ᜔ᜆᜓ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 7,
-            "flashCardFront": "QUESTION BAYBAYIN7",
-            "flashCardBack": "Truck",
+            "flashCardFront": "abaka",
+            "flashCardBack": "Ang tamang sagot ay ᜀᜊᜃ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜀᜊᜃᜇ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜀᜊᜅ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜀᜊᜃ",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜀᜊᜅᜈ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 8,
-            "flashCardFront": "QUESTION BAYBAYIN8",
-            "flashCardBack": "Truck",
+            "flashCardFront": "obaryo",
+            "flashCardBack": "Ang tamang sagot ay Pahimakas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜂᜊᜒᜐᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜂᜊ᜔ᜑᜒᜆᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜂᜊᜒᜐ᜔ᜉᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂᜊᜇ᜔ᜌᜓ",
                     "correct": true,
                     "selected": false
                 }
@@ -194,95 +234,115 @@
         },
         {
             "id": 9,
-            "flashCardFront": "QUESTION BAYBAYIN9",
-            "flashCardBack": "Truck",
+            "flashCardFront": "paalala",
+            "flashCardBack": "Ang tamang sagot ay ᜉᜀᜎᜎ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜉᜀᜎᜎ",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜀᜎᜋ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜀᜈᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜀᜈ᜔ᜌᜌ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 10,
-            "flashCardFront": "QUESTION BAYBAYIN10",
-            "flashCardBack": "Truck",
+            "flashCardFront": "buntot",
+            "flashCardBack": "Ang tamang sagot ay ᜊᜓᜈ᜔ᜆᜓᜆ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜊᜊᜁᜇᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜊᜓᜈ᜔ᜆᜓᜆ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜊᜊᜄ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜊᜀᜇ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 11,
-            "flashCardFront": "QUESTION BAYBAYIN11",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ba",
+            "flashCardBack": "Ang tamang sagot ay ᜊ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜃ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜊᜊ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜊ",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜊᜊ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 12,
-            "flashCardFront": "QUESTION BAYBAYIN12",
-            "flashCardBack": "Truck",
+            "flashCardFront": "daanan",
+            "flashCardBack": "Ang tamang sagot ay ᜇᜀᜈᜈ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜇᜀᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜇᜊᜓᜄ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜇᜄᜊ᜔ᜇᜊ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜇᜀᜈᜈ᜔",
                     "correct": true,
                     "selected": false
                 }
@@ -290,95 +350,115 @@
         },
         {
             "id": 13,
-            "flashCardFront": "QUESTION BAYBAYIN13",
-            "flashCardBack": "Truck",
+            "flashCardFront": "ebanista",
+            "flashCardBack": "Ang tamang sagot ay ᜁᜊᜈᜒᜐ᜔ᜆ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜁᜊᜈᜒᜐ᜔ᜆ",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜁᜊᜎ᜔ᜏᜐ᜔ᜌᜓᜈ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜁᜊᜃ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜁᜊᜉᜓᜇᜐ᜔ᜌᜓᜈ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 14,
-            "flashCardFront": "QUESTION BAYBAYIN14",
-            "flashCardBack": "Truck",
+            "flashCardFront": "alimpungat",
+            "flashCardBack": "Ang tamang sagot ay ᜀᜎᜒᜋ᜔ᜉᜓᜅᜆ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜀᜎᜒᜋ᜔ᜊᜓᜌᜓᜄᜒᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜀᜎᜒᜋ᜔ᜉᜓᜅᜆ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜀᜎᜒᜋ᜔ᜉᜉᜌᜏ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜀᜎᜒᜋ᜔ᜉᜓᜌᜓ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 15,
-            "flashCardFront": "QUESTION BAYBAYIN15",
-            "flashCardBack": "Truck",
+            "flashCardFront": "alimuom",
+            "flashCardBack": "Ang tamang sagot ay ᜀᜎᜒᜋᜓᜂᜋ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜀᜎᜒᜋᜓᜇᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜀᜎᜒᜋ᜔ᜉᜓᜌᜓ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜀᜎᜒᜋᜓᜂᜋ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜀᜎᜒᜋᜓᜇᜈᜒᜈ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 16,
-            "flashCardFront": "QUESTION BAYBAYIN16",
-            "flashCardBack": "Truck",
+            "flashCardFront": "pahimakas",
+            "flashCardBack": "Ang tamang sagot ay ᜉᜑᜒᜋᜃᜐ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜉᜀᜇᜎᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜉᜀᜈ᜔ᜌᜌ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜉᜀᜎᜋ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜑᜒᜋᜃᜐ᜔",
                     "correct": true,
                     "selected": false
                 }
@@ -386,96 +466,116 @@
         },
         {
             "id": 17,
-            "flashCardFront": "QUESTION BAYBAYIN17",
-            "flashCardBack": "Truck",
+            "flashCardFront": "lawak",
+            "flashCardBack": "Ang tamang sagot ay ᜎᜏᜃ᜔",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜎᜏᜃ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜋᜒᜄ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜈ᜔ᜄᜒᜆ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜊᜊᜓ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 18,
-            "flashCardFront": "QUESTION BAYBAYIN18",
-            "flashCardBack": "Truck",
+            "flashCardFront": "maaasahan",
+            "flashCardBack": "Ang tamang sagot ay Pahimakas",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜋᜀᜄᜉ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "ᜋᜀᜀᜐᜑᜈ᜔",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜋᜀᜎᜋ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜋᜀᜎᜆ᜔",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 19,
-            "flashCardFront": "QUESTION BAYBAYIN19",
-            "flashCardBack": "Truck",
+            "flashCardFront": "naglalagare",
+            "flashCardBack": "Ang tamang sagot ay ᜈᜄ᜔ᜎᜎᜄᜇᜒ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜈᜄᜒᜐ᜔ᜈᜈ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜈᜄᜒᜄᜒᜅ᜔",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ᜈᜄ᜔ᜎᜎᜄᜇᜒ",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜈᜊᜒᜄᜈ᜔ᜆᜒ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 20,
-            "flashCardFront": "QUESTION BAYBAYIN20",
-            "flashCardBack": "Truck",
+            "flashCardFront": "ka",
+            "flashCardBack": "Ang tamang sagot ay ᜃ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "ᜄ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ᜊ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
-                    "correct": true,
+                    "answer": "ᜇ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜃ",
+                    "correct": false,
                     "selected": false
                 }
             ]
