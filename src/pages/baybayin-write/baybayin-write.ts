@@ -46,7 +46,7 @@ export class BaybayinWritePage {
    this.pageTop.scrollToTop();
  }
 
- public scrollElemenWritten() {
+ public scrollElementWritten() {
   // Avoid reading the DOM directly, by using ViewChild and the target reference
   this.content.scrollTo(0, this.Written.nativeElement.offsetTop, 500);
 }
