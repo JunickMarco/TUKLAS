@@ -32,7 +32,7 @@ export class WordPage {
   copyrightDefFil: string;
   copyrightDefEng: string;
   copyrightSentSampl: string;
-  
+
 
   client: any;
   index: any;
@@ -45,7 +45,7 @@ export class WordPage {
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
     });
-    
+
     this.index = this.client.initIndex("tuklas_WORDS")
     //for testing
     console.log(this.navParams.get('audioFile'));
@@ -75,13 +75,13 @@ export class WordPage {
     this.sentences = navParams.get('sentences');
     this.synonyms = navParams.get('synonyms');
     this.engEq = navParams.get('engEq');
-    
-   
+
+
   }
- 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad WordPage');
-    
+
   }
 
   search(event) {
@@ -96,8 +96,10 @@ export class WordPage {
   }
 
   navigateToHomePage(): void {
-    this.navCtrl.push(HomePage);
- }
+    // this.navCtrl.push(HomePage);
+    this.navCtrl.pop()
+    console.log("Go Back")
+  }
 
   navigateToDetails(word) {
     this.selectedWord = word;
@@ -122,10 +124,10 @@ export class WordPage {
   }
 
   @ViewChild("audio") audio;
-  playAudio(){
+  playAudio() {
     this.audio.nativeElement.play();
   }
 
 
-  
+
 }

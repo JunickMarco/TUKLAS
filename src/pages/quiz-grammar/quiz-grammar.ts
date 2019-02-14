@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
+import { HttpClient } from '@angular/common/http';
 /**
  * Generated class for the QuizGrammarPage page.
  *
@@ -23,25 +24,27 @@ export class QuizGrammarPage {
   slideOptions: any;
   questions: any;
 
-  constructor(public navCtrl: NavController, public dataService: DataProvider) {
+  loadData: any;
+  data: any
+  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
 
   }
+  ionViewWillLeave() {
+    this.loadData.unsubscribe();
+  }
 
-  ionViewDidLoad() {
+  ionViewWillEnter() {
     this.slides.lockSwipes(true);
 
-    this.dataService.loadGrammar().then((data) => {
-
-      data.map((question) => {
-
+    this.loadData = this.http.get('assets/data/questions-grammar.json').subscribe((data: any) => {
+      this.data = data.questions;
+      this.data.map((question) => {
         let originalOrder = question.answers;
         question.answers = this.randomize(originalOrder);
         return question;
 
-      });
-
-      this.questions = this.randomize(data);
-      // this.questions = data.filter(item => item.n == this.random)
+      })
+      this.questions = this.randomize(this.data);
     });
   }
   nextSlide() {

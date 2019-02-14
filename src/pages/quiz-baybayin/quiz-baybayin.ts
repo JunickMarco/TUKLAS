@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
+import { HttpClient } from '@angular/common/http';
 /**
  * Generated class for the QuizBaybayinPage page.
  *
@@ -21,27 +22,29 @@ export class QuizBaybayinPage {
 
   slideOptions: any;
   questions: any;
-
-  constructor(public navCtrl: NavController, public dataService: DataProvider) {
+  loadData: any;
+  data: any
+  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
 
   }
+  ionViewWillLeave() {
+    this.loadData.unsubscribe();
+  }
 
-  ionViewDidLoad() {
+  ionViewWillEnter() {
     this.slides.lockSwipes(true);
 
-    this.dataService.loadBaybayin().then((data) => {
-
-      data.map((question) => {
-
+    this.loadData = this.http.get('assets/data/questions-baybayin.json').subscribe((data: any) => {
+      this.data = data.questions;
+      this.data.map((question) => {
         let originalOrder = question.answers;
         question.answers = this.randomize(originalOrder);
         return question;
 
-      });
-
-      this.questions = this.randomize(data);
-      // this.questions = data.filter(item => item.n == this.random)
+      })
+      this.questions = this.randomize(this.data);
     });
+
   }
   nextSlide() {
     this.slides.lockSwipes(false);

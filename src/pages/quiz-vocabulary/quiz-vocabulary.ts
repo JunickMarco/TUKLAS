@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
+import { HttpClient } from '@angular/common/http';
 /**
  * Generated class for the QuizVocabularyPage page.
  *
@@ -23,25 +24,26 @@ export class QuizVocabularyPage {
   slideOptions: any;
   questions: any;
 
-  constructor(public navCtrl: NavController, public dataService: DataProvider) {
+  loadData: any;
+  data: any
+  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
 
   }
+  ionViewWillLeave() {
+    this.loadData.unsubscribe();
+  }
 
-  ionViewDidLoad() {
-    this.slides.lockSwipes(true);
+  ionViewWillEnter() {
 
-    this.dataService.loadVocab().then((data) => {
-
-      data.map((question) => {
-
+    this.loadData = this.http.get('assets/data/questions-vocabulary.json').subscribe((data: any) => {
+      this.data = data.questions;
+      this.data.map((question) => {
         let originalOrder = question.answers;
         question.answers = this.randomize(originalOrder);
         return question;
 
-      });
-
-      this.questions = this.randomize(data);
-      // this.questions = data.filter(item => item.n == this.random)
+      })
+      this.questions = this.randomize(this.data);
     });
   }
   nextSlide() {
