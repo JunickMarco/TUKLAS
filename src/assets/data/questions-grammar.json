@@ -2,23 +2,28 @@
     "questions": [
         {
             "id": 1,
-            "flashCardFront": "QUESTION GRAMMAR1",
-            "flashCardBack": "Helicopter",
+            "flashCardFront": "1. Ang ganda _____ buhok niya.",
+            "flashCardBack": "Ang tamang sagot ay Ng",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": true,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
+                    "answer": "Nang",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Ng",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Noong",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nung",
                     "correct": false,
                     "selected": false
                 }
@@ -26,23 +31,28 @@
         },
         {
             "id": 2,
-            "flashCardFront": "QUESTION GRAMMAR2",
-            "flashCardBack": "Plane",
+            "flashCardFront": "Kailangan nating magtulong-tulong ______ luminis ang ating kapaligiran.",
+            "flashCardBack": "Ang tamang sagot ay Nang",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
+                    "answer": "Nang",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Ng ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Noong",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nung",
                     "correct": false,
                     "selected": false
                 }
@@ -50,119 +60,144 @@
         },
         {
             "id": 3,
-            "flashCardFront": "QUESTION GRAMMAR3",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ikot _____ ikot si Sarah Geronimo.",
+            "flashCardBack": "Ang tamang sagot ay Nang",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Nang",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Ng ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Noong",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Noong",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 4,
-            "flashCardFront": "QUESTION GRAMMAR4",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Hindi pa ______ daw tayo marunong magmahal.",
+            "flashCardBack": "Ang tamang sagot ay Rin",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Din ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Rin",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Lang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Roon",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 5,
-            "flashCardFront": "QUESTION GRAMMAR5",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Sasayaw na _____ ako.",
+            "flashCardBack": "Ang tamang sagot ay Rin",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Din ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Rin",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Lang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Roon",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 6,
-            "flashCardFront": "QUESTION GRAMMAR6",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ang hirap talaga kapag ______ ang pananaw natin sa buhay.",
+            "flashCardBack": "Ang tamang sagot ay ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Iba'iba",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Iba iba",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Iba-iba",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Ibaiba",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 7,
-            "flashCardFront": "QUESTION GRAMMAR7",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Bakit gan’on ang sagot? _____ naman.",
+            "flashCardBack": "Ang tamang sagot ay ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Walang tamang sagot",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Paki explain",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Pakiexplain",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Paki-explain",
                     "correct": true,
                     "selected": false
                 }
@@ -170,23 +205,28 @@
         },
         {
             "id": 8,
-            "flashCardFront": "QUESTION GRAMMAR8",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Alin sa mga pangungusap ang may tamang balarila?",
+            "flashCardBack": "Ang tamang sagot ay Walang makapipigil sa’min!",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Umaasa parin ako sabihin mo, sana ako parin. Ako nalang. Ako nalang ulit.",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Makakainom na din siya nang maram",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Makakainom na din siya nang marami",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Walang makapipigil sa’min!",
                     "correct": true,
                     "selected": false
                 }
@@ -194,143 +234,173 @@
         },
         {
             "id": 9,
-            "flashCardFront": "QUESTION GRAMMAR9",
-            "flashCardBack": "Truck",
+            "flashCardFront": "_______ ang kanyang biro.",
+            "flashCardBack": "Ang tamang sagot ay Nakakatawa",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Nakakatawa",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Nakatatawa",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nakakatatawa",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Nakakatuwa",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 10,
-            "flashCardFront": "QUESTION GRAMMAR10",
-            "flashCardBack": "Truck",
+            "flashCardFront": "_______ ang ating mga sariling tadhana.",
+            "flashCardBack": "Ang tamang sagot ay Iba’t iba",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Iba’t-iba",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Iba’t iba",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Iba'tiba",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ibatiba",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 11,
-            "flashCardFront": "QUESTION GRAMMAR11",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Nakakainis ________ magbasa ng mahabang kwento",
+            "flashCardBack": "Ang tamang sagot ay Palang",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Pa lang",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Pala",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Palang",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Pa la ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 12,
-            "flashCardFront": "QUESTION GRAMMAR12",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Nasa bahay ______ ako.",
+            "flashCardBack": "Ang tamang sagot ay Pa lang",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Pa lang",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Pala",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Palang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Pa la ",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 13,
-            "flashCardFront": "QUESTION GRAMMAR13",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ikaw ______ pala ang _______ niya at hindi ako.",
+            "flashCardBack": "Ang tamang sagot ay Pa rin ; Hanap-hanap",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Parin ; Hanap-hanap",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Pa rin ; Hanap hanap",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Pa rin ; Hanap-hanap",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "Parin ; Hanap hanap",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 14,
-            "flashCardFront": "QUESTION GRAMMAR14",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Malulungkot ako kapag wala ______ tao sa bahay namin sa darating na pasko.",
+            "flashCardBack": "Ang tamang sagot ay Na namang",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Nanamang",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Na'namang",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Na-namang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Na namang",
                     "correct": true,
                     "selected": false
                 }
@@ -338,47 +408,57 @@
         },
         {
             "id": 15,
-            "flashCardFront": "QUESTION GRAMMAR15",
-            "flashCardBack": "Truck",
+            "flashCardFront": "______ akong nais malaman.",
+            "flashCardBack": "Ang tamang sagot ay Mayroon",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Mayron",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "Meron",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "Mayroon",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "May'roon",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 16,
-            "flashCardFront": "QUESTION GRAMMAR16",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ako ay _________ sa kanilang bahay.",
+            "flashCardBack": "Ang tamang sagot ay tagaluto",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "taga-luto ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "tiga-luto",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "tagaluto",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "tagaluto",
                     "correct": true,
                     "selected": false
                 }
@@ -386,95 +466,115 @@
         },
         {
             "id": 17,
-            "flashCardFront": "QUESTION GRAMMAR17",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Saan ka nakatira?",
+            "flashCardBack": "Ang tamang sagot ay Taga-Capiz",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "Tiga-Bulacan",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "Taga-Capiz",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "TagaNovaliches",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "TigaMaynila",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 18,
-            "flashCardFront": "QUESTION GRAMMAR18",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Bawal ang ______ sa ating pupuntahan.",
+            "flashCardBack": "Ang tamang sagot ay naka-itim",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "nakaitim",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "nakakakaitim",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "naka-itim",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "nakaitiman",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 19,
-            "flashCardFront": "QUESTION GRAMMAR19",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Ang mga kinakasal ay _______.",
+            "flashCardBack": "Ang tamang sagot ay nakaputi",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "nakaputi",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "naka-puti",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "nakakakaputi",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "naka-kaputi",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 20,
-            "flashCardFront": "QUESTION GRAMMAR20",
-            "flashCardBack": "Truck",
+            "flashCardFront": "Pumunta tayo doon ______umaga na",
+            "flashCardBack": "Ang tamang sagot ay kapag",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "kung",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "sa",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "kapag",
                     "correct": true,
                     "selected": false
                 }

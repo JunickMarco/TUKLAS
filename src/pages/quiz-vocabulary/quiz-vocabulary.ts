@@ -67,7 +67,7 @@ export class QuizVocabularyPage {
       this.nextSlide();
       answer.selected = false;
       question.flashCardFlipped = false;
-    }, 1000);
+    }, 2000);
   }
 
   randomize(rawAnswers: any[]): any[] {

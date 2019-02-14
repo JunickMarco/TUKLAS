@@ -67,7 +67,7 @@ export class QuizBaybayinPage {
       this.nextSlide();
       answer.selected = false;
       question.flashCardFlipped = false;
-    }, 1000);
+    }, 1700);
   }
 
   randomize(rawAnswers: any[]): any[] {

@@ -2,47 +2,57 @@
     "questions": [
         {
             "id": 1,
-            "flashCardFront": "QUESTION IDIOMS1",
-            "flashCardBack": "Helicopter",
+            "flashCardFront": "taong nagbabait-baitan",
+            "flashCardBack": "Ang tamang sagot ay bantay-salakay",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "halang ang bituka",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "anak-dalita",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "balat-sibuyas",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "bantay-salakay",
                     "correct": true,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
-                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 2,
-            "flashCardFront": "QUESTION IDIOMS2",
-            "flashCardBack": "Plane",
+            "flashCardFront": "utusang walang sweldo, pagkain lang",
+            "flashCardBack": "Ang tamang sagot ay alilang-kanin",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "anak-dalita",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "anak-pawis",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "alilang-kanin",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "balat-kalabaw",
                     "correct": false,
                     "selected": false
                 }
@@ -50,71 +60,86 @@
         },
         {
             "id": 3,
-            "flashCardFront": "QUESTION IDIOMS3",
-            "flashCardBack": "Truck",
+            "flashCardFront": "mahina ang pakiramdam, di agad tinatablan ng hiya",
+            "flashCardBack": "Ang tamang sagot ay balat-kalabaw",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "buto't balat",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "balat-kalabaw",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "matigas ang buto",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "magaan ang kamay",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 4,
-            "flashCardFront": "QUESTION IDIOMS4",
-            "flashCardBack": "Truck",
+            "flashCardFront": "salbahe, desperado, hindi nangingiming pumatay ng tao",
+            "flashCardBack": "Ang tamang sagot ay halang ang bituka",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "halang ang bituka",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "mahapdi ang bituka",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "dalawa ang bibig",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "balat-sibuyas",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 5,
-            "flashCardFront": "QUESTION IDIOMS5",
-            "flashCardBack": "Truck",
+            "flashCardFront": "nagtapat na nais pakasalan ang kasintahan",
+            "flashCardBack": "Ang tamang sagot ay nagbukas ng dibdib",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "bulaklak ng dila",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "daga sa dibdib",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "matamis ang dila",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "nagbukas ng dibdib",
                     "correct": true,
                     "selected": false
                 }
@@ -122,95 +147,115 @@
         },
         {
             "id": 6,
-            "flashCardFront": "QUESTION IDIOMS6",
-            "flashCardBack": "Truck",
+            "flashCardFront": "di-makagiliwan",
+            "flashCardBack": "Ang tamang sagot ay mabigat ang loob",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "mahabang dulang",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "maitim ang dugo",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "mabigat ang loob",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "maanghang ang dila",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 7,
-            "flashCardFront": "QUESTION IDIOMS7",
-            "flashCardBack": "Truck",
+            "flashCardFront": "mahinhin",
+            "flashCardBack": "Ang tamang sagot ay di makabasag-pinggan",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "kusang palo",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "di makabasag-pinggan",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "magaan ang dugo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "bukal sa loob",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 8,
-            "flashCardFront": "QUESTION IDIOMS8",
-            "flashCardBack": "Truck",
+            "flashCardFront": "patay na",
+            "flashCardBack": "Ang tamang sagot ay pantay ang mga paa ",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "pantay ang mga paa",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 9,
-            "flashCardFront": "QUESTION IDIOMS9",
-            "flashCardBack": "Truck",
+            "flashCardFront": "hindi totoong balita",
+            "flashCardBack": "Ang tamang sagot ay balitang kutsero",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "sanga-sangang dila",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "kaututang dila",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "tulak ng bibig",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "balitang kutsero",
                     "correct": true,
                     "selected": false
                 }
@@ -218,95 +263,115 @@
         },
         {
             "id": 10,
-            "flashCardFront": "QUESTION IDIOMS10",
-            "flashCardBack": "Truck",
+            "flashCardFront": "sinungaling",
+            "flashCardBack": "Ang tamang sagot ay sanga-sangang dila",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "kaututang dila",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "tulak ng bibig",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "sanga-sangang dila",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "balitang kutsero",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 11,
-            "flashCardFront": "QUESTION IDIOMS11",
-            "flashCardBack": "Truck",
+            "flashCardFront": "lagalag, busabos",
+            "flashCardBack": "Ang tamang sagot ay hampas-lupa",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "tatlo ang mata",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "hampas-lupa",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "maitim ang budhi",
+                   "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "makapal ang palad",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 12,
-            "flashCardFront": "QUESTION IDIOMS12",
-            "flashCardBack": "Truck",
+            "flashCardFront": "taong simangot, problemado",
+            "flashCardBack": "Ang tamang sagot ay madilim ang mukha",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "madilim ang mukha",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "dalawa ang mukha",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "namuti ang mata",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "mahaba ang buntot",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 13,
-            "flashCardFront": "QUESTION IDIOMS13",
-            "flashCardBack": "Truck",
+            "flashCardFront": "mapag-mataas, di namamansin",
+            "flashCardBack": "Ang tamang sagot ay matigas ang leeg",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "makapal ang palad",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "anak-dalita",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "balat-kalabaw",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "matigas ang leeg",
                     "correct": true,
                     "selected": false
                 }
@@ -314,95 +379,115 @@
         },
         {
             "id": 14,
-            "flashCardFront": "QUESTION IDIOMS14",
-            "flashCardBack": "Truck",
+            "flashCardFront": "salawahan",
+            "flashCardBack": "Ang tamang sagot ay namamangka sa dalawang ilog",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "naniningalang-pugad",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ningas-kugon",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "namamangka sa dalawang ilog",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "nagbibilang ng poste",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 15,
-            "flashCardFront": "QUESTION IDIOMS15",
-            "flashCardBack": "Truck",
+            "flashCardFront": "matandang nag-aayos binata o dalaga",
+            "flashCardBack": "Ang tamang sagot ay nagmumurang kamatis",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "panis ang laway",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "nagmumurang kamatis",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "pulot-gata",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "putok sa buho",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 16,
-            "flashCardFront": "QUESTION IDIOMS16",
-            "flashCardBack": "Truck",
+            "flashCardFront": "nagsasabi ng mga kuwento ukol sa isang tao",
+            "flashCardBack": "Ang tamang sagot ay nagpupusa",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "nagpupusa",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "sampid-bakod",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "pulot-gata",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "putok sa buho",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 17,
-            "flashCardFront": "QUESTION IDIOMS17",
-            "flashCardBack": "Truck",
+            "flashCardFront": "taong nagpapanggap, hindi mapagkakatiwalaan ang sinasabi",
+            "flashCardBack": "Ang tamang sagot ay sampay-bakod",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "talusaling",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "sampid-bakod",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "samaing palad",
+                   "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sampay-bakod",
                     "correct": true,
                     "selected": false
                 }
@@ -410,72 +495,87 @@
         },
         {
             "id": 18,
-            "flashCardFront": "QUESTION IDIOMS18",
-            "flashCardBack": "Truck",
+            "flashCardFront": "nagmamayabang, nangmamaliit",
+            "flashCardBack": "Ang tamang sagot ay tawang-aso",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "naniningalang-pugad",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
+                    "answer": "ningas-kugon",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Truck",
+                    "answer": "tawang-aso",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "maitim ang budhi",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 19,
-            "flashCardFront": "QUESTION IDIOMS19",
-            "flashCardBack": "Truck",
+            "flashCardFront": "bobo, mahina ang ulo",
+            "flashCardBack": "Ang tamang sagot ay utak-biya",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
+                    "answer": "sira ang tuktok",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "utak-biya",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "mahangin ang ulo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "talusira",
+                    "correct": false,
                     "selected": false
                 }
             ]
         },
         {
             "id": 20,
-            "flashCardFront": "QUESTION IDIOMS20",
-            "flashCardBack": "Truck",
+            "flashCardFront": "madaling magbago",
+            "flashCardBack": "Ang tamang sagot ay talusira",
             "flashCardFlipped": false,
-            "questionText": "What is this?",
+            
             "answers": [
                 {
-                    "answer": "Helicopter",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Plane",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Truck",
+                    "answer": "talusira",
                     "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "utak-biya",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "may ipot sa ulo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "talusaling",
+                    "correct": false,
                     "selected": false
                 }
             ]
