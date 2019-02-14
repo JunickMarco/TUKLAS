@@ -6,22 +6,23 @@
         <div class="logo-container">
             <img id="logo" src="../../assets/imgs/logo-placeholder.png" alt="Tuklas Logo">
         </div>
-    
+
         <div class="search-container">
             <div class="search-box">
-                <ion-searchbar [(ngModel)]="selectedItem" (ionInput)="search($event)" debounce="1" placeholder="Search a word..."></ion-searchbar>
-                <button class="btn-icon" (click)="global()">
+                <ion-searchbar [(ngModel)]="selectedItem" (ionInput)="search($event)" debounce="1"
+                    placeholder="Search a word..."></ion-searchbar>
+                <button class="btn-icon" (click)="instModal()">
                     <!-- <ion-icon name="mic"></ion-icon> -->
                     <i class="fas fa-microphone"></i>
                 </button>
             </div>
-            
+
             <div *ngIf="selectedItem.length > 1" class="suggestion-box">
                 <ion-list>
-        
+
                     <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
                         <h2>Filipino: {{word.wordName}}</h2>
-                
+
                         <div *ngIf="word.engEq == null">
                             <h3>English: None</h3>
                         </div>
@@ -29,13 +30,13 @@
                             <h3>English: {{word.engEq}}</h3>
                         </div>
                     </ion-item>
-                
+
                     <div *ngIf="selectedItem">
                         <ion-item *ngIf="words.length < 1 ">
                             <h2>No Word Found</h2>
                         </ion-item>
                     </div>
-        
+
                 </ion-list>
             </div>
         </div>
@@ -43,18 +44,19 @@
         <div class="wotd-container">
             <div class="wotd-card" (touchend)="SwitchTab()" (click)="SwitchTab()">
 
-                    <div class="card-title"> <span class="accent">></span> Word of the Day</div>
-                    <div class="card-random">
-                        <div class="card-word" *ngFor="let item of wordsWOTD | async">{{item.wordName}}</div>
-                        <div class="card-baybayin bay-font" *ngFor="let item of wordsWOTD | async" >{{item.bayEq}}</div>
-                        <div class="card-pos" *ngFor="let item of wordsWOTD | async" >{{item.partofspeech.filParos}} | {{item.partofspeech.engParos}}</div>
-                    </div>
-                    <div class="card-footer">
-                        <p>tap to view word card </p>
-                        <img src="../../assets/imgs/tap.png" alt="tap"> 
-                    </div>
-            
+                <div class="card-title"> <span class="accent">></span> Word of the Day</div>
+                <div class="card-random">
+                    <div class="card-word" *ngFor="let item of wordsWOTD | async">{{item.wordName}}</div>
+                    <div class="card-baybayin bay-font" *ngFor="let item of wordsWOTD | async">{{item.bayEq}}</div>
+                    <div class="card-pos" *ngFor="let item of wordsWOTD | async">{{item.partofspeech.filParos}} |
+                        {{item.partofspeech.engParos}}</div>
                 </div>
+                <div class="card-footer">
+                    <p>tap to view word card </p>
+                    <img src="../../assets/imgs/tap.png" alt="tap">
+                </div>
+
+            </div>
         </div>
     </div>
 </ion-content>
