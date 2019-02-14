@@ -124,7 +124,7 @@
         {
             "id": 6,
             "flashCardFront": "Ang hirap talaga kapag ______ ang pananaw natin sa buhay.",
-            "flashCardBack": "Ang tamang sagot ay ",
+            "flashCardBack": "Ang tamang sagot ay Iba-iba",
             "flashCardFlipped": false,
             
             "answers": [
@@ -149,7 +149,7 @@
         {
             "id": 7,
             "flashCardFront": "Bakit gan’on ang sagot? _____ naman.",
-            "flashCardBack": "Ang tamang sagot ay ",
+            "flashCardBack": "Ang tamang sagot ay Paki-explain",
             "flashCardFlipped": false,
             
             "answers": [
@@ -367,7 +367,7 @@
                     "answer": "Mayroon",
                     "correct": true,
                     "selected": false
-                },
+                }
 
             ]
         },

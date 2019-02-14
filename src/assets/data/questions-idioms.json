@@ -7,11 +7,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "halang ang bituka",
-                    "correct": false,
-                    "selected": false
-                },
+         
                 {
                     "answer": "anak-dalita",
                     "correct": false,
@@ -36,18 +32,14 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "anak-dalita",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "anak-pawis",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "alilang-kanin",
+                    "answer": "alilang-kanin", 
                     "correct": true,
                     "selected": false
                 },
@@ -65,11 +57,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "buto't balat",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "balat-kalabaw",
                     "correct": true,
@@ -108,11 +96,6 @@
                     "answer": "dalawa ang bibig",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "balat-sibuyas",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -123,11 +106,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "bulaklak ng dila",
-                    "correct": false,
-                    "selected": false
-                },
+                
                 {
                     "answer": "daga sa dibdib",
                     "correct": false,
@@ -152,11 +131,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "mahabang dulang",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "maitim ang dugo",
                     "correct": false,
@@ -181,11 +156,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "kusang palo",
-                    "correct": false,
-                    "selected": false
-                },
+               
                 {
                     "answer": "di makabasag-pinggan",
                     "correct": true,
@@ -216,17 +187,12 @@
                     "selected": false
                 },
                 {
-                    "answer": "",
+                    "answer": "sampid-bakod",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "",
+                    "answer": "nakapinid ang tainga",
                     "correct": false,
                     "selected": false
                 }
@@ -239,11 +205,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "sanga-sangang dila",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "kaututang dila",
                     "correct": false,
@@ -274,11 +236,6 @@
                     "selected": false
                 },
                 {
-                    "answer": "tulak ng bibig",
-                    "correct": false,
-                    "selected": false
-                },
-                {
                     "answer": "sanga-sangang dila",
                     "correct": true,
                     "selected": false
@@ -297,11 +254,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "tatlo ang mata",
-                    "correct": false,
-                    "selected": false
-                },
+           
                 {
                     "answer": "hampas-lupa",
                     "correct": true,
@@ -340,11 +293,6 @@
                     "answer": "namuti ang mata",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "mahaba ang buntot",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -355,11 +303,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "makapal ang palad",
-                    "correct": false,
-                    "selected": false
-                },
+              
                 {
                     "answer": "anak-dalita",
                     "correct": false,
@@ -384,11 +328,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "naniningalang-pugad",
-                    "correct": false,
-                    "selected": false
-                },
+           
                 {
                     "answer": "ningas-kugon",
                     "correct": false,
@@ -413,11 +353,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "panis ang laway",
-                    "correct": false,
-                    "selected": false
-                },
+           
                 {
                     "answer": "nagmumurang kamatis",
                     "correct": true,
@@ -456,11 +392,6 @@
                     "answer": "pulot-gata",
                     "correct": false,
                     "selected": false
-                },
-                {
-                    "answer": "putok sa buho",
-                    "correct": false,
-                    "selected": false
                 }
             ]
         },
@@ -471,11 +402,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "talusaling",
-                    "correct": false,
-                    "selected": false
-                },
+      
                 {
                     "answer": "sampid-bakod",
                     "correct": false,
@@ -500,11 +427,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "naniningalang-pugad",
-                    "correct": false,
-                    "selected": false
-                },
+        
                 {
                     "answer": "ningas-kugon",
                     "correct": false,
@@ -529,11 +452,7 @@
             "flashCardFlipped": false,
             
             "answers": [
-                {
-                    "answer": "sira ang tuktok",
-                    "correct": false,
-                    "selected": false
-                },
+        
                 {
                     "answer": "utak-biya",
                     "correct": true,
@@ -570,11 +489,6 @@
                 },
                 {
                     "answer": "may ipot sa ulo",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "talusaling",
                     "correct": false,
                     "selected": false
                 }

@@ -459,11 +459,7 @@
             "flashCardBack": "Ang tamang sagot ay Ibayo",
             "flashCardFlipped": false,
             "answers": [
-                {
-                    "answer": "Labaha",
-                    "correct": false,
-                    "selected": false
-                },
+             
                 {
                     "answer": "Nagisnan",
                     "correct": false,
