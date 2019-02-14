@@ -61,11 +61,25 @@ page-baybayin-intro {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
 
-            margin: 2%;
+            margin: 3%;
 
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            h3 {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 18px;  
+
+                background: #FFFBA0;
+                // border: 1px solid #fff;
+                box-sizing: border-box;
+                border-radius: 3px;
+
+                padding: 5px;
+                max-width: 90%;
+            }
 
 
             .lesson-title {
@@ -105,6 +119,7 @@ page-baybayin-intro {
                     font-size: 18px;  
                 }
 
+
                 .content-list{
                     list-style-type: none;
                     margin-top: 5px;
@@ -117,7 +132,7 @@ page-baybayin-intro {
                         margin: 5px;
                         padding: 3px 5px; 
     
-                        background: #A8FFA0;
+                        background: #FFFBA0;
                         // border: 1px solid #fff;
                         box-sizing: border-box;
                         border-radius: 3px;
@@ -127,14 +142,20 @@ page-baybayin-intro {
                         font-size: 13px;
 
                         &:active {
-                            background: rgb(197, 255, 192);
+                            background: rgb(252, 189, 189);
                             transition: 0.1s;         
                         }
                     }
                 }
+
+                .lesson-text {
+                    font-family: 'sourcesans-reg';
+                    color: #000;
+                    font-size: 13px;
+                }
+
             }
-
-
+            
         }
     }
 }
