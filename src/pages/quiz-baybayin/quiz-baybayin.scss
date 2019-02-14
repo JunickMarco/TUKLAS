@@ -154,32 +154,33 @@
                 }
     
                 .item-quiz {
-                    width: 230px;
-                    height: 90px;
+                    // width: 230px;
+                    // height: 90px;
+                    padding: 30px;
+
                     background: #fff;
                     background-size: cover;
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     border-radius: 10px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
     
-                .description-lesson {
-                    padding: 5px;
-                    text-align: center;
-                    position: relative;
-                    bottom: 15px;
-                    
-                    h2 {
-                        font-family: 'opensans-bold';
-                        color: #000;
-                        font-size: 18px;  
-                    }
+
+                h2 {
+                    font-family: 'opensans-bold';
+                    color: #000;
+                    font-size: 18px;  
                 }
+
     
                 .icon-quiz {
-                    width: 40%;
+                    width: 10%;
     
                     img {
-                        width: 67px;
+                        width: 37px;
                         height: 56px;
                     }
                 }

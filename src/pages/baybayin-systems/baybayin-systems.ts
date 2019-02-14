@@ -28,6 +28,10 @@ export class BaybayinSystemsPage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Surat') Surat: any;
+ @ViewChild('Tagbanua') Tagbanua: any;
+ @ViewChild('Kulitan') Kulitan: any;
 
  /**
   * Method to scroll to top
@@ -36,5 +40,20 @@ export class BaybayinSystemsPage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElementSurat() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Surat.nativeElement.offsetTop, 500);
+}
+
+public scrollElementTagbanua() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Tagbanua.nativeElement.offsetTop, 500);
+}
+
+public scrollElementKulitan() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Kulitan.nativeElement.offsetTop, 500);
+}
 
 }

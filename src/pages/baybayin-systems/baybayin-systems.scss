@@ -71,11 +71,25 @@ page-baybayin-systems {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
 
-            margin: 2%;
+            margin: 3%;
 
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            h3 {
+                font-family: 'opensans-bold';
+                color: #000;
+                font-size: 18px;  
+
+                background: #FFFBA0;
+                // border: 1px solid #fff;
+                box-sizing: border-box;
+                border-radius: 3px;
+
+                padding: 5px;
+                max-width: 90%;
+            }
 
 
             .lesson-title {
@@ -90,13 +104,13 @@ page-baybayin-systems {
                     align-items: center;
 
                     img {
-                        width: 100%;
+                        width: 90%;
                         height: 76px;
                     }
                 }
 
                 .lesson-name {
-                    width: 70%;
+                    width: 60%;
                     padding-left: 5px;
 
                     font-family: 'opensans-extrabold';
@@ -115,6 +129,7 @@ page-baybayin-systems {
                     font-size: 18px;  
                 }
 
+
                 .content-list{
                     list-style-type: none;
                     margin-top: 5px;
@@ -127,7 +142,7 @@ page-baybayin-systems {
                         margin: 5px;
                         padding: 3px 5px; 
     
-                        background: #FFC2A0;
+                        background: #FFFBA0;
                         // border: 1px solid #fff;
                         box-sizing: border-box;
                         border-radius: 3px;
@@ -137,14 +152,40 @@ page-baybayin-systems {
                         font-size: 13px;
 
                         &:active {
-                            background: rgb(255, 217, 196);
+                            background: rgb(255, 252, 204);
                             transition: 0.1s;         
                         }
                     }
                 }
+
+                .lesson-text {
+                    font-family: 'sourcesans-reg';
+                    color: #000;
+                    font-size: 13px;
+                }
+
+                .text-light {
+                    font-family: 'sourcesans-light';
+                    color: #000;
+                    font-size: 13px;
+                }
+
+                .example-text {
+                    font-family: 'sourcesans-bold';
+                    color: #000;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                .example-italic-text {
+                    font-family: 'sourcesans-semibolditalic';
+                    color: #000;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
             }
-
-
+            
         }
     }
 }

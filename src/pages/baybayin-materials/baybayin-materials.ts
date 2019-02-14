@@ -31,6 +31,8 @@ export class BaybayinMaterialsPage {
  @ViewChild(Content) content: Content;
  @ViewChild('Lordsprayer') Lordsprayer: any;
  @ViewChild('Lupanghinirang') Lupanghinirang: any;
+ @ViewChild('Univer') Univer: any;
+ @ViewChild('Motto') Motto: any;
 
  /**
   * Method to scroll to top
@@ -48,5 +50,15 @@ export class BaybayinMaterialsPage {
 public scrollElementLupanghinirang() {
   // Avoid reading the DOM directly, by using ViewChild and the target reference
   this.content.scrollTo(0, this.Lupanghinirang.nativeElement.offsetTop, 500);
+}
+
+public scrollElementUniver() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Univer.nativeElement.offsetTop, 500);
+}
+
+public scrollElementMotto() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Motto.nativeElement.offsetTop, 500);
 }
 }
