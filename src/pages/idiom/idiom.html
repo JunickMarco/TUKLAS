@@ -23,8 +23,13 @@
             <h1>{{idiomName}}</h1>
             <span class="fake">{{idiomName}}</span>
         </div>
-        
+      
         <div class="lesson-content">
+          <div class="meaning" *ngIf="litMean != null">
+          <h2>Literal Meaning</h2>
+          <p>: {{litMean}}</p>
+          </div>
+
            <div class="meaning">
               <h2>Meaning</h2>
               <p>: {{meanEng}}</p>

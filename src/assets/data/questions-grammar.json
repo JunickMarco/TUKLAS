@@ -171,31 +171,7 @@
                 }
             ]
         },
-        {
-            "id": 8,
-            "flashCardFront": "Alin sa mga pangungusap ang may tamang balarila?",
-            "flashCardBack": "Ang tamang sagot ay Walang makapipigil sa’min!",
-            "flashCardFlipped": false,
-            
-            "answers": [
-                {
-                    "answer": "Umaasa parin ako sabihin mo, sana ako parin. Ako nalang. Ako nalang ulit.",
-                    "correct": false,
-                    "selected": false
-                },
-
-                {
-                    "answer": "Makakainom na din siya nang marami",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Walang makapipigil sa’min!",
-                    "correct": true,
-                    "selected": false
-                }
-            ]
-        },
+       
         {
             "id": 9,
             "flashCardFront": "_______ ang kanyang biro.",
@@ -374,7 +350,7 @@
         {
             "id": 16,
             "flashCardFront": "Ako ay _________ sa kanilang bahay.",
-            "flashCardBack": "Ang tamang sagot ay tagaluto",
+            "flashCardBack": "Ang tamang sagot ay taga luto",
             "flashCardFlipped": false,
             
             "answers": [

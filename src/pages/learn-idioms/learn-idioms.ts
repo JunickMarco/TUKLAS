@@ -24,6 +24,7 @@ import 'rxjs/add/operator/map';
    idiomID: number;
    idiomName: string;
    meaning: Map<string, string>;
+   litMean: string;
  }
 @IonicPage()
 
@@ -87,19 +88,7 @@ export class LearnIdiomsPage implements OnInit{
   idioms26: Observable<any[]>;
  
   constructor(private afs: AngularFirestore, public navCtrl: NavController){
-    // this.idioms = db.collection('idioms').valueChanges();
-    // this.idioms = db.collection('idioms', ref => {
-    //   return ref.orderBy('idiomName')
-    // }).valueChanges();
-    // this.idioms = db.collection('idioms', ref => {
-    //   return ref.where('idiomId', '==', '2000')
-    // }).valueChanges();
 
-
-  
-    // switchMap(aaa => db.collection('idioms', ref => ref.where('idiomId', '==', '2000')).valueChanges(),
-    
-    // );
     
  }
 
@@ -246,7 +235,8 @@ export class LearnIdiomsPage implements OnInit{
       'meanEng': this.selectedIdiom.meaning.meanEng,
       'meanFil': this.selectedIdiom.meaning.meanFil,
       'idiomCopyr': this.selectedIdiom.idiomCopyr,
-      'idiomID': this.selectedIdiom.idiomID
+      'idiomID': this.selectedIdiom.idiomID,
+      'litMean': this.selectedIdiom.litMean
     });
 
   }
