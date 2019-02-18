@@ -24,7 +24,7 @@ import 'rxjs/add/operator/map';
    idiomID: number;
    idiomName: string;
    meaning: Map<string, string>;
-   litMean: string;
+
  }
 @IonicPage()
 
@@ -236,7 +236,7 @@ export class LearnIdiomsPage implements OnInit{
       'meanFil': this.selectedIdiom.meaning.meanFil,
       'idiomCopyr': this.selectedIdiom.idiomCopyr,
       'idiomID': this.selectedIdiom.idiomID,
-      'litMean': this.selectedIdiom.litMean
+      'meanLit': this.selectedIdiom.meaning.meanLit
     });
 
   }

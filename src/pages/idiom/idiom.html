@@ -1,4 +1,3 @@
-
 <ion-content>
   <div class="nav-half"></div>
 
@@ -11,7 +10,7 @@
     <div class="title">
       <p>Idioms</p>
     </div>
-     
+
   </div>
 
   <div class="content-wrapper">
@@ -20,35 +19,35 @@
 
       <div class="lesson-box">
         <div class="lesson-title">
-            <h1>{{idiomName}}</h1>
-            <span class="fake">{{idiomName}}</span>
+          <h1>{{idiomName}}</h1>
+          <span class="fake">{{idiomName}}</span>
         </div>
-      
+
         <div class="lesson-content">
-          <div class="meaning" *ngIf="litMean != null">
-          <h2>Literal Meaning</h2>
-          <p>: {{litMean}}</p>
+          <div class="meaning" *ngIf="meanLit!= null">
+            <h2>Literal Meaning</h2>
+            <p>: {{meanLit}}</p>
           </div>
 
-           <div class="meaning">
-              <h2>Meaning</h2>
-              <p>: {{meanEng}}</p>
-           </div>
+          <div class="meaning">
+            <h2>Meaning</h2>
+            <p>: {{meanEng}}</p>
+          </div>
 
-           <div class="kahulugan">
-              <h2>Kahuluhan</h2>
-              <p>: {{meanFil}}</p>
-           </div>
+          <div class="kahulugan">
+            <h2>Kahuluhan</h2>
+            <p>: {{meanFil}}</p>
+          </div>
         </div>
 
         <div class="copyrights">
-            <div class="word-subhead cpr">Copyrights ©</div>
-            <p class="copy-item">Meaning retrieved from {{idiomCopyr}}</p>
-          </div>
+          <div class="word-subhead cpr">Copyrights ©</div>
+          <p class="copy-item">Meaning retrieved from {{idiomCopyr}}</p>
+        </div>
       </div>
 
     </div>
 
-  
+
   </div>
 </ion-content>

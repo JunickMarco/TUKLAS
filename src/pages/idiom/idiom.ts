@@ -22,20 +22,20 @@ export class IdiomPage {
   meanFil: string;
   idiomCopyr: string;
   idiomId: number;
-  litMean: string;
+  meanLit: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log(this.navParams.get('idiomName'));
     console.log(this.navParams.get('meanEng'));
     console.log(this.navParams.get('meanFil'));
     console.log(this.navParams.get('idiomCopyr'));
-    console.log(this.navParams.get('litMean'));
+    console.log(this.navParams.get('meanLit'));
 
     this.idiomName = navParams.get('idiomName');
     this.meanEng = navParams.get('meanEng');
     this.meanFil = navParams.get('meanFil');
     this.idiomCopyr = navParams.get('idiomCopyr');
     this.idiomId = navParams.get('idiomId');
-    this.litMean = navParams.get('litMean');
+    this.meanLit = navParams.get('meanLit');
   }
 
   ionViewDidLoad() {
