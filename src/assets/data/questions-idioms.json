@@ -3,7 +3,7 @@
         {
             "id": 1,
             "flashCardFront": "taong nagbabait-baitan",
-            "flashCardBack": "Ang tamang sagot ay bantay-salakay",
+            "flashCardBack": "bantay-salakay",
             "flashCardFlipped": false,
             
             "answers": [
@@ -28,7 +28,7 @@
         {
             "id": 2,
             "flashCardFront": "utusang walang sweldo, pagkain lang",
-            "flashCardBack": "Ang tamang sagot ay alilang-kanin",
+            "flashCardBack": "alilang-kanin",
             "flashCardFlipped": false,
             
             "answers": [
@@ -53,7 +53,7 @@
         {
             "id": 3,
             "flashCardFront": "mahina ang pakiramdam, di agad tinatablan ng hiya",
-            "flashCardBack": "Ang tamang sagot ay balat-kalabaw",
+            "flashCardBack": "balat-kalabaw",
             "flashCardFlipped": false,
             
             "answers": [
@@ -78,7 +78,7 @@
         {
             "id": 4,
             "flashCardFront": "salbahe, desperado, hindi nangingiming pumatay ng tao",
-            "flashCardBack": "Ang tamang sagot ay halang ang bituka",
+            "flashCardBack": "halang ang bituka",
             "flashCardFlipped": false,
             
             "answers": [
@@ -102,7 +102,7 @@
         {
             "id": 5,
             "flashCardFront": "nagtapat na nais pakasalan ang kasintahan",
-            "flashCardBack": "Ang tamang sagot ay nagbukas ng dibdib",
+            "flashCardBack": "nagbukas ng dibdib",
             "flashCardFlipped": false,
             
             "answers": [
@@ -127,7 +127,7 @@
         {
             "id": 6,
             "flashCardFront": "di-makagiliwan",
-            "flashCardBack": "Ang tamang sagot ay mabigat ang loob",
+            "flashCardBack": "mabigat ang loob",
             "flashCardFlipped": false,
             
             "answers": [
@@ -152,7 +152,7 @@
         {
             "id": 7,
             "flashCardFront": "mahinhin",
-            "flashCardBack": "Ang tamang sagot ay di makabasag-pinggan",
+            "flashCardBack": "di makabasag-pinggan",
             "flashCardFlipped": false,
             
             "answers": [
@@ -177,7 +177,7 @@
         {
             "id": 8,
             "flashCardFront": "patay na",
-            "flashCardBack": "Ang tamang sagot ay pantay ang mga paa ",
+            "flashCardBack": "pantay ang mga paa ",
             "flashCardFlipped": false,
             
             "answers": [
@@ -201,7 +201,7 @@
         {
             "id": 9,
             "flashCardFront": "hindi totoong balita",
-            "flashCardBack": "Ang tamang sagot ay balitang kutsero",
+            "flashCardBack": "balitang kutsero",
             "flashCardFlipped": false,
             
             "answers": [
@@ -226,7 +226,7 @@
         {
             "id": 10,
             "flashCardFront": "sinungaling",
-            "flashCardBack": "Ang tamang sagot ay sanga-sangang dila",
+            "flashCardBack": "sanga-sangang dila",
             "flashCardFlipped": false,
             
             "answers": [
@@ -250,7 +250,7 @@
         {
             "id": 11,
             "flashCardFront": "lagalag, busabos",
-            "flashCardBack": "Ang tamang sagot ay hampas-lupa",
+            "flashCardBack": "hampas-lupa",
             "flashCardFlipped": false,
             
             "answers": [
@@ -275,7 +275,7 @@
         {
             "id": 12,
             "flashCardFront": "taong simangot, problemado",
-            "flashCardBack": "Ang tamang sagot ay madilim ang mukha",
+            "flashCardBack": "madilim ang mukha",
             "flashCardFlipped": false,
             
             "answers": [
@@ -299,7 +299,7 @@
         {
             "id": 13,
             "flashCardFront": "mapag-mataas, di namamansin",
-            "flashCardBack": "Ang tamang sagot ay matigas ang leeg",
+            "flashCardBack": "matigas ang leeg",
             "flashCardFlipped": false,
             
             "answers": [
@@ -324,7 +324,7 @@
         {
             "id": 14,
             "flashCardFront": "salawahan",
-            "flashCardBack": "Ang tamang sagot ay namamangka sa dalawang ilog",
+            "flashCardBack": "namamangka sa dalawang ilog",
             "flashCardFlipped": false,
             
             "answers": [
@@ -349,7 +349,7 @@
         {
             "id": 15,
             "flashCardFront": "matandang nag-aayos binata o dalaga",
-            "flashCardBack": "Ang tamang sagot ay nagmumurang kamatis",
+            "flashCardBack": "nagmumurang kamatis",
             "flashCardFlipped": false,
             
             "answers": [
@@ -374,7 +374,7 @@
         {
             "id": 16,
             "flashCardFront": "nagsasabi ng mga kuwento ukol sa isang tao",
-            "flashCardBack": "Ang tamang sagot ay nagpupusa",
+            "flashCardBack": "nagpupusa",
             "flashCardFlipped": false,
             
             "answers": [
@@ -398,7 +398,7 @@
         {
             "id": 17,
             "flashCardFront": "taong nagpapanggap, hindi mapagkakatiwalaan ang sinasabi",
-            "flashCardBack": "Ang tamang sagot ay sampay-bakod",
+            "flashCardBack": "sampay-bakod",
             "flashCardFlipped": false,
             
             "answers": [
@@ -423,7 +423,7 @@
         {
             "id": 18,
             "flashCardFront": "nagmamayabang, nangmamaliit",
-            "flashCardBack": "Ang tamang sagot ay tawang-aso",
+            "flashCardBack": "tawang-aso",
             "flashCardFlipped": false,
             
             "answers": [
@@ -448,7 +448,7 @@
         {
             "id": 19,
             "flashCardFront": "bobo, mahina ang ulo",
-            "flashCardBack": "Ang tamang sagot ay utak-biya",
+            "flashCardBack": "utak-biya",
             "flashCardFlipped": false,
             
             "answers": [
@@ -473,7 +473,7 @@
         {
             "id": 20,
             "flashCardFront": "madaling magbago",
-            "flashCardBack": "Ang tamang sagot ay talusira",
+            "flashCardBack": "talusira",
             "flashCardFlipped": false,
             
             "answers": [

@@ -3,7 +3,7 @@
         {
             "id": 1,
             "flashCardFront": "Farewell",
-            "flashCardBack": "Ang tamang sagot ay Pahimakas",
+            "flashCardBack": "Pahimakas",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -26,7 +26,7 @@
         {
             "id": 2,
             "flashCardFront": "Consequence",
-            "flashCardBack": "Ang tamang sagot ay Akibat",
+            "flashCardBack": "Akibat",
             "flashCardFlipped": false,
             "answers": [
  
@@ -50,7 +50,7 @@
         {
             "id": 3,
             "flashCardFront": "Cassock",
-            "flashCardBack": "Ang tamang sagot ay Pahimakas",
+            "flashCardBack": "Pahimakas",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -74,7 +74,7 @@
         {
             "id": 4,
             "flashCardFront": "Gibber",
-            "flashCardBack": "Ang tamang sagot ay Abla",
+            "flashCardBack": "Abla",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -98,7 +98,7 @@
         {
             "id": 5,
             "flashCardFront": "Cobwebs",
-            "flashCardBack": "Ang tamang sagot ay Agiw",
+            "flashCardBack": "Agiw",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -122,7 +122,7 @@
         {
             "id": 6,
             "flashCardFront": "Combat",
-            "flashCardBack": "Ang tamang sagot ay Babag",
+            "flashCardBack": "Babag",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -146,7 +146,7 @@
         {
             "id": 7,
             "flashCardFront": "Overcoat",
-            "flashCardBack": "Ang tamang sagot ay Gaban",
+            "flashCardBack": "Gaban",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -170,7 +170,7 @@
         {
             "id": 8,
             "flashCardFront": "Navigator",
-            "flashCardBack": "Ang tamang sagot ay Nabegador",
+            "flashCardBack": "Nabegador",
             "flashCardFlipped": false,
             "answers": [
   
@@ -194,7 +194,7 @@
         {
             "id": 9,
             "flashCardFront": "Written",
-            "flashCardBack": "Ang tamang sagot ay Nakatitik",
+            "flashCardBack": "Nakatitik",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -219,7 +219,7 @@
         {
             "id": 10,
             "flashCardFront": "Loud voice",
-            "flashCardBack": "Ang tamang sagot ay Ngalatowat",
+            "flashCardBack": "Ngalatowat",
             "flashCardFlipped": false,
             "answers": [
        
@@ -243,7 +243,7 @@
         {
             "id": 11,
             "flashCardFront": "Clear",
-            "flashCardBack": "Ang tamang sagot ay Maaliwalas",
+            "flashCardBack": "Maaliwalas",
             "flashCardFlipped": false,
             "answers": [
   
@@ -267,7 +267,7 @@
         {
             "id": 12,
             "flashCardFront": "Prepared",
-            "flashCardBack": "Ang tamang sagot ay Laan",
+            "flashCardBack": "Laan",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -291,7 +291,7 @@
         {
             "id": 13,
             "flashCardFront": "Nick",
-            "flashCardBack": "Ang tamang sagot ay Gaat",
+            "flashCardBack": "Gaat",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -314,7 +314,7 @@
         {
             "id": 14,
             "flashCardFront": "Neighbor",
-            "flashCardBack": "Ang tamang sagot ay Kaabay",
+            "flashCardBack": "Kaabay",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -337,7 +337,7 @@
         {
             "id": 15,
             "flashCardFront": "Obsequious",
-            "flashCardBack": "Ang tamang sagot ay Naglalangis",
+            "flashCardBack": "Naglalangis",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -361,7 +361,7 @@
         {
             "id": 16,
             "flashCardFront": "Bishoptic",
-            "flashCardBack": "Ang tamang sagot ay Obispado",
+            "flashCardBack": "Obispado",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -385,7 +385,7 @@
         {
             "id": 17,
             "flashCardFront": "Obey",
-            "flashCardBack": "Ang tamang sagot ay Talima",
+            "flashCardBack": "Talima",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -408,7 +408,7 @@
         {
             "id": 18,
             "flashCardFront": "Cabinetmaker",
-            "flashCardBack": "Ang tamang sagot ay Ebanista",
+            "flashCardBack": "Ebanista",
             "flashCardFlipped": false,
             "answers": [
       
@@ -432,7 +432,7 @@
         {
             "id": 19,
             "flashCardFront": "Barge",
-            "flashCardBack": "Ang tamang sagot ay Gabara",
+            "flashCardBack": "Gabara",
             "flashCardFlipped": false,
             "answers": [
          
@@ -456,7 +456,7 @@
         {
             "id": 20,
             "flashCardFront": "Double",
-            "flashCardBack": "Ang tamang sagot ay Ibayo",
+            "flashCardBack": "Ibayo",
             "flashCardFlipped": false,
             "answers": [
              

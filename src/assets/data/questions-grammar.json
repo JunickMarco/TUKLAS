@@ -3,7 +3,7 @@
         {
             "id": 1,
             "flashCardFront": "1. Ang ganda _____ buhok niya.",
-            "flashCardBack": "Ang tamang sagot ay Ng",
+            "flashCardBack": "Ng",
             "flashCardFlipped": false,
             
             "answers": [
@@ -27,7 +27,7 @@
         {
             "id": 2,
             "flashCardFront": "Kailangan nating magtulong-tulong ______ luminis ang ating kapaligiran.",
-            "flashCardBack": "Ang tamang sagot ay Nang",
+            "flashCardBack": "Nang",
             "flashCardFlipped": false,
             
             "answers": [
@@ -51,7 +51,7 @@
         {
             "id": 3,
             "flashCardFront": "Ikot _____ ikot si Sarah Geronimo.",
-            "flashCardBack": "Ang tamang sagot ay Nang",
+            "flashCardBack": "Nang",
             "flashCardFlipped": false,
             
             "answers": [
@@ -75,7 +75,7 @@
         {
             "id": 4,
             "flashCardFront": "Hindi pa ______ daw tayo marunong magmahal.",
-            "flashCardBack": "Ang tamang sagot ay Rin",
+            "flashCardBack": "Rin",
             "flashCardFlipped": false,
             
             "answers": [
@@ -99,7 +99,7 @@
         {
             "id": 5,
             "flashCardFront": "Sasayaw na _____ ako.",
-            "flashCardBack": "Ang tamang sagot ay Rin",
+            "flashCardBack": "Rin",
             "flashCardFlipped": false,
             
             "answers": [
@@ -124,7 +124,7 @@
         {
             "id": 6,
             "flashCardFront": "Ang hirap talaga kapag ______ ang pananaw natin sa buhay.",
-            "flashCardBack": "Ang tamang sagot ay Iba-iba",
+            "flashCardBack": "Iba-iba",
             "flashCardFlipped": false,
             
             "answers": [
@@ -149,7 +149,7 @@
         {
             "id": 7,
             "flashCardFront": "Bakit gan’on ang sagot? _____ naman.",
-            "flashCardBack": "Ang tamang sagot ay Paki-explain",
+            "flashCardBack": "Paki-explain",
             "flashCardFlipped": false,
             
             "answers": [
@@ -175,7 +175,7 @@
         {
             "id": 9,
             "flashCardFront": "_______ ang kanyang biro.",
-            "flashCardBack": "Ang tamang sagot ay Nakakatawa",
+            "flashCardBack": "Nakakatawa",
             "flashCardFlipped": false,
             
             "answers": [
@@ -200,7 +200,7 @@
         {
             "id": 10,
             "flashCardFront": "_______ ang ating mga sariling tadhana.",
-            "flashCardBack": "Ang tamang sagot ay Iba’t iba",
+            "flashCardBack": "Iba’t iba",
             "flashCardFlipped": false,
             
             "answers": [
@@ -225,7 +225,7 @@
         {
             "id": 11,
             "flashCardFront": "Nakakainis ________ magbasa ng mahabang kwento",
-            "flashCardBack": "Ang tamang sagot ay Palang",
+            "flashCardBack": "Palang",
             "flashCardFlipped": false,
             
             "answers": [
@@ -250,7 +250,7 @@
         {
             "id": 12,
             "flashCardFront": "Nasa bahay ______ ako.",
-            "flashCardBack": "Ang tamang sagot ay Pa lang",
+            "flashCardBack": "Pa lang",
             "flashCardFlipped": false,
             
             "answers": [
@@ -275,7 +275,7 @@
         {
             "id": 13,
             "flashCardFront": "Ikaw ______ pala ang _______ niya at hindi ako.",
-            "flashCardBack": "Ang tamang sagot ay Pa rin ; Hanap-hanap",
+            "flashCardBack": "Pa rin ; Hanap-hanap",
             "flashCardFlipped": false,
             
             "answers": [
@@ -300,7 +300,7 @@
         {
             "id": 14,
             "flashCardFront": "Malulungkot ako kapag wala ______ tao sa bahay namin sa darating na pasko.",
-            "flashCardBack": "Ang tamang sagot ay Na namang",
+            "flashCardBack": "Na namang",
             "flashCardFlipped": false,
             
             "answers": [
@@ -325,7 +325,7 @@
         {
             "id": 15,
             "flashCardFront": "______ akong nais malaman.",
-            "flashCardBack": "Ang tamang sagot ay Mayroon",
+            "flashCardBack": "Mayroon",
             "flashCardFlipped": false,
             
             "answers": [
@@ -350,7 +350,7 @@
         {
             "id": 16,
             "flashCardFront": "Ako ay _________ sa kanilang bahay.",
-            "flashCardBack": "Ang tamang sagot ay taga luto",
+            "flashCardBack": "taga luto",
             "flashCardFlipped": false,
             
             "answers": [
@@ -375,7 +375,7 @@
         {
             "id": 17,
             "flashCardFront": "Saan ka nakatira?",
-            "flashCardBack": "Ang tamang sagot ay Taga-Capiz",
+            "flashCardBack": "Taga-Capiz",
             "flashCardFlipped": false,
             
             "answers": [
@@ -400,7 +400,7 @@
         {
             "id": 18,
             "flashCardFront": "Bawal ang ______ sa ating pupuntahan.",
-            "flashCardBack": "Ang tamang sagot ay naka-itim",
+            "flashCardBack": "naka-itim",
             "flashCardFlipped": false,
             
             "answers": [
@@ -425,7 +425,7 @@
         {
             "id": 19,
             "flashCardFront": "Ang mga kinakasal ay _______.",
-            "flashCardBack": "Ang tamang sagot ay nakaputi",
+            "flashCardBack": "nakaputi",
             "flashCardFlipped": false,
             
             "answers": [
@@ -450,7 +450,7 @@
         {
             "id": 20,
             "flashCardFront": "Pumunta tayo doon ______umaga na",
-            "flashCardBack": "Ang tamang sagot ay kapag",
+            "flashCardBack": "kapag",
             "flashCardFlipped": false,
             
             "answers": [
