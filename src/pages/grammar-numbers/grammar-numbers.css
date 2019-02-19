@@ -1,9 +1,46 @@
-page-grammar-numbers .yellow-half {
+page-grammar-numbers ion-content {
+  background-color: #F7F7F7 !important;
+}
+
+page-grammar-numbers .fix-scroll {
+  position: fixed;
+  bottom: 10.5%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+}
+
+page-grammar-numbers .nav-half {
   width: 100%;
-  height: 13%;
-  background-color: #FFD15C;
+  height: 200px;
+  margin-top: -35px;
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
+  background-color: #A0BBFF;
   position: absolute;
   z-index: -1;
+}
+
+page-grammar-numbers .action-bar {
+  width: 100%;
+  max-height: 15%;
+  margin-top: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-grammar-numbers .action-bar .title {
+  font-family: 'bitter-bold';
+  color: #3B3B3B;
+  font-size: 24px;
 }
 
 page-grammar-numbers .action-icon {
@@ -11,72 +48,187 @@ page-grammar-numbers .action-icon {
   font-size: 2em;
 }
 
-page-grammar-numbers .action-bar {
+page-grammar-numbers .content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-page-grammar-numbers .divide {
-  margin-bottom: 10px;
+page-grammar-numbers .lesson-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-page-grammar-numbers .btn-icon {
-  background-color: transparent;
-}
-
-page-grammar-numbers .backTop {
-  background-color: #FFD15C;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 1.01em;
-  text-align: center;
+page-grammar-numbers .lesson-list .lesson-box {
+  width: 322px;
+  background: #fff;
+  background-size: cover;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-page-grammar-numbers .btn-area {
-  margin: 0 auto;
-  width: 30%;
+page-grammar-numbers .lesson-list .lesson-box h3 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+  background: #FFFBA0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px;
+  max-width: 90%;
 }
 
-page-grammar-numbers .accent {
-  background-color: #fdf6e5;
+page-grammar-numbers .lesson-list .lesson-box .lesson-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin-top: 10px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-icon {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-icon img {
+  width: 100%;
+  height: 66px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-name {
+  width: 70%;
+  padding-left: 5px;
+  font-family: 'opensans-extrabold';
+  color: #000;
+  font-size: 36px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content {
   padding: 10px;
 }
 
-page-grammar-numbers .second {
-  background-color: #fdfbf5;
-  padding: 10px;
+page-grammar-numbers .lesson-list .lesson-box .lesson-content h2 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
 }
 
-page-grammar-numbers .lesson h1 {
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list li {
+  margin: 5px;
+  padding: 3px 5px;
+  background: #FFFBA0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list li:active {
+  background: #fffccc;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .lesson-text {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .text-light {
+  font-family: 'sourcesans-light';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .example-text {
+  font-family: 'sourcesans-bold';
+  color: #000;
+  font-size: 16px;
   text-align: center;
-  margin-top: 50px;
 }
 
-page-grammar-numbers #customers {
+page-grammar-numbers .lesson-list .lesson-box .lesson-content .example-italic-text {
+  font-family: 'sourcesans-semibolditalic';
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+page-grammar-numbers .lesson-list .lesson-box #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-page-grammar-numbers #customers td, page-grammar-numbers #customers th {
+page-grammar-numbers .lesson-list .lesson-box #customers td, page-grammar-numbers .lesson-list .lesson-box #customers th {
   border: 1px solid #ddd;
   padding: 8px;
+  color: #000;
+  font-family: 'opensans-reg';
+  font-size: 13px;
 }
 
-page-grammar-numbers #customers tr:nth-child(even) {
+page-grammar-numbers .lesson-list .lesson-box #customers tr:nth-child(even) {
   background-color: #fdfbf5;
 }
 
-page-grammar-numbers #customers th {
+page-grammar-numbers .lesson-list .lesson-box #customers th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #fcd67e;
-  color: white;
+  background-color: #FFFBA0;
+  color: #000;
+  font-family: 'opensans-semibold';
+  font-size: 13px;
 }
 /*# sourceMappingURL=grammar-numbers.css.map */

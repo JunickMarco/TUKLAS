@@ -1,0 +1,216 @@
+.ios page-quiz-idioms ion-slide, .md page-quiz-idioms ion-slide {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ios page-quiz-idioms ion-list, .md page-quiz-idioms ion-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ios page-quiz-idioms ion-item, .md page-quiz-idioms ion-item {
+  width: 90%;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.ios page-quiz-idioms flash-card, .md page-quiz-idioms flash-card {
+  color: #000;
+}
+
+.ios page-quiz-idioms flash-card img, .md page-quiz-idioms flash-card img {
+  width: 70%;
+  height: auto;
+}
+
+.ios page-quiz-idioms .flash-card-front, .md page-quiz-idioms .flash-card-front {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 22px;
+}
+
+.ios page-quiz-idioms .flash-card-back, .md page-quiz-idioms .flash-card-back {
+  font-family: 'opensans-extrabold';
+  color: #000;
+  font-size: 22px;
+}
+
+.ios page-quiz-idioms .question-label, .md page-quiz-idioms .question-label {
+  text-align: left;
+  margin: 20px 20px;
+  font-family: 'bitter-bold';
+  color: #000;
+  font-size: 21px;
+}
+
+.ios page-quiz-idioms .question-label .quiz-accent, .md page-quiz-idioms .question-label .quiz-accent {
+  font-family: 'bitter-bold';
+  color: #fff;
+  font-size: 21px;
+}
+
+.ios page-quiz-idioms .answer-label, .md page-quiz-idioms .answer-label {
+  font-family: 'opensans-semibold';
+  color: #000;
+  font-size: 21px;
+}
+
+.ios page-quiz-idioms .start-slide, .md page-quiz-idioms .start-slide {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ios page-quiz-idioms .start-slide button, .md page-quiz-idioms .start-slide button {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.ios page-quiz-idioms .start-slide h1, .md page-quiz-idioms .start-slide h1 {
+  font-family: 'bitter-bold';
+  color: #000;
+  font-size: 35px;
+}
+
+.ios page-quiz-idioms ion-content, .md page-quiz-idioms ion-content {
+  background-color: #A0FFCC !important;
+}
+
+.ios page-quiz-idioms .menu-lesson, .md page-quiz-idioms .menu-lesson {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson, .md page-quiz-idioms .menu-lesson .item-lesson {
+  width: 230px;
+  height: 230px;
+  background: #fff;
+  background-size: cover;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 5% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson:active, .md page-quiz-idioms .menu-lesson .item-lesson:active {
+  background: #F2F2F2;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: changesizequiz;
+          animation-name: changesizequiz;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes changesizequiz {
+  from {
+    width: 230px;
+    height: 230px;
+  }
+  to {
+    width: 235px;
+    height: 235px;
+  }
+}
+
+@keyframes changesizequiz {
+  from {
+    width: 230px;
+    height: 230px;
+  }
+  to {
+    width: 235px;
+    height: 235px;
+  }
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson .icon-lesson, .md page-quiz-idioms .menu-lesson .item-lesson .icon-lesson {
+  margin-top: 20px;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson .icon-lesson img, .md page-quiz-idioms .menu-lesson .item-lesson .icon-lesson img {
+  width: 97px;
+  height: 86px;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson .description-lesson, .md page-quiz-idioms .menu-lesson .item-lesson .description-lesson {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-lesson .description-lesson h2, .md page-quiz-idioms .menu-lesson .item-lesson .description-lesson h2 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+}
+
+.ios page-quiz-idioms .menu-lesson .item-quiz, .md page-quiz-idioms .menu-lesson .item-quiz {
+  width: 230px;
+  height: 90px;
+  background: #fff;
+  background-size: cover;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.ios page-quiz-idioms .menu-lesson .description-lesson, .md page-quiz-idioms .menu-lesson .description-lesson {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 15px;
+}
+
+.ios page-quiz-idioms .menu-lesson .description-lesson h2, .md page-quiz-idioms .menu-lesson .description-lesson h2 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+}
+
+.ios page-quiz-idioms .menu-lesson .icon-quiz, .md page-quiz-idioms .menu-lesson .icon-quiz {
+  width: 40%;
+}
+
+.ios page-quiz-idioms .menu-lesson .icon-quiz img, .md page-quiz-idioms .menu-lesson .icon-quiz img {
+  width: 67px;
+  height: 56px;
+}
+/*# sourceMappingURL=quiz-idioms.css.map */
