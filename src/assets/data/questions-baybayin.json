@@ -237,17 +237,17 @@
             "flashCardFlipped": false,
             "answers": [
                 {
-                    "answer": "ᜊᜊ",
+                    "answer": "ᜃ",
                     "correct": false,
                     "selected": false
                 },
                 {
-                    "answer": "ᜊ",
+                    "answer": "ᜊᜊ",
                     "correct": true,
                     "selected": false
                 },
                 {
-                    "answer": "ᜊᜊ",
+                    "answer": "ᜊ",
                     "correct": false,
                     "selected": false
                 }

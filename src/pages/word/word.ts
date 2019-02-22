@@ -2,6 +2,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
+import { SpeechRecognition } from '@ionic-native/speech-recognition';
+import { ChangeDetectorRef } from '@angular/core';
 import { HomePage } from '../home/home';
 
 /**
@@ -40,8 +42,9 @@ export class WordPage {
   ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
   words = [];
+  ainput: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private modal: ModalController, private view: ViewController) {
+    private modal: ModalController, private view: ViewController, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef,) {
     //algolia for search
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -80,6 +83,39 @@ export class WordPage {
 
   }
 
+  //speechrecognition
+  ngOnInit() {
+
+    this.speechRecognition.hasPermission()
+      .then((hasPermission: boolean) => {
+
+        if (!hasPermission) {
+          this.speechRecognition.requestPermission()
+            .then(
+              () => console.log('Granted'),
+              () => console.log('Denied')
+            )
+        }
+
+      });
+
+  }
+  start() {
+    let options = {
+      language: 'fil-PH'
+    }
+    this.speechRecognition.startListening(options)
+      .subscribe(
+        (matches: Array<string>) => {
+          this.ainput = matches[0];
+          console.log(this.ainput);
+          this.searchQuery = this.ainput
+        },
+        (onerror) => console.log('error:', onerror)
+      )
+
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad WordPage');
 
@@ -96,7 +132,7 @@ export class WordPage {
 
   }
 
-  navigateToHomePage(): void {
+  navigateToHomePage() {
     // this.navCtrl.push(HomePage);
     this.navCtrl.pop()
     console.log("Go Back")
@@ -129,10 +165,10 @@ export class WordPage {
     this.audio.nativeElement.play();
   }
 
-  instModal() {
-    const myModal = this.modal.create('ModalPage')
-    myModal.present();
-  }
+  // instModal() {
+  //   const myModal = this.modal.create('ModalPage')
+  //   myModal.present();
+  // }
 
 
 

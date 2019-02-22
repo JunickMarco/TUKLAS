@@ -51,6 +51,7 @@ export class HomePage {
   // random: number;
   // rand: any;
   //initialization for speechrecognition
+  ainput: string;
   private matches: Array<string>;
   isRecording = false;
   selectedItem: string = "";
@@ -70,21 +71,53 @@ export class HomePage {
     });
 
     this.index = this.client.initIndex("tuklas_WORDS")
-    this.matches = [];
+    // this.matches = [];
   }
+
+  //speechrecognition
+  ngOnInit() {
+
+    this.speechRecognition.hasPermission()
+      .then((hasPermission: boolean) => {
+
+        if (!hasPermission) {
+          this.speechRecognition.requestPermission()
+            .then(
+              () => console.log('Granted'),
+              () => console.log('Denied')
+            )
+        }
+
+      });
+
+  }
+  start() {
+    let options = {
+      language: 'fil-PH'
+    }
+    this.speechRecognition.startListening(options)
+      .subscribe(
+        (matches: Array<string>) => {
+          this.ainput = matches[0];
+          console.log(this.ainput);
+          this.searchQuery = this.ainput
+        },
+        (onerror) => console.log('error:', onerror)
+      )
+
+  }
+  
 
   //searchbox
   search(event) {
     this.index.search({
-      query: this.selectedItem
+      query: this.searchQuery
     }).then((data) => {
       console.log(data.hits);
       this.words = data.hits;
-
-
     })
-
   }
+
   //click suggested words in searchbox
   navigateToDetails(word) {
     this.selectedWord = word;
@@ -131,10 +164,10 @@ export class HomePage {
 
   }
 
-  instModal(){
-    const myModal = this.modal.create('ModalPage')
-    myModal.present();
-  }
+  // instModal(){
+  //   const myModal = this.modal.create('ModalPage')
+  //   myModal.present();
+  // }
 
  
 }

@@ -31,6 +31,7 @@ export class QuizGrammarPage {
   }
   ionViewWillLeave() {
     this.loadData.unsubscribe();
+    this.navCtrl.pop();
   }
 
   ionViewWillEnter() {
@@ -84,9 +85,13 @@ export class QuizGrammarPage {
 
   }
 
-  restartQuiz(): void {
+
+  restartQuiz(){
     this.score = 0;
+    // this.ionViewWillEnter();
+    // this.navCtrl.pop();
     this.navCtrl.push(QuizGrammarPage);
+    // this.navCtrl.setRoot(this.navCtrl.getActive().component);
     // this.slides.lockSwipes(false);
     // this.slides.slideTo(1, 1000);
     // this.slides.lockSwipes(true);

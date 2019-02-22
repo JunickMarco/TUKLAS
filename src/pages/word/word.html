@@ -10,14 +10,14 @@
         <ion-icon name="arrow-back" class="action-icon"></ion-icon>
       </button>
 
-      <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)" class="searchbarbg"></ion-searchbar>
+      <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionChange)="search($event)" class="searchbarbg"></ion-searchbar>
 
-      <button class="btn-icon" (click)="instModal()">
+      <button class="btn-icon" (click)="start()">
           <i class="fas fa-microphone"></i>
       </button>
     </div>
 
-    <div *ngIf="searchQuery.length > 1">
+    <div *ngIf="searchQuery.length >= 1">
       <ion-list class="suggestion-box">
     
         <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">

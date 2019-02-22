@@ -9,15 +9,16 @@
 
         <div class="search-container">
             <div class="search-box">
-                <ion-searchbar [(ngModel)]="selectedItem" (ionInput)="search($event)" debounce="1"
+                <ion-searchbar [(ngModel)]="searchQuery" (ionChange)="search($event)" debounce="1"
                     placeholder="Search a word..."></ion-searchbar>
-                <button class="btn-icon" (click)="instModal()">
+                <button class="btn-icon" (click)="start()">
                     <!-- <ion-icon name="mic"></ion-icon> -->
                     <i class="fas fa-microphone"></i>
                 </button>
+                
             </div> 
 
-            <div *ngIf="selectedItem.length > 1" class="suggestion-box">
+            <div *ngIf="searchQuery.length > 1" class="suggestion-box">
                 <ion-list>
 
                     <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
@@ -31,7 +32,7 @@
                         </div>
                     </ion-item>
 
-                    <div *ngIf="selectedItem">
+                    <div *ngIf="searchQuery">
                         <ion-item *ngIf="words.length < 1 ">
                             <h2>No Word Found</h2>
                         </ion-item>
