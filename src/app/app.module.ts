@@ -21,6 +21,10 @@ import { GrammarLanguagePage } from '../pages/grammar-language/grammar-language'
 import { GrammarStructurePage } from '../pages/grammar-structure/grammar-structure';
 import { GrammarNumbersPage } from '../pages/grammar-numbers/grammar-numbers';
 import { GrammarMistakesPage } from '../pages/grammar-mistakes/grammar-mistakes';
+import { GrammarColorsPage } from '../pages/grammar-colors/grammar-colors';
+import { GrammarDaysmonthsPage } from '../pages/grammar-daysmonths/grammar-daysmonths';
+import { GrammarPleasePage } from '../pages/grammar-please/grammar-please';
+import { GrammarTimePage } from '../pages/grammar-time/grammar-time';
 
 import { BaybayinIntroPage } from '../pages/baybayin-intro/baybayin-intro';
 import { BaybayinHistoryPage } from '../pages/baybayin-history/baybayin-history';
@@ -78,6 +82,10 @@ const config = {
     GrammarStructurePage,
     GrammarNumbersPage,
     GrammarMistakesPage,
+    GrammarColorsPage,
+    GrammarDaysmonthsPage,
+    GrammarPleasePage,
+    GrammarTimePage,
     BaybayinIntroPage,
     BaybayinHistoryPage,
     BaybayinWritePage,
@@ -121,6 +129,10 @@ const config = {
     GrammarStructurePage,
     GrammarNumbersPage,
     GrammarMistakesPage,
+    GrammarColorsPage,
+    GrammarDaysmonthsPage,
+    GrammarPleasePage,
+    GrammarTimePage,
     BaybayinIntroPage,
     BaybayinHistoryPage,
     BaybayinWritePage,
