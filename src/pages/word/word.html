@@ -12,9 +12,12 @@
 
       <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionChange)="search($event)" class="searchbarbg"></ion-searchbar>
 
-      <button class="btn-icon" (click)="start()">
+      <button class="btn-icon" (click)="startListening()">
           <i class="fas fa-microphone"></i>
       </button>
+      <button class="btn-icon" full (click)="stopListening()" *ngIf="isIos()">
+        <i class="fas fa-microphone-slash"></i>
+    </button>
     </div>
 
     <div *ngIf="searchQuery.length >= 1">

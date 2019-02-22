@@ -59,6 +59,10 @@ page-home {
                 color: map-get($colors, primary);
                 font-size: 25px;
             }
+            .fa-microphone-slash{
+                color: map-get($colors, primary);
+                font-size: 25px;
+            }
         }
 
         .suggestion-box {

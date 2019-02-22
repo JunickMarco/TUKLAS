@@ -1,6 +1,6 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController, Platform } from 'ionic-angular';
 import * as algoliasearch from 'algoliasearch';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { ChangeDetectorRef } from '@angular/core';
@@ -42,9 +42,10 @@ export class WordPage {
   ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
   words = [];
+  isRecording = false;
   ainput: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private modal: ModalController, private view: ViewController, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef,) {
+    private modal: ModalController, private view: ViewController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef,) {
     //algolia for search
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -100,6 +101,33 @@ export class WordPage {
       });
 
   }
+  isIos() {
+    return this.plt.is('ios');
+  }
+
+  startListening() {
+    return new Promise<any>((resolve, reject) => {
+
+      let options = {
+        language: 'en-US'
+      }
+      this.speechRecognition.startListening(options).subscribe(matches => {
+        this.ainput = matches[0];
+      console.log(this.ainput);
+      this.searchQuery = this.ainput
+      this.cd.detectChanges();
+      });
+      this.isRecording = true;
+
+    });
+  }
+
+  stopListening() {
+    this.speechRecognition.stopListening().then(() => {
+      this.isRecording = false;
+    });
+  }
+
   start() {
     let options = {
       language: 'fil-PH'

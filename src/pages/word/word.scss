@@ -54,6 +54,11 @@ page-word {
             font-size: 25px;
         }
 
+        .fa-microphone-slash{
+            color: map-get($colors, primary);
+            font-size: 25px;
+        }
+
         .suggestion-box {
             width: 86.8%;
             margin: 0 auto;

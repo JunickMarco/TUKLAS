@@ -11,11 +11,12 @@
             <div class="search-box">
                 <ion-searchbar [(ngModel)]="searchQuery" (ionChange)="search($event)" debounce="1"
                     placeholder="Search a word..."></ion-searchbar>
-                <button class="btn-icon" (click)="start()">
-                    <!-- <ion-icon name="mic"></ion-icon> -->
+                <button class="btn-icon" (click)="startListening()">
                     <i class="fas fa-microphone"></i>
                 </button>
-                
+                <button class="btn-icon" full (click)="stopListening()" *ngIf="isIos()">
+                    <i class="fas fa-microphone-slash"></i>
+                </button>
             </div> 
 
             <div *ngIf="searchQuery.length > 1" class="suggestion-box">

@@ -72,8 +72,11 @@ export class HomePage {
 
     this.index = this.client.initIndex("tuklas_WORDS")
     // this.matches = [];
+
+    
   }
 
+ 
   //speechrecognition
   ngOnInit() {
 
@@ -91,20 +94,57 @@ export class HomePage {
       });
 
   }
-  start() {
-    let options = {
-      language: 'fil-PH'
-    }
-    this.speechRecognition.startListening(options)
-      .subscribe(
-        (matches: Array<string>) => {
-          this.ainput = matches[0];
-          console.log(this.ainput);
-          this.searchQuery = this.ainput
-        },
-        (onerror) => console.log('error:', onerror)
-      )
+  startListening() {
+    return new Promise<any>((resolve, reject) => {
 
+      let options = {
+        language: 'en-US'
+      }
+      this.speechRecognition.startListening(options).subscribe(matches => {
+        this.ainput = matches[0];
+      console.log(this.ainput);
+      this.searchQuery = this.ainput
+      this.cd.detectChanges();
+      });
+      this.isRecording = true;
+
+    });
+  }
+
+  isIos() {
+    return this.plt.is('ios');
+  }
+
+  stopListening() {
+    this.speechRecognition.stopListening().then(() => {
+      this.isRecording = false;
+    });
+  }
+
+  start() {
+    // let options = {
+    //   language: 'fil-PH'
+    // }
+    // this.speechRecognition.startListening(options)
+    //   .subscribe(
+    //     (matches: Array<string>) => {
+    //       this.ainput = matches[0];
+    //       console.log(this.ainput);
+    //       this.searchQuery = this.ainput
+    //     },
+    //     (onerror) => console.log('error:', onerror)
+    //   )
+    let options = {
+      language: 'en-US'
+    }
+    this.speechRecognition.startListening(options).subscribe(matches => {
+      this.ainput = matches[0];
+      console.log(this.ainput);
+      this.searchQuery = this.ainput
+      this.cd.detectChanges();
+      
+    });
+    this.isRecording = true;
   }
   
 
