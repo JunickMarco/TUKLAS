@@ -38,100 +38,183 @@
         
 
         <div class="lesson-content">
-            <!-- <h2>Contents</h2>
+            <h2>Contents</h2>
             <ul class="content-list">
-              <li>Classification & Terminology</li>
-            </ul> -->
+              <li (click)="scrollElementBasic()">Basic Colors</li>
+              <li (click)="scrollElementDark()">Dark Colors</li>
+              <li (click)="scrollElementLight()">Light Colors</li>
+              <li (click)="scrollElementOtherC()">Other Colors</li>
+            </ul>
         </div>
       </div>
 
-
       <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
-                <p>
-                    For English speakers, as well as speakers of most European languages would know that the sentence structure of those languages is mainly.
-                </p>
+        <!-- <h3>Classification & Terminology</h3> -->
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+              The English names for colors in the Tagalog language are quite incomplete. The language, for instance, has no equivalent for brown and its different shades such as golden brown. What is commonly used for golden brown is <strong>pula</strong> (red) as in the following direction for cooking:
+            </p>
 
-                <p class="example-text">
-                  Subject – Verb – Object
-                </p>
-                <p class="example-italic-text">
-                  I am a man.
-                </p>
-              </div>
+            <div class="table-ordi sent">              
+              <div class="cell-ordi intro-sent"><strong>Prituhin mo ang isa hanggang sa pumula.</strong></div>
+              <div class="cell-ordi intro-sent">Fry the fish until it turns golden brown.</div>
             </div>
+
+            <p>
+              However, Filipinos use <strong>kayumanggi</strong>  when referring to the color of the Filipino race and their skin color (sometimes called <strong>morena</strong>, which is Spanish in origin). This word is specific to the race and skin color, and does not apply to anything that is brown. Descriptive words are used instead to indicate the brownness of a thing or object like <strong>kulay kape</strong> (coffee-colored) or <strong>kulay tsokolate</strong> (chocolate-colored).
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
-
-                <p>
-                  In Tagalog however, one needs to become accustomed to the structure when he/she practises the language. The sentence structure is not unique however strange to native English speakers. These are the most common structures in Tagalog:
-                </p>
-
-                <p class="example-text">
-                  Verb – Subject – Object 
-                </p>
-                <p class="example-italic-text">or</p>
-                <p class="example-text">
-                  Verb – Object – Subject
-                </p>
-
-                <p>As you can see, the verb goes before either the object or the subject. This form is common in speech. Let’s analyse some examples:</p>
-
-                <p class="example-text">
-                  Lalaki si Juan → Juan is male
-                </p>
-
-                <p class="text-light">
-                  NOTE: There is no “to be” word but we’ll discuss this later. Here are some examples with verbs.
-                </p>
-
-                <p class="example-italic-text">
-                  Kumain (ate) ang aso (dog) ng buto (bone)  →  The dog ate a bone.
-                </p>
-                <p class="example-italic-text">
-                  Nakita (saw) ko (I) siya (him/her) → I saw him/her.
-                </p>
-              </div>
-            </div>
+      <div class="lesson-box" #Basic>
+        <h3>Basic Colors</h3>
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+              The Tagalog term for black is <strong>itim</strong>  and that for white is <strong>puti</strong>  while the terms for the primary and secondary colors are:
+            </p>
           </div>
 
-          <div class="lesson-box">
-            <!-- <h3>Classification & Terminology</h3> -->
-              <div class="lesson-content">
-                <div class="lesson-text">
-  
-                    <p class="example-text">
-                      Subject – Verb – Object
-                    </p>
+          <div class="table">
+            <div class="cell tnone"> </div>
+            <div class="cell thead">Filipino</div>
+            <div class="cell thead">Spanish</div>
+            
+            <div class="cell tred"> </div>
+            <div class="cell"><strong>pula</strong></div>
+            <div class="cell">red</div>
 
-                    <p>
-                      This is another structure common in the language where the subject goes before the verb. Usually, this form is considered formal.
-                    </p>
+            <div class="cell tblue"> </div>
+            <div class="cell"><strong>asul / bughaw</strong></div>
+            <div class="cell">blue</div>
 
-                    <p class="example-italic-text">
-                      Si Juan ay lalaki → Juan is male
-                    </p>
+            <div class="cell tyellow"> </div>
+            <div class="cell"><strong>dilaw</strong></div>
+            <div class="cell">yellow</div>
 
-                    <p>
-                      Notice that unlike the VSO example (Lalaki si Juan), the SVO example has the word “ay” between the subject and the object. Ay is a particle in a sentence that can be used as either a copula, linking verb, “to be” verb or an equal sign. 
-                    </p>
-                    <p>
-                      Some sources may say that the particle is not a copula or a linking verb but like the “=”. If it makes things easy for you, you can try using it as the verb “to be” in SVO sentences. One of the reasons why the particle is not considered a verb because it can be in a sentence with other verbs. Ay is also not considered an auxiliary verb.
-                    </p>
+            <div class="cell tgreen"> </div>
+            <div class="cell"><strong>berde / luntian</strong></div>
+            <div class="cell">green</div>
 
-                    <p class="example-italic-text">
-                      Ang aso ay kumain ng buto  →  The dog ate a bone.
-                    </p>
+            <div class="cell tviolet"> </div>
+            <div class="cell"><strong>ube</strong></div>
+            <div class="cell">violet</div>
 
-                </div>
-              </div>
-            </div>
+            <div class="cell torange"> </div>
+            <div class="cell"><strong>kulay kahel</strong></div>
+            <div class="cell">orange</div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lesson-box" #Dark>
+        <h3>Dark Colors</h3>
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+              When expressing the darker, solid or brilliant shades of colors, duplicate the names of colors by using ligatures <strong>na</strong>  and <strong>–ng</strong>. Refer the following examples of dark colors.
+            </p>
+          </div>
+
+          <div class="table">
+            <div class="cell tnone"> </div>
+            <div class="cell thead">Filipino</div>
+            <div class="cell thead">English</div>
+            
+            <div class="cell tnavy"> </div>
+            <div class="cell"><strong>asul na asul</strong></div>
+            <div class="cell">navy blue</div>
+
+            <div class="cell tbyellow"> </div>
+            <div class="cell"><strong>dilaw na dilaw</strong></div>
+            <div class="cell">bright yellow</div>
+
+            <div class="cell tdgreen"> </div>
+            <div class="cell"><strong>berdeng-berde</strong></div>
+            <div class="cell">dark green</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="lesson-box" #Light>
+        <h3>Light Colors</h3>
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+              Lighter colors, unless those that have specific Tagalog names, such as pale blue, light green, pale yellow, require the word <strong>mura</strong>  (which means pale or light although <strong>mura</strong>  also refers to an unripe fruit as well as something that is cheap or not expensive) attached either before or after the Tagalog names.
+            </p>
+          </div>
+
+          <div class="table">
+            <div class="cell tnone"> </div>
+            <div class="cell thead">Filipino</div>
+            <div class="cell thead">English</div>
+            
+            <div class="cell tpblue"> </div>
+            <div class="cell"><strong>asul na mura</strong></div>
+            <div class="cell">pale blue</div>
+
+            <div class="cell tlgreen"> </div>
+            <div class="cell"><strong>murang berde</strong></div>
+            <div class="cell">light green</div>
+
+            <div class="cell tlyellow"> </div>
+            <div class="cell"><strong>dilaw na mura</strong></div>
+            <div class="cell">pale yellow</div>
+
+            <div class="cell tpurple"> </div>
+            <div class="cell"><strong>lila</strong></div>
+            <div class="cell">purple</div>
+
+            <div class="cell tpink"> </div>
+            <div class="cell"><strong>rosas</strong></div>
+            <div class="cell">pink</div>
+
+            <div class="cell tgray"> </div>
+            <div class="cell"><strong>abo</strong></div>
+            <div class="cell">gray</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="lesson-box" #OtherC>
+        <h3>Other Colors</h3>
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+              Other color names are more specific and use common materials as a point of reference whose mere mention of their names connote a specific color, such as those listed below:
+            </p>
+          </div>
+
+          <div class="table">
+            <div class="cell tnone"> </div>
+            <div class="cell thead">Filipino</div>
+            <div class="cell thead">English</div>
+            
+            <div class="cell tagreen"> </div>
+            <div class="cell"><strong>berdeng mansanas</strong></div>
+            <div class="cell">apple green</div>
+
+            <div class="cell tmgreen"> </div>
+            <div class="cell"><strong>berdeng lumot</strong></div>
+            <div class="cell">moss green</div>
+
+            <div class="cell tgold"> </div>
+            <div class="cell"><strong>ginto/gintuan</strong></div>
+            <div class="cell">gold/golden</div>
+
+            <div class="cell tsilver"> </div>
+            <div class="cell"><strong>pilak/pinilakan</strong></div>
+            <div class="cell">silver</div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
 

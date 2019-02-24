@@ -181,6 +181,176 @@ page-grammar-colors {
                 }
 
             }
+
+            .table-ordi {
+                width: 100%;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, auto);
+                margin-bottom: 40px;
+            }
+            
+            .cell-ordi {
+                background-color: rgb(233, 230, 255);
+                color: #000;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 15px;
+                font-family: 'opensans-reg';
+                display: flex;
+                align-items: center;   
+                justify-content: center;
+                text-align: center; 
+            }
+
+            // .cell-ordi:nth-child(3n + 1) {
+            //     background-color: rgb(209, 216, 255);
+            // }
+
+            .cell-ordi:nth-child(4n),  .cell-ordi:nth-child(4n + 3){
+                background-color: rgb(246, 245, 255);
+            }
+
+            .thead-ordi {
+                background-color: rgb(219, 212, 255);
+                color: #000;
+                font-family: 'sourcesans-bold';
+                font-size: 18px;
+
+                border-radius: 5px;
+                border-bottom: 1px solid rgb(187, 174, 255);
+            }
+
+            .sent {
+                margin-bottom: 0;
+            }
+
+            .intro-sent {
+                padding: 3px;
+                font-size: 10px;
+            }
+
+            .table {
+                width: 100%;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 10% auto auto;
+                /*   grid-template-rows: repeat; */
+                /*   grid-auto-flow: column; */
+            }
+            
+            .cell {
+                background-color: rgb(233, 230, 255);
+                color: #000;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 15px;
+                font-family: 'opensans-reg';
+                display: flex;
+                align-items: center;   
+                justify-content: center;
+                text-align: center;  
+            }
+
+            // .cell:nth-child(3n + 1) {
+            //     background-color: rgb(209, 216, 255);
+            // }
+
+            .cell:nth-child(6n + 5), .cell:nth-child(6n) {
+                background-color: rgb(246, 245, 255);
+            }
+
+            .thead {
+                background-color: rgb(219, 212, 255);
+                color: #000;
+                font-family: 'sourcesans-bold';
+                font-size: 18px;
+
+                border-radius: 5px;
+                border-bottom: 1px solid rgb(187, 174, 255);
+            }
+
+            .tnone {
+                background-color: transparent !important;
+                padding: 0;
+                font-size: 10px;
+            }
+
+            .tred {
+                background-color: rgb(255, 151, 151) !important;
+            }
+
+            .tblue {
+                background-color: rgb(151, 153, 255) !important;
+            }
+
+            .tyellow {
+                background-color: rgb(253, 255, 151) !important;
+            }
+
+            .tgreen {
+                background-color: rgb(151, 255, 151) !important;
+            }
+
+            .tviolet {
+                background-color: rgb(234, 151, 255) !important;
+            }
+
+            .torange {
+                background-color: rgb(255, 206, 151) !important;
+            }
+
+            .tnavy {
+                background-color: rgb(78, 82, 131) !important;
+            }
+
+            .tbyellow {
+                background-color: rgb(255, 238, 82) !important;
+            }
+
+            .tdgreen {
+                background-color: rgb(67, 138, 64) !important;
+            }
+
+            .tpblue {
+                background-color: rgb(208, 215, 253) !important;
+            }
+
+            .tlgreen {
+                background-color: rgb(213, 253, 208) !important;
+            }
+
+            .tlyellow {
+                background-color: rgb(253, 252, 208) !important;
+            }
+
+            .tpurple {
+                background-color: rgb(238, 203, 252) !important;
+            }
+
+            .tpink {
+                background-color: rgb(255, 159, 204) !important;
+            }
+
+            .tgray {
+                background-color: rgb(95, 95, 95) !important;
+            }
+
+            .tagreen {
+                background-color: rgb(155, 230, 120) !important;
+            }
+
+            .tmgreen {
+                background-color: rgb(56, 97, 48) !important;
+            }
+
+            .tgold {
+                background-color: rgb(204, 193, 90) !important;
+            }
+
+            .tsilver {
+                background-color: rgb(197, 197, 197) !important;
+            }
             
         }
     }
