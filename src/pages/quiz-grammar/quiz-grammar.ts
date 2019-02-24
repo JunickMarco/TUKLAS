@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, Platform, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 import { HttpClient } from '@angular/common/http';
+import { QuizPage } from '../quiz/quiz';
 /**
  * Generated class for the QuizGrammarPage page.
  *
@@ -26,14 +27,21 @@ export class QuizGrammarPage {
 
   loadData: any;
   data: any
-  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
-
+  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient, private plt: Platform) {
+    let backAction = plt.registerBackButtonAction(() => {
+      console.log("second");
+      this.navCtrl.setRoot(QuizPage);
+      backAction();
+    }, 2)
   }
+
   ionViewWillLeave() {
     this.loadData.unsubscribe();
+
   }
 
   ionViewWillEnter() {
+
     this.slides.lockSwipes(true);
 
     this.loadData = this.http.get('assets/data/questions-grammar.json').subscribe((data: any) => {
@@ -47,6 +55,7 @@ export class QuizGrammarPage {
       this.questions = this.randomize(this.data);
     });
   }
+
   nextSlide() {
     this.slides.lockSwipes(false);
     this.slides.slideNext();
@@ -86,14 +95,14 @@ export class QuizGrammarPage {
 
 
   restartQuiz() {
-    this.score = 0;
+    // this.score = 0;
     // this.ionViewWillEnter();
     // this.navCtrl.pop();
-    this.navCtrl.push(QuizGrammarPage);
+    this.navCtrl.setRoot(QuizGrammarPage);
+    // this.navCtrl.popToRoot()
+    // this.navCtrl.push(QuizGrammarPage);
     // this.navCtrl.setRoot(this.navCtrl.getActive().component);
-    // this.slides.lockSwipes(false);
-    // this.slides.slideTo(1, 1000);
-    // this.slides.lockSwipes(true);
 
   }
+
 }

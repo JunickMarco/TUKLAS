@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, Platform, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
+import { QuizPage } from '../quiz/quiz';
 /**
  * Generated class for the QuizIdiomsPage page.
  *
@@ -22,8 +23,12 @@ export class QuizIdiomsPage {
   slideOptions: any;
   questions: any;
 
-  constructor(public navCtrl: NavController, public dataService: DataProvider) {
-
+  constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider) {
+    let backAction = plt.registerBackButtonAction(() => {
+      console.log("second");
+      this.navCtrl.setRoot(QuizPage);
+      backAction();
+    }, 2)
   }
 
   ionViewDidLoad() {
@@ -81,8 +86,8 @@ export class QuizIdiomsPage {
   }
 
   restartQuiz(): void {
-    this.score = 0;
-    this.navCtrl.push(QuizIdiomsPage);
+    // this.score = 0;
+    this.navCtrl.setRoot(QuizIdiomsPage);
     // this.slides.lockSwipes(false);
     // this.slides.slideTo(1, 1000);
     // this.slides.lockSwipes(true);

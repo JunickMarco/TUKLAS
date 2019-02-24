@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 import { HttpClient } from '@angular/common/http';
+import { QuizPage } from '../quiz/quiz';
 /**
  * Generated class for the QuizBaybayinPage page.
  *
@@ -24,8 +25,12 @@ export class QuizBaybayinPage {
   questions: any;
   loadData: any;
   data: any
-  constructor(public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
-
+  constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
+    let backAction = plt.registerBackButtonAction(() => {
+      console.log("second");
+      this.navCtrl.setRoot(QuizPage);
+      backAction();
+    }, 2)
   }
   ionViewWillLeave() {
     this.loadData.unsubscribe();
@@ -84,8 +89,8 @@ export class QuizBaybayinPage {
   }
 
   restartQuiz(): void {
-    this.score = 0;
-    this.navCtrl.push(QuizBaybayinPage);
+    // this.score = 0;
+    this.navCtrl.setRoot(QuizBaybayinPage);
     // this.slides.lockSwipes(false);
     // this.slides.slideTo(1, 1000);
     // this.slides.lockSwipes(true);

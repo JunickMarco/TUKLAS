@@ -79,6 +79,11 @@ export class WordPage {
     this.synonyms = navParams.get('synonyms');
     this.engEq = navParams.get('engEq');
 
+    let backAction = plt.registerBackButtonAction(() => {
+      console.log("second");
+      this.navCtrl.setRoot(HomePage);
+      backAction();
+    }, 2)
 
   }
 
@@ -178,7 +183,7 @@ export class WordPage {
   }
 
   navigateToHomePage() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
     console.log("Go Back")
   }
 
