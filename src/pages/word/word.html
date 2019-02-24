@@ -10,22 +10,25 @@
         <ion-icon name="arrow-back" class="action-icon"></ion-icon>
       </button>
 
-      <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionChange)="search($event)" class="searchbarbg"></ion-searchbar>
-
-      <button class="btn-icon" (click)="startListening()">
-          <i class="fas fa-microphone"></i>
+      <ion-searchbar placeholder="Search a word" [(ngModel)]="searchQuery" debounce="1" (ionInput)="search($event)"
+        (ionChange)="search($event)" class="searchbarbg"></ion-searchbar>
+      <button class="btn-icon" (click)="start()">
+        <i class="fas fa-microphone"></i>
+      </button>
+      <button class="btn-icon" (click)="startListening()" *ngIf="isIos()">
+        <i class="fas fa-microphone"></i>
       </button>
       <button class="btn-icon" full (click)="stopListening()" *ngIf="isIos()">
         <i class="fas fa-microphone-slash"></i>
-    </button>
+      </button>
     </div>
 
-    <div *ngIf="searchQuery.length >= 1">
+    <div *ngIf="searchQuery.length > 1">
       <ion-list class="suggestion-box">
-    
+
         <ion-item *ngFor="let word of words" (click)="navigateToDetails(word)">
           <h2>Filipino: {{word.wordName}}</h2>
-    
+
           <div *ngIf="word.engEq == null">
             <h3>English: None</h3>
           </div>
@@ -33,13 +36,13 @@
             <h3>English: {{word.engEq}}</h3>
           </div>
         </ion-item>
-    
+
         <div *ngIf="searchQuery">
           <ion-item *ngIf="words.length < 1 ">
             <h2>No Word Found</h2>
           </ion-item>
         </div>
-    
+
       </ion-list>
     </div>
 
@@ -48,7 +51,7 @@
       <!-- <div class="back-wordcard"></div> -->
 
       <div class="word-card">
-        
+
         <div class="word-header">
           <div class="row-one">
             <div class="word-name">{{wordName}}</div>
@@ -57,7 +60,7 @@
               <ion-icon name="volume-up"></ion-icon>
             </div>
           </div>
-          
+
           <div class="word-baybayin">{{bayEq}}</div>
 
           <div *ngIf="engEq != null">
@@ -76,12 +79,12 @@
             </ion-segment>
 
             <div [ngSwitch]="def">
-    
+
               <ion-list *ngSwitchCase="'engDef'">
-                <h2 class="word-subhead">Definition</h2>       
+                <h2 class="word-subhead">Definition</h2>
                 <p *ngFor="let item of engDef" class="definition">: {{item}}</p>
               </ion-list>
-    
+
               <ion-list *ngSwitchDefault>
                 <h2 class="word-subhead">Depinisyon</h2>
                 <!-- <ul>
@@ -93,7 +96,7 @@
             </div>
           </div>
         </div>
-    
+
         <div *ngIf="engDef == null">
           <div class="word-subcard">
             <h2 class="word-subhead">Depinisyon</h2>

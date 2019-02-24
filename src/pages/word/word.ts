@@ -45,7 +45,7 @@ export class WordPage {
   isRecording = false;
   ainput: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private modal: ModalController, private view: ViewController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef,) {
+    private modal: ModalController, private view: ViewController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, ) {
     //algolia for search
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -111,11 +111,12 @@ export class WordPage {
       let options = {
         language: 'en-US'
       }
+      this.searchQuery = " "
       this.speechRecognition.startListening(options).subscribe(matches => {
         this.ainput = matches[0];
-      console.log(this.ainput);
-      this.searchQuery = this.ainput
-      this.cd.detectChanges();
+        console.log(this.ainput);
+        this.searchQuery = this.ainput
+        this.cd.detectChanges();
       });
       this.isRecording = true;
 
@@ -132,6 +133,7 @@ export class WordPage {
     let options = {
       language: 'fil-PH'
     }
+    this.searchQuery = " "
     this.speechRecognition.startListening(options)
       .subscribe(
         (matches: Array<string>) => {

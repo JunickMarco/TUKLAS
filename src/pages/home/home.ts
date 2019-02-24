@@ -62,6 +62,7 @@ export class HomePage {
   ALGOLIA_APP_ID: string = "E4K2LLB4XB";
   ALGOLIA_APP_KEY: string = "0fdb807e39c747a9bd8ae696afb572e6";
   searchQuery: string = "";
+
   words = [];
 
   constructor(public navCtrl: NavController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, private alertCtrl: AlertController, private afs: AngularFirestore, private storage: Storage, private http: HttpClient, public fcm: FcmProvider,
@@ -73,10 +74,10 @@ export class HomePage {
     this.index = this.client.initIndex("tuklas_WORDS")
     // this.matches = [];
 
-    
+
   }
 
- 
+
   //speechrecognition
   ngOnInit() {
 
@@ -100,11 +101,12 @@ export class HomePage {
       let options = {
         language: 'en-US'
       }
+      this.searchQuery = " "
       this.speechRecognition.startListening(options).subscribe(matches => {
         this.ainput = matches[0];
-      console.log(this.ainput);
-      this.searchQuery = this.ainput
-      this.cd.detectChanges();
+        console.log(this.ainput);
+        this.searchQuery = this.ainput
+        this.cd.detectChanges();
       });
       this.isRecording = true;
 
@@ -122,31 +124,36 @@ export class HomePage {
   }
 
   start() {
-    // let options = {
-    //   language: 'fil-PH'
-    // }
-    // this.speechRecognition.startListening(options)
-    //   .subscribe(
-    //     (matches: Array<string>) => {
-    //       this.ainput = matches[0];
-    //       console.log(this.ainput);
-    //       this.searchQuery = this.ainput
-    //     },
-    //     (onerror) => console.log('error:', onerror)
-    //   )
     let options = {
-      language: 'en-US'
+      language: 'fil-PH',
+      matches: 1
     }
-    this.speechRecognition.startListening(options).subscribe(matches => {
-      this.ainput = matches[0];
-      console.log(this.ainput);
-      this.searchQuery = this.ainput
-      this.cd.detectChanges();
-      
-    });
-    this.isRecording = true;
+    this.searchQuery = " "
+    this.speechRecognition.startListening(options)
+      .subscribe(
+        (matches: Array<string>) => {
+
+          console.log(matches)
+          this.ainput = matches[0];
+          console.log(this.ainput);
+          this.searchQuery = this.ainput
+          console.log(this.searchQuery)
+        },
+        (onerror) => console.log('error:', onerror)
+      )
+    // let options = {
+    //   language: 'en-US'
+    // }
+    // this.speechRecognition.startListening(options).subscribe(matches => {
+    //   this.ainput = matches[0];
+    //   console.log(this.ainput);
+    //   this.searchQuery = this.ainput
+    //   this.cd.detectChanges();
+
+    // });
+    // this.isRecording = true;
   }
-  
+
 
   //searchbox
   search(event) {
@@ -209,5 +216,5 @@ export class HomePage {
   //   myModal.present();
   // }
 
- 
+
 }
