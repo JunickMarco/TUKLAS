@@ -28,6 +28,9 @@ export class GrammarStructurePage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Subjp') Subjp: any;
+ @ViewChild('Invert') Invert: any;
 
  /**
   * Method to scroll to top
@@ -36,5 +39,15 @@ export class GrammarStructurePage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElementSubjp() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Subjp.nativeElement.offsetTop, 500);
+}
+
+public scrollElementInvert() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Invert.nativeElement.offsetTop, 500);
+}
 
 }

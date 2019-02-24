@@ -78,13 +78,14 @@ page-grammar-structure {
                 color: #000;
                 font-size: 18px;  
 
-                background: #FFFBA0;
+                background: #FFA0A0;
                 // border: 1px solid #fff;
                 box-sizing: border-box;
                 border-radius: 3px;
 
                 padding: 5px;
-                max-width: 90%;
+                max-width: 95%;
+                text-align: center;
             }
 
 
@@ -138,7 +139,7 @@ page-grammar-structure {
                         margin: 5px;
                         padding: 3px 5px; 
     
-                        background: #FFFBA0;
+                        background: #FFA0A0;
                         // border: 1px solid #fff;
                         box-sizing: border-box;
                         border-radius: 3px;
@@ -186,17 +187,17 @@ page-grammar-structure {
                 width: 100%;
                 display: grid;
                 grid-gap: 10px;
-                grid-template-columns: 10% auto auto;
+                grid-template-columns: repeat(3, auto);
                 /*   grid-template-rows: repeat; */
                 /*   grid-auto-flow: column; */
             }
             
             .cell {
-                background-color: rgb(233, 230, 255);
+                background-color: rgb(255, 231, 231);
                 color: #000;
                 border-radius: 5px;
                 padding: 5px;
-                font-size: 15px;
+                font-size: 13px;
                 font-family: 'opensans-reg';
                 display: flex;
                 align-items: center;   
@@ -204,22 +205,32 @@ page-grammar-structure {
                 text-align: center;  
             }
 
+            .table-one {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .one {
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
             // .cell:nth-child(3n + 1) {
             //     background-color: rgb(209, 216, 255);
             // }
 
             .cell:nth-child(6n + 5), .cell:nth-child(6n) {
-                background-color: rgb(246, 245, 255);
+                background-color: rgb(255, 240, 240);
             }
 
             .thead {
-                background-color: rgb(219, 212, 255);
+                background-color: rgb(255, 213, 213);
                 color: #000;
                 font-family: 'sourcesans-bold';
-                font-size: 18px;
+                font-size: 15px;
 
                 border-radius: 5px;
-                border-bottom: 1px solid rgb(187, 174, 255);
+                border-bottom: 1px solid rgb(255, 174, 174);
             }
             
         }
