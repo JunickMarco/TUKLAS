@@ -181,7 +181,39 @@ page-grammar-daysmonths {
                 }
 
             }
+
+            .table {
+                width: 95%;
+                display: grid;
+                grid-gap: 13px;
+                grid-template-columns: repeat(3, auto);
+                /*   grid-template-rows: repeat; */
+                /*   grid-auto-flow: column; */
+            }
             
+            .cell {
+                background-color: rgb(236, 255, 235);
+                color: #000;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 15px;
+                font-family: 'opensans-reg';
+                text-align: center;
+            }
+
+            .thead {
+                background-color: rgb(201, 255, 200);
+                color: #000;
+                font-family: 'opensans-semibold';
+                font-size: 18px;
+
+                border-radius: 5px;
+            }
+
+            .tnone {
+                background-color: transparent;
+            }
+              
         }
     }
 }

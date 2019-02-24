@@ -38,156 +38,304 @@
           
   
           <div class="lesson-content">
-              <!-- <h2>Contents</h2>
+              <h2>Contents</h2>
               <ul class="content-list">
-                <li>Cardinal Numbers</li>
-                <li>Ordinal Numbers</li>
-              </ul> -->
+                <li (click)="scrollElementCardi()">Cardinal Numbers</li>
+                <li (click)="scrollElementOrdi()">Ordinal Numbers</li>
+                <li (click)="scrollElementOther()">Other Names</li>
+              </ul>
           </div>
         </div>
 
-        <div class="lesson-box" #Cnt>
+        <div class="lesson-box">
+          <!-- <h3>Classification & Terminology</h3> -->
+            <div class="lesson-content">
+              <div class="lesson-text">
+                <p>
+                  <strong>
+                    When learning Filipino names of numbers, it is also useful to learn the Spanish ones as well (spelled according to the conventions of Tagalog phonetics) since these are still commonly used, especially among the older generations. So in this lesson, we give the Spanish equivalents of numbers if they are commonly used by Filipinos.
+                  </strong>
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="lesson-box" #Cardi>
           <h3>Cardinal Numbers</h3>
             <div class="lesson-content">
-              <table id="customers">
-          
-                <tr>
-                <th>&nbsp;</th>
-                <th>Tagalog</th>
-                <th>Spanish</th>
-                </tr>
-            
-                <tr>
-                <td>0</td>
-                <td>wala / sero</td>
-                <td>sero</td>
-                </tr>
-                <tr>
-                <td>1</td>
-                <td>isa</td>
-                <td>uno</td>
-                </tr>
-                <tr>
-                <td>2</td>
-                <td>dalawa</td>
-                <td>dos</td>
-                </tr>
-                <tr>
-                <td>3</td>
-                <td>tatlo</td>
-                <td>tres</td>
-                </tr>
-                <tr>
-                <td>4</td>
-                <td>apat</td>
-                <td>kwatro</td>
-                </tr>
-                <tr>
-                <td>5</td>
-                <td>lima</td>
-                <td>sinko</td>
-                </tr>
-                <tr>
-                <td>6</td>
-                <td>anim</td>
-                <td>sais</td>
-                </tr>
-                <tr>
-                <td>7</td>
-                <td>pito</td>
-                <td>syete</td>
-                </tr>
-                <tr>
-                <td>8</td>
-                <td>walo</td>
-                <td>otso</td>
-                </tr>
-                <tr>
-                <td>9</td>
-                <td>siyam</td>
-                <td>nuwebe</td>
-                </tr>
-                <tr>
-                <td>10</td>
-                <td>sampu</td>
-                <td>diyes</td>
-                </tr>
-                <tr>
-                <td>11</td>
-                <td>labing-isa</td>
-                <td>onse</td>
-                </tr>
-           
-                </table>
+
+              <div class="lesson-text">
+                <p>
+                  Filipino numbers have equivalents in Spanish (written according to Tagalog orthography) and these are commonly used by older people, especially in buying and selling.                </p>
+              </div>
+              
+              <div class="table">
+                <div class="cell tnone"> </div>
+                <div class="cell thead">Tagalog</div>
+                <div class="cell thead">Spanish</div>
+                
+                <div class="cell">1</div>
+                <div class="cell">isa</div>
+                <div class="cell">uno</div>
+
+                <div class="cell">2</div>
+                <div class="cell">dalawa</div>
+                <div class="cell">dos</div>
+
+                <div class="cell">3</div>
+                <div class="cell">tatlo</div>
+                <div class="cell">tres</div>
+
+                <div class="cell">4</div>
+                <div class="cell">apat</div>
+                <div class="cell">kuwatro</div>
+
+                <div class="cell">5</div>
+                <div class="cell">lima</div>
+                <div class="cell">sinko</div>
+
+                <div class="cell">6</div>
+                <div class="cell">anim</div>
+                <div class="cell">seis</div>
+
+                <div class="cell">7</div>
+                <div class="cell">pito</div>
+                <div class="cell">siyete</div>
+
+                <div class="cell">8</div>
+                <div class="cell">walo</div>
+                <div class="cell">otso</div>
+
+                <div class="cell">9</div>
+                <div class="cell">siyam</div>
+                <div class="cell">nuwebe</div>
+
+                <div class="cell">10</div>
+                <div class="cell">sampu</div>
+                <div class="cell">diyes</div>
+
+                <div class="cell">11</div>
+                <div class="cell">labing-isa</div>
+                <div class="cell">onse</div>
+
+                <div class="cell">12</div>
+                <div class="cell">labindalawa</div>
+                <div class="cell">dose</div>
+
+                <div class="cell">13</div>
+                <div class="cell">labintatlo</div>
+                <div class="cell">trese</div>
+
+                <div class="cell">14</div>
+                <div class="cell">labing-apat</div>
+                <div class="cell">katorse</div>
+
+                <div class="cell">15</div>
+                <div class="cell">labinlima</div>
+                <div class="cell">kinse</div>
+
+                <div class="cell">16</div>
+                <div class="cell">labing-anim</div>
+                <div class="cell">disiseis</div>
+
+                <div class="cell">17</div>
+                <div class="cell">labimpito</div>
+                <div class="cell">disisiyete</div>
+
+                <div class="cell">18</div>
+                <div class="cell">labingwalo</div>
+                <div class="cell">disiotso</div>
+
+                <div class="cell">19</div>
+                <div class="cell">labingsiyam</div>
+                <div class="cell">disinuwebe</div>
+
+                <div class="cell">20</div>
+                <div class="cell">dalawampu</div>
+                <div class="cell">beynte</div>
+
+                <div class="cell">21</div>
+                <div class="cell">dalawampu't isa</div>
+                <div class="cell">beynte uno</div>
+
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+
+                <div class="cell">25</div>
+                <div class="cell">dalawampu't lima</div>
+                <div class="cell">beynte sinko</div>
+
+                <div class="cell">30</div>
+                <div class="cell">tatlumpu</div>
+                <div class="cell">treynta</div>
+
+                <div class="cell">36</div>
+                <div class="cell">tatlumpu't anim</div>
+                <div class="cell">trynta'y seis</div>
+
+                <div class="cell">40</div>
+                <div class="cell">apatnapu</div>
+                <div class="cell">kuwarenta</div>
+
+                <div class="cell">47</div>
+                <div class="cell">apatnapu't pito</div>
+                <div class="cell">kuwarenta'y siyete</div>
+
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+
+                <div class="cell">50</div>
+                <div class="cell">limampu</div>
+                <div class="cell">sinkuwenta</div>
+
+                <div class="cell">55</div>
+                <div class="cell">limampu't lima</div>
+                <div class="cell">sinkuwenta'y sinko</div>
+
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+                <div class="cell tnone"> </div>
+
+                <div class="cell">60</div>
+                <div class="cell">animnapu</div>
+                <div class="cell">sesenta</div>
+
+                <div class="cell">70</div>
+                <div class="cell">pitumpu</div>
+                <div class="cell">setenta</div>
+
+                <div class="cell">80</div>
+                <div class="cell">walumpu</div>
+                <div class="cell">otsenta</div>
+
+                <div class="cell">90</div>
+                <div class="cell">siyamnapu</div>
+                <div class="cell">nobenta</div>
+
+                <div class="cell">100</div>
+                <div class="cell">sandaan</div>
+                <div class="cell">siyento</div>
+
+                <div class="cell">110</div>
+                <div class="cell">sandaa't sampu</div>
+                <div class="cell">siyento diyes</div>
+
+                <div class="cell">200</div>
+                <div class="cell">dalawang daan</div>
+                <div class="cell">dos siyentos</div>
+
+                <div class="cell">300</div>
+                <div class="cell">tatlong daan</div>
+                <div class="cell">tres siyentos</div>
+
+                <div class="cell">400</div>
+                <div class="cell">apat na raan</div>
+                <div class="cell">kwatro siyentos</div>
+
+                <div class="cell">500</div>
+                <div class="cell">limang daan</div>
+                <div class="cell">kinyentos</div>
+
+                <div class="cell">1000</div>
+                <div class="cell">isang libo</div>
+                <div class="cell">mil</div>
+              </div>
               
             </div>
         </div>
 
 
-        <div class="lesson-box" #Cnt>
+        <div class="lesson-box" #Ordi>
           <h3>Ordinal Numbers</h3>
             <div class="lesson-content">
-              <table id="customers">
-              
-               
-                <tr>
-                <th>English</th>
-                <th>Filipino</th>
-                </tr>
-         
-                <tr>
-                <td>first</td>
-                <td>una</td>
-                </tr>
-                <tr>
-                <td>second</td>
-                <td>pangalawa</td>
-                </tr>
-                <tr>
-                <td>third</td>
-                <td>pangatlo</td>
-                </tr>
-                <tr>
-                <td>fourth</td>
-                <td>pang-apat</td>
-                </tr>
-                <tr>
-                <td>fifth</td>
-                <td>ika-lima</td>
-                </tr>
-                <tr>
-                <td>sixth</td>
-                <td>pang-anim</td>
-                </tr>
-                <tr>
-                <td>seventh</td>
-                <td>pampito</td>
-                </tr>
-                <tr>
-                <td>eighth</td>
-                <td>pang-walo</td>
-                </tr>
-                <tr>
-                <td>ninth</td>
-                <td>ika-siyam</td>
-                </tr>
-                <tr>
-                <td>tenth</td>
-                <td>ika-sampu</td>
-                </tr>
-                <tr>
-                <td>eleventh</td>
-                <td>pang-onse</td>
-                </tr>
-                <tr>
-                <td>twelfth</td>
-                <td>ika-labindalawa</td>
-                </tr>
-     
-                </table>
+
+              <div class="lesson-text">
+                <p>
+                    An ordinal number indicates the place occupied by an item in an ordered sequence. Filipino ordinals are easy to put together and remember. The prefix <strong>ika-</strong> is added to the cardinal numbers. There are few irregularities, however—first and last are always <strong>una</strong> and <strong>huli</strong>, respectively, and the removal of the first two letters of <strong>dalawa</strong> and <strong>tatlo</strong> before attaching the prefix <strong>ika-</strong>.
+                </p>
+              </div>
+
+              <div class="table-ordi">
+                <div class="cell-ordi thead-ordi">Tagalog</div>
+                <div class="cell-ordi thead-ordi">English</div>
+                
+                <div class="cell-ordi"><strong>una</strong></div>
+                <div class="cell-ordi">first</div>
+
+                <div class="cell-ordi"><strong>ikalawa</strong></div>
+                <div class="cell-ordi">second</div>
+
+                <div class="cell-ordi"><strong>ikatlo</strong></div>
+                <div class="cell-ordi">third</div>
+
+                <div class="cell-ordi"><strong>ikaapat</strong></div>
+                <div class="cell-ordi">fourth</div>
+
+                <div class="cell-ordi"><strong>ikalima</strong></div>
+                <div class="cell-ordi">fifth</div>
+
+                <div class="cell-ordi"><strong>ikaanim</strong></div>
+                <div class="cell-ordi">sixth</div>
+
+                <div class="cell-ordi"><strong>ikapito</strong></div>
+                <div class="cell-ordi">seventh</div>
+
+                <div class="cell-ordi"><strong>ikawalo</strong></div>
+                <div class="cell-ordi">eighth</div>
+
+                <div class="cell-ordi"><strong>ikasiyam</strong></div>
+                <div class="cell-ordi">ninth</div>
+
+                <div class="cell-ordi"><strong>ikasampu</strong></div>
+                <div class="cell-ordi">tenth</div>
+
+                <div class="cell-ordi"><strong>ikalabing-isa</strong></div>
+                <div class="cell-ordi">eleventh</div>
+
+                <div class="cell-ordi"><strong>ikadalawampu</strong></div>
+                <div class="cell-ordi">twentieth</div>
+
+                <div class="cell-ordi"><strong>ikasandaan</strong></div>
+                <div class="cell-ordi">one hundredth</div>
+
+                <div class="cell-ordi"><strong>huli</strong></div>
+                <div class="cell-ordi">last</div>
+              </div>
               
             </div>
         </div>
+
+        <div class="lesson-box" #Other>
+          <h3>Orther Names and Their Equivalents</h3>
+            <div class="lesson-content">
+
+              <div class="table-ordi">
+                <div class="cell-ordi thead-ordi">Filipino</div>
+                <div class="cell-ordi thead-ordi">English</div>
+                
+                <div class="cell-ordi"><strong>puo</strong></div>
+                <div class="cell-ordi">ten</div>
+
+                <div class="cell-ordi"><strong>daan</strong></div>
+                <div class="cell-ordi">hundred</div>
+
+                <div class="cell-ordi"><strong>libo</strong></div>
+                <div class="cell-ordi">thousand</div>
+
+                <div class="cell-ordi"><strong>laksa</strong></div>
+                <div class="cell-ordi">ten thousand</div>
+
+                <div class="cell-ordi"><strong>yuta</strong></div>
+                <div class="cell-ordi">hundred thousand</div>
+
+                <div class="cell-ordi"><strong>angaw</strong></div>
+                <div class="cell-ordi">million</div>
+              </div>
+              
+            </div>
+          </div>
   
       </div>
   

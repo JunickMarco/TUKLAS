@@ -43,6 +43,7 @@
                 <li (click)="scrollElementB()">B</li>
                 <li (click)="scrollElementK()">K</li>
                 <li (click)="scrollElementD()">D</li>
+                <li (click)="scrollElementG()">G</li>
                 <li (click)="scrollElementH()">H</li>
                 <li (click)="scrollElementI()">I</li>
                 <li (click)="scrollElementL()">L</li>
@@ -53,6 +54,7 @@
                 <li (click)="scrollElementT()">T</li>
                 <li (click)="scrollElementU()">U</li>
                 <li (click)="scrollElementW()">W</li>
+                <li (click)="scrollElementY()">Y</li>
               </ul>
           </div>
         </div>
@@ -94,6 +96,16 @@
           </div>
   
           <div class="idiom-item" *ngFor="let item of idioms4 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container" #target_G>
+          <div class="letter-start">
+            <h2>G</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms7 | async" (click)="navigateToDetails(item)">
             <p>{{ item.idiomName }}</p>
           </div>
         </div>
@@ -194,6 +206,16 @@
           </div>
   
           <div class="idiom-item" *ngFor="let item of idioms23 | async" (click)="navigateToDetails(item)">
+            <p>{{ item.idiomName }}</p>
+          </div>
+        </div>
+
+        <div class="letter-container" #target_Y>
+          <div class="letter-start">
+            <h2>Y</h2>
+          </div>
+  
+          <div class="idiom-item" *ngFor="let item of idioms25 | async" (click)="navigateToDetails(item)">
             <p>{{ item.idiomName }}</p>
           </div>
         </div>

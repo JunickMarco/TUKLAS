@@ -28,6 +28,10 @@ export class GrammarNumbersPage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Cardi') Cardi: any;
+ @ViewChild('Ordi') Ordi: any;
+ @ViewChild('Other') Other: any;
 
  /**
   * Method to scroll to top
@@ -36,4 +40,20 @@ export class GrammarNumbersPage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+ 
+ public scrollElementCardi() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Cardi.nativeElement.offsetTop, 500);
+}
+
+public scrollElementOrdi() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Ordi.nativeElement.offsetTop, 500);
+}
+
+public scrollElementOther() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Other.nativeElement.offsetTop, 500);
+}
+
 }

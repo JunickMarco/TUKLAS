@@ -251,6 +251,7 @@ export class LearnIdiomsPage implements OnInit{
   @ViewChild('target_B') target_B: any;
   @ViewChild('target_K') target_K: any;
   @ViewChild('target_D') target_D: any;
+  @ViewChild('target_G') target_G: any;
   @ViewChild('target_H') target_H: any;
   @ViewChild('target_I') target_I: any;
   @ViewChild('target_L') target_L: any;
@@ -261,6 +262,7 @@ export class LearnIdiomsPage implements OnInit{
   @ViewChild('target_T') target_T: any;
   @ViewChild('target_U') target_U: any;
   @ViewChild('target_W') target_W: any;
+  @ViewChild('target_Y') target_Y: any;
  
 
  /**
@@ -289,6 +291,11 @@ export class LearnIdiomsPage implements OnInit{
   public scrollElementD() {
     // Avoid reading the DOM directly, by using ViewChild and the target reference
     this.content.scrollTo(0, this.target_D.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementG() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_G.nativeElement.offsetTop, 500);
   }
 
   public scrollElementH() {
@@ -339,6 +346,11 @@ export class LearnIdiomsPage implements OnInit{
   public scrollElementW() {
     // Avoid reading the DOM directly, by using ViewChild and the target reference
     this.content.scrollTo(0, this.target_W.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementY() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.target_Y.nativeElement.offsetTop, 500);
   }
 
 }
