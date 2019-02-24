@@ -38,102 +38,149 @@
         
 
         <div class="lesson-content">
-            <!-- <h2>Contents</h2>
+            <h2>Contents</h2>
             <ul class="content-list">
-              <li>Classification & Terminology</li>
-            </ul> -->
+              <li (click)="scrollElementTimetable()">Time Table</li>
+              <li (click)="scrollElementShort()">Short Forms of Time</li>
+            </ul>
         </div>
       </div>
 
-
-      <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
-                <p>
-                    For English speakers, as well as speakers of most European languages would know that the sentence structure of those languages is mainly.
-                </p>
-
-                <p class="example-text">
-                  Subject – Verb – Object
-                </p>
-                <p class="example-italic-text">
-                  I am a man.
-                </p>
-              </div>
+      <div class="lesson-box" #Timetable>
+          <!-- <h3>Days of the Week</h3> -->
+          <div class="lesson-content">
+            <div class="lesson-text">
+              <p>
+                To express time in Filipino, the prefix <strong>ika-</strong> is placed before cardinal numbers. The Spanish equivalent (in Tagalog orthography) of time is included in this lesson as it still has a wider use among Filipinos.
+              </p>
             </div>
-        </div>
+  
+            <div class="table">
+              <div class="cell thead">English</div>
+              <div class="cell thead">Tagalog</div>
+              <div class="cell thead">Spanish</div>
+              
+              <div class="cell">1:00 a.m.</div>
+              <div class="cell">unang oras ng umaga</div>
+              <div class="cell">a la una ng umaga</div>
+  
+              <div class="cell">2:00 a.m.</div>
+              <div class="cell">ikalawa ng umaga</div>
+              <div class="cell">a las dos ng umaga</div>
+  
+              <div class="cell">3:00 a.m.</div>
+              <div class="cell">ikatlo ng umaga</div>
+              <div class="cell">a las tres ng umaga</div>
 
-        <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
+              <div class="cell">4:00 a.m.</div>
+              <div class="cell">ika-apat ng umaga</div>
+              <div class="cell">a las kuwatro ng umaga</div>
 
-                <p>
-                  In Tagalog however, one needs to become accustomed to the structure when he/she practises the language. The sentence structure is not unique however strange to native English speakers. These are the most common structures in Tagalog:
-                </p>
+              <div class="cell">5:00 a.m.</div>
+              <div class="cell">ikalima ng umaga</div>
+              <div class="cell">a las sinko ng umaga</div>
 
-                <p class="example-text">
-                  Verb – Subject – Object 
-                </p>
-                <p class="example-italic-text">or</p>
-                <p class="example-text">
-                  Verb – Object – Subject
-                </p>
+              <div class="cell">6:00 a.m.</div>
+              <div class="cell">ikaanim ng umaga</div>
+              <div class="cell">a las seis ng umaga</div>
 
-                <p>As you can see, the verb goes before either the object or the subject. This form is common in speech. Let’s analyse some examples:</p>
+              <div class="cell">7:00 a.m.</div>
+              <div class="cell">ikapito ng umaga</div>
+              <div class="cell">a las siyete ng umaga</div>
 
-                <p class="example-text">
-                  Lalaki si Juan → Juan is male
-                </p>
+              <div class="cell">8:00 a.m.</div>
+              <div class="cell">ikawalo ng umaga</div>
+              <div class="cell">a las otso ng umaga</div>
 
-                <p class="text-light">
-                  NOTE: There is no “to be” word but we’ll discuss this later. Here are some examples with verbs.
-                </p>
+              <div class="cell">9:00 a.m.</div>
+              <div class="cell">ikasiyam ng umaga</div>
+              <div class="cell">a las nuwebe ng umaga</div>
 
-                <p class="example-italic-text">
-                  Kumain (ate) ang aso (dog) ng buto (bone)  →  The dog ate a bone.
-                </p>
-                <p class="example-italic-text">
-                  Nakita (saw) ko (I) siya (him/her) → I saw him/her.
-                </p>
-              </div>
+              <div class="cell">10:00 a.m.</div>
+              <div class="cell">ikasampu ng umaga</div>
+              <div class="cell">a las diyes ng umaga</div>
+
+              <div class="cell">11:00 a.m.</div>
+              <div class="cell">ikalabing-isa ng umaga</div>
+              <div class="cell">a las onse ng umaga</div>
+
+              <div class="cell"><strong>12:00 nn</strong></div>
+              <div class="cell"><strong>ikalabindalawa ng tanghali</strong></div>
+              <div class="cell"><strong>a las dose ng tanghali</strong></div>
+
+              <div class="cell">1:00 p.m.</div>
+              <div class="cell">unang oras ng hapon</div>
+              <div class="cell">a la una ng hapon</div>
+
+              <div class="cell">2:00 p.m.</div>
+              <div class="cell">ikalawa ng hapon</div>
+              <div class="cell">a las dos ng hapon</div>
+
+              <div class="cell">3:30 p.m.</div>
+              <div class="cell">ikatlo at kalahati ng hapon</div>
+              <div class="cell">a las tres y medya ng hapon</div>
+
+              <div class="cell">4:00 p.m.</div>
+              <div class="cell">ika-apat ng hapon</div>
+              <div class="cell">a las kuwatro ng hapon</div>
+
+              <div class="cell">5:15 p.m.</div>
+              <div class="cell">ikalima at labinlimang minuto ng hapon</div>
+              <div class="cell">a las sinko y kuwatro ng hapon</div>
+
+              <div class="cell"><strong>6:40 p.m.</strong></div>
+              <div class="cell"><strong>ikaanim at apatnapung miuto ng gabi</strong></div>
+              <div class="cell"><strong>a las seis kuwarenta ng gabi</strong></div>
+
+              <div class="cell">7:00 p.m.</div>
+              <div class="cell">ikapito ng gabi</div>
+              <div class="cell">a las siyete ng gabi</div>
+
+              <div class="cell">8:00 p.m.</div>
+              <div class="cell">ikawalo ng gabi</div>
+              <div class="cell">a las otso ng gabi</div>
+
+              <div class="cell">9:10 p.m.</div>
+              <div class="cell">ikasiyam at sampung minuto ng gabi</div>
+              <div class="cell">a las nuwebe diyes ng gabi</div>
+
+              <div class="cell">10:00 p.m.</div>
+              <div class="cell">ikasampu ng gabi</div>
+              <div class="cell">a las diyes ng gabi</div>
+
+              <div class="cell">11:00 p.m.</div>
+              <div class="cell">ikalabing-isa ng gabi</div>
+              <div class="cell">a las onse ng gabi</div>
+
+              <div class="cell">12:00 midnight</div>
+              <div class="cell">ikalabindalawa ng hatinggabi</div>
+              <div class="cell">a las dose ng hatinggabi</div>
             </div>
           </div>
-
-          <div class="lesson-box">
-            <!-- <h3>Classification & Terminology</h3> -->
-              <div class="lesson-content">
-                <div class="lesson-text">
   
-                    <p class="example-text">
-                      Subject – Verb – Object
-                    </p>
+        </div>
 
-                    <p>
-                      This is another structure common in the language where the subject goes before the verb. Usually, this form is considered formal.
-                    </p>
 
-                    <p class="example-italic-text">
-                      Si Juan ay lalaki → Juan is male
-                    </p>
-
-                    <p>
-                      Notice that unlike the VSO example (Lalaki si Juan), the SVO example has the word “ay” between the subject and the object. Ay is a particle in a sentence that can be used as either a copula, linking verb, “to be” verb or an equal sign. 
-                    </p>
-                    <p>
-                      Some sources may say that the particle is not a copula or a linking verb but like the “=”. If it makes things easy for you, you can try using it as the verb “to be” in SVO sentences. One of the reasons why the particle is not considered a verb because it can be in a sentence with other verbs. Ay is also not considered an auxiliary verb.
-                    </p>
-
-                    <p class="example-italic-text">
-                      Ang aso ay kumain ng buto  →  The dog ate a bone.
-                    </p>
-
-                </div>
-              </div>
+        <div class="lesson-box" #Short>
+          <h3>Short Forms of Time</h3>
+          <div class="lesson-content">
+            <div class="lesson-text">
+              <p>
+                The shortened forms of time, most common in writing, are:
+              </p>
             </div>
 
-    </div>
+            <div class="table-short">
+              <div class="cell-short"><strong>n.u.</strong> = <strong>ng umaga</strong>, a.m.</div>
+              <div class="cell-short"><strong>n.t.</strong> = <strong>ng tanghali</strong>, noon</div>
+              <div class="cell-short"><strong>n.h.</strong> = <strong>ng hapon</strong>, p.m.</div>
+              <div class="cell-short"><strong>n.g.</strong> = <strong>ng gabi</strong>, evening</div>
+            </div>
+          </div>
+  
+        </div>
+
+  </div>
 
   </div>
 </ion-content>

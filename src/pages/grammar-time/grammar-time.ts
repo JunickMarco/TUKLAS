@@ -29,6 +29,9 @@ export class GrammarTimePage {
  }
 
   @ViewChild('pageTop') pageTop: Content;
+  @ViewChild(Content) content: Content;
+  @ViewChild('Timetable') Timetable: any;
+  @ViewChild('Short') Short: any;
 
   /**
    * Method to scroll to top
@@ -36,6 +39,16 @@ export class GrammarTimePage {
   public pageScroller(){
     //scroll to page top
     this.pageTop.scrollToTop();
+  }
+
+  public scrollElementTimetable() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.Timetable.nativeElement.offsetTop, 500);
+  }
+
+  public scrollElementShort() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.Short.nativeElement.offsetTop, 500);
   }
 
 }
