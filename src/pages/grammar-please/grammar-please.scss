@@ -84,7 +84,8 @@ page-grammar-please {
                 border-radius: 3px;
 
                 padding: 5px;
-                max-width: 90%;
+                max-width: 95%;
+                text-align: center;
             }
 
 
@@ -180,6 +181,63 @@ page-grammar-please {
                     text-align: center;
                 }
 
+            }
+
+            .table-ordi {
+                width: 100%;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, auto);
+                margin-bottom: 40px;
+            }
+            
+            .cell-ordi {
+                background-color: rgb(255, 255, 246);
+                color: #000;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 15px;
+                font-family: 'opensans-reg';
+                display: flex;
+                align-items: center;   
+                justify-content: center;
+                text-align: center; 
+            }
+
+            // .cell-ordi:nth-child(3n + 1) {
+            //     background-color: rgb(209, 216, 255);
+            // }
+
+            .cell-ordi:nth-child(4n),  .cell-ordi:nth-child(4n + 3){
+                background-color: rgb(255, 255, 228);
+            }
+
+            .thead-ordi {
+                background-color: rgb(254, 255, 210);
+                color: #000;
+                font-family: 'sourcesans-bold';
+                font-size: 18px;
+
+                border-radius: 5px;
+                border-bottom: 1px solid rgb(254, 255, 174);
+            }
+
+            .table-short {
+                width: 100%;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: auto;
+
+            }
+
+            .cell-short {
+                background-color: rgb(255, 255, 246);
+                color: #000;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 15px;
+                font-family: 'opensans-reg';
+                text-align: center;     
             }
             
         }

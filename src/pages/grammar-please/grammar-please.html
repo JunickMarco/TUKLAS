@@ -38,100 +38,91 @@
         
 
         <div class="lesson-content">
-            <!-- <h2>Contents</h2>
+            <h2>Contents</h2>
             <ul class="content-list">
-              <li>Classification & Terminology</li>
-            </ul> -->
+              <li (click)="scrollElementForm()">Forming Paki- and Maki- Derivatives</li>
+              <li (click)="scrollElementSample()">Sample Sentences</li>
+           </ul>
         </div>
       </div>
 
-
       <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
-                <p>
-                    For English speakers, as well as speakers of most European languages would know that the sentence structure of those languages is mainly.
-                </p>
-
-                <p class="example-text">
-                  Subject – Verb – Object
-                </p>
-                <p class="example-italic-text">
-                  I am a man.
-                </p>
-              </div>
-            </div>
+        <!-- <h3>Classification & Terminology</h3> -->
+        <div class="lesson-content">
+          <div class="lesson-text">
+            <p>
+                Saying please in Filipino requires the use of the prefixes <strong>paki-</strong> and <strong>maki-</strong>, which when added to action roots from dericative verbs that are used for requests.
+            </p>
+            <p>
+                A <strong>paki-</strong> verb is passive like an <strong>-in-</strong> verb and needs a doer of the action in the possessive form such as <strong>niya</strong> and <strong>mo</strong>.
+            </p>
+            <p>
+                On the other hand, a <strong>maki-</strong> verb is active like an <strong>-um-</strong> verb and needs a doer in the nominative form such as <strong>si Nestor</strong>, <strong>ako</strong>, <strong>siya</strong>, and <strong>ikaw</strong>.
+            </p>
+            <p>
+                These verbs have tenses but the imperative form is mostly used. And as Filipinos prefer to speak in the passive, <strong>paki-</strong> verbs are more widely used in making requests.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
-            <div class="lesson-content">
-              <div class="lesson-text">
+      <div class="lesson-box" #Form>
+        <h3>Forming Paki- and Maki- Derivatives</h3>
+          <div class="lesson-content">
+            
+            <div class="table-ordi">
+              <div class="cell-ordi thead-ordi">Example: <br/><strong> kuha</strong></div>
+              <div class="cell-ordi thead-ordi">to get</div>
 
-                <p>
-                  In Tagalog however, one needs to become accustomed to the structure when he/she practises the language. The sentence structure is not unique however strange to native English speakers. These are the most common structures in Tagalog:
-                </p>
+              <div class="cell-ordi">Infinitive: <br/><strong> makikuha</strong></div>
+              <div class="cell-ordi">(maki- + root) to please get</div>
 
-                <p class="example-text">
-                  Verb – Subject – Object 
-                </p>
-                <p class="example-italic-text">or</p>
-                <p class="example-text">
-                  Verb – Object – Subject
-                </p>
+              <div class="cell-ordi">Imperative: <br/><strong> makikuha</strong></div>
+              <div class="cell-ordi">(maki- + root)</div>
 
-                <p>As you can see, the verb goes before either the object or the subject. This form is common in speech. Let’s analyse some examples:</p>
+              <div class="cell-ordi">Past: <br/><strong> nakikuha</strong></div>
+              <div class="cell-ordi">(naki- + root)</div>
 
-                <p class="example-text">
-                  Lalaki si Juan → Juan is male
-                </p>
+              <div class="cell-ordi">Present: <br/><strong> nakikikuha</strong></div>
+              <div class="cell-ordi">(nakiki- + root)</div>
 
-                <p class="text-light">
-                  NOTE: There is no “to be” word but we’ll discuss this later. Here are some examples with verbs.
-                </p>
+              <div class="cell-ordi">Future: <br/><strong> makikikuha</strong></div>
+              <div class="cell-ordi">(makiki- + root)</div>
+            </div>
 
-                <p class="example-italic-text">
-                  Kumain (ate) ang aso (dog) ng buto (bone)  →  The dog ate a bone.
-                </p>
-                <p class="example-italic-text">
-                  Nakita (saw) ko (I) siya (him/her) → I saw him/her.
-                </p>
-              </div>
+            <div class="table-ordi">
+              <div class="cell-ordi thead-ordi">Example: <br/><strong> kuha</strong></div>
+              <div class="cell-ordi thead-ordi">to get</div>
+
+              <div class="cell-ordi">Infinitive: <br/><strong> pakikuha</strong></div>
+              <div class="cell-ordi">(paki- + root) to please get</div>
+
+              <div class="cell-ordi">Imperative: <br/><strong> pakikuha</strong></div>
+              <div class="cell-ordi">(paki- + root)</div>
+
+              <div class="cell-ordi">Past: <br/><strong> pinakikuha</strong></div>
+              <div class="cell-ordi">(pinaki- + root)</div>
+
+              <div class="cell-ordi">Present: <br/><strong> pinakikikuha</strong></div>
+              <div class="cell-ordi">(pinakiki- + root)</div>
+
+              <div class="cell-ordi">Future: <br/><strong>pakikikuha</strong></div>
+              <div class="cell-ordi">(pakiki- + root)</div>
             </div>
           </div>
+        </div>
 
-          <div class="lesson-box">
-            <!-- <h3>Classification & Terminology</h3> -->
-              <div class="lesson-content">
-                <div class="lesson-text">
-  
-                    <p class="example-text">
-                      Subject – Verb – Object
-                    </p>
-
-                    <p>
-                      This is another structure common in the language where the subject goes before the verb. Usually, this form is considered formal.
-                    </p>
-
-                    <p class="example-italic-text">
-                      Si Juan ay lalaki → Juan is male
-                    </p>
-
-                    <p>
-                      Notice that unlike the VSO example (Lalaki si Juan), the SVO example has the word “ay” between the subject and the object. Ay is a particle in a sentence that can be used as either a copula, linking verb, “to be” verb or an equal sign. 
-                    </p>
-                    <p>
-                      Some sources may say that the particle is not a copula or a linking verb but like the “=”. If it makes things easy for you, you can try using it as the verb “to be” in SVO sentences. One of the reasons why the particle is not considered a verb because it can be in a sentence with other verbs. Ay is also not considered an auxiliary verb.
-                    </p>
-
-                    <p class="example-italic-text">
-                      Ang aso ay kumain ng buto  →  The dog ate a bone.
-                    </p>
-
-                </div>
-              </div>
+        <div class="lesson-box" #Sample>
+          <h3>Sample Sentences</h3>
+          <div class="lesson-content">
+            <div class="table-short">
+              <div class="cell-short"><strong>Paki</strong>basa mo sa akin ang kuwento.</div>
+              <div class="cell-short"><strong>Pakiki</strong>kuha ko sa iyo ang aking sapatos.</div>
+              <div class="cell-short"><strong>Maki</strong>tawag ka ng doctor.</div>
+              <div class="cell-short"><strong>Makiki</strong>dala ako ng balutan sa iyo.</div>
             </div>
+          </div>
+        </div>
 
     </div>
 

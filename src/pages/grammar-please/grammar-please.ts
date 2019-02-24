@@ -28,6 +28,9 @@ export class GrammarPleasePage {
  }
 
   @ViewChild('pageTop') pageTop: Content;
+  @ViewChild(Content) content: Content;
+  @ViewChild('Form') Form: any;
+  @ViewChild('Sample') Sample: any;
 
   /**
    * Method to scroll to top
@@ -35,6 +38,16 @@ export class GrammarPleasePage {
   public pageScroller(){
     //scroll to page top
     this.pageTop.scrollToTop();
+  }
+
+  public scrollElementForm() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.Form.nativeElement.offsetTop, 500);
+  }
+  
+  public scrollElementSample() {
+    // Avoid reading the DOM directly, by using ViewChild and the target reference
+    this.content.scrollTo(0, this.Sample.nativeElement.offsetTop, 500);
   }
 
 }
