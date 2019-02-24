@@ -95,6 +95,20 @@ export class HomePage {
       });
 
   }
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'Recording',
+      subTitle: 'Try Saying Something',
+      buttons: [{
+        text: 'OK',
+        handler: () => {
+          this.stopListening();
+        }
+      }],
+      
+    });
+    alert.present();
+  }
   startListening() {
     return new Promise<any>((resolve, reject) => {
 
@@ -111,12 +125,15 @@ export class HomePage {
       this.isRecording = true;
 
     });
+  
   }
 
   isIos() {
     return this.plt.is('ios');
   }
-
+  isAndroid() {
+    return this.plt.is('android');
+  }
   stopListening() {
     this.speechRecognition.stopListening().then(() => {
       this.isRecording = false;

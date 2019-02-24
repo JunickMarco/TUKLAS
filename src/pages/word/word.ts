@@ -5,7 +5,7 @@ import * as algoliasearch from 'algoliasearch';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { ChangeDetectorRef } from '@angular/core';
 import { HomePage } from '../home/home';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the WordPage page.
  *
@@ -45,7 +45,7 @@ export class WordPage {
   isRecording = false;
   ainput: string;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private modal: ModalController, private view: ViewController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, ) {
+    private modal: ModalController, private alertCtrl: AlertController, private view: ViewController, private plt: Platform, private speechRecognition: SpeechRecognition, private cd: ChangeDetectorRef, ) {
     //algolia for search
     this.client = algoliasearch(this.ALGOLIA_APP_ID, this.ALGOLIA_APP_KEY, {
       protocol: 'https:'
@@ -104,7 +104,23 @@ export class WordPage {
   isIos() {
     return this.plt.is('ios');
   }
+  isAndroid() {
+    return this.plt.is('android');
+  }
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'Recording',
+      subTitle: 'Try Saying Something',
+      buttons: [{
+        text: 'OK',
+        handler: () => {
+          this.stopListening();
+        }
+      }],
 
+    });
+    alert.present();
+  }
   startListening() {
     return new Promise<any>((resolve, reject) => {
 
