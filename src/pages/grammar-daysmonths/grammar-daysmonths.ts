@@ -29,6 +29,9 @@ export class GrammarDaysmonthsPage {
  }
 
  @ViewChild('pageTop') pageTop: Content;
+ @ViewChild(Content) content: Content;
+ @ViewChild('Days') Days: any;
+ @ViewChild('Months') Months: any;
 
  /**
   * Method to scroll to top
@@ -37,5 +40,15 @@ export class GrammarDaysmonthsPage {
    //scroll to page top
    this.pageTop.scrollToTop();
  }
+
+ public scrollElementDays() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Days.nativeElement.offsetTop, 500);
+}
+
+public scrollElementMonths() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.Months.nativeElement.offsetTop, 500);
+}
 
 }

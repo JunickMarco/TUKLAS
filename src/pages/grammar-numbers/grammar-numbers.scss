@@ -214,7 +214,7 @@ page-grammar-numbers {
             .thead {
                 background-color: rgb(209, 216, 255);
                 color: #000;
-                font-family: 'opensans-semibold';
+                font-family: 'sourcesans-bold';
                 font-size: 18px;
 
                 border-radius: 5px;
@@ -222,6 +222,8 @@ page-grammar-numbers {
 
             .tnone {
                 background-color: transparent !important;
+                padding: 0;
+                font-size: 10px;
             }
 
 
@@ -255,7 +257,7 @@ page-grammar-numbers {
             .thead-ordi {
                 background-color: rgb(209, 216, 255);
                 color: #000;
-                font-family: 'opensans-semibold';
+                font-family: 'sourcesans-bold';
                 font-size: 18px;
 
                 border-radius: 5px;

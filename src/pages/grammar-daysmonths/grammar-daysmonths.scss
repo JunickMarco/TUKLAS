@@ -182,17 +182,17 @@ page-grammar-daysmonths {
 
             }
 
-            .table {
-                width: 95%;
+            .table-ordi {
+                width: 100%;
                 display: grid;
-                grid-gap: 13px;
-                grid-template-columns: repeat(3, auto);
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, auto);
                 /*   grid-template-rows: repeat; */
                 /*   grid-auto-flow: column; */
             }
             
-            .cell {
-                background-color: rgb(236, 255, 235);
+            .cell-ordi {
+                background-color: rgb(246, 255, 246);
                 color: #000;
                 border-radius: 5px;
                 padding: 5px;
@@ -201,17 +201,22 @@ page-grammar-daysmonths {
                 text-align: center;
             }
 
-            .thead {
-                background-color: rgb(201, 255, 200);
+            // .cell-ordi:nth-child(3n + 1) {
+            //     background-color: rgb(209, 216, 255);
+            // }
+
+            .cell-ordi:nth-child(4n),  .cell-ordi:nth-child(4n + 3){
+                background-color: rgb(236, 255, 235);
+            }
+
+            .thead-ordi {
+                background-color: rgb(208, 255, 208);
                 color: #000;
-                font-family: 'opensans-semibold';
+                font-family: 'sourcesans-bold';
                 font-size: 18px;
 
                 border-radius: 5px;
-            }
-
-            .tnone {
-                background-color: transparent;
+                border-bottom: 1px solid rgb(174, 255, 174);
             }
               
         }

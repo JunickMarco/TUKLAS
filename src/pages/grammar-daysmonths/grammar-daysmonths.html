@@ -38,43 +38,95 @@
         
 
         <div class="lesson-content">
-            <!-- <h2>Contents</h2>
+            <h2>Contents</h2>
             <ul class="content-list">
-              <li>Classification & Terminology</li>
-            </ul> -->
+              <li (click)="scrollElementDays()">Days of the Week</li>
+              <li (click)="scrollElementMonths()">Months of the Year</li>
+            </ul>
         </div>
       </div>
 
 
-      <div class="lesson-box">
-          <!-- <h3>Classification & Terminology</h3> -->
+      <div class="lesson-box" #Days>
+        <h3>Days of the Week</h3>
+          <div class="lesson-content">
+            
+            <div class="table-ordi">
+              <div class="cell-ordi thead-ordi">Filipino</div>
+              <div class="cell-ordi thead-ordi">English</div>
+              
+              <div class="cell-ordi"><strong>Lunes</strong></div>
+              <div class="cell-ordi">Monday</div>
+
+              <div class="cell-ordi"><strong>Martes</strong></div>
+              <div class="cell-ordi">Tuesday</div>
+
+              <div class="cell-ordi"><strong>Miyerkules</strong></div>
+              <div class="cell-ordi">Wednesday</div>
+
+              <div class="cell-ordi"><strong>Huwebes</strong></div>
+              <div class="cell-ordi">Thursday</div>
+
+              <div class="cell-ordi"><strong>Biyernes</strong></div>
+              <div class="cell-ordi">Friday</div>
+
+              <div class="cell-ordi"><strong>Sabado</strong></div>
+              <div class="cell-ordi">Saturday</div>
+
+              <div class="cell-ordi"><strong>Linggo</strong></div>
+              <div class="cell-ordi">Sunday</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-box" #Months>
+          <h3>Months of the Year</h3>
             <div class="lesson-content">
               
-              <div class="table">
-                <div class="cell tnone"> </div>
-                <div class="cell thead">Filipino</div>
-                <div class="cell thead">Spanish</div>
+              <div class="table-ordi">
+                <div class="cell-ordi thead-ordi">Filipino</div>
+                <div class="cell-ordi thead-ordi">English</div>
                 
-                <div class="cell">1</div>
-                <div class="cell">Isa</div>
-                <div class="cell">Uno</div>
+                <div class="cell-ordi"><strong>Enero</strong></div>
+                <div class="cell-ordi">January</div>
 
-                <div class="cell">2</div>
-                <div class="cell">Dalawa</div>
-                <div class="cell">Dos</div>
+                <div class="cell-ordi"><strong>Pebrero</strong></div>
+                <div class="cell-ordi">February</div>
 
-                <div class="cell">3</div>
-                <div class="cell">Tatlo</div>
-                <div class="cell">Tres</div>
+                <div class="cell-ordi"><strong>Marso</strong></div>
+                <div class="cell-ordi">March</div>
 
+                <div class="cell-ordi"><strong>Abril</strong></div>
+                <div class="cell-ordi">April</div>
+
+                <div class="cell-ordi"><strong>Mayo</strong></div>
+                <div class="cell-ordi">May</div>
+
+                <div class="cell-ordi"><strong>Hunyo</strong></div>
+                <div class="cell-ordi">June</div>
+
+                <div class="cell-ordi"><strong>Hulyo</strong></div>
+                <div class="cell-ordi">July</div>
+
+                <div class="cell-ordi"><strong>Agosto</strong></div>
+                <div class="cell-ordi">August</div>
+
+                <div class="cell-ordi"><strong>Septyembre</strong></div>
+                <div class="cell-ordi">September</div>
+
+                <div class="cell-ordi"><strong>Oktubre</strong></div>
+                <div class="cell-ordi">October</div>
+
+                <div class="cell-ordi"><strong>Nobyembre</strong></div>
+                <div class="cell-ordi">November</div>
+
+                <div class="cell-ordi"><strong>Disyembre</strong></div>
+                <div class="cell-ordi">December</div>
               </div>
 
             </div>
-        </div>
-
-       
+          </div>
 
     </div>
-
   </div>
 </ion-content>
