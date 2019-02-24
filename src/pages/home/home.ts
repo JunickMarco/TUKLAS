@@ -11,14 +11,8 @@ import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
-import { query } from '@angular/core/src/render3/instructions';
 import { HttpClient } from '@angular/common/http';
-import { async } from 'rxjs/internal/scheduler/async';
 import { ToastController } from 'ionic-angular';
-import { Subject } from 'rxjs/Subject';
-import { tap } from 'rxjs/operators';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 interface Note {
   audioOut: string;
   bayEq: string;
@@ -100,12 +94,12 @@ export class HomePage {
       title: 'Recording',
       subTitle: 'Try Saying Something',
       buttons: [{
-        text: 'OK',
+        text: 'Stop',
         handler: () => {
           this.stopListening();
         }
       }],
-      
+
     });
     alert.present();
   }
@@ -125,7 +119,7 @@ export class HomePage {
       this.isRecording = true;
 
     });
-  
+
   }
 
   isIos() {
@@ -170,7 +164,9 @@ export class HomePage {
     // });
     // this.isRecording = true;
   }
-
+  ionViewWillLeave() {
+    this.searchQuery = "";
+  }
 
   //searchbox
   search(event) {

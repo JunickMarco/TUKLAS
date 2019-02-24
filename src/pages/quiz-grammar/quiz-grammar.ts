@@ -31,7 +31,6 @@ export class QuizGrammarPage {
   }
   ionViewWillLeave() {
     this.loadData.unsubscribe();
-    this.navCtrl.pop();
   }
 
   ionViewWillEnter() {
@@ -69,7 +68,7 @@ export class QuizGrammarPage {
       this.nextSlide();
       answer.selected = false;
       question.flashCardFlipped = false;
-    },1700);
+    }, 1700);
   }
 
   randomize(rawAnswers: any[]): any[] {
@@ -86,7 +85,7 @@ export class QuizGrammarPage {
   }
 
 
-  restartQuiz(){
+  restartQuiz() {
     this.score = 0;
     // this.ionViewWillEnter();
     // this.navCtrl.pop();
