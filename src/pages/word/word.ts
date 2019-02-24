@@ -4,8 +4,8 @@ import { IonicPage, NavController, NavParams, ModalController, ViewController, P
 import * as algoliasearch from 'algoliasearch';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { ChangeDetectorRef } from '@angular/core';
-import { HomePage } from '../home/home';
 import { AlertController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the WordPage page.
  *
@@ -34,8 +34,6 @@ export class WordPage {
   copyrightDefFil: string;
   copyrightDefEng: string;
   copyrightSentSampl: string;
-
-
   client: any;
   index: any;
   ALGOLIA_APP_ID: string = "E4K2LLB4XB";
@@ -112,7 +110,7 @@ export class WordPage {
       title: 'Recording',
       subTitle: 'Try Saying Something',
       buttons: [{
-        text: 'OK',
+        text: 'Stop',
         handler: () => {
           this.stopListening();
         }
@@ -167,6 +165,7 @@ export class WordPage {
 
   }
 
+
   search(event) {
     this.index.search({
       query: this.searchQuery
@@ -179,8 +178,7 @@ export class WordPage {
   }
 
   navigateToHomePage() {
-    // this.navCtrl.push(HomePage);
-    this.navCtrl.pop()
+    this.navCtrl.push(HomePage);
     console.log("Go Back")
   }
 
