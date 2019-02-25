@@ -1,299 +1,333 @@
-
 <ion-content #pageTop>
 
     <ion-fab bottom right>
-      <button (click)="pageScroller()" class="fab-btn"> 
-        <img src="../../assets/imgs/icon-scolltop.png" alt="Scroll To Top">
-      </button>
+        <button (click)="pageScroller()" class="fab-btn">
+            <img src="../../assets/imgs/icon-scolltop.png" alt="Scroll To Top">
+        </button>
     </ion-fab>
 
     <div class="nav-half"></div>
-  
+
     <div class="action-bar">
-  
-      <div class="back" (click)="navigateToGrammarPage()">
-        <ion-icon name="arrow-back" class="action-icon"></ion-icon>
-      </div>
-  
-      <div class="title">
-        <p>Grammar</p>
-      </div>
-       
+
+        <div class="back" (click)="navigateToGrammarPage()">
+            <ion-icon name="arrow-back" class="action-icon"></ion-icon>
+        </div>
+
+        <div class="title">
+            <p>Grammar</p>
+        </div>
+
     </div>
-  
+
     <div class="content-wrapper">
-  
-      <div class="lesson-list">
-  
-        <div class="lesson-box">
-          <div class="lesson-title">
-              <div class="lesson-icon">
-                  <img src="../../assets/imgs/icon-grammar-mistakes.png" alt="Mistakes Icon">
-                </div>
 
-              <div class="lesson-name">
-                <h1>Common Mistakes</h1>
-              </div>
-          </div>
-           
-  
-          <div class="lesson-content">
-              <h2>Contents</h2>
-              <ul class="content-list">
-                <li (click)="scrollElementNgvsnang()">Ng vs Nang</li>
-                <li (click)="scrollElementDinvsrin()">Din vs Rin</li>
-                <li (click)="scrollElementKungvskapag()">Kung vs Kapag</li>
-                <li (click)="scrollElementTelling()">Telling an action that just happened</li>
-                <li (click)="scrollElementBukodvsliban()">Bukod vs Liban</li>
-                <li (click)="scrollElementPangpanpam()">Pang, Pan, Pam</li>
-                <li (click)="scrollElementSilasina()">Sila vs Sina</li>
-              </ul>
-          </div>
-        </div>
+        <div class="lesson-list">
 
-
-        <div class="lesson-box" #Ngvsnang>
-          <h3>Ng vs Nang</h3>
-            <div class="lesson-content">
-                <div class="mistake-explanation">
-                  <p><strong>Nang</strong> is used to replace “noong” and “para” or “upang”, to connect an adverb (pang-abay), and to connect two repeating verbs (pandiwang inuulit).</p>
-                  <p><strong>Ng</strong> is used to point out an object and to express ownership.</p>
-                </div>
-
-                <div class="example wrong-example">
-                  <div class="icon-example">
-                    <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                  </div>
-
-                  <ul class="example-list wrong-list">
-                    <li>Natuwa ako ng makita ko sila.</li>
-                    <li>Bilisan mo ng maka-uwi na tayo.</li>
-                    <li>Pumila ng maayos.</li>
-                    <li>Tulog ng tulog ang bata.</li>
-                  </ul>
-                </div>
-
-                <div class="example correct-example">
-                    <div class="icon-example">
-                        <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                      </div>
-                  <ul class="example-list correct-list">
-                    <li>Natuwa ako nang makita ko sila.</li>
-                    <li>Bilisan mo nang maka-uwi na tayo.</li>
-                    <li>Pumila nang maayos.</li>
-                    <li>Tulog nang tulog ang bata.</li>
-                  </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="lesson-box" #Dinvsrin>
-            <h3>Din vs Rin</h3>
-              <div class="lesson-content">
-                  <div class="mistake-explanation">
-                    <p><strong>Din</strong> is used when the preceding word ends with a consonant letter except w and y.</p>
-                    <p><strong>Rin</strong> is used when the preceding word ends with a vowel letter, w, and y.</p>
-                  </div>
-  
-                  <div class="example wrong-example">
-                    <div class="icon-example">
-                      <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+            <div class="lesson-box">
+                <div class="lesson-title">
+                    <div class="lesson-icon">
+                        <img src="../../assets/imgs/icon-grammar-mistakes.png" alt="Mistakes Icon">
                     </div>
-  
-                    <ul class="example-list wrong-list">
-                      <li>Tapos na din siyang kumain.</li>
-                      <li>Doon rin ako nagpunta.</li>
-                      <li>Sumigaw din si Juan.</li>
-                      <li>Nag-away din silang dalawa.</li>
-                    </ul>
-                  </div>
-  
-                  <div class="example correct-example">
-                      <div class="icon-example">
-                          <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                        </div>
-                    <ul class="example-list correct-list">
-                      <li>Tapos na rin siyang kumain.</li>
-                      <li>Doon din ako nagpunta.</li>
-                      <li>Sumigaw rin si Juan nang.</li>
-                      <li>Nag-away rin silang dalawa.</li>
-                    </ul>
-                  </div>
-  
-              </div>
-          </div>
 
+                    <div class="lesson-name">
+                        <h1>Common Mistakes</h1>
+                    </div>
+                </div>
 
-          <div class="lesson-box" #Kungvskapag>
-              <h3>Kung vs Kapag</h3>
+                <div class="lesson-content">
+                    <h2>Contents</h2>
+                    <ul class="content-list">
+                        <li (click)="scrollElementNgvsnang()">Ng vs Nang</li>
+                        <li (click)="scrollElementDinvsrin()">Din vs Rin</li>
+                        <li (click)="scrollElementKungvskapag()">Kung vs Kapag</li>
+                        <li (click)="scrollElementTelling()">Telling an action that just happened</li>
+                        <li (click)="scrollElementBukodvsliban()">Bukod vs Liban</li>
+                        <li (click)="scrollElementPangpanpam()">Pang, Pan, Pam</li>
+                        <li (click)="scrollElementSilasina()">Sila vs Sina</li>
+                        <li (click)="scrollElementDe()">Usage of prefix “de-”</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lesson-box" #Ngvsnang>
+                <h3>Ng vs Nang</h3>
                 <div class="lesson-content">
                     <div class="mistake-explanation">
-                      <p><strong>Kung</strong>  is used if unsure. (‘if’ in english)</p>
-                      <p><strong>Kapag</strong> is used if sure. (‘when’ in english)</p>
+                        <p><strong>Nang</strong> is used to replace “noong” and “para” or “upang”, to connect an adverb (pang-abay), and to connect two repeating verbs (pandiwang inuulit).</p>
+                        <p><strong>Ng</strong> is used to point out an object and to express ownership.</p>
                     </div>
-    
+
                     <div class="example wrong-example">
-                      <div class="icon-example">
-                        <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                      </div>
-    
-                      <ul class="example-list wrong-list">
-                          <li>Pumunta tayo doon kung umaga na.</li>
-                          <li>Paano kapag mali ang sagot?</li>
-                      </ul>
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Natuwa ako ng makita ko sila.</li>
+                            <li>Bilisan mo ng maka-uwi na tayo.</li>
+                            <li>Pumila ng maayos.</li>
+                            <li>Tulog ng tulog ang bata.</li>
+                        </ul>
                     </div>
-    
+
                     <div class="example correct-example">
                         <div class="icon-example">
                             <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                          </div>
-                      <ul class="example-list correct-list">
-                          <li>Pumunta tayo doon kapag umaga na.</li>
-                          <li>Paano kung mali ang sagot ko?</li>
-                      </ul>
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Natuwa ako nang makita ko sila.</li>
+                            <li>Bilisan mo nang maka-uwi na tayo.</li>
+                            <li>Pumila nang maayos.</li>
+                            <li>Tulog nang tulog ang bata.</li>
+                        </ul>
                     </div>
-    
+
                 </div>
             </div>
 
-              <div class="lesson-box" #Telling>
-                  <h3>Telling an action that just happened</h3>
-                    <div class="lesson-content">
-                        <div class="mistake-explanation">
-                          <p>Repeat only the first syllable of the root word.</p>
-                        </div>
-        
-                        <div class="example wrong-example">
-                          <div class="icon-example">
+            <div class="lesson-box" #Dinvsrin>
+                <h3>Din vs Rin</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p><strong>Din</strong> is used when the preceding word ends with a consonant letter except w and y.</p>
+                        <p><strong>Rin</strong> is used when the preceding word ends with a vowel letter, w, and y.</p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
                             <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                          </div>
-        
-                          <ul class="example-list wrong-list">
-                              <li>Kakagising ko lang.</li>
-                          </ul>
                         </div>
-        
-                        <div class="example correct-example">
-                            <div class="icon-example">
-                                <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                              </div>
-                          <ul class="example-list correct-list">
-                              <li>Kagigising ko lang.</li>
-                          </ul>
-                        </div>
-        
+
+                        <ul class="example-list wrong-list">
+                            <li>Tapos na din siyang kumain.</li>
+                            <li>Doon rin ako nagpunta.</li>
+                            <li>Sumigaw din si Juan.</li>
+                            <li>Nag-away din silang dalawa.</li>
+                        </ul>
                     </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Tapos na rin siyang kumain.</li>
+                            <li>Doon din ako nagpunta.</li>
+                            <li>Sumigaw rin si Juan nang.</li>
+                            <li>Nag-away rin silang dalawa.</li>
+                        </ul>
+                    </div>
+
                 </div>
+            </div>
 
-
-                <div class="lesson-box" #Bukodvsliban>
-                    <h3>Bukod vs Liban</h3>
-                      <div class="lesson-content">
-                          <div class="mistake-explanation">
-                            <p><strong>Bukod sa</strong> is used if implying about other than something (‘aside from’ in english)</p>
-                            <p><strong>Liban sa</strong> is used if implying about something that is excepted from others (‘except from’ in english)</p>
-                            <p><strong>Liban</strong> is used if giving conditions. (‘unless’ in english’)</p>
-                          </div>
-          
-                          <div class="example wrong-example">
-                            <div class="icon-example">
-                              <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                            </div>
-          
-                            <ul class="example-list wrong-list">
-                              <li>Bukod sa isa, lahat ay umalis na.</li>
-                              <li>Liban sa siya ay matangkad, mataba rin siya.</li> 
-                            </ul>
-                          </div>
-          
-                          <div class="example correct-example">
-                              <div class="icon-example">
-                                  <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                                </div>
-                            <ul class="example-list correct-list">
-                                <li>Liban sa isa, lahat ay umalis na.</li>
-	                              <li>Bukod sa siya ay matangkad, mataba rin siya.</li>
-                            </ul>
-                          </div>
-          
-                      </div>
-                  </div>
-
-
-                  <div class="lesson-box" #Pangpanpam>
-                      <h3>Usage of ‘Pang’, ‘Pan’, at ‘Pam’</h3>
-                        <div class="lesson-content">
-                            <div class="mistake-explanation">
-                              <p><strong>Pang </strong> is used preceding the words that end with a letter g, h, k, m, n, ng, w, or y.</p>
-                              <p><strong>Pan</strong> is used preceding the words that end with a letter d, l, r, s, or t.</p>
-                              <p><strong>Pam</strong> is used preceding the words that end with a letter b or d.</p>
-                            </div>
-            
-                            <div class="example wrong-example">
-                              <div class="icon-example">
-                                <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                              </div>
-            
-                              <ul class="example-list wrong-list">
-                                <li>Ilagay mo doon ang mga gamit na pangbahay.</li>
-                                <li>Ginamit niya ang kanyang libro bilang pamwalis ng kalat.</li>
-                                <li>Ito ang mga damit na pangtulog ko.</li>
-                              </ul>
-                            </div>
-            
-                            <div class="example correct-example">
-                                <div class="icon-example">
-                                    <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                                  </div>
-                              <ul class="example-list correct-list">
-                                <li>Ilagay mo doon ang mga gamit na pambahay.</li>
-                                <li>Ginamit niya ang kanyang libro bilang pangwalis ng kalat.</li>
-                                <li>Ito ang mga damit na pantulog ko.</li>
-                              </ul>
-                            </div>
-            
-                        </div>
+            <div class="lesson-box" #Kungvskapag>
+                <h3>Kung vs Kapag</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p><strong>Kung</strong> is used if unsure. (‘if’ in english)</p>
+                        <p><strong>Kapag</strong> is used if sure. (‘when’ in english)</p>
                     </div>
 
-                    <div class="lesson-box" #Silasina>
-                        <h3>Usage of “Sila” and “Sina”</h3>
-                          <div class="lesson-content">
-                              <div class="mistake-explanation">
-                                <p>Use <strong>“sila” </strong> if referring to two or more people without naming them. (“they/them”)</p>
-                                <p>Use <strong>“sina” </strong> if referring to two or more people with names. (“sina” + names)</p>
-                              </div>
-              
-                              <div class="example wrong-example">
-                                <div class="icon-example">
-                                  <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
-                                </div>
-              
-                                <ul class="example-list wrong-list">
-                                    <li>Nakita ko sila Karlo at Risa.</li>
-                                </ul>
-                              </div>
-              
-                              <div class="example correct-example">
-                                  <div class="icon-example">
-                                      <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
-                                    </div>
-                                <ul class="example-list correct-list">
-                                    <li>Nakita ko sina Karlo at Risa.</li>
-                                </ul>
-                              </div>
-              
-                          </div>
-                      </div>
-
-                      <div class="lesson-box">
-                          <h3>More to add (Coming Soon)</h3>
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
                         </div>
 
-  
-  
-      </div>
-  
+                        <ul class="example-list wrong-list">
+                            <li>Pumunta tayo doon kung umaga na.</li>
+                            <li>Paano kapag mali ang sagot?</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Pumunta tayo doon kapag umaga na.</li>
+                            <li>Paano kung mali ang sagot ko?</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box" #Telling>
+                <h3>Telling an action that just happened</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p>Repeat only the first syllable of the root word.</p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Kakagising ko lang.</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Kagigising ko lang.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box" #Bukodvsliban>
+                <h3>Bukod vs Liban</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p><strong>Bukod sa</strong> is used if implying about other than something (‘aside from’ in english)</p>
+                        <p><strong>Liban sa</strong> is used if implying about something that is excepted from others (‘except from’ in english)</p>
+                        <p><strong>Liban</strong> is used if giving conditions. (‘unless’ in english’)</p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Bukod sa isa, lahat ay umalis na.</li>
+                            <li>Liban sa siya ay matangkad, mataba rin siya.</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Liban sa isa, lahat ay umalis na.</li>
+                            <li>Bukod sa siya ay matangkad, mataba rin siya.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box" #Pangpanpam>
+                <h3>Usage of ‘Pang’, ‘Pan’, at ‘Pam’</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p><strong>Pang </strong> is used preceding the words that end with a letter g, h, k, m, n, ng, w, or y.</p>
+                        <p><strong>Pan</strong> is used preceding the words that end with a letter d, l, r, s, or t.</p>
+                        <p><strong>Pam</strong> is used preceding the words that end with a letter b or d.</p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Ilagay mo doon ang mga gamit na pangbahay.</li>
+                            <li>Ginamit niya ang kanyang libro bilang pamwalis ng kalat.</li>
+                            <li>Ito ang mga damit na pangtulog ko.</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Ilagay mo doon ang mga gamit na pambahay.</li>
+                            <li>Ginamit niya ang kanyang libro bilang pangwalis ng kalat.</li>
+                            <li>Ito ang mga damit na pantulog ko.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box" #Silasina>
+                <h3>Usage of “Sila” and “Sina”</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p>Use <strong>“sila” </strong> if referring to two or more people without naming them. (“they/them”)</p>
+                        <p>Use <strong>“sina” </strong> if referring to two or more people with names. (“sina” + names)</p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Nakita ko sila Karlo at Risa.</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Nakita ko sina Karlo at Risa.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box" #De>
+                <h3>Usage of prefix “de-”</h3>
+                <div class="lesson-content">
+                    <div class="mistake-explanation">
+                        <p>The prefix <strong>“de-” </strong> is used when expressing a level or standing (“de-kalidad”) or indicating function of an object ("de-susi").</p>
+                        <p>Hyphens should also be added when using the prefix <strong>“de-” </strong></p>
+                    </div>
+
+                    <div class="example wrong-example">
+                        <div class="icon-example">
+                            <img class="icon-wrong" src="../../assets/imgs/icon-wrong.png" alt="Wrong Icon">
+                        </div>
+
+                        <ul class="example-list wrong-list">
+                            <li>Sila ay gumagawa ng mga telang de kalidad.</li>
+                            <li>Ang pangsara ng pintuan ay de susi.</li>
+                        </ul>
+                    </div>
+
+                    <div class="example correct-example">
+                        <div class="icon-example">
+                            <img class="icon-correct" src="../../assets/imgs/icon-correct.png" alt="Correct Icon">
+                        </div>
+                        <ul class="example-list correct-list">
+                            <li>Sila ay gumagawa ng mga telang de-kalidad.</li>
+                            <li>Ang pangsara ng pintuan ay de-susi.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lesson-box">
+              <div class="lesson-content">
+                <div class="lesson-text">
+                  <p><strong>References</strong></p>
+                  <p class="reference">
+                    <strong>></strong> M2.0 Communications Inc. ©2015
+                  </p>
+                  <p class="reference">
+                    <strong>></strong> 10 Filipino Words You're Probably Using Wrong by Jeremiah Capacillio ©2018
+                  </p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
     </div>
 </ion-content>
-  

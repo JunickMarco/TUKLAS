@@ -125,10 +125,10 @@ export class LearnIdiomsPage implements OnInit{
   //  });
   //  this.idioms6 = this.notesCollection6.valueChanges();
    //g
-  //  this.notesCollection7 = this.afs.collection('idioms', ref => {
-  //    return ref.where("idiomID", '>=', 300).where("idiomID", '<', 350)
-  //  });
-  //  this.idioms7 = this.notesCollection7.valueChanges();
+   this.notesCollection7 = this.afs.collection('idioms', ref => {
+     return ref.where("idiomID", '>=', 300).where("idiomID", '<', 350)
+   });
+   this.idioms7 = this.notesCollection7.valueChanges();
    //h
    this.notesCollection8 = this.afs.collection('idioms', ref => {
      return ref.where("idiomID", '>=', 350).where("idiomID", '<', 400)
