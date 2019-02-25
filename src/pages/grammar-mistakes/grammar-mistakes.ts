@@ -36,6 +36,7 @@ export class GrammarMistakesPage {
  @ViewChild('Bukodvsliban') Bukodvsliban: any;
  @ViewChild('Pangpanpam') Pangpanpam: any;
  @ViewChild('Silasina') Silasina: any;
+ @ViewChild('De') De: any;
 
 
  /**
@@ -79,6 +80,11 @@ public scrollElementPangpanpam() {
 public scrollElementSilasina() {
   // Avoid reading the DOM directly, by using ViewChild and the target reference
   this.content.scrollTo(0, this.Silasina.nativeElement.offsetTop, 500);
+}
+
+public scrollElementDe() {
+  // Avoid reading the DOM directly, by using ViewChild and the target reference
+  this.content.scrollTo(0, this.De.nativeElement.offsetTop, 500);
 }
 
 }
