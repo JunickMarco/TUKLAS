@@ -104,22 +104,39 @@ export class HomePage {
     alert.present();
   }
   startListening() {
-    return new Promise<any>((resolve, reject) => {
+    // return new Promise<any>((resolve, reject) => {
 
-      let options = {
-        language: 'en-US'
-      }
-      this.searchQuery = " "
-      this.speechRecognition.startListening(options).subscribe(matches => {
-        this.ainput = matches[0];
-        console.log(this.ainput);
-        this.searchQuery = this.ainput
-        this.cd.detectChanges();
-      });
-      this.isRecording = true;
+    //   let options = {
+    //     language: 'en-US'
+    //   }
+    //   this.searchQuery = " "
+    //   this.speechRecognition.startListening(options).subscribe(matches => {
+    //     this.ainput = matches[0];
+    //     console.log(this.ainput);
+    //     this.searchQuery = this.ainput
+    //     this.cd.detectChanges();
+    //   });
+    //   this.isRecording = true;
 
-    });
+    // });
 
+    let options = {
+      language: 'en-US',
+      matches: 1
+    }
+    this.searchQuery = " "
+    this.speechRecognition.startListening(options)
+      .subscribe(
+        (matches: Array<string>) => {
+
+          console.log(matches)
+          this.ainput = matches[0];
+          console.log(this.ainput);
+          this.searchQuery = this.ainput
+          console.log(this.searchQuery)
+        },
+        (onerror) => console.log('error:', onerror)
+      )
   }
 
   isIos() {
