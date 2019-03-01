@@ -21,12 +21,12 @@ export class QuizVocabularyPage {
 
   hasAnswered: boolean = false;
   score: number = 0;
-
   slideOptions: any;
   questions: any;
-
   loadData: any;
   data: any
+  show: string;
+  color: string;
   constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
     let backAction = plt.registerBackButtonAction(() => {
       console.log("second");
@@ -65,6 +65,10 @@ export class QuizVocabularyPage {
 
     if (answer.correct) {
       this.score++;
+      this.show = "YOU ARE RIGHT!"
+    }
+    else {
+      this.show = "WRONG!"
     }
 
     setTimeout(() => {

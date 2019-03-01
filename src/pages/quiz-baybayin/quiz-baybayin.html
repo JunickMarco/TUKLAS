@@ -28,8 +28,7 @@
   
         <flash-card [isFlipped]="question.flashCardFlipped">
           <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
-          <div class="flash-card-back">Correct Answer: <br> <h3 class="bay-font">{{question.flashCardBack}}</h3></div>
-        
+          <div class="flash-card-back">{{this.show}} <br> <h3 class="bay-font">{{question.flashCardBack}}</h3></div>
         </flash-card>
   
         <!-- <h3>{{question.questionText}}</h3> -->

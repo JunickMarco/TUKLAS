@@ -16,13 +16,11 @@ import { QuizPage } from '../quiz/quiz';
 })
 export class QuizIdiomsPage {
   @ViewChild('slides') slides: any;
-
   hasAnswered: boolean = false;
   score: number = 0;
-
   slideOptions: any;
   questions: any;
-
+  show: string;
   constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider) {
     let backAction = plt.registerBackButtonAction(() => {
       console.log("second");
@@ -62,6 +60,10 @@ export class QuizIdiomsPage {
 
     if (answer.correct) {
       this.score++;
+      this.show = "YOU ARE RIGHT!"
+    }
+    else {
+      this.show = "WRONG!"
     }
 
     setTimeout(() => {

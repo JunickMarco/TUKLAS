@@ -42,14 +42,10 @@ export class HomePage {
   randomNumber: Observable<any[]>;
   rand: any;
   random: number;
-  // random: number;
-  // rand: any;
-  //initialization for speechrecognition
   ainput: string;
   private matches: Array<string>;
   isRecording = false;
   selectedItem: string = "";
-  // public selectedItem: any;
   public selectedWord: any;
   client: any;
   index: any;
@@ -104,21 +100,6 @@ export class HomePage {
     alert.present();
   }
   startListening() {
-    // return new Promise<any>((resolve, reject) => {
-
-    //   let options = {
-    //     language: 'en-US'
-    //   }
-    //   this.searchQuery = " "
-    //   this.speechRecognition.startListening(options).subscribe(matches => {
-    //     this.ainput = matches[0];
-    //     console.log(this.ainput);
-    //     this.searchQuery = this.ainput
-    //     this.cd.detectChanges();
-    //   });
-    //   this.isRecording = true;
-
-    // });
 
     let options = {
       language: 'en-US',
@@ -169,17 +150,6 @@ export class HomePage {
         },
         (onerror) => console.log('error:', onerror)
       )
-    // let options = {
-    //   language: 'en-US'
-    // }
-    // this.speechRecognition.startListening(options).subscribe(matches => {
-    //   this.ainput = matches[0];
-    //   console.log(this.ainput);
-    //   this.searchQuery = this.ainput
-    //   this.cd.detectChanges();
-
-    // });
-    // this.isRecording = true;
   }
   ionViewWillLeave() {
     this.searchQuery = "";
@@ -240,11 +210,5 @@ export class HomePage {
     });
 
   }
-
-  // instModal(){
-  //   const myModal = this.modal.create('ModalPage')
-  //   myModal.present();
-  // }
-
 
 }
