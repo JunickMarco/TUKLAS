@@ -86,84 +86,10 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
-
-@font-face{
-  font-family: 'tex';
-  font-size: normal;
-  src: url(../assets/fonts/texgyreadventor-regular.otf);
-}
-
-@font-face{
-  font-family: 'pop';
-  font-size: normal;
-  src: url(../assets/fonts/Poppins-Regular.ttf);
-}
-
-@font-face{
-  font-family: 'gyre';
-  font-size: normal;
-  src: url(../assets/fonts/gilroy-extrabold.otf);
-}
-
-@font-face{
-  font-family: 'gyrelight';
-  font-size: normal;
-  src: url(../assets/fonts/gilroy-light.otf);
-}
-
-@font-face{
-  font-family: 'oss';
-  font-size: normal;
-  src: url(../assets/fonts/open-sans.semibold.ttf);
-  
-}
-
 @font-face{
   font-family: 'mont';
   font-size: normal;
   src: url(../assets/fonts/Montserrat-Regular.otf);
-  
-  
-}
-
-@font-face{
-  font-family: 'heebo';
-  font-size: normal;
-  src: url(../assets/fonts/Heebo-Regular.ttf);
-
-}
-@font-face{
-  font-family: 'heebomed';
-  font-size: normal;
-  src: url(../assets/fonts/Heebo-Medium.ttf);
-  
-
-}
-
-@font-face{
-  font-family: 'robotomed';
-  font-size: normal;
-  src: url(../assets/fonts/Roboto-Medium.ttf);
-  
-
-}
-
-@font-face{
-  font-family: 'worksanssemi';
-  font-size: normal;
-  src: url(../assets/fonts/WorkSans-SemiBold.ttf);
-
-
-}
-
-@font-face{
-  font-family: 'worksans';
-  // font-size: normal;
-  src: url(../assets/fonts/WorkSans-Regular.ttf);
-
-
 }
 
 
@@ -248,5 +174,3 @@ $colors: (
   font-family: 'opensans-extrabold';
   src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
 }
-
-

@@ -9,17 +9,13 @@
 
         <div class="search-container">
             <div class="search-box">
-                <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="search($event)" (ionChange)="search($event)"
-                    debounce="1" placeholder="Search a word..."></ion-searchbar>
+                <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="search($event)" (ionChange)="search($event)" debounce="1" placeholder="Search a word..."></ion-searchbar>
                 <button class="btn-icon" (click)="start()" *ngIf="isAndroid()">
                     <i class="fas fa-microphone"></i>
                 </button>
                 <button class="btn-icon" (click)="showAlert()" (click)="startListening()" *ngIf="isIos()">
                     <i class="fas fa-microphone"></i>
                 </button>
-                <!-- <button class="btn-icon" full (click)="stopListening()" *ngIf="isIos()">
-                    <i class="fas fa-microphone-slash"></i>
-                </button> -->
             </div>
 
             <div *ngIf="searchQuery.length > 1" class="suggestion-box">
@@ -52,9 +48,9 @@
                 <div class="card-title"> <span class="accent">></span> Word of the Day</div>
                 <div class="card-random">
                     <div class="card-word" *ngFor="let item of wordsWOTD | async">{{item.wordName}}</div>
-                    <div class="card-baybayin bay-font" *ngFor="let item of wordsWOTD | async">{{item.bayEq}}</div>
-                    <div class="card-pos" *ngFor="let item of wordsWOTD | async">{{item.partofspeech.filParos}} |
-                        {{item.partofspeech.engParos}}</div>
+                    <div class="card-baybayin" *ngFor="let item of wordsWOTD | async">{{item.bayEq}}</div>
+                    <div class="card-pos" *ngFor="let item of wordsWOTD | async">{{item.partofspeech.filParos}} | {{item.partofspeech.engParos}}
+                    </div>
                 </div>
                 <div class="card-footer">
                     <p>tap to view word card </p>

@@ -56,6 +56,8 @@ page-grammar-language {
     .lesson-list {
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     
@@ -84,7 +86,9 @@ page-grammar-language {
                 border-radius: 3px;
 
                 padding: 5px;
-                max-width: 90%;
+                max-width: 95%;
+
+                text-align: center;
             }
 
 

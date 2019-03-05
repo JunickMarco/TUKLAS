@@ -4,14 +4,6 @@ page-home {
         background: #f7f7f7 !important;
     }
 
-    // .scroll-content {
-    //     overflow-y: hidden;
-    // }
-
-    .bay-sil {
-        font-family: 'baysil';
-    }
-
     .btn-icon {
         background-color: transparent;
     }
@@ -59,10 +51,6 @@ page-home {
                 color: map-get($colors, primary);
                 font-size: 25px;
             }
-            .fa-microphone-slash{
-                color: map-get($colors, primary);
-                font-size: 25px;
-            }
         }
 
         .suggestion-box {
@@ -100,7 +88,6 @@ page-home {
             &:active {
                 background: linear-gradient(0deg, rgba(118, 118, 118, 0.76), rgba(118, 118, 118, 0.76)), url(../../assets/imgs/wotd.png) no-repeat center;
                 background-size: cover;
-                // transition: 0.3s;
 
                 @keyframes changesizewotd {
                     from {
@@ -180,6 +167,3 @@ page-home {
         }
     }
 }
-
-
-

@@ -9,11 +9,8 @@
     </div>
 
     <div class="word-container">
-
-      <!-- <div class="back-wordcard"></div> -->
-
       <div class="word-card">
-        
+
         <div class="word-header">
           <div class="row-one">
             <div class="word-name" *ngFor="let item of wordsWOTD | async">{{item.wordName}}</div>
@@ -22,8 +19,8 @@
               <ion-icon name="volume-up"></ion-icon>
             </div>
           </div>
-          
-          <div class="word-baybayin" *ngFor="let item of wordsWOTD | async" >{{item.bayEq}}</div>
+
+          <div class="word-baybayin" *ngFor="let item of wordsWOTD | async">{{item.bayEq}}</div>
 
           <div *ngFor="let item of wordsWOTD | async">
             <div *ngIf="item.engEq != null">
@@ -34,8 +31,8 @@
           <div class="word-paros" *ngFor="let item of wordsWOTD | async">{{item.partofspeech.filParos}} | {{item.partofspeech.engParos}}</div>
         </div>
 
-
         <div *ngFor="let item of wordsWOTD | async">
+
           <div *ngIf="item.definition.engDef != null">
             <div class="word-subcard">
               <ion-segment [(ngModel)]="def">
@@ -44,30 +41,26 @@
               </ion-segment>
 
               <div [ngSwitch]="def">
-      
                 <ion-list *ngSwitchCase="'engDef'">
-                  <h2 class="word-subhead">Definition</h2>       
+                  <h2 class="word-subhead">Definition</h2>
                   <p *ngFor="let item of item.definition.engDef" class="definition">: {{item}}</p>
                 </ion-list>
-      
+
                 <ion-list *ngSwitchDefault>
                   <h2 class="word-subhead">Depinisyon</h2>
-                  <!-- <ul>
-                    <li *ngFor="let item of filDef">{{item}}</li>
-                  </ul> -->
                   <p *ngFor="let item of item.definition.filDef" class="definition">: {{item}}</p>
                 </ion-list>
-
               </div>
             </div>
           </div>
-    
-        <div *ngIf="item.definition.filDef == null">
-          <div class="word-subcard">
-            <h2 class="word-subhead">Depinisyon</h2>
-            <p class="def">{{item.definition.filDef}}</p>
+
+          <div *ngIf="item.definition.filDef == null">
+            <div class="word-subcard">
+              <h2 class="word-subhead">Depinisyon</h2>
+              <p class="def">{{item.definition.filDef}}</p>
+            </div>
           </div>
-        </div>
+
         </div>
 
         <div *ngFor="let item of wordsWOTD | async">
@@ -76,7 +69,7 @@
             <ul class="sentence-list white">
               <li *ngFor="let item of item.sentences">"{{item}}"</li>
             </ul>
-            </div>
+          </div>
         </div>
 
         <div *ngFor="let item of wordsWOTD | async">
@@ -85,17 +78,16 @@
             <ul class="synonyms-list white">
               <li *ngFor="let item of item.synonyms">{{item}}</li>
             </ul>
-            </div>
+          </div>
         </div>
-       
+
         <div *ngFor="let item of wordsWOTD | async">
           <div class="copyrights">
-              <div class="word-subhead cpr">Copyrights ©</div>
-              <p class="copy-item">English definition retrieved from {{item.copyright.defEng}}</p>
-              <p class="copy-item">Filipino definition retrieved from {{item.copyright.defFil}}</p>
-            </div>
+            <div class="word-subhead cpr">Copyrights ©</div>
+            <p class="copy-item">Filipino definition retrieved from {{item.copyright.defFil}}</p>
+            <p class="copy-item">English definition retrieved from {{item.copyright.defEng}}</p>
+          </div>
         </div>
-        
 
       </div>
     </div>
@@ -104,7 +96,7 @@
   <div *ngFor="let item of wordsWOTD | async">
     <audio #audio>
       <source src="{{item.audioOut}}" type="audio/mpeg">
-      </audio>
+    </audio>
   </div>
 
 </ion-content>
