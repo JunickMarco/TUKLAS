@@ -175,18 +175,18 @@
         {
             "id": 9,
             "flashCardFront": "_______ ang kanyang biro.",
-            "flashCardBack": "Nakakatawa",
+            "flashCardBack": "Nakatatawa",
             "flashCardFlipped": false,
             
             "answers": [
                 {
                     "answer": "Nakakatawa",
-                    "correct": true,
+                    "correct": false,
                     "selected": false
                 },
                 {
                     "answer": "Nakatatawa",
-                    "correct": false,
+                    "correct": true,
                     "selected": false
                 },
 
@@ -224,7 +224,7 @@
         },
         {
             "id": 11,
-            "flashCardFront": "Nakakainis ________ magbasa ng mahabang kwento",
+            "flashCardFront": "Nakaiinis ________ magbasa ng mahabang kwento",
             "flashCardBack": "Palang",
             "flashCardFlipped": false,
             
@@ -350,7 +350,7 @@
         {
             "id": 16,
             "flashCardFront": "Ako ay _________ sa kanilang bahay.",
-            "flashCardBack": "taga luto",
+            "flashCardBack": "tagaluto",
             "flashCardFlipped": false,
             
             "answers": [
@@ -424,7 +424,7 @@
         },
         {
             "id": 19,
-            "flashCardFront": "Ang mga kinakasal ay _______.",
+            "flashCardFront": "Ang mga ikinakasal ay _______.",
             "flashCardBack": "nakaputi",
             "flashCardFlipped": false,
             
