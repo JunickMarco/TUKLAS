@@ -548,8 +548,8 @@
         },
         {
             "id": 24,
-            "flashCardFront": "Dirt",
-            "flashCardBack": "Kuyagut",
+            "flashCardFront": "Wallet",
+            "flashCardBack": "Kalupi",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -563,7 +563,7 @@
                     "selected": false
                 },
                 {
-                    "answer": "Kuyagut",
+                    "answer": "Kalupi",
                     "correct": true,
                     "selected": false
                 }
@@ -571,8 +571,8 @@
         },
         {
             "id": 25,
-            "flashCardFront": "Eclipse",
-            "flashCardBack": "Duyog",
+            "flashCardFront": "Shack",
+            "flashCardBack": "Dampa",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -586,7 +586,7 @@
                     "selected": false
                 },
                 {
-                    "answer": "Duyog",
+                    "answer": "Dampa",
                     "correct": true,
                     "selected": false
                 }
@@ -617,8 +617,8 @@
         },
         {
             "id": 27,
-            "flashCardFront": "Jealousy",
-            "flashCardBack": "Panimbuso",
+            "flashCardFront": "Kite",
+            "flashCardBack": "Papagayo",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -632,7 +632,7 @@
                     "selected": false
                 },
                 {
-                    "answer": "Panimbuso",
+                    "answer": "Papagayo",
                     "correct": true,
                     "selected": false
                 }
@@ -663,8 +663,8 @@
         },
         {
             "id": 29,
-            "flashCardFront": "Mathematics",
-            "flashCardBack": "Sipnayan",
+            "flashCardFront": "Comb",
+            "flashCardBack": "Payneta",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -678,7 +678,7 @@
                     "selected": false
                 },
                 {
-                    "answer": "Sipnayan",
+                    "answer": "Payneta",
                     "correct": true,
                     "selected": false
                 }
@@ -686,8 +686,8 @@
         },
         {
             "id": 30,
-            "flashCardFront": "Thermodynamics",
-            "flashCardBack": "Tigib",
+            "flashCardFront": "Suspicion",
+            "flashCardBack": "Sapantaha",
             "flashCardFlipped": false,
             "answers": [
                 {
@@ -701,7 +701,7 @@
                     "selected": false
                 },
                 {
-                    "answer": "Tigib",
+                    "answer": "Sapantaha",
                     "correct": true,
                     "selected": false
                 }
