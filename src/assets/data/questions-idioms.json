@@ -493,6 +493,236 @@
                     "selected": false
                 }
             ]
+        },
+        {
+            "id": 21,
+            "flashCardFront": "Maanghit",
+            "flashCardBack": "Amoy-kambing",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Amoy-aso",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Amoy-kambing",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Amoy-kambing",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "flashCardFront": "Walang kabuluhan",
+            "flashCardBack": "Bals-wals",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Bahid-dungis",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Balot sa puti",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Bals-wals",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "flashCardFront": "Mahigpit na pamamahala",
+            "flashCardBack": "Kamay na bakal",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Kamay ng singkit",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Kamay sa likod",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Kamay na bakal",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "flashCardFront": "Napakalawak (tumutukoy sa lupain)",
+            "flashCardBack": "Di-maliparang-uwak",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Di-mag-amoy-beha",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Di-mababayaran ang tiyan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Di-maliparang-uwak",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "flashCardFront": "Tulong sa ikabubuhay",
+            "flashCardBack": "Hapin ng buhay",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Hinahabagat",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Hilong talilong",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Hapin ng buhay",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "flashCardFront": "Ipanganak",
+            "flashCardBack": "Iluwal sa Maliwanag",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Iluwag ng loob",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ilista sa tubig",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Iluwal sa Maliwanag",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "flashCardFront": "Naubos ang salapi",
+            "flashCardBack": "Lagot ang pisi",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Laglag-luksa",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Lamang-kati",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Lagot ang pisi",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "flashCardFront": "Mga kahirapan o pagtitiis",
+            "flashCardBack": "Landas na matinik",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Lawit ang pusod",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Langit ng buhay",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Landas na matinik",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "flashCardFront": "Libingan",
+            "flashCardBack": "Huling hantungan",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Hiyas ng tahanan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Humuhukay ng sariling libingan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Huling hantungan",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "flashCardFront": "Malaki ang nagasta o nagugol",
+            "flashCardBack": "Gasgas ang bulsa",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Gawin ang isda",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ganggakalingkingan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Gasgas ang bulsa",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
         }
     ]
 }

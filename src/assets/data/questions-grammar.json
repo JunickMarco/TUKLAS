@@ -471,6 +471,236 @@
                     "selected": false
                 }
             ]
+        },
+        {
+            "id": 21,
+            "flashCardFront": "Alin  sa mga salita ang may tamanag bararila",
+            "flashCardBack": "Walang makapipigil sa’min!",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Umaasa parin ako sabihin mo, sana ako parin. Ako nalang. Ako nalang ulit.",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Makakainom na din siya nang marami.",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Walang makapipigil sa’min!",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "flashCardFront": "Aling bahagi ang mali sa pangungusap:  Marami ding Pilipino ang nalungkot sa sinapit ng mga dayuhan sa kamay ng isang Pilipinong naghostage sa kanila.",
+            "flashCardBack": "Marami ding",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Ang naglungkot",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Isang Pilipinong",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Marami ding",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "flashCardFront": "Alin sa mga sumusuno ang may tamang bararila",
+            "flashCardBack": "Ito ang mga damit na pantulog ko.",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Ilagay mo doon ang mga gamit na pangbahay.",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ito ang mga damit na pangtulog ko.",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ito ang mga damit na pantulog ko.",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "flashCardFront": "Ang mga bisita ng bagong kasal ay mga kaibigan at kamag-anak ____ kanilang bayan",
+            "flashCardBack": "sa",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sa",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "flashCardFront": "Kami ay sumakay ____ kotse, kasama ang katulong at ang anak ko",
+            "flashCardBack": "sa",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sa",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "flashCardFront": "Ang bahay ____ aming kaibigan ay nasa Nueva Ecija",
+            "flashCardBack": "ng",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "sa",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ng",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "flashCardFront": "Umalis kami ____ Maynila nang ika-10:00 ng umaga",
+            "flashCardBack": "sa",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sa",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "flashCardFront": "Maraming pagkain ____ mahabang mesa",
+            "flashCardBack": "sa",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sa",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "flashCardFront": "Maganda ____ asawa ng aking kaibigan",
+            "flashCardBack": "ang",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ng",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "sa",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ang",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "flashCardFront": "Maraming pera si Ramon. Iyon ay ibinigay ng _______ ama.",
+            "flashCardBack": "kanyang",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "aming",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "kanilang",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "kanyang",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
         }
     ]
 }

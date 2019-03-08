@@ -476,6 +476,236 @@
                     "selected": false
                 }
             ]
+        },
+        {
+            "id": 21,
+            "flashCardFront": "Carpenter",
+            "flashCardBack": "Anluwage",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Payneta",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Ebanista",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Anluwage",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "flashCardFront": "Shininess",
+            "flashCardBack": "Kilab",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Yakis",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Sapantaha",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Kilab",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "flashCardFront": "Tree",
+            "flashCardBack": "Tigib",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Initsigan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Dagilab",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Tigib",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "flashCardFront": "Dirt",
+            "flashCardBack": "Kuyagut",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "kaabay",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "kaakuhan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Kuyagut",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "flashCardFront": "Eclipse",
+            "flashCardBack": "Duyog",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "aldea",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "alibunda",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Duyog",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "flashCardFront": "Evangelist",
+            "flashCardBack": "ebanghelista",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Sapantaha",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Bulo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ebanghelista",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "flashCardFront": "Jealousy",
+            "flashCardBack": "Panimbuso",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Panghibayo",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Initsigan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Panimbuso",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "flashCardFront": "Electricity",
+            "flashCardBack": "Dagilab",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Kuyagut",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Baar",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Dagilab",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "flashCardFront": "Mathematics",
+            "flashCardBack": "Sipnayan",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Tampalasan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Karumlan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Sipnayan",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "flashCardFront": "Thermodynamics",
+            "flashCardBack": "Tigib",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "Tsampan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Tangan",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "Tigib",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
         }
     ]
 }

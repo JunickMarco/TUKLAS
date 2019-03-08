@@ -459,6 +459,236 @@
                     "selected": false
                 }
             ]
+        },
+        {
+            "id": 21,
+            "flashCardFront": "obelisko",
+            "flashCardBack": "ᜂᜊᜒᜎᜒᜐ᜔ᜃᜓ",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜂᜊᜒᜇ᜔ᜆᜓᜇ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂᜊᜒᜐᜒᜇᜇ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂᜊᜒᜎᜒᜐ᜔ᜃᜓ",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "flashCardFront": "talima",
+            "flashCardBack": "ᜆᜎᜒᜋ",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜆᜎᜒᜋᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜆᜎᜒᜋᜒ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜆᜎᜒᜋ",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "flashCardFront": "lawak",
+            "flashCardBack": "ᜎᜏᜃ᜔",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜎᜋᜒᜄ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜈ᜔ᜄᜒᜆ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜏᜃ᜔",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "flashCardFront": "langit   ",
+            "flashCardBack": "ᜎᜈ᜔ᜄᜒᜆ᜔",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜎᜈ᜔ᜄᜒᜆ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜅᜓᜆ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜎᜈ᜔ᜄᜒᜆ᜔",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "flashCardFront": "nakatitik",
+            "flashCardBack": "ᜈᜃᜆᜒᜆᜒᜃ᜔",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜈᜃᜆᜓᜆᜓᜃ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜈᜃᜆᜒᜆᜒᜄ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜈᜃᜆᜒᜆᜒᜃ᜔",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "flashCardFront": "obertura",
+            "flashCardBack": "ᜂᜊᜒᜇ᜔ᜆᜓᜇ",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜁᜊᜒᜇ᜔ᜆᜓᜇ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂᜊᜒᜇ᜔ᜆᜓᜇᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜂᜊᜒᜇ᜔ᜆᜓᜇ",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "flashCardFront": "batalan",
+            "flashCardBack": "ᜊᜆᜎᜈ᜔",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜊᜒᜆᜎᜈ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜊᜓᜆᜓᜎᜓᜈ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜊᜆᜎᜈ᜔",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "flashCardFront": "yakis",
+            "flashCardBack": "ᜌᜃᜒᜐ᜔",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜌᜒᜃᜒᜐ᜔",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜌᜒᜃᜒᜐ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜌᜃᜒᜐ᜔",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "flashCardFront": "sapantaha",
+            "flashCardBack": "ᜐᜉᜈ᜔ᜆᜑ",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜐᜒᜉᜓᜈ᜔ᜆᜓᜑᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜐᜉᜈ᜔ᜆᜓᜑᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜐᜉᜈ᜔ᜆᜑ",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "flashCardFront": "papagayo",
+            "flashCardBack": "ᜉᜉᜄᜌᜓ",
+            "flashCardFlipped": false,
+            "answers": [
+                {
+                    "answer": "ᜉᜉᜄᜒᜌᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜒᜉᜄᜌᜓ",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "ᜉᜉᜄᜌᜓ",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
         }
     ]
 }
