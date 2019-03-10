@@ -56,7 +56,7 @@ page-baybayin-intro {
     .lesson-list {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -164,6 +164,9 @@ page-baybayin-intro {
 
             }
             
+            .reference {
+                font-size: 8px;
+            }
         }
     }
 }
