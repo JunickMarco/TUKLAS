@@ -20,7 +20,10 @@ export class QuizIdiomsPage {
   score: number = 0;
   slideOptions: any;
   questions: any;
-  show: string;
+  showFil: string;
+  showEng: string;
+  correct: boolean = false;
+  wrong: boolean = false;
   constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider) {
     let backAction = plt.registerBackButtonAction(() => {
       console.log("second");
@@ -57,13 +60,18 @@ export class QuizIdiomsPage {
     this.hasAnswered = true;
     answer.selected = true;
     question.flashCardFlipped = true;
-
+    this.correct = false;
+    this.wrong = false;
     if (answer.correct) {
       this.score++;
-      this.show = "YOU ARE RIGHT!"
+      this.showFil = "Tama ka!"
+      this.showEng = "You are right!"
+      this.correct = true;
     }
     else {
-      this.show = "WRONG!"
+      this.showFil = "Mali!"
+      this.showEng = "Wrong!"
+      this.wrong = true;
     }
 
     setTimeout(() => {

@@ -28,11 +28,16 @@
   
         <flash-card [isFlipped]="question.flashCardFlipped">
           <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
-          <div class="flash-card-back">{{this.show}} <br> <h3 style="color:forestgreen" class="bay-font">{{question.flashCardBack}}</h3></div>
+          <div class="flash-card-back">
+            <h3 class="correct"  *ngIf="correct">{{this.showFil}}</h3>
+            <p class="sub" *ngIf="correct">{{this.showEng}}</p>
+            <h3 class="wrong" *ngIf="wrong">{{this.showFil}}</h3>
+            <p class="sub" *ngIf="wrong">{{this.showEng}}</p>
+
+            <h3 class="bay-font">{{question.flashCardBack}}</h3>
+          </div>
         </flash-card>
-  
-        <!-- <h3>{{question.questionText}}</h3> -->
-   
+
         <ion-list no-lines radio-group >
   
           <ion-item *ngFor="let answer of question.answers; let i = index;" > 

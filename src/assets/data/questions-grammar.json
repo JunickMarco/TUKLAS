@@ -472,29 +472,7 @@
                 }
             ]
         },
-        {
-            "id": 21,
-            "flashCardFront": "Alin  sa mga salita ang may tamanag bararila",
-            "flashCardBack": "Walang makapipigil sa’min!",
-            "flashCardFlipped": false,
-            "answers": [
-                {
-                    "answer": "Umaasa parin ako sabihin mo, sana ako parin. Ako nalang. Ako nalang ulit.",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Makakainom na din siya nang marami.",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Walang makapipigil sa’min!",
-                    "correct": true,
-                    "selected": false
-                }
-            ]
-        },
+        
         {
             "id": 22,
             "flashCardFront": "Aling bahagi ang mali sa pangungusap:  Marami ding Pilipino ang nalungkot sa sinapit ng mga dayuhan sa kamay ng isang Pilipinong naghostage sa kanila.",
@@ -518,29 +496,7 @@
                 }
             ]
         },
-        {
-            "id": 23,
-            "flashCardFront": "Alin sa mga sumusuno ang may tamang bararila",
-            "flashCardBack": "Ito ang mga damit na pantulog ko.",
-            "flashCardFlipped": false,
-            "answers": [
-                {
-                    "answer": "Ilagay mo doon ang mga gamit na pangbahay.",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Ito ang mga damit na pangtulog ko.",
-                    "correct": false,
-                    "selected": false
-                },
-                {
-                    "answer": "Ito ang mga damit na pantulog ko.",
-                    "correct": true,
-                    "selected": false
-                }
-            ]
-        },
+        
         {
             "id": 24,
             "flashCardFront": "Ang mga bisita ng bagong kasal ay mga kaibigan at kamag-anak ____ kanilang bayan",

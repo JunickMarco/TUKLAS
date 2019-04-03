@@ -25,8 +25,10 @@ export class QuizVocabularyPage {
   questions: any;
   loadData: any;
   data: any
-  show: string;
-  color: string;
+  showFil: string;
+  showEng: string;
+  correct: boolean = false;
+  wrong: boolean = false;
   constructor(private plt: Platform, public navCtrl: NavController, public dataService: DataProvider, public http: HttpClient) {
     let backAction = plt.registerBackButtonAction(() => {
       console.log("second");
@@ -62,13 +64,18 @@ export class QuizVocabularyPage {
     this.hasAnswered = true;
     answer.selected = true;
     question.flashCardFlipped = true;
-
+    this.correct = false;
+    this.wrong = false;
     if (answer.correct) {
       this.score++;
-      this.show = "YOU ARE RIGHT!"
+      this.showFil = "Tama ka!"
+      this.showEng = "You are right!"
+      this.correct = true;
     }
     else {
-      this.show = "WRONG!"
+      this.showFil = "Mali!"
+      this.showEng = "Wrong!"
+      this.wrong = true;
     }
 
     setTimeout(() => {
