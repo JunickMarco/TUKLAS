@@ -6,22 +6,10 @@ page-wotd ion-icon {
   font-size: 2.2rem;
 }
 
-page-wotd .action-icon {
-  color: #fff;
-}
-
-page-wotd .btn-icon {
-  background-color: transparent;
-}
-
 page-wotd .bg-half {
-  width: 100%;
-  height: 45%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/imgs/wotd-bg.jpg) no-repeat fixed;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/imgs/wotd-bg.jpg) no-repeat fixed;
   background-size: cover;
-  position: absolute;
-  z-index: -1;
 }
 
 page-wotd .page-wrap {
@@ -32,168 +20,18 @@ page-wotd .page-wrap {
 
 page-wotd .header {
   width: 90%;
-  text-align: center;
 }
 
 page-wotd .header h1 {
   font-family: 'bitter-bold';
-  text-shadow: 0px 0px 13px #000407;
-  text-shadow: 0px 0px 7px #052f5f;
   color: #FDFDFD;
   font-size: 48px;
+  text-shadow: 0px 0px 13px #000407;
+  text-shadow: 0px 0px 7px #052f5f;
+  text-align: center;
 }
 
 page-wotd .word-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
   margin-top: 30px;
-}
-
-page-wotd .word-container .back-wordcard {
-  width: 95%;
-  min-height: 208px;
-  max-height: 500px;
-  position: absolute;
-  top: -3px;
-  right: -1px;
-  z-index: -1;
-  background: #8FA7FF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-
-page-wotd .word-container .word-card {
-  width: 95%;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  padding: 10px;
-}
-
-page-wotd .word-container .word-card .word-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-page-wotd .word-container .word-card .word-header .row-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-page-wotd .word-container .word-card .word-header .row-one .word-name {
-  font-family: 'opensans-bold';
-  color: #fff;
-  font-size: 36px;
-  overflow-x: auto;
-}
-
-page-wotd .word-container .word-card .word-header .row-one .word-audio {
-  color: #fff;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin: 15px 3px 0 10px;
-}
-
-page-wotd .word-container .word-card .word-header .word-baybayin {
-  font-family: 'baydoc';
-  color: #fff;
-  font-size: 28px;
-  overflow-x: auto;
-}
-
-page-wotd .word-container .word-card .word-header .word-english {
-  font-family: 'opensans-reg';
-  color: #fff;
-  font-size: 24px;
-  overflow-x: auto;
-}
-
-page-wotd .word-container .word-card .word-header .word-paros {
-  font-family: 'sourcesans-reg';
-  color: #b6b6b6;
-  font-size: 13px;
-}
-
-page-wotd .word-container .word-card .word-subcard {
-  padding: 7px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background: white;
-  border-radius: 6px;
-}
-
-page-wotd .word-container .word-card .word-subcard .definition {
-  font-family: 'opensans-reg';
-  color: #000;
-  font-size: 14px;
-}
-
-page-wotd .word-container .word-card .word-subhead {
-  font-family: 'opensans-bold';
-  color: #000;
-  font-size: 18px;
-}
-
-page-wotd .word-container .word-card .white {
-  color: #fff;
-}
-
-page-wotd .word-container .word-card .sentence-list li {
-  margin-bottom: 10px;
-  font-family: 'opensans-reg';
-  font-size: 14px;
-}
-
-page-wotd .word-container .word-card .synonyms-list {
-  list-style-type: none;
-  margin-top: 10px;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-page-wotd .word-container .word-card .synonyms-list li {
-  margin: 5px;
-  padding: 3px 5px;
-  background: rgba(146, 146, 146, 0.53);
-  border: 1px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 7px;
-  font-family: 'opensans-light';
-  color: #ffff;
-  font-size: 14px;
-}
-
-page-wotd .word-container .word-card .copyrights {
-  margin-top: 30px;
-}
-
-page-wotd .word-container .word-card .copyrights .cpr {
-  font-size: 14px;
-  color: rgba(196, 196, 196, 0.616);
-}
-
-page-wotd .word-container .word-card .copyrights .copy-item {
-  font-family: 'opensans-reg';
-  color: rgba(160, 160, 160, 0.616);
-  font-size: 8px;
 }
 /*# sourceMappingURL=wotd.css.map */

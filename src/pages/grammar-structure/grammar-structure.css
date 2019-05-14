@@ -2,12 +2,10 @@ page-grammar-structure ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-grammar-structure .fix-scroll {
-  position: fixed;
-  bottom: 10.5%;
-  right: 3%;
-  width: 50px;
-  height: 50px;
+page-grammar-structure .fab-btn {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
 }
 
 page-grammar-structure .nav-half {
@@ -97,12 +95,13 @@ page-grammar-structure .lesson-list .lesson-box h3 {
   font-family: 'opensans-bold';
   color: #000;
   font-size: 18px;
-  background: #FFFBA0;
+  background: #FFA0A0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
-  max-width: 90%;
+  max-width: 95%;
+  text-align: center;
 }
 
 page-grammar-structure .lesson-list .lesson-box .lesson-title {
@@ -163,7 +162,7 @@ page-grammar-structure .lesson-list .lesson-box .lesson-content .content-list {
 page-grammar-structure .lesson-list .lesson-box .lesson-content .content-list li {
   margin: 5px;
   padding: 3px 5px;
-  background: #FFFBA0;
+  background: #FFA0A0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -202,5 +201,69 @@ page-grammar-structure .lesson-list .lesson-box .lesson-content .example-italic-
   color: #000;
   font-size: 16px;
   text-align: center;
+}
+
+page-grammar-structure .lesson-list .lesson-box .table {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  /*   grid-template-rows: repeat; */
+  /*   grid-auto-flow: column; */
+}
+
+page-grammar-structure .lesson-list .lesson-box .cell {
+  background-color: #ffe7e7;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 13px;
+  font-family: 'opensans-reg';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+page-grammar-structure .lesson-list .lesson-box .table-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+page-grammar-structure .lesson-list .lesson-box .one {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+page-grammar-structure .lesson-list .lesson-box .cell:nth-child(6n + 5), page-grammar-structure .lesson-list .lesson-box .cell:nth-child(6n) {
+  background-color: #fff0f0;
+}
+
+page-grammar-structure .lesson-list .lesson-box .thead {
+  background-color: #ffd5d5;
+  color: #000;
+  font-family: 'sourcesans-bold';
+  font-size: 15px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ffaeae;
+}
+
+page-grammar-structure .lesson-list .lesson-box .reference {
+  font-size: 8px;
 }
 /*# sourceMappingURL=grammar-structure.css.map */

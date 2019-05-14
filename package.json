@@ -86,8 +86,8 @@
       "cordova-custom-config": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

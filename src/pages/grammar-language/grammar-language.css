@@ -2,12 +2,10 @@ page-grammar-language ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-grammar-language .fix-scroll {
-  position: fixed;
-  bottom: 10.5%;
-  right: 3%;
-  width: 50px;
-  height: 50px;
+page-grammar-language .fab-btn {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
 }
 
 page-grammar-language .nav-half {
@@ -66,6 +64,9 @@ page-grammar-language .lesson-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -102,7 +103,8 @@ page-grammar-language .lesson-list .lesson-box h3 {
           box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
-  max-width: 90%;
+  max-width: 95%;
+  text-align: center;
 }
 
 page-grammar-language .lesson-list .lesson-box .lesson-title {
@@ -182,5 +184,9 @@ page-grammar-language .lesson-list .lesson-box .lesson-content .lesson-text {
   font-family: 'sourcesans-reg';
   color: #000;
   font-size: 13px;
+}
+
+page-grammar-language .lesson-list .lesson-box .reference {
+  font-size: 8px;
 }
 /*# sourceMappingURL=grammar-language.css.map */

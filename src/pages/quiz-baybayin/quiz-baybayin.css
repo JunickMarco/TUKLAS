@@ -43,7 +43,7 @@
 .ios page-quiz-baybayin .flash-card-back, .md page-quiz-baybayin .flash-card-back {
   font-family: 'opensans-extrabold';
   color: #000;
-  font-size: 22px;
+  font-size: 35px;
 }
 
 .ios page-quiz-baybayin .question-label, .md page-quiz-baybayin .question-label {
@@ -212,5 +212,29 @@
 .ios page-quiz-baybayin .menu-lesson .icon-quiz img, .md page-quiz-baybayin .menu-lesson .icon-quiz img {
   width: 37px;
   height: 56px;
+}
+
+.ios page-quiz-baybayin .sub, .md page-quiz-baybayin .sub {
+  font-family: 'opensans-bold';
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.ios page-quiz-baybayin .correct, .md page-quiz-baybayin .correct {
+  font-family: 'opensans-bold';
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: forestgreen;
+  text-transform: uppercase;
+}
+
+.ios page-quiz-baybayin .wrong, .md page-quiz-baybayin .wrong {
+  font-family: 'opensans-bold';
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: red;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=quiz-baybayin.css.map */

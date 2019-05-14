@@ -1,14 +1,14 @@
-page-grammar-numbers ion-content {
+page-grammar-time ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-grammar-numbers .fab-btn {
+page-grammar-time .fab-btn {
   background-color: transparent;
   width: 60px;
   height: 60px;
 }
 
-page-grammar-numbers .nav-half {
+page-grammar-time .nav-half {
   width: 100%;
   height: 200px;
   margin-top: -35px;
@@ -19,7 +19,7 @@ page-grammar-numbers .nav-half {
   z-index: -1;
 }
 
-page-grammar-numbers .action-bar {
+page-grammar-time .action-bar {
   width: 100%;
   max-height: 15%;
   margin-top: 10px;
@@ -35,18 +35,18 @@ page-grammar-numbers .action-bar {
           align-items: center;
 }
 
-page-grammar-numbers .action-bar .title {
+page-grammar-time .action-bar .title {
   font-family: 'bitter-bold';
   color: #3B3B3B;
   font-size: 24px;
 }
 
-page-grammar-numbers .action-icon {
+page-grammar-time .action-icon {
   color: #fff;
   font-size: 2em;
 }
 
-page-grammar-numbers .content-wrapper {
+page-grammar-time .content-wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -59,7 +59,7 @@ page-grammar-numbers .content-wrapper {
           flex-direction: column;
 }
 
-page-grammar-numbers .lesson-list {
+page-grammar-time .lesson-list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +71,7 @@ page-grammar-numbers .lesson-list {
       flex-wrap: wrap;
 }
 
-page-grammar-numbers .lesson-list .lesson-box {
+page-grammar-time .lesson-list .lesson-box {
   width: 322px;
   background: #fff;
   background-size: cover;
@@ -91,20 +91,19 @@ page-grammar-numbers .lesson-list .lesson-box {
           align-items: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box h3 {
+page-grammar-time .lesson-list .lesson-box h3 {
   font-family: 'opensans-bold';
   color: #000;
   font-size: 18px;
-  background: #A0B0FF;
+  background: #FFA0E5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
   max-width: 90%;
-  text-align: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-title {
+page-grammar-time .lesson-list .lesson-box .lesson-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +114,7 @@ page-grammar-numbers .lesson-list .lesson-box .lesson-title {
   margin-top: 10px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-icon {
+page-grammar-time .lesson-list .lesson-box .lesson-title .lesson-icon {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,12 +124,12 @@ page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-icon {
           align-items: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-icon img {
+page-grammar-time .lesson-list .lesson-box .lesson-title .lesson-icon img {
   width: 100%;
-  height: 66px;
+  height: 75px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-name {
+page-grammar-time .lesson-list .lesson-box .lesson-title .lesson-name {
   width: 70%;
   padding-left: 5px;
   font-family: 'opensans-extrabold';
@@ -138,17 +137,17 @@ page-grammar-numbers .lesson-list .lesson-box .lesson-title .lesson-name {
   font-size: 36px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content {
+page-grammar-time .lesson-list .lesson-box .lesson-content {
   padding: 10px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content h2 {
+page-grammar-time .lesson-list .lesson-box .lesson-content h2 {
   font-family: 'opensans-bold';
   color: #000;
   font-size: 18px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list {
+page-grammar-time .lesson-list .lesson-box .lesson-content .content-list {
   list-style-type: none;
   margin-top: 5px;
   padding: 0;
@@ -159,10 +158,10 @@ page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list {
       flex-wrap: wrap;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list li {
+page-grammar-time .lesson-list .lesson-box .lesson-content .content-list li {
   margin: 5px;
   padding: 3px 5px;
-  background: #A0B0FF;
+  background: #FFA0E5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -171,39 +170,39 @@ page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list li {
   font-size: 13px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .content-list li:active {
-  background: #c3cdff;
+page-grammar-time .lesson-list .lesson-box .lesson-content .content-list li:active {
+  background: #ffd7f4;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .lesson-text {
+page-grammar-time .lesson-list .lesson-box .lesson-content .lesson-text {
   font-family: 'sourcesans-reg';
   color: #000;
   font-size: 13px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .text-light {
+page-grammar-time .lesson-list .lesson-box .lesson-content .text-light {
   font-family: 'sourcesans-light';
   color: #000;
   font-size: 13px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .example-text {
+page-grammar-time .lesson-list .lesson-box .lesson-content .example-text {
   font-family: 'sourcesans-bold';
   color: #000;
   font-size: 16px;
   text-align: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .lesson-content .example-italic-text {
+page-grammar-time .lesson-list .lesson-box .lesson-content .example-italic-text {
   font-family: 'sourcesans-semibolditalic';
   color: #000;
   font-size: 16px;
   text-align: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .table {
+page-grammar-time .lesson-list .lesson-box .table {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -214,51 +213,58 @@ page-grammar-numbers .lesson-list .lesson-box .table {
   /*   grid-auto-flow: column; */
 }
 
-page-grammar-numbers .lesson-list .lesson-box .cell {
-  background-color: #f7f8ff;
+page-grammar-time .lesson-list .lesson-box .cell {
+  background-color: #ffeffa;
   color: #000;
   border-radius: 5px;
   padding: 5px;
   font-size: 15px;
   font-family: 'opensans-reg';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .cell:nth-child(3n + 1) {
-  background-color: #d1d8ff;
+page-grammar-time .lesson-list .lesson-box .cell:nth-child(3n + 1) {
+  background-color: #ffd6f4;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .cell:nth-child(6n + 5), page-grammar-numbers .lesson-list .lesson-box .cell:nth-child(6n) {
-  background-color: #eff1ff;
+page-grammar-time .lesson-list .lesson-box .cell:nth-child(6n + 5), page-grammar-time .lesson-list .lesson-box .cell:nth-child(6n) {
+  background-color: #fff4fc;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .thead {
-  background-color: #d1d8ff;
+page-grammar-time .lesson-list .lesson-box .thead {
+  background-color: #ffd6f4;
   color: #000;
   font-family: 'sourcesans-bold';
   font-size: 18px;
   border-radius: 5px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .tnone {
+page-grammar-time .lesson-list .lesson-box .tnone {
   background-color: transparent !important;
   padding: 0;
   font-size: 10px;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .table-ordi {
+page-grammar-time .lesson-list .lesson-box .table-short {
   width: 100%;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  /*   grid-template-rows: repeat; */
-  /*   grid-auto-flow: column; */
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .cell-ordi {
-  background-color: #f7f8ff;
+page-grammar-time .lesson-list .lesson-box .cell-short {
+  background-color: #ffd6f4;
   color: #000;
   border-radius: 5px;
   padding: 5px;
@@ -267,19 +273,7 @@ page-grammar-numbers .lesson-list .lesson-box .cell-ordi {
   text-align: center;
 }
 
-page-grammar-numbers .lesson-list .lesson-box .cell-ordi:nth-child(4n), page-grammar-numbers .lesson-list .lesson-box .cell-ordi:nth-child(4n + 3) {
-  background-color: #eff1ff;
-}
-
-page-grammar-numbers .lesson-list .lesson-box .thead-ordi {
-  background-color: #d1d8ff;
-  color: #000;
-  font-family: 'sourcesans-bold';
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-page-grammar-numbers .lesson-list .lesson-box .reference {
+page-grammar-time .lesson-list .lesson-box .reference {
   font-size: 8px;
 }
-/*# sourceMappingURL=grammar-numbers.css.map */
+/*# sourceMappingURL=grammar-time.css.map */

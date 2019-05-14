@@ -2,12 +2,10 @@ page-grammar-mistakes ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-grammar-mistakes .fix-scroll {
-  position: fixed;
-  bottom: 10.5%;
-  right: 3%;
-  width: 50px;
-  height: 50px;
+page-grammar-mistakes .fab-btn {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
 }
 
 page-grammar-mistakes .nav-half {
@@ -102,6 +100,8 @@ page-grammar-mistakes .lesson-list .lesson-box h3 {
           box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
+  max-width: 95%;
+  text-align: center;
 }
 
 page-grammar-mistakes .lesson-list .lesson-box .lesson-title {
@@ -221,5 +221,9 @@ page-grammar-mistakes .lesson-list .lesson-box .lesson-content .example .wrong-l
 
 page-grammar-mistakes .lesson-list .lesson-box .lesson-content .example .correct-list {
   background-color: rgba(160, 255, 169, 0.7);
+}
+
+page-grammar-mistakes .lesson-list .lesson-box .reference {
+  font-size: 8px;
 }
 /*# sourceMappingURL=grammar-mistakes.css.map */

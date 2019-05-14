@@ -1,25 +1,25 @@
-page-baybayin-chart ion-content {
+page-grammar-daysmonths ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-baybayin-chart .fab-btn {
+page-grammar-daysmonths .fab-btn {
   background-color: transparent;
   width: 60px;
   height: 60px;
 }
 
-page-baybayin-chart .nav-half {
+page-grammar-daysmonths .nav-half {
   width: 100%;
   height: 200px;
   margin-top: -35px;
   -webkit-transform: skew(0deg, -10deg);
           transform: skew(0deg, -10deg);
-  background-color: #FFA0A0;
+  background-color: #A0BBFF;
   position: absolute;
   z-index: -1;
 }
 
-page-baybayin-chart .action-bar {
+page-grammar-daysmonths .action-bar {
   width: 100%;
   max-height: 15%;
   margin-top: 10px;
@@ -35,18 +35,18 @@ page-baybayin-chart .action-bar {
           align-items: center;
 }
 
-page-baybayin-chart .action-bar .title {
+page-grammar-daysmonths .action-bar .title {
   font-family: 'bitter-bold';
   color: #3B3B3B;
   font-size: 24px;
 }
 
-page-baybayin-chart .action-icon {
+page-grammar-daysmonths .action-icon {
   color: #fff;
   font-size: 2em;
 }
 
-page-baybayin-chart .content-wrapper {
+page-grammar-daysmonths .content-wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -59,7 +59,7 @@ page-baybayin-chart .content-wrapper {
           flex-direction: column;
 }
 
-page-baybayin-chart .lesson-list {
+page-grammar-daysmonths .lesson-list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +71,7 @@ page-baybayin-chart .lesson-list {
       flex-wrap: wrap;
 }
 
-page-baybayin-chart .lesson-list .lesson-box {
+page-grammar-daysmonths .lesson-list .lesson-box {
   width: 322px;
   background: #fff;
   background-size: cover;
@@ -91,18 +91,19 @@ page-baybayin-chart .lesson-list .lesson-box {
           align-items: center;
 }
 
-page-baybayin-chart .lesson-list .lesson-box h3 {
+page-grammar-daysmonths .lesson-list .lesson-box h3 {
   font-family: 'opensans-bold';
   color: #000;
   font-size: 18px;
-  background: #FFA0A0;
+  background: #A2FFA0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
+  max-width: 90%;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-title {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +114,7 @@ page-baybayin-chart .lesson-list .lesson-box .lesson-title {
   margin-top: 10px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-title .lesson-icon {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-title .lesson-icon {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,12 +124,12 @@ page-baybayin-chart .lesson-list .lesson-box .lesson-title .lesson-icon {
           align-items: center;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-title .lesson-icon img {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-title .lesson-icon img {
   width: 100%;
-  height: 76px;
+  height: 73px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-title .lesson-name {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-title .lesson-name {
   width: 70%;
   padding-left: 5px;
   font-family: 'opensans-extrabold';
@@ -136,17 +137,17 @@ page-baybayin-chart .lesson-list .lesson-box .lesson-title .lesson-name {
   font-size: 36px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-content {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content {
   padding: 10px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-content h2 {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content h2 {
   font-family: 'opensans-bold';
   color: #000;
   font-size: 18px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-content .content-list {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .content-list {
   list-style-type: none;
   margin-top: 5px;
   padding: 0;
@@ -157,10 +158,10 @@ page-baybayin-chart .lesson-list .lesson-box .lesson-content .content-list {
       flex-wrap: wrap;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-content .content-list li {
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .content-list li {
   margin: 5px;
   padding: 3px 5px;
-  background: #FFA0A0;
+  background: #A2FFA0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -169,49 +170,73 @@ page-baybayin-chart .lesson-list .lesson-box .lesson-content .content-list li {
   font-size: 13px;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .lesson-content .content-list li:active {
-  background: #fcbdbd;
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .content-list li:active {
+  background: #d4ffd4;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-page-baybayin-chart .lesson-list .lesson-box .reference {
-  font-size: 8px;
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .lesson-text {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
 }
 
-page-baybayin-chart .baybayin-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .text-light {
+  font-family: 'sourcesans-light';
+  color: #000;
+  font-size: 13px;
 }
 
-page-baybayin-chart .baybayin-list .baybayin-item {
-  width: 130px;
-  min-height: 150px;
-  margin: 3px;
-  background: #FFFFFF;
-  border: 2px solid #EAEAEA;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .example-text {
+  font-family: 'sourcesans-bold';
+  color: #000;
+  font-size: 16px;
   text-align: center;
 }
 
-page-baybayin-chart .baybayin-list .baybayin-item .baybayin-text {
-  font-family: 'baysil';
+page-grammar-daysmonths .lesson-list .lesson-box .lesson-content .example-italic-text {
+  font-family: 'sourcesans-semibolditalic';
   color: #000;
-  font-size: 45px;
-  line-height: 0.5;
+  font-size: 16px;
+  text-align: center;
 }
 
-page-baybayin-chart .baybayin-list .baybayin-item .baybayin-eq {
-  font-family: 'opensans-bold';
-  color: #000;
-  font-size: 18px;
+page-grammar-daysmonths .lesson-list .lesson-box .table-ordi {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  /*   grid-template-rows: repeat; */
+  /*   grid-auto-flow: column; */
 }
-/*# sourceMappingURL=baybayin-chart.css.map */
+
+page-grammar-daysmonths .lesson-list .lesson-box .cell-ordi {
+  background-color: #f6fff6;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'opensans-reg';
+  text-align: center;
+}
+
+page-grammar-daysmonths .lesson-list .lesson-box .cell-ordi:nth-child(4n), page-grammar-daysmonths .lesson-list .lesson-box .cell-ordi:nth-child(4n + 3) {
+  background-color: #ecffeb;
+}
+
+page-grammar-daysmonths .lesson-list .lesson-box .thead-ordi {
+  background-color: #d0ffd0;
+  color: #000;
+  font-family: 'sourcesans-bold';
+  font-size: 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #aeffae;
+}
+
+page-grammar-daysmonths .lesson-list .lesson-box .reference {
+  font-size: 8px;
+}
+/*# sourceMappingURL=grammar-daysmonths.css.map */

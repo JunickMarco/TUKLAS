@@ -1,3 +1,32 @@
+import { QuizVocabularyPageModule } from './../pages/quiz-vocabulary/quiz-vocabulary.module';
+import { QuizIdiomsPageModule } from './../pages/quiz-idioms/quiz-idioms.module';
+import { QuizGrammarPageModule } from './../pages/quiz-grammar/quiz-grammar.module';
+import { QuizBaybayinPageModule } from './../pages/quiz-baybayin/quiz-baybayin.module';
+import { QuizPageModule } from './../pages/quiz/quiz.module';
+import { LearnIdiomsPageModule } from './../pages/learn-idioms/learn-idioms.module';
+import { LearnGrammarPageModule } from './../pages/learn-grammar/learn-grammar.module';
+import { LearnBaybayinPageModule } from './../pages/learn-baybayin/learn-baybayin.module';
+import { LearnPageModule } from './../pages/learn/learn.module';
+import { IdiomPageModule } from './../pages/idiom/idiom.module';
+import { HomePageModule } from './../pages/home/home.module';
+import { GrammarTimePageModule } from './../pages/grammar-time/grammar-time.module';
+import { GrammarStructurePageModule } from './../pages/grammar-structure/grammar-structure.module';
+import { GrammarPleasePageModule } from './../pages/grammar-please/grammar-please.module';
+import { GrammarNumbersPageModule } from './../pages/grammar-numbers/grammar-numbers.module';
+import { GrammarMistakesPageModule } from './../pages/grammar-mistakes/grammar-mistakes.module';
+import { GrammarLanguagePageModule } from './../pages/grammar-language/grammar-language.module';
+import { GrammarDaysmonthsPageModule } from './../pages/grammar-daysmonths/grammar-daysmonths.module';
+import { GrammarColorsPageModule } from './../pages/grammar-colors/grammar-colors.module';
+import { BaybayinWritePageModule } from './../pages/baybayin-write/baybayin-write.module';
+import { BaybayinSystemsPageModule } from './../pages/baybayin-systems/baybayin-systems.module';
+import { BaybayinMaterialsPageModule } from './../pages/baybayin-materials/baybayin-materials.module';
+import { BaybayinIntroPageModule } from './../pages/baybayin-intro/baybayin-intro.module';
+import { BaybayinHistoryPageModule } from './../pages/baybayin-history/baybayin-history.module';
+import { BaybayinChartPageModule } from './../pages/baybayin-chart/baybayin-chart.module';
+import { BaybayinActionPageModule } from './../pages/baybayin-action/baybayin-action.module';
+import { AboutAppPageModule } from './../pages/about-app/about-app.module';
+import { AboutPageModule } from './../pages/about/about.module';
+import { ComponentsModule } from './../components/components.module';
 
 
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -56,6 +85,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { FcmProvider } from '../providers/fcm/fcm';
 import { Firebase } from '@ionic-native/firebase/ngx';
+import { WotdPageModule } from '../pages/wotd/wotd.module';
+import { WordPageModule } from '../pages/word/word.module';
 const config = {
   apiKey: "AIzaSyB__ZukLK_JVXiVYNzoHPwArqjRQHTjah8",
   authDomain: "thesis-6214c.firebaseapp.com",
@@ -67,41 +98,72 @@ const config = {
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    HomePage,
-    LearnPage,
-    QuizPage,
-    WotdPage,
-    WordPage,
+    // AboutPage,
+    // HomePage,
+    // LearnPage,
+    // QuizPage,
+    // WotdPage,
+    // WordPage,
     TabsPage,
-    LearnIdiomsPage,
-    IdiomPage,
-    LearnGrammarPage,
-    LearnBaybayinPage,
-    GrammarLanguagePage,
-    GrammarStructurePage,
-    GrammarNumbersPage,
-    GrammarMistakesPage,
-    GrammarColorsPage,
-    GrammarDaysmonthsPage,
-    GrammarPleasePage,
-    GrammarTimePage,
-    BaybayinIntroPage,
-    BaybayinHistoryPage,
-    BaybayinWritePage,
-    BaybayinChartPage,
-    BaybayinMaterialsPage,
-    BaybayinSystemsPage,
-    BaybayinActionPage,
-    QuizBaybayinPage,
-    QuizGrammarPage,
-    QuizIdiomsPage,
-    QuizVocabularyPage,
-    AboutAppPage,
-    FlashCardComponent
+    // LearnIdiomsPage,
+    // IdiomPage,
+    // LearnGrammarPage,
+    // LearnBaybayinPage,
+    // GrammarLanguagePage,
+    // GrammarStructurePage,
+    // GrammarNumbersPage,
+    // GrammarMistakesPage,
+    // GrammarColorsPage,
+    // GrammarDaysmonthsPage,
+    // GrammarPleasePage,
+    // GrammarTimePage,
+    // BaybayinIntroPage,
+    // BaybayinHistoryPage,
+    // BaybayinWritePage,
+    // BaybayinChartPage,
+    // BaybayinMaterialsPage,
+    // BaybayinSystemsPage,
+    // BaybayinActionPage,
+    // QuizBaybayinPage,
+    // QuizGrammarPage,
+    // QuizIdiomsPage,
+    // QuizVocabularyPage,
+    // AboutAppPage,
+    // FlashCardComponent
 
   ],
   imports: [
+    WordPageModule,
+    WotdPageModule,
+    QuizVocabularyPageModule,
+    QuizIdiomsPageModule,
+    QuizGrammarPageModule,
+    QuizBaybayinPageModule,
+    QuizPageModule,
+    LearnIdiomsPageModule,
+    LearnGrammarPageModule,
+    LearnBaybayinPageModule,
+    LearnPageModule,
+    IdiomPageModule,
+    HomePageModule,
+    GrammarTimePageModule,
+    GrammarStructurePageModule,
+    GrammarPleasePageModule,
+    GrammarNumbersPageModule,
+    GrammarMistakesPageModule,
+    GrammarLanguagePageModule,
+    GrammarDaysmonthsPageModule,
+    GrammarColorsPageModule,
+    BaybayinWritePageModule,
+    BaybayinSystemsPageModule,
+    BaybayinMaterialsPageModule,
+    BaybayinIntroPageModule,
+    BaybayinHistoryPageModule,
+    BaybayinChartPageModule,
+    BaybayinActionPageModule,
+    // ComponentsModule,
+    AboutPageModule,
+    AboutAppPageModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(), //for local storage

@@ -1,0 +1,384 @@
+page-grammar-colors ion-content {
+  background-color: #F7F7F7 !important;
+}
+
+page-grammar-colors .fab-btn {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+page-grammar-colors .nav-half {
+  width: 100%;
+  height: 200px;
+  margin-top: -35px;
+  -webkit-transform: skew(0deg, -10deg);
+          transform: skew(0deg, -10deg);
+  background-color: #A0BBFF;
+  position: absolute;
+  z-index: -1;
+}
+
+page-grammar-colors .action-bar {
+  width: 100%;
+  max-height: 15%;
+  margin-top: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-grammar-colors .action-bar .title {
+  font-family: 'bitter-bold';
+  color: #3B3B3B;
+  font-size: 24px;
+}
+
+page-grammar-colors .action-icon {
+  color: #fff;
+  font-size: 2em;
+}
+
+page-grammar-colors .content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+page-grammar-colors .lesson-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+page-grammar-colors .lesson-list .lesson-box {
+  width: 322px;
+  background: #fff;
+  background-size: cover;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box h3 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+  background: #AEA0FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px;
+  max-width: 90%;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin-top: 10px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-title .lesson-icon {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-title .lesson-icon img {
+  width: 100%;
+  height: 80px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-title .lesson-name {
+  width: 70%;
+  padding-left: 5px;
+  font-family: 'opensans-extrabold';
+  color: #000;
+  font-size: 36px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content {
+  padding: 10px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content h2 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .content-list {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .content-list li {
+  margin: 5px;
+  padding: 3px 5px;
+  background: #AEA0FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .content-list li:active {
+  background: #cec6ff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .lesson-text {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .text-light {
+  font-family: 'sourcesans-light';
+  color: #000;
+  font-size: 13px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .example-text {
+  font-family: 'sourcesans-bold';
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box .lesson-content .example-italic-text {
+  font-family: 'sourcesans-semibolditalic';
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box .table-ordi {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  margin-bottom: 40px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .cell-ordi {
+  background-color: #e9e6ff;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'opensans-reg';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box .cell-ordi:nth-child(4n), page-grammar-colors .lesson-list .lesson-box .cell-ordi:nth-child(4n + 3) {
+  background-color: #f6f5ff;
+}
+
+page-grammar-colors .lesson-list .lesson-box .thead-ordi {
+  background-color: #dbd4ff;
+  color: #000;
+  font-family: 'sourcesans-bold';
+  font-size: 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #bbaeff;
+}
+
+page-grammar-colors .lesson-list .lesson-box .sent {
+  margin-bottom: 0;
+}
+
+page-grammar-colors .lesson-list .lesson-box .intro-sent {
+  padding: 3px;
+  font-size: 10px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .table {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 10% auto auto;
+      grid-template-columns: 10% auto auto;
+  /*   grid-template-rows: repeat; */
+  /*   grid-auto-flow: column; */
+}
+
+page-grammar-colors .lesson-list .lesson-box .cell {
+  background-color: #e9e6ff;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'opensans-reg';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+page-grammar-colors .lesson-list .lesson-box .cell:nth-child(6n + 5), page-grammar-colors .lesson-list .lesson-box .cell:nth-child(6n) {
+  background-color: #f6f5ff;
+}
+
+page-grammar-colors .lesson-list .lesson-box .thead {
+  background-color: #dbd4ff;
+  color: #000;
+  font-family: 'sourcesans-bold';
+  font-size: 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #bbaeff;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tnone {
+  background-color: transparent !important;
+  padding: 0;
+  font-size: 10px;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tred {
+  background-color: #ff9797 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tblue {
+  background-color: #9799ff !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tyellow {
+  background-color: #fdff97 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tgreen {
+  background-color: #97ff97 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tviolet {
+  background-color: #ea97ff !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .torange {
+  background-color: #ffce97 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tnavy {
+  background-color: #4e5283 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tbyellow {
+  background-color: #ffee52 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tdgreen {
+  background-color: #438a40 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tpblue {
+  background-color: #d0d7fd !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tlgreen {
+  background-color: #d5fdd0 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tlyellow {
+  background-color: #fdfcd0 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tpurple {
+  background-color: #eecbfc !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tpink {
+  background-color: #ff9fcc !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tgray {
+  background-color: #5f5f5f !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tagreen {
+  background-color: #9be678 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tmgreen {
+  background-color: #386130 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tgold {
+  background-color: #ccc15a !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .tsilver {
+  background-color: #c5c5c5 !important;
+}
+
+page-grammar-colors .lesson-list .lesson-box .reference {
+  font-size: 8px;
+}
+/*# sourceMappingURL=grammar-colors.css.map */

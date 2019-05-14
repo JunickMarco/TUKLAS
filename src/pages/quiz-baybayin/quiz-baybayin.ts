@@ -1,8 +1,10 @@
+import { ComponentsModule } from './../../components/components.module';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, Platform, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 import { HttpClient } from '@angular/common/http';
 import { QuizPage } from '../quiz/quiz';
+
 /**
  * Generated class for the QuizBaybayinPage page.
  *

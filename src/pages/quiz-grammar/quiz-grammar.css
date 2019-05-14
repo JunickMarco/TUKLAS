@@ -213,4 +213,28 @@
   width: 67px;
   height: 56px;
 }
+
+.ios page-quiz-grammar .sub, .md page-quiz-grammar .sub {
+  font-family: 'opensans-bold';
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.ios page-quiz-grammar .correct, .md page-quiz-grammar .correct {
+  font-family: 'opensans-bold';
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: forestgreen;
+  text-transform: uppercase;
+}
+
+.ios page-quiz-grammar .wrong, .md page-quiz-grammar .wrong {
+  font-family: 'opensans-bold';
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: red;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=quiz-grammar.css.map */

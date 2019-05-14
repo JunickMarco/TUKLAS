@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'flash-card',

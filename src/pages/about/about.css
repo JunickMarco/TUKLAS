@@ -1,38 +1,352 @@
-page-about .blue-half {
+page-about ion-content {
+  background: #f5f4f4 !important;
+}
+
+page-about .bg-half {
   width: 100%;
-  height: 23%;
-  background-color: #D7515A;
+  height: 45%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/imgs/about-bg.png) no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/imgs/about-bg.png) no-repeat center;
+  background-size: cover;
   position: absolute;
   z-index: -1;
 }
 
-page-about .head-center {
+page-about .page-wrap {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+
+page-about .header {
+  margin-left: 20px;
+}
+
+page-about .header h1 {
+  font-family: 'bitter-bold';
+  color: #fff;
+  font-size: 48px;
+}
+
+page-about .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-about .menu .item {
+  width: 90%;
+  height: 107px;
+  background: #fff;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+page-about .menu .item:active {
+  background: #F2F2F2;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: changesize;
+          animation-name: changesize;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes changesize {
+  from {
+    width: 90%;
+    height: 107px;
+  }
+  to {
+    width: 92%;
+    height: 110px;
+  }
+}
+
+@keyframes changesize {
+  from {
+    width: 90%;
+    height: 107px;
+  }
+  to {
+    width: 92%;
+    height: 110px;
+  }
+}
+
+page-about .menu .item .icon {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+page-about .menu .item .icon .icon-gra {
+  width: 67px;
+  height: 56px;
+}
+
+page-about .menu .item .icon .icon-bay {
+  width: 60px;
+  height: 40px;
+}
+
+page-about .menu .item .icon .icon-idio {
+  width: 78px;
+  height: 79px;
+}
+
+page-about .menu .item .description {
+  width: 70%;
+  padding-right: 20px;
+}
+
+page-about .menu .item .description h2 {
+  font-family: 'opensans-semibold';
+  color: #000;
+  font-size: 24px;
+}
+
+page-about .menu .item .description p {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 11px;
+}
+
+page-about .menu .blue {
+  -webkit-box-shadow: 0px 4px 4px rgba(5, 62, 171, 0.15);
+          box-shadow: 0px 4px 4px rgba(5, 62, 171, 0.15);
+}
+
+page-about .menu .red {
+  -webkit-box-shadow: 0px 4px 4px rgba(179, 2, 2, 0.15);
+          box-shadow: 0px 4px 4px rgba(179, 2, 2, 0.15);
+}
+
+page-about .menu .green {
+  -webkit-box-shadow: 0px 4px 4px rgba(30, 108, 10, 0.15);
+          box-shadow: 0px 4px 4px rgba(30, 108, 10, 0.15);
+}
+
+page-about .content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+page-about .lesson-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+page-about .lesson-list .lesson-box {
+  width: 322px;
+  background: #fff;
+  background-size: cover;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-about .lesson-list .lesson-box h3 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+  background: #A2FFA0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px;
+  max-width: 90%;
+}
+
+page-about .lesson-list .lesson-box .lesson-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
   margin-top: 10px;
 }
 
-page-about .page-head {
-  font-family: 'oss';
-  text-transform: uppercase;
-  font-size: 3em;
-  margin: 30px auto 0 auto;
-  color: #fff;
+page-about .lesson-list .lesson-box .lesson-title .lesson-icon {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-page-about ion-content {
-  background-color: #fdfdfe !important;
+page-about .lesson-list .lesson-box .lesson-title .lesson-icon img {
+  width: 100%;
+  height: 73px;
 }
 
-page-about .line-divide {
-  width: 80%;
-  height: 3px;
-  margin: auto;
+page-about .lesson-list .lesson-box .lesson-title .lesson-name {
+  width: 70%;
+  padding-left: 5px;
+  font-family: 'opensans-extrabold';
+  color: #000;
+  font-size: 36px;
 }
 
-page-about ion-list {
-  margin: 0 auto;
+page-about .lesson-list .lesson-box .lesson-content {
+  padding: 10px;
+}
+
+page-about .lesson-list .lesson-box .lesson-content h2 {
+  font-family: 'opensans-bold';
+  color: #000;
+  font-size: 18px;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .content-list {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .content-list li {
+  margin: 5px;
+  padding: 3px 5px;
+  background: #A2FFA0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .content-list li:active {
+  background: #d4ffd4;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .lesson-text {
+  font-family: 'sourcesans-reg';
+  color: #000;
+  font-size: 13px;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .text-light {
+  font-family: 'sourcesans-light';
+  color: #000;
+  font-size: 13px;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .example-text {
+  font-family: 'sourcesans-bold';
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+page-about .lesson-list .lesson-box .lesson-content .example-italic-text {
+  font-family: 'sourcesans-semibolditalic';
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+page-about .lesson-list .lesson-box .table-ordi {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  /*   grid-template-rows: repeat; */
+  /*   grid-auto-flow: column; */
+}
+
+page-about .lesson-list .lesson-box .cell-ordi {
+  background-color: #f6fff6;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'opensans-reg';
+  text-align: center;
+}
+
+page-about .lesson-list .lesson-box .cell-ordi:nth-child(4n), page-about .lesson-list .lesson-box .cell-ordi:nth-child(4n + 3) {
+  background-color: #ecffeb;
+}
+
+page-about .lesson-list .lesson-box .thead-ordi {
+  background-color: #d0ffd0;
+  color: #000;
+  font-family: 'sourcesans-bold';
+  font-size: 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #aeffae;
+}
+
+page-about .lesson-list .lesson-box .reference {
+  font-size: 8px;
+}
+
+page-about .lesson-list .lesson-box .copyhead {
+  font-family: 'opensans-semibold';
+  color: #000;
+  font-size: 14px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=about.css.map */

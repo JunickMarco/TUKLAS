@@ -2,13 +2,10 @@ page-learn-idioms ion-content {
   background-color: #F7F7F7 !important;
 }
 
-page-learn-idioms .fix-scroll {
-  position: fixed;
-  bottom: 10.5%;
-  right: 3%;
-  width: 50px;
-  height: 50px;
-  -webkit-backface-visibility: hidden;
+page-learn-idioms .fab-btn {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
 }
 
 page-learn-idioms .nav-half {
@@ -67,6 +64,13 @@ page-learn-idioms .lesson-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
